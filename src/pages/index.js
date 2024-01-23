@@ -1,7 +1,12 @@
-import { Inter } from "next/font/google";
+import Experience from "@/components/Experience";
+import { Canvas } from "@react-three/fiber";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
-  return <h1>Hello world!</h1>;
+export default function App() {
+  return (
+    <div className="App h-[100vh] w-[100vw]">
+      <Canvas>
+        <Experience />
+      </Canvas>
+    </div>
+  );
 }
