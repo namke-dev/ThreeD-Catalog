@@ -1,48 +1,17 @@
-import Experience from "@/components/Experience";
-import {
-  AccumulativeShadows,
-  CameraControls,
-  RandomizedLight,
-} from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
+import ModelContainer from "@/components/ModelContainer";
 
 export default function App() {
   return (
-    <div className="App h-[100vh] w-[100vw]">
-      <Canvas
-        shadows
-        camera={{ position: [30, 0, -3], fov: 35, near: 1, far: 50 }}
-      >
-        <color attach="background" args={["#c6e5db"]} />
-        <CameraControls
-          truckSpeed={0}
-          dollySpeed={0}
-          minPolarAngle={0}
-          maxPolarAngle={Math.PI / 2}
-        />
-
-        <Experience />
-        {/** Soft shadows */}
-        <AccumulativeShadows
-          temporal
-          frames={100}
-          color="lightblue"
-          colorBlend={2}
-          opacity={0.7}
-          scale={60}
-          position={[0, -3.5, 0]}
-        >
-          <RandomizedLight
-            amount={1}
-            radius={10}
-            ambient={0}
-            intensity={4}
-            position={[-5, 10, -5]}
-            size={30}
-          />
-        </AccumulativeShadows>
-      </Canvas>
+    <div className="App bg-[#ffffff] flex flex-col">
+      <div className="flex flex-grow h-1/4 w-auto flex-1 bg-red-300">
+        This is my div
+      </div>
+      <div className="h-3/4 flex flex-row">
+        <div className="w-2/3">
+          <ModelContainer />
+        </div>
+        <div className="w-1/3 h-full bg-blue-200"></div>
+      </div>
     </div>
   );
 }
