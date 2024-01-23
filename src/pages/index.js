@@ -31,15 +31,15 @@ export default function App() {
           colorBlend={2}
           opacity={0.7}
           scale={60}
-          position={[0, -5, 0]}
+          position={[0, -3.5, 0]}
         >
           <RandomizedLight
-            amount={4}
-            radius={15}
-            ambient={0.5}
+            amount={1}
+            radius={10}
+            ambient={0}
             intensity={4}
             position={[-5, 10, -5]}
-            size={20}
+            size={30}
           />
         </AccumulativeShadows>
       </Canvas>
