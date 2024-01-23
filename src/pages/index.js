@@ -3,9 +3,7 @@ import ModelContainer from "@/components/ModelContainer";
 export default function App() {
   return (
     <div className="App bg-[#ffffff] flex flex-col">
-      <div className="flex flex-grow h-1/4 w-auto flex-1 bg-red-300">
-        This is my div
-      </div>
+      <div className="flex flex-grow h-1/4 w-auto flex-1 bg-red-300"></div>
       <div className="h-3/4 flex flex-row">
         <div className="w-2/3">
           <ModelContainer />
