@@ -1,0 +1,8 @@
+Model Information:
+* title:	Plants
+* source:	https://sketchfab.com/3d-models/plants-69352f0a90e94a0a9173b989e41acfc9
+* author:	Anom Purple Modelling (https://sketchfab.com/Anom404)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
