@@ -2,26 +2,28 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function BambooChair(props) {
-  const { nodes, materials } = useGLTF("models/bamboo-chair/scene.gltf");
+  const { nodes } = useGLTF("models/bamboo-chair/scene.gltf");
   return (
     <group {...props} dispose={null}>
       <group
         rotation={[0, Math.PI / 2, 0]}
-        scale={0.015}
+        scale={0.01}
         position={[0, -0.5, 0]}
       >
         <mesh
           castShadow
           shadows
           geometry={nodes.Alandhra_seatting_group_Black_metal_0.geometry}
-          material={materials.Black_metal}
-        />
+        >
+          <meshStandardMaterial color="white" />
+        </mesh>
         <mesh
           castShadow
           shadows
           geometry={nodes.Alandhra_seatting_group_Wicker_chair_0.geometry}
-          material={materials.Wicker_chair}
-        />
+        >
+          <meshStandardMaterial color="white" />
+        </mesh>
       </group>
     </group>
   );

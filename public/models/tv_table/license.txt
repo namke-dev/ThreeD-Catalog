@@ -1,8 +1,0 @@
-Model Information:
-* title:	Table 2 - All Wooden
-* source:	https://sketchfab.com/3d-models/table-2-all-wooden-33f9146e16354d0886f88341a6bcdb3a
-* author:	Harv (https://sketchfab.com/hsetterfield)
-
-Model License:
-* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
-* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

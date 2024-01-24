@@ -3,7 +3,7 @@ import { DeskModel } from "@/components/DeskModel";
 import ModelContainer from "@/components/ModelContainer";
 import { Sofa2 } from "@/components/Sofa2";
 import BambooChair from "@/components/Bamboo-chair";
-import Plant2 from "@/components/Plant2";
+import BackgroundPlant2 from "@/components/BackgroundPlant2";
 import BackgroundScene from "@/components/BackgroundScene";
 
 export default function App() {
@@ -16,8 +16,8 @@ export default function App() {
             {/* <FloatCube /> */}
 
             {/* <DeskModel /> */}
-            <Sofa2 />
-            {/* <BambooChair /> */}
+            {/* <Sofa2 /> */}
+            <BambooChair />
             <BackgroundScene />
           </ModelContainer>
         </div>
