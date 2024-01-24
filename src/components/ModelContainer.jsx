@@ -9,7 +9,7 @@ export default function ModelContainer({ children }) {
     <Canvas
       shadows
       camera={{
-        position: [6, 0, 0],
+        position: [5, 0, 0],
         fov: 35,
         near: 3,
         far: 10,
@@ -22,7 +22,7 @@ export default function ModelContainer({ children }) {
       <CustomCameraControls />
       <CustomBackdrop />
       <ambientLight intensity={0.1} color={"pink"} />
-      <Suspense fallback={null}>{children}</Suspense>
+      {children}
     </Canvas>
   );
 }
