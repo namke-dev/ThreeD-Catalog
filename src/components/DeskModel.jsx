@@ -2,9 +2,9 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function DeskModel(props) {
-  const { nodes, materials } = useGLTF("/public/models/desk/scene.gltf");
+  const { nodes, materials } = useGLTF("/models/desk/scene.gltf");
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} position={[0, 0, 0]}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh
           geometry={nodes.Object_7.geometry}
@@ -23,4 +23,4 @@ export function DeskModel(props) {
   );
 }
 
-useGLTF.preload("/public/models/desk/scene.gltf");
+useGLTF.preload("/models/desk/scene.gltf");
