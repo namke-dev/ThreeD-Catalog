@@ -9,7 +9,7 @@ import BambooChair from "./Bamboo-chair";
 
 export default function BackgroundScene() {
   return (
-    <group>
+    <group position={[-0.3, 0, 0]}>
       <BackgroundPlant2 position={[-1.8, -0.5, 1.5]} />
       <BackgroundPlant2 position={[-1.9, -0.5, -2.2]} />
       <BackgroundPlant1
