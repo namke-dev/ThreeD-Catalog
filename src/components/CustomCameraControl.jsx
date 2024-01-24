@@ -2,13 +2,14 @@ import { OrbitControls } from "@react-three/drei";
 import React from "react";
 
 export default function CustomCameraControls() {
-  const minDistance = 4.5;
+  const minDistance = 4.2;
   const maxDistance = 8;
   return (
     <OrbitControls
       makeDefault
       enablePan={false}
       enableZoom={true}
+      zoomSpeed={0.3}
       minDistance={minDistance}
       maxDistance={maxDistance}
       minPolarAngle={Math.PI / 4}
