@@ -13,8 +13,8 @@ export default function App() {
           <ModelContainer>
             {/* <FloatCube /> */}
 
-            <DeskModel />
-            {/* <Sofa2 /> */}
+            {/* <DeskModel /> */}
+            <Sofa2 />
             {/* <BambooChair /> */}
           </ModelContainer>
         </div>

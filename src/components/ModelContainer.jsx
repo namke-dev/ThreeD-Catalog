@@ -21,7 +21,7 @@ export default function ModelContainer({ children }) {
 
       <CustomCameraControls />
       <CustomBackdrop />
-      <ambientLight intensity={0.1} color={"pink"} />
+      <ambientLight intensity={0.1} color={"yellow"} />
       {children}
     </Canvas>
   );
