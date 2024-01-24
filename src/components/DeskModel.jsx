@@ -28,6 +28,12 @@ export function DeskModel(props) {
           material={materials.Foregrou}
         />
       </group>
+      {/* <group>
+        <mesh castShadow shadows>
+          <boxGeometry args={[1, 1, 1]} />
+          <meshPhysicalMaterial color="orange" />
+        </mesh>
+      </group> */}
     </group>
   );
 }

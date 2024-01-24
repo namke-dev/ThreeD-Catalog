@@ -20,9 +20,13 @@ export default function ModelContainer({ children }) {
       <color attach="background" args={["#eeeeee"]} />
       <OrbitControls
         enablePan={false}
-        enableZoom={false}
-        minPolarAngle={0}
-        maxPolarAngle={Math.PI / 2.4}
+        enableZoom={flase}
+        makeDefault
+        minPolarAngle={Math.PI / 4}
+        maxPolarAngle={Math.PI / 2.3}
+        minAzimuthAngle={Math.PI / 6}
+        maxAzimuthAngle={Math.PI / 1.3}
+        rotateSpeed={0.3}
       />
       <CustomBackdrop />
       <Suspense fallback={null}>{children}</Suspense>
