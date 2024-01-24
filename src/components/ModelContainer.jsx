@@ -1,6 +1,6 @@
-import { CameraControls, Environment, OrbitControls } from "@react-three/drei";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Suspense, useRef } from "react";
+import { Environment } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
 import { CustomBackdrop } from "./Backdrop";
 import CustomCameraControls from "./CustomCameraControl";
 
@@ -15,12 +15,13 @@ export default function ModelContainer({ children }) {
         far: 10,
       }}
     >
-      <ambientLight intensity={0.5} />
       <Environment preset="city" />
       {/* <color attach="background" args={["#c6e5db"]} /> */}
-      <color attach="background" args={["#eeeeee"]} />
+      <color attach="background" args={["#e0e0e0"]} />
+
       <CustomCameraControls />
       <CustomBackdrop />
+      <ambientLight intensity={0.1} color={"pink"} />
       <Suspense fallback={null}>{children}</Suspense>
     </Canvas>
   );

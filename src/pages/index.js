@@ -2,6 +2,7 @@ import FloatCube from "@/components/FloatCube";
 import { DeskModel } from "@/components/DeskModel";
 import ModelContainer from "@/components/ModelContainer";
 import { Sofa2 } from "@/components/Sofa2";
+import BambooChair from "@/components/Bamboo-chair";
 
 export default function App() {
   return (
@@ -10,8 +11,11 @@ export default function App() {
       <div className="h-[90vh] flex flex-row">
         <div className="w-full">
           <ModelContainer>
+            {/* <FloatCube /> */}
+
             <DeskModel />
             {/* <Sofa2 /> */}
+            {/* <BambooChair /> */}
           </ModelContainer>
         </div>
         {/* <div className="w-1/3 h-full bg-blue-200"></div> */}
