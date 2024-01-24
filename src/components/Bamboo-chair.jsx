@@ -6,9 +6,9 @@ export default function BambooChair(props) {
   return (
     <group {...props} dispose={null}>
       <group
-        rotation={[0, (Math.PI * 2.5) / 4, 0]}
+        rotation={[0, Math.PI / 2, 0]}
         scale={0.015}
-        position={[0.5, -0.5, 0]}
+        position={[0, -0.5, 0]}
       >
         <mesh
           castShadow

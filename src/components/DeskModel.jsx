@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
@@ -12,9 +12,9 @@ export function DeskModel(props) {
   const textureTopProps = useTexture({
     map: "/models/desk/textures/ACABAMEN_diffuse.jpeg",
   });
-
-  textureTopProps.map.repeat.set(2, 2);
-  textureTopProps.map.wrapS = textureTopProps.map.wrapT = THREE.RepeatWrapping;
+  // textureTopProps.map.wrapS = THREE.RepeatWrapping;
+  // textureTopProps.map.wrapT = THREE.RepeatWrapping;
+  // textureTopProps.map.repeat.set(2, 2);
 
   return (
     <group {...props} dispose={null}>

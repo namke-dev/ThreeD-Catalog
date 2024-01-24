@@ -28,6 +28,7 @@ export function CustomBackdrop() {
         intensity={2.5}
         ambient={0.25}
         position={[5, 5, -10]}
+        // bias={0.5}
       />
       <RandomizedLight
         amount={4}
@@ -35,6 +36,7 @@ export function CustomBackdrop() {
         intensity={0.9}
         ambient={0.55}
         position={[-5, 5, -9]}
+        // bias={0.5}
       />
     </AccumulativeShadows>
   );
