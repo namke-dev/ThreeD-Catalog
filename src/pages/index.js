@@ -1,4 +1,4 @@
-import Cube from "@/components/Cube";
+import FloatCube from "@/components/FloatCube";
 import { DeskModel } from "@/components/DeskModel";
 import ModelContainer from "@/components/ModelContainer";
 import { Sofa2 } from "@/components/Sofa2";

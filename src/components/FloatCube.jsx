@@ -1,7 +1,7 @@
 import { Float } from "@react-three/drei";
 import React from "react";
 
-export default function Cube() {
+export default function FloatCube() {
   return (
     <Float rotationIntensity={2} floatIntensity={1} speed={2}>
       <mesh position={[0, 0, 0]} castShadow shadows>
