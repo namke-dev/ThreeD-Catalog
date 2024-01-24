@@ -5,6 +5,7 @@ import { BackgroudTableAndChair } from "./BackgroudTableAndChair";
 import { BackgroundTvTable } from "./BackgroundTvTable";
 import BackgroudTv from "./BackgroundTv";
 import { MeshTransmissionMaterial } from "@react-three/drei";
+import BambooChair from "./Bamboo-chair";
 
 export default function BackgroundScene() {
   return (
@@ -32,6 +33,10 @@ export default function BackgroundScene() {
         scale={1}
         position={[-2.6, 0.1, 0]}
         rotation={[0, Math.PI / 2, 0]}
+      />
+      <BambooChair
+        position={[-0.7, 0.1, -2.6]}
+        rotation={[0, -Math.PI / 5, 0]}
       />
       <mesh position={[-3.5, 1.5, 0]}>
         <boxGeometry args={[0.1, 4, 20]} />
