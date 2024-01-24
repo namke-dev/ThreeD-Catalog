@@ -3,7 +3,7 @@ import { DeskModel } from "@/components/DeskModel";
 import ModelContainer from "@/components/ModelContainer";
 import { Sofa2 } from "@/components/Sofa2";
 import BambooChair from "@/components/Bamboo-chair";
-import IndoorPlant from "@/components/IndoorPlant";
+import Plant2 from "@/components/Plant2";
 import BackgroundScene from "@/components/BackgroundScene";
 
 export default function App() {

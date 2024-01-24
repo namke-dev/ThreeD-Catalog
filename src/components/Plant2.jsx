@@ -6,7 +6,7 @@ Command: npx gltfjsx@6.2.16 indoor plant_02.gltf
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-export default function IndoorPlant(props) {
+export default function Plant2(props) {
   const { nodes, materials } = useGLTF("models/plant2/indoor plant_02.gltf");
   return (
     <group {...props} dispose={null}>

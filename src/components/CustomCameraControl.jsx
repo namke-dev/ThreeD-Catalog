@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CustomCameraControls() {
   const minDistance = 4.2;
-  const maxDistance = 8;
+  const maxDistance = 6;
   return (
     <OrbitControls
       makeDefault
