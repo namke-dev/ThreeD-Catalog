@@ -15,9 +15,10 @@ export default function ModelContainer({ children }) {
       }}
     >
       <color attach="background" args={["#c6e5db"]} />
-      <ambientLight intensity={0.2} color={"blue"} />
-      <Environment preset="city" />
+      <ambientLight intensity={0.35} color={"blue"} />
+      <Environment preset="city" intensity={0} />
       <CustomCameraControls />
+
       <CustomBackdrop />
 
       {children}

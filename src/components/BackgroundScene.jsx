@@ -15,7 +15,7 @@ export default function BackgroundScene() {
   return (
     <group position={[-1.5, 0, 0]}>
       <mesh position={[-3, 1.5, 0]}>
-        <boxGeometry args={[0.1, 4, 8]} />
+        <boxGeometry args={[0.001, 4, 9]} />
         <MeshTransmissionMaterial color={"lightblue"} />
       </mesh>
       <BackgroundPlant1

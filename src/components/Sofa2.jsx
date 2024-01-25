@@ -11,10 +11,10 @@ export function Sofa2(props) {
         rotation={[-Math.PI / 2, 0, Math.PI / 2]}
       >
         <mesh castShadow shadows geometry={nodes.Object_4.geometry}>
-          <meshPhysicalMaterial color={"white"} />
+          <meshPhysicalMaterial color={"#497285"} />
         </mesh>
         <mesh castShadow shadows geometry={nodes.Object_5.geometry}>
-          <meshPhysicalMaterial color={"white"} />
+          <meshPhysicalMaterial color={"#497285"} />
         </mesh>
       </group>
     </group>
