@@ -5,6 +5,7 @@ import { Sofa2 } from "@/components/Sofa2";
 import BambooChair from "@/components/Bamboo-chair";
 import BackgroundPlant2 from "@/components/BackgroundPlant2";
 import BackgroundScene from "@/components/BackgroundScene";
+import { UniqueSofa } from "../../public/models/unique-sofa-design/UniqueSofa";
 
 export default function App() {
   return (
