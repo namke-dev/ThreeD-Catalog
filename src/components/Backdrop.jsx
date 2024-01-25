@@ -2,6 +2,7 @@ import { AccumulativeShadows, RandomizedLight } from "@react-three/drei";
 import { easing } from "maath";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
+import { room_area } from "@/helpers/light-color-helper";
 
 export function CustomBackdrop() {
   const shadows = useRef();
@@ -19,7 +20,7 @@ export function CustomBackdrop() {
       temporal
       frames={60}
       alphaTest={0.85}
-      scale={12}
+      scale={room_area}
       position={[0, -0.499, 0]}
       opacity={0.95}
     >

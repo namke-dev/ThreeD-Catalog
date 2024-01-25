@@ -4,6 +4,7 @@ import BackgroundScene from "@/components/BackgroundScene";
 import { UniqueSofa } from "../../public/models/unique-sofa-design/UniqueSofa";
 import { Sofa2 } from "@/components/Sofa2";
 import { Float } from "@react-three/drei";
+import BackgroundRoom from "@/components/BackgroundRoom";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <div className="w-full h-full">
         <ModelContainer>
           <BackgroundScene />
+          <BackgroundRoom />
           <Float
             rotationIntensity={0.2}
             floatIntensity={0.3}
