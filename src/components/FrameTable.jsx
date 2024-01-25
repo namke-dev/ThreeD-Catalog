@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import { furniture_color } from "@/helpers/light-color-helper";
 
 export function FrameTable(props) {
   const { nodes } = useGLTF("/models/frame-table/scene.gltf");
@@ -9,22 +10,22 @@ export function FrameTable(props) {
         <group position={[0, 0, 90]}>
           <group position={[0, -16.617, 83.591]}>
             <mesh geometry={nodes.STEEL.geometry}>
-              <meshPhysicalMaterial color="white" />
+              <meshStandardMaterial color={furniture_color} />
             </mesh>
             <mesh geometry={nodes.STEEL_BLACK.geometry}>
-              <meshPhysicalMaterial color="white" />
+              <meshStandardMaterial color={furniture_color} />
             </mesh>
             <mesh geometry={nodes.OAK.geometry}>
-              <meshPhysicalMaterial color="white" />
+              <meshStandardMaterial color={furniture_color} />
             </mesh>
             <mesh geometry={nodes.WALNUT.geometry}>
-              <meshPhysicalMaterial color="white" />
+              <meshStandardMaterial color={furniture_color} />
             </mesh>
           </group>
         </group>
         <mesh position={[0, -15, 0]} castShadow shadows>
           <boxGeometry args={[94, 40, 2]} />
-          <meshPhysicalMaterial color="white" />
+          <meshStandardMaterial color={furniture_color} />
         </mesh>
       </group>
     </group>

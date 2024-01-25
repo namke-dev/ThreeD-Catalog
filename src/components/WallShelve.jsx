@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import { furniture_color } from "@/helpers/light-color-helper";
 
 export default function WallShelve(props) {
   const { nodes } = useGLTF("/models/wall-shelve/scene.gltf");
@@ -10,7 +11,7 @@ export default function WallShelve(props) {
         position={[0, 19, 0]}
         scale={49.166}
       >
-        <meshStandardMaterial color="white" />
+        <meshStandardMaterial color={furniture_color} />
       </mesh>
     </group>
   );

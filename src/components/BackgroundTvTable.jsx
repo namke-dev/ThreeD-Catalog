@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
+import { furniture_color } from "@/helpers/light-color-helper";
 
 export function BackgroundTvTable(props) {
   const { nodes } = useGLTF("models/tv-table/scene.gltf");
@@ -13,7 +14,7 @@ export function BackgroundTvTable(props) {
           castShadow
           shadows
         >
-          <meshStandardMaterial color="white" />{" "}
+          <meshStandardMaterial color={furniture_color} />
         </mesh>
       </group>
     </group>
