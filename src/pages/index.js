@@ -1,8 +1,6 @@
 import FloatCube from "@/components/FloatCube";
 import { DeskModel } from "@/components/DeskModel";
 import ModelContainer from "@/components/ModelContainer";
-import BambooChair from "@/components/Bamboo-chair";
-import BackgroundPlant2 from "@/components/BackgroundPlant2";
 import BackgroundScene from "@/components/BackgroundScene";
 import { UniqueSofa } from "../../public/models/unique-sofa-design/UniqueSofa";
 import { Sofa2 } from "@/components/Sofa2";

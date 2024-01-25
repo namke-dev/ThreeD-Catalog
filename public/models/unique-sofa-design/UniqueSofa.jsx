@@ -28,7 +28,7 @@ export function UniqueSofa(props) {
             shadows
             castShadow
           >
-            <meshStandardMaterial color="lightblue" />
+            <meshStandardMaterial color="pink" />
           </mesh>
         </group>
         <mesh
@@ -49,7 +49,7 @@ export function UniqueSofa(props) {
           shadows
           castShadow
         >
-          <meshStandardMaterial color="lightblue" />
+          <meshStandardMaterial color="pink" />
         </mesh>
       </group>
     </group>

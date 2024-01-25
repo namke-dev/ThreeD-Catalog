@@ -41,7 +41,7 @@ export default function BackgroundScene() {
       />
       <BambooChair position={[0, 0, 2.5]} rotation={[0, Math.PI / 3, 0]} />
       <ModernLight
-        position={[-1.2, -0.5, -2]}
+        position={[-1.32, -0.5, -2]}
         rotation={[0, -Math.PI / 1.5, 0]}
       />
       <EliasChest

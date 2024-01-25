@@ -8,6 +8,8 @@ export function ModernLight(props) {
       <mesh
         geometry={nodes.Cylinder001.geometry}
         rotation={[Math.PI / 2, 0, 0]}
+        castShadow
+        shadows
       >
         <meshStandardMaterial color="white" />
       </mesh>

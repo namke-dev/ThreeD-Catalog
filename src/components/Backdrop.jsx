@@ -19,7 +19,7 @@ export function CustomBackdrop() {
       temporal
       frames={60}
       alphaTest={0.85}
-      scale={20}
+      scale={10}
       position={[0, -0.5, 0]}
     >
       <RandomizedLight
@@ -33,8 +33,8 @@ export function CustomBackdrop() {
       <RandomizedLight
         amount={2}
         radius={5}
-        intensity={0.9}
-        ambient={0.55}
+        intensity={1.9}
+        ambient={0.5}
         position={[-5, 5, -9]}
         // bias={0.5}
       />
