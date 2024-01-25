@@ -14,11 +14,12 @@ export default function ModelContainer({ children }) {
         far: 30,
       }}
     >
-      <color attach="background" args={["#c6e5db"]} />
-      <ambientLight intensity={0.35} color={"blue"} />
+      <ambientLight intensity={0.2} color={"blue"} />
+      {/* <color attach="background" args={["#c6e5db"]} /> */}
+      <color attach="background" args={["#ffffff"]} />
+
       <Environment preset="city" intensity={0} />
       <CustomCameraControls />
-
       <CustomBackdrop />
 
       {children}

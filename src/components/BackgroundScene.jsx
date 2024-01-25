@@ -14,8 +14,8 @@ import { FrameTable } from "./FrameTable";
 export default function BackgroundScene() {
   return (
     <group position={[-1.5, 0, 0]}>
-      <mesh position={[-3, 1.5, 0]}>
-        <boxGeometry args={[0.001, 4, 9]} />
+      <mesh position={[-3, 1.5, 0]} rotation={[0, Math.PI / 2, 0]}>
+        <planeGeometry args={[9, 4]} />
         <MeshTransmissionMaterial color={"lightblue"} />
       </mesh>
       <BackgroundPlant1

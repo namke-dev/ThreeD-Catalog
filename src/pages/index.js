@@ -1,9 +1,9 @@
-import FloatCube from "@/components/FloatCube";
 import { DeskModel } from "@/components/DeskModel";
 import ModelContainer from "@/components/ModelContainer";
 import BackgroundScene from "@/components/BackgroundScene";
 import { UniqueSofa } from "../../public/models/unique-sofa-design/UniqueSofa";
 import { Sofa2 } from "@/components/Sofa2";
+import { Float } from "@react-three/drei";
 
 export default function App() {
   return (
@@ -13,11 +13,11 @@ export default function App() {
       <div className="w-full h-full">
         <ModelContainer>
           <BackgroundScene />
-          {/* <FloatCube /> */}
-
-          {/* <DeskModel /> */}
-          <Sofa2 />
-          {/* <UniqueSofa /> */}
+          <Float rotationIntensity={0.2} floatIntensity={0.2} speed={3}>
+            <Sofa2 />
+            {/* <DeskModel /> */}
+            {/* <UniqueSofa /> */}
+          </Float>
         </ModelContainer>
       </div>
       {/* <div className="w-1/3 h-full bg-blue-200"></div> */}
