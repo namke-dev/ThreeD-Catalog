@@ -13,9 +13,14 @@ export default function App() {
       <div className="w-full h-full">
         <ModelContainer>
           <BackgroundScene />
-          <Float rotationIntensity={0.2} floatIntensity={0.2} speed={3}>
-            <Sofa2 />
-            {/* <DeskModel /> */}
+          <Float
+            rotationIntensity={0.2}
+            floatIntensity={0.3}
+            speed={5}
+            position={[0, 0.3, 0]}
+          >
+            {/* <Sofa2 /> */}
+            <DeskModel />
             {/* <UniqueSofa /> */}
           </Float>
         </ModelContainer>
