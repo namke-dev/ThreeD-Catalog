@@ -20,13 +20,13 @@ export function CustomBackdrop() {
       frames={60}
       alphaTest={0.85}
       scale={9}
-      position={[0, -0.5, 0]}
-      opacity={1.05}
+      position={[0, -0.499, 0]}
+      opacity={0.95}
     >
       <RandomizedLight
         amount={1}
         radius={10}
-        intensity={2}
+        intensity={2.2}
         ambient={0.8}
         position={[15, 5, -10]}
       />

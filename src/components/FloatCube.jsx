@@ -1,8 +1,4 @@
-import {
-  Float,
-  MeshRefractionMaterial,
-  MeshTransmissionMaterial,
-} from "@react-three/drei";
+import { Float, MeshTransmissionMaterial } from "@react-three/drei";
 import React from "react";
 
 export default function FloatCube() {
@@ -11,7 +7,6 @@ export default function FloatCube() {
       <mesh position={[0, 0.3, 0]} castShadow>
         <boxGeometry args={[1, 1, 1]} />
         <MeshTransmissionMaterial color={"lightblue"} />
-        {/* <meshPhysicalMaterial color="orange" /> */}
       </mesh>
     </Float>
   );

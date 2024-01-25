@@ -4,7 +4,7 @@ import { BackgroundPlant1 } from "./BackgroundPlant1";
 import { BackgroudPlant } from "./BackgroudPlant";
 import { BackgroundTvTable } from "./BackgroundTvTable";
 import BackgroudTv from "./BackgroundTv";
-import { MeshTransmissionMaterial } from "@react-three/drei";
+import { MeshReflectorMaterial } from "@react-three/drei";
 import BambooChair from "./Bamboo-chair";
 import { ModernLight } from "./ModernLight";
 import { EliasChest } from "./EliasChest";
@@ -15,8 +15,19 @@ export default function BackgroundScene() {
   return (
     <group position={[-1.5, 0, 0]}>
       <mesh position={[-3, 1.5, 0]} rotation={[0, Math.PI / 2, 0]}>
-        <planeGeometry args={[9, 4]} />
-        <MeshTransmissionMaterial color={"lightblue"} />
+        <planeGeometry args={[12, 4]} />
+        <MeshReflectorMaterial
+          blur={[300, 100]}
+          resolution={512}
+          mixBlur={0.5}
+          mixStrength={0.3}
+          roughness={1}
+          depthScale={1.2}
+          minDepthThreshold={0.4}
+          maxDepthThreshold={1.4}
+          color="#eeeeee"
+          metalness={0}
+        />
       </mesh>
       <BackgroundPlant1
         scale={8}
