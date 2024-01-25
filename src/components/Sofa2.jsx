@@ -17,12 +17,6 @@ export function Sofa2(props) {
           <meshPhysicalMaterial color={"white"} />
         </mesh>
       </group>
-      {/* <group>
-        <mesh castShadow shadows>
-          <boxGeometry args={[1, 1, 1]} />
-          <meshPhysicalMaterial color="orange" />
-        </mesh>
-      </group> */}
     </group>
   );
 }

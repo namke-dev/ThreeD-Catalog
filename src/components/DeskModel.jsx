@@ -1,6 +1,5 @@
 import React from "react";
 import { useGLTF, useTexture } from "@react-three/drei";
-import * as THREE from "three";
 
 export function DeskModel(props) {
   const { nodes } = useGLTF("/models/desk/scene.gltf");
@@ -32,12 +31,6 @@ export function DeskModel(props) {
           <meshStandardMaterial {...textureLegsProps} />
         </mesh>
       </group>
-      {/* <group>
-        <mesh castShadow shadows>
-          <boxGeometry args={[1, 1, 1]} />
-          <meshPhysicalMaterial color="orange" />
-        </mesh>
-      </group> */}
     </group>
   );
 }

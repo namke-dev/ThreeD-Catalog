@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function FrameTable(props) {
-  const { nodes, materials } = useGLTF("/models/frame-table/scene.gltf");
+  const { nodes } = useGLTF("/models/frame-table/scene.gltf");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.008}>
@@ -11,28 +11,13 @@ export function FrameTable(props) {
             <mesh geometry={nodes.STEEL.geometry} castShadow shadows>
               <meshPhysicalMaterial color="white" />
             </mesh>
-            <mesh
-              geometry={nodes.STEEL_BLACK.geometry}
-              material={materials.EnvironmentAmbientLight}
-              castShadow
-              shadows
-            >
+            <mesh geometry={nodes.STEEL_BLACK.geometry} castShadow shadows>
               <meshPhysicalMaterial color="white" />
             </mesh>
-            <mesh
-              geometry={nodes.OAK.geometry}
-              material={materials.material}
-              castShadow
-              shadows
-            >
+            <mesh geometry={nodes.OAK.geometry} castShadow shadows>
               <meshPhysicalMaterial color="white" />
             </mesh>
-            <mesh
-              geometry={nodes.WALNUT.geometry}
-              material={materials.WALNUT}
-              castShadow
-              shadows
-            >
+            <mesh geometry={nodes.WALNUT.geometry} castShadow shadows>
               <meshPhysicalMaterial color="white" />
             </mesh>
           </group>

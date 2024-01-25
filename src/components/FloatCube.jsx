@@ -10,8 +10,8 @@ export default function FloatCube() {
     <Float rotationIntensity={2} floatIntensity={1} speed={2}>
       <mesh position={[0, 0.3, 0]} castShadow>
         <boxGeometry args={[1, 1, 1]} />
-        {/* <MeshTransmissionMaterial color={"lightblue"} /> */}
-        <meshPhysicalMaterial color="orange" />
+        <MeshTransmissionMaterial color={"lightblue"} />
+        {/* <meshPhysicalMaterial color="orange" /> */}
       </mesh>
     </Float>
   );
