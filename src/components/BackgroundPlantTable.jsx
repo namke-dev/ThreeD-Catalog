@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-export function BackgroudPlant(props) {
+export function BackgroudPlantTable(props) {
   const { nodes } = useGLTF("models/table_and_chair/scene.gltf");
   return (
     <group {...props} dispose={null}>

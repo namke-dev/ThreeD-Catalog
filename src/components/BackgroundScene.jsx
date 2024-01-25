@@ -1,7 +1,7 @@
 import React from "react";
 import BackgroundPlant2 from "./BackgroundPlant2";
 import { BackgroundPlant1 } from "./BackgroundPlant1";
-import { BackgroudPlant } from "./BackgroudPlant";
+import { BackgroudPlantTable } from "./BackgroundPlantTable";
 import { BackgroundTvTable } from "./BackgroundTvTable";
 import BackgroudTv from "./BackgroundTv";
 import { MeshReflectorMaterial } from "@react-three/drei";
@@ -34,12 +34,12 @@ export default function BackgroundScene() {
         position={[-1.9, -0.5, 1.9]}
         rotation={[0, Math.PI / 2, 0]}
       />
-      <BackgroudPlant
+      <BackgroudPlantTable
         scale={0.25}
-        position={[-1.2, -0.5, 2.2]}
-        rotation={[0, -Math.PI / 1.7, 0]}
-      />{" "}
-      <BackgroundPlant2 position={[-1.2, 0.12, 2.2]} scale={0.7} />
+        position={[-1.2, -0.5, 2.8]}
+        rotation={[0, -Math.PI / 1.5, 0]}
+      />
+      <BackgroundPlant2 position={[-1.2, 0.12, 2.8]} scale={0.7} />
       <BackgroundTvTable
         scale={0.6}
         position={[-2, -0.15, 0]}
@@ -50,9 +50,9 @@ export default function BackgroundScene() {
         position={[-2, 0.22, 0]}
         rotation={[0, Math.PI / 2, 0]}
       />
-      <BambooChair position={[0, 0, 2.5]} rotation={[0, Math.PI / 3, 0]} />
+      <BambooChair position={[-0.1, 0, -2.6]} rotation={[0, -Math.PI / 4, 0]} />
       <ModernLight
-        position={[-1.32, -0.5, -2]}
+        position={[-1, -0.5, -2]}
         rotation={[0, -Math.PI / 1.5, 0]}
       />
       <EliasChest
@@ -60,7 +60,7 @@ export default function BackgroundScene() {
         rotation={[0, Math.PI / 2, 0]}
       />
       <WallShelve position={[-2.6, 1, 2]} rotation={[0, Math.PI / 2, 0]} />
-      <FrameTable position={[-2, -0.5, -2.7]} rotation={[0, Math.PI / 2, 0]} />
+      <FrameTable position={[-2, -0.5, -3]} rotation={[0, Math.PI / 2, 0]} />
     </group>
   );
 }

@@ -19,7 +19,7 @@ export function CustomBackdrop() {
       temporal
       frames={60}
       alphaTest={0.85}
-      scale={9}
+      scale={12}
       position={[0, -0.499, 0]}
       opacity={0.95}
     >
