@@ -1,18 +1,47 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
-export default function FrameTable(props) {
+export function FrameTable(props) {
   const { nodes, materials } = useGLTF("/models/frame-table/scene.gltf");
   return (
-    <group {...props} dispose={null} scale={0.012}>
-      <mesh
-        geometry={nodes.Object_6.geometry}
-        material={materials.wire_225088199}
-        position={[0, 19, 0]}
-        scale={49.166}
-      >
-        <meshStandardMaterial color="white" />
-      </mesh>
+    <group {...props} dispose={null}>
+      <group rotation={[-Math.PI / 2, 0, 0]} scale={0.008}>
+        <group position={[0, 0, 90]}>
+          <group position={[0, -16.617, 83.591]}>
+            <mesh geometry={nodes.STEEL.geometry} castShadow shadows>
+              <meshPhysicalMaterial color="white" />
+            </mesh>
+            <mesh
+              geometry={nodes.STEEL_BLACK.geometry}
+              material={materials.EnvironmentAmbientLight}
+              castShadow
+              shadows
+            >
+              <meshPhysicalMaterial color="white" />
+            </mesh>
+            <mesh
+              geometry={nodes.OAK.geometry}
+              material={materials.material}
+              castShadow
+              shadows
+            >
+              <meshPhysicalMaterial color="white" />
+            </mesh>
+            <mesh
+              geometry={nodes.WALNUT.geometry}
+              material={materials.WALNUT}
+              castShadow
+              shadows
+            >
+              <meshPhysicalMaterial color="white" />
+            </mesh>
+          </group>
+        </group>
+        <mesh position={[0, -15, 0]}>
+          <boxGeometry args={[94, 40, 2]} />
+          <meshPhysicalMaterial color="white" />
+        </mesh>
+      </group>
     </group>
   );
 }
