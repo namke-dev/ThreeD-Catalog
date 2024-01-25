@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 import { furniture_color } from "@/helpers/light-color-helper";
 
 export default function BackgroudTv(props) {
-  const { nodes } = useGLTF("models/tv/scene.gltf");
+  const { nodes } = useGLTF("models/tv-flat/scene.gltf");
   return (
     <group {...props} dispose={null}>
       <group scale={0.225}>
@@ -21,4 +21,4 @@ export default function BackgroudTv(props) {
   );
 }
 
-useGLTF.preload("models/tv/scene.gltf");
+useGLTF.preload("models/tv-flat/scene.gltf");
