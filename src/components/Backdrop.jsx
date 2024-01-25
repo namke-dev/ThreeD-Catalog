@@ -31,7 +31,7 @@ export function CustomBackdrop() {
         // bias={0.5}
       />
       <RandomizedLight
-        amount={4}
+        amount={2}
         radius={5}
         intensity={0.9}
         ambient={0.55}

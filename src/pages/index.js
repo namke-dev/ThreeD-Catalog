@@ -1,7 +1,6 @@
 import FloatCube from "@/components/FloatCube";
 import { DeskModel } from "@/components/DeskModel";
 import ModelContainer from "@/components/ModelContainer";
-import { Sofa2 } from "@/components/Sofa2";
 import BambooChair from "@/components/Bamboo-chair";
 import BackgroundPlant2 from "@/components/BackgroundPlant2";
 import BackgroundScene from "@/components/BackgroundScene";
@@ -14,12 +13,15 @@ export default function App() {
       <div className="h-[90vh] flex flex-row"> */}
       <div className="w-full h-full">
         <ModelContainer>
+          <BackgroundScene />
           {/* <FloatCube /> */}
 
           {/* <DeskModel /> */}
-          <Sofa2 />
 
-          <BackgroundScene />
+          <UniqueSofa
+            position={[0.5, -0.5, -0.5]}
+            rotation={[0, Math.PI / 2, 0]}
+          />
         </ModelContainer>
       </div>
       {/* <div className="w-1/3 h-full bg-blue-200"></div> */}

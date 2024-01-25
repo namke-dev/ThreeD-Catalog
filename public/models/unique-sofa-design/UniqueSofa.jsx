@@ -11,11 +11,19 @@ export function UniqueSofa(props) {
           rotation={[-Math.PI / 2, 0, 0]}
           scale={100}
         >
-          <mesh geometry={nodes.Cube002_Furniture_Fabric_sjfvdgbc_0.geometry}>
-            <meshStandardMaterial color="white" />
+          <mesh
+            geometry={nodes.Cube002_Furniture_Fabric_sjfvdgbc_0.geometry}
+            shadows
+            castShadow
+          >
+            <meshStandardMaterial color="lightblue" />
           </mesh>
-          <mesh geometry={nodes.Cube002_Furniture_Fabric_sjfvdgbc_0_1.geometry}>
-            <meshStandardMaterial color="white" />
+          <mesh
+            geometry={nodes.Cube002_Furniture_Fabric_sjfvdgbc_0_1.geometry}
+            shadows
+            castShadow
+          >
+            <meshStandardMaterial color="lightblue" />
           </mesh>
         </group>
         <mesh
@@ -23,16 +31,20 @@ export function UniqueSofa(props) {
           position={[-107.677, 0, -115.873]}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={100}
+          shadows
+          castShadow
         >
-          <meshStandardMaterial color="white" />
+          <meshStandardMaterial color="pink" />
         </mesh>
         <mesh
           geometry={nodes.Cube005_Furniture_Fabric_sjfvdgbc_0.geometry}
           position={[-71.585, 56.47, -85.766]}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={100}
+          shadows
+          castShadow
         >
-          <meshStandardMaterial color="white" />
+          <meshStandardMaterial color="lightblue" />
         </mesh>
       </group>
     </group>

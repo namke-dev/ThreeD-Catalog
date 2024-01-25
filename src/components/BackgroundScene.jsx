@@ -8,6 +8,7 @@ import { MeshTransmissionMaterial } from "@react-three/drei";
 import BambooChair from "./Bamboo-chair";
 import { ModernLight } from "./ModernLight";
 import { UniqueSofa } from "../../public/models/unique-sofa-design/UniqueSofa";
+import { Sofa2 } from "./Sofa2";
 
 export default function BackgroundScene() {
   return (
@@ -16,8 +17,8 @@ export default function BackgroundScene() {
         <boxGeometry args={[0.1, 4, 8]} />
         <MeshTransmissionMaterial color={"lightblue"} />
       </mesh>
-      <BackgroundPlant2 position={[-1.9, -0.5, -2.5]} />
-      {/* <BackgroundPlant2 position={[-0.8, 0.12, 2.6]} scale={0.7} /> */}
+      {/* <BackgroundPlant2 position={[-1.9, -0.5, -2.5]} /> */}
+      <BackgroundPlant2 position={[-0.6, 0.12, 2.4]} scale={0.7} />
       <BackgroundPlant1
         scale={10}
         position={[-0.5, -0.5, 3.3]}
@@ -39,13 +40,12 @@ export default function BackgroundScene() {
         position={[-2, 0.22, 0]}
         rotation={[0, Math.PI / 2, 0]}
       />
-      <BambooChair position={[0.9, 0.1, 2.9]} rotation={[0, Math.PI / 3, 0]} />
+      <BambooChair position={[0.9, 0.1, 2.7]} rotation={[0, Math.PI / 3, 0]} />
       <ModernLight
         position={[-1.8, -0.5, -1.4]}
         rotation={[0, -Math.PI / 1.5, 0]}
       />
-
-      <UniqueSofa position={[1, -0.5, -2.4]} rotation={[0, Math.PI / 12, 0]} />
+      <Sofa2 position={[0.8, 0, -2.6]} rotation={[0, -Math.PI / 2.5, 0]} />
     </group>
   );
 }
