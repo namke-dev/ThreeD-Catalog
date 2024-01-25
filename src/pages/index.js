@@ -5,6 +5,7 @@ import BambooChair from "@/components/Bamboo-chair";
 import BackgroundPlant2 from "@/components/BackgroundPlant2";
 import BackgroundScene from "@/components/BackgroundScene";
 import { UniqueSofa } from "../../public/models/unique-sofa-design/UniqueSofa";
+import { Sofa2 } from "@/components/Sofa2";
 
 export default function App() {
   return (
@@ -16,8 +17,8 @@ export default function App() {
           <BackgroundScene />
           {/* <FloatCube /> */}
 
-          <DeskModel />
-
+          {/* <DeskModel /> */}
+          <Sofa2 />
           {/* <UniqueSofa /> */}
         </ModelContainer>
       </div>
