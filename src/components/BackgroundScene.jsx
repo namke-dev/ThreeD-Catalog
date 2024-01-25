@@ -9,6 +9,7 @@ import BambooChair from "./Bamboo-chair";
 import { ModernLight } from "./ModernLight";
 import { UniqueSofa } from "../../public/models/unique-sofa-design/UniqueSofa";
 import { Sofa2 } from "./Sofa2";
+import { EliasChest } from "./EliasChest";
 
 export default function BackgroundScene() {
   return (
@@ -42,10 +43,14 @@ export default function BackgroundScene() {
       />
       <BambooChair position={[0.9, 0.1, 2.7]} rotation={[0, Math.PI / 3, 0]} />
       <ModernLight
-        position={[-1.8, -0.5, -1.4]}
+        position={[-1.8, -0.5, -2.2]}
         rotation={[0, -Math.PI / 1.5, 0]}
       />
       <Sofa2 position={[0.8, 0, -2.6]} rotation={[0, -Math.PI / 2.5, 0]} />
+      <EliasChest
+        position={[-1.8, -0.5, -1.4]}
+        rotation={[0, Math.PI / 2, 0]}
+      />
     </group>
   );
 }

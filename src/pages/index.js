@@ -16,12 +16,9 @@ export default function App() {
           <BackgroundScene />
           {/* <FloatCube /> */}
 
-          {/* <DeskModel /> */}
+          <DeskModel />
 
-          <UniqueSofa
-            position={[0.5, -0.5, -0.5]}
-            rotation={[0, Math.PI / 2, 0]}
-          />
+          {/* <UniqueSofa /> */}
         </ModelContainer>
       </div>
       {/* <div className="w-1/3 h-full bg-blue-200"></div> */}

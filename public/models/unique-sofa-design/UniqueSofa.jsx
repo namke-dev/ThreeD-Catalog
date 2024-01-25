@@ -4,7 +4,12 @@ import { useGLTF } from "@react-three/drei";
 export function UniqueSofa(props) {
   const { nodes } = useGLTF("/models/unique-sofa-design/scene.gltf");
   return (
-    <group {...props} dispose={null}>
+    <group
+      {...props}
+      dispose={null}
+      position={[0.5, -0.5, -0.5]}
+      rotation={[0, Math.PI / 2, 0]}
+    >
       <group scale={0.005}>
         <group
           position={[-71.585, 56.47, -85.766]}
