@@ -8,7 +8,7 @@ export default function ModelContainer({ children }) {
     <Canvas
       shadows
       camera={{
-        position: [5, 1, 0],
+        position: [5, 0, 0],
         fov: 35,
         near: 3,
         far: 30,
