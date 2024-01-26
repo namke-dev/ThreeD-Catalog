@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div
       className=" 
-        w-full h-[25vh]
+        w-full h-[16vh]
         flex justify-center items-center fixed bottom-0
         bg-white/95
         text-black/70

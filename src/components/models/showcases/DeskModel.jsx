@@ -11,9 +11,6 @@ export function DeskModel(props) {
   const textureTopProps = useTexture({
     map: "/models/desk/textures/ACABAMEN_diffuse.jpeg",
   });
-  // textureTopProps.map.wrapS = THREE.RepeatWrapping;
-  // textureTopProps.map.wrapT = THREE.RepeatWrapping;
-  // textureTopProps.map.repeat.set(2, 2);
 
   return (
     <group {...props} dispose={null}>

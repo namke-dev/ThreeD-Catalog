@@ -19,4 +19,4 @@ export const furniture_color = "white";
 export const backdrop_light_intensity = 1;
 
 //Page
-export const page_background = "#eeeeee";
+export const page_background = "#ffffff";
