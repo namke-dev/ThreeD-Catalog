@@ -9,8 +9,8 @@ export const directional_light_intensity = 3;
 export const room_area = 15;
 
 // wall color
-export const room_wall_color = "#fefefe";
-export const room_floor_color = "#e0e0e0";
+export const room_wall_color = "#cccccc";
+export const room_floor_color = "#aaaaaa";
 
 //furniture color
 export const furniture_color = "white";

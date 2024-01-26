@@ -17,7 +17,7 @@ export default function CustomLight() {
       <fog attach="fog" args={["#d0d0d0", 8, 35]} />
       <ambientLight intensity={0.55} />
       <Light />
-      <Sphere />
+      <Sphere scale={0.9} />
       <Sphere position={[2, 4, -8]} scale={0.9} />
       <Sphere position={[-2, 2, -8]} scale={0.8} />
     </>
@@ -53,12 +53,12 @@ function Light() {
   return (
     <group ref={ref}>
       <ambientLight intensity={ambient_light_intensity} color={ambient_light} />
-      <Sky inclination={0.52} scale={20} />
+      {/* <Sky inclination={0.52} scale={20} /> */}
       <directionalLight
         position={[5, 5, -8]}
         intensity={directional_light_intensity}
         castShadow
-        shadow-mapSize={2048}
+        shadow-mapSize={1024 * 4}
         shadow-bias={-0.001}
       >
         <orthographicCamera
