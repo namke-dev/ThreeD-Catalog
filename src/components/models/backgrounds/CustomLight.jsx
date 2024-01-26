@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Float, Sky } from "@react-three/drei";
+import { Float, SoftShadows } from "@react-three/drei";
 
 import { easing } from "maath";
 import {
@@ -9,17 +9,33 @@ import {
   ambient_light_intensity,
   directional_light_intensity,
 } from "@/helpers/light-color-helper";
+import { useControls } from "leva";
 
 export default function CustomLight() {
+  const [bad, set] = useState(false);
+  const { impl, debug, enabled, samples, ...config } = useControls({
+    debug: true,
+    enabled: true,
+    size: { value: 35, min: 0, max: 100, step: 0.1 },
+    focus: { value: 0.5, min: 0, max: 2, step: 0.1 },
+    samples: { value: 8, min: 1, max: 40, step: 1 },
+  });
   return (
     <>
       <color attach="background" args={["#d0d0d0"]} />
       <fog attach="fog" args={["#d0d0d0", 8, 35]} />
       <ambientLight intensity={0.55} />
       <Light />
-      <Sphere scale={0.9} />
-      <Sphere position={[2, 4, -8]} scale={0.9} />
-      <Sphere position={[-2, 2, -8]} scale={0.8} />
+      {enabled && (
+        <SoftShadows
+          {...config}
+          samples={bad ? Math.min(6, samples) : samples}
+        />
+      )}
+
+      <Sphere scale={0.45} position={[0, 5, -7]} />
+      <Sphere position={[2, 4, -7]} scale={0.45} />
+      <Sphere position={[-2, 2, -6]} scale={0.4} />
     </>
   );
 }
@@ -53,7 +69,6 @@ function Light() {
   return (
     <group ref={ref}>
       <ambientLight intensity={ambient_light_intensity} color={ambient_light} />
-      {/* <Sky inclination={0.52} scale={20} /> */}
       <directionalLight
         position={[5, 5, -8]}
         intensity={directional_light_intensity}

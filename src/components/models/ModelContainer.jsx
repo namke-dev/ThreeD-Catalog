@@ -21,7 +21,6 @@ export default function ModelContainer({ children }) {
       {/* Setup */}
       <color attach="background" args={[page_background]} />
       <CustomCameraControls />
-
       <BackgroundScene />
       <CustomLight />
 
