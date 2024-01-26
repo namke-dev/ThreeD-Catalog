@@ -1,8 +1,18 @@
 import React, { useState } from "react";
 import Cart from "./Cart";
+import { product_custom_options } from "@/data/product_custom_options";
 
 export default function CustomProductPanel() {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
+
+  const [selectedOptions, setSelectedOptions] = useState({});
+
+  const handleOptionClick = (category, option) => {
+    setSelectedOptions((prevOptions) => ({
+      ...prevOptions,
+      [category]: option,
+    }));
+  };
 
   return (
     <Cart
@@ -51,6 +61,34 @@ export default function CustomProductPanel() {
         >
           Get Your Own Style
         </p>
+
+        <div className="flex flex-col">
+          {Object.entries(product_custom_options).map(([category, options]) => (
+            <div key={category} className="mb-4">
+              <h3 className="text-md font-medium mb-2">{category}</h3>
+              <div className="flex flex-wrap gap-2">
+                {options.map((option) => (
+                  <button
+                    key={option}
+                    onClick={() => handleOptionClick(category, option)}
+                    className={`
+                  px-4 py-2
+                  ${
+                    selectedOptions[category] === option
+                      ? "bg-gray-500 text-white"
+                      : "bg-gray-200 text-black"
+                  }
+                  hover:bg-gray-300 
+                  rounded-md
+                `}
+                  >
+                    {option}
+                  </button>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </Cart>
   );
