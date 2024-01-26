@@ -7,6 +7,7 @@ import { MeshReflectorMaterial, useTexture } from "@react-three/drei";
 import { useFrame, useLoader } from "@react-three/fiber";
 import React, { useEffect } from "react";
 import * as THREE from "three";
+import { FloatingGrid } from "./FloatingGrid";
 
 export default function BackgroundRoom() {
   const [roughness, normal] = useLoader(THREE.TextureLoader, [
@@ -18,7 +19,7 @@ export default function BackgroundRoom() {
     [normal, roughness].forEach((t) => {
       t.wrapS = THREE.RepeatWrapping;
       t.wrapT = THREE.RepeatWrapping;
-      t.repeat.set(5, 5);
+      t.repeat.set(room_area / 2.5, room_area / 2.5);
       t.offset.set(0, 0);
     });
 
@@ -42,13 +43,13 @@ export default function BackgroundRoom() {
           normalScale={[0.15, 0.15]}
           roughnessMap={roughness}
           dithering={true}
-          color={[0.015, 0.015, 0.015]}
+          color={room_floor_color}
           roughness={0.7}
-          blur={[1000, 400]} // Blur ground reflections (width, heigt), 0 skips blur
+          blur={[1, 1]} // Blur ground reflections (width, heigt), 0 skips blur
           mixBlur={1} // How much blur mixes with surface roughness (default = 1)
           mixStrength={80} // Strength of the reflections
-          mixContrast={1} // Contrast of the reflections
-          resolution={1024} // Off-buffer resolution, lower=faster, higher=better quality, slower
+          mixContrast={0.5} // Contrast of the reflections
+          resolution={512} // Off-buffer resolution, lower=faster, higher=better quality, slower
           mirror={0} // Mirror environment, 0 = texture colors, 1 = pick up env colors
           depthScale={0.01} // Scale the depth factor (0 = no depth, default = 0)
           minDepthThreshold={0.9} // Lower edge for the depthTexture interpolation (default = 0)
@@ -67,6 +68,7 @@ export default function BackgroundRoom() {
         <planeGeometry args={[room_area, 4]} />
         <meshPhysicalMaterial color={room_wall_color} />
       </mesh>
+      <FloatingGrid />
 
       {/*
       <mesh position={[0, 1.5, -room_area / 2]}>

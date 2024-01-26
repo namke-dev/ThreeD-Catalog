@@ -10,7 +10,7 @@ export const room_area = 15;
 
 // wall color
 export const room_wall_color = "#cccccc";
-export const room_floor_color = "#aaaaaa";
+export const room_floor_color = [0.02, 0.02, 0.02];
 
 //furniture color
 export const furniture_color = "white";
