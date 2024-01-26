@@ -5,9 +5,12 @@ export default function Footer() {
     <div
       className=" 
         w-full h-[16vh]
-        flex justify-center items-center fixed bottom-0
+        
+        fixed bottom-0
         bg-white/95
         text-black/70
+
+        flex flex-row
         "
     >
       <div className="text-3xl">Hello</div>
