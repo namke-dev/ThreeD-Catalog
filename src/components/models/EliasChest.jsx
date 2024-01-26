@@ -7,13 +7,13 @@ export function EliasChest(props) {
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.01}>
-        <mesh geometry={nodes.WHITE.geometry} shadows castShadow>
+        <mesh geometry={nodes.WHITE.geometry} shadows castShadow receiveShadow>
           <meshStandardMaterial color={furniture_color} />
         </mesh>
-        <mesh geometry={nodes.STEEL.geometry} shadows castShadow>
+        <mesh geometry={nodes.STEEL.geometry} shadows castShadow receiveShadow>
           <meshStandardMaterial color={furniture_color} />
         </mesh>
-        <mesh geometry={nodes.PINE.geometry} shadows castShadow>
+        <mesh geometry={nodes.PINE.geometry} shadows castShadow receiveShadow>
           <meshStandardMaterial color={furniture_color} />
         </mesh>
       </group>

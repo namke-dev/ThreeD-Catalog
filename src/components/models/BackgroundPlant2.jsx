@@ -8,16 +8,36 @@ export default function BackgroundPlant2(props) {
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI, 0.781, -Math.PI]}>
         <group scale={0.2}>
-          <mesh geometry={nodes.indoor_plant_02_1.geometry} castShadow shadows>
+          <mesh
+            geometry={nodes.indoor_plant_02_1.geometry}
+            castShadow
+            shadows
+            receiveShadow
+          >
             <meshStandardMaterial color={furniture_color} />
           </mesh>
-          <mesh geometry={nodes.indoor_plant_02_2.geometry} castShadow shadows>
+          <mesh
+            geometry={nodes.indoor_plant_02_2.geometry}
+            castShadow
+            shadows
+            receiveShadow
+          >
             <meshStandardMaterial color={furniture_color} />
           </mesh>
-          <mesh geometry={nodes.indoor_plant_02_3.geometry} castShadow shadows>
+          <mesh
+            geometry={nodes.indoor_plant_02_3.geometry}
+            castShadow
+            shadows
+            receiveShadow
+          >
             <meshStandardMaterial color={furniture_color} />
           </mesh>
-          <mesh geometry={nodes.indoor_plant_02_4.geometry} castShadow shadows>
+          <mesh
+            geometry={nodes.indoor_plant_02_4.geometry}
+            castShadow
+            shadows
+            receiveShadow
+          >
             <meshStandardMaterial color={furniture_color} />
           </mesh>
         </group>

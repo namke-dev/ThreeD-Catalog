@@ -12,6 +12,7 @@ export default function WallShelve(props) {
         scale={49.166}
         castShadow
         shadows
+        receiveShadow
       >
         <meshStandardMaterial color={furniture_color} />
       </mesh>

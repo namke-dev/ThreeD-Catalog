@@ -14,6 +14,7 @@ export default function BambooChair(props) {
         <mesh
           castShadow
           shadows
+          receiveShadow
           geometry={nodes.Alandhra_seatting_group_Black_metal_0.geometry}
         >
           <meshStandardMaterial color={furniture_color} />
@@ -21,6 +22,7 @@ export default function BambooChair(props) {
         <mesh
           castShadow
           shadows
+          receiveShadow
           geometry={nodes.Alandhra_seatting_group_Wicker_chair_0.geometry}
         >
           <meshStandardMaterial color={furniture_color} />

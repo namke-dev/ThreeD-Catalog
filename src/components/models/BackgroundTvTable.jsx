@@ -13,6 +13,7 @@ export function BackgroundTvTable(props) {
           rotation={[Math.PI / 2, 0, 0]}
           castShadow
           shadows
+          receiveShadow
         >
           <meshStandardMaterial color={furniture_color} />
         </mesh>

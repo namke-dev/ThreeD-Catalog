@@ -14,6 +14,7 @@ export function BackgroudPlantTable(props) {
           scale={100}
           castShadow
           shadows
+          receiveShadow
         >
           <meshStandardMaterial color={furniture_color} />
         </mesh>

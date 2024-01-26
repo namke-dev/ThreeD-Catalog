@@ -12,6 +12,7 @@ export function BackgroundPlant1(props) {
           rotation={[-Math.PI / 2, 0, 0]}
           castShadow
           shadows
+          receiveShadow
         >
           <meshStandardMaterial color={furniture_color} />
         </mesh>
@@ -21,6 +22,7 @@ export function BackgroundPlant1(props) {
           rotation={[-Math.PI / 2, 0, 0]}
           castShadow
           shadows
+          receiveShadow
         >
           <meshStandardMaterial color={furniture_color} />
         </mesh>

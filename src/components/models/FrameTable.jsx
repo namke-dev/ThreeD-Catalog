@@ -9,21 +9,41 @@ export function FrameTable(props) {
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.008}>
         <group position={[0, 0, 90]}>
           <group position={[0, -16.617, 83.591]}>
-            <mesh geometry={nodes.STEEL.geometry} castShadow shadows>
+            <mesh
+              geometry={nodes.STEEL.geometry}
+              castShadow
+              shadows
+              receiveShadow
+            >
               <meshStandardMaterial color={furniture_color} />
             </mesh>
-            <mesh geometry={nodes.STEEL_BLACK.geometry} castShadow shadows>
+            <mesh
+              geometry={nodes.STEEL_BLACK.geometry}
+              castShadow
+              shadows
+              receiveShadow
+            >
               <meshStandardMaterial color={furniture_color} />
             </mesh>
-            <mesh geometry={nodes.OAK.geometry} castShadow shadows>
+            <mesh
+              geometry={nodes.OAK.geometry}
+              castShadow
+              shadows
+              receiveShadow
+            >
               <meshStandardMaterial color={furniture_color} />
             </mesh>
-            <mesh geometry={nodes.WALNUT.geometry} castShadow shadows>
+            <mesh
+              geometry={nodes.WALNUT.geometry}
+              castShadow
+              shadows
+              receiveShadow
+            >
               <meshStandardMaterial color={furniture_color} />
             </mesh>
           </group>
         </group>
-        <mesh position={[0, -15, 0]} castShadow shadows>
+        <mesh position={[0, -15, 0]} castShadow shadows receiveShadow>
           <boxGeometry args={[94, 40, 2]} />
           <meshStandardMaterial color={furniture_color} />
         </mesh>

@@ -11,13 +11,26 @@ export function ModernLight(props) {
         rotation={[Math.PI / 2, 0, 0]}
         castShadow
         shadows
+        receiveShadow
       >
         <meshStandardMaterial color={furniture_color} />
       </mesh>
-      <mesh geometry={nodes.Lamp_Base.geometry} rotation={[Math.PI / 2, 0, 0]}>
+      <mesh
+        geometry={nodes.Lamp_Base.geometry}
+        rotation={[Math.PI / 2, 0, 0]}
+        castShadow
+        shadows
+        receiveShadow
+      >
         <meshStandardMaterial color={furniture_color} />
       </mesh>
-      <mesh geometry={nodes.Lamp_Head.geometry} rotation={[Math.PI / 2, 0, 0]}>
+      <mesh
+        geometry={nodes.Lamp_Head.geometry}
+        rotation={[Math.PI / 2, 0, 0]}
+        castShadow
+        shadows
+        receiveShadow
+      >
         <meshStandardMaterial color={furniture_color} />
       </mesh>
     </group>

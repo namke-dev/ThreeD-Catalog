@@ -21,13 +21,28 @@ export function DeskModel(props) {
         position={[0.5, -0.5, 1.3]}
         rotation={[-Math.PI / 2, 0, Math.PI / 2]}
       >
-        <mesh castShadow shadows geometry={nodes.Object_7.geometry}>
+        <mesh
+          castShadow
+          shadows
+          receiveShadow
+          geometry={nodes.Object_7.geometry}
+        >
           <meshStandardMaterial {...textureTopProps} />
         </mesh>
-        <mesh castShadow shadows geometry={nodes.Object_5.geometry}>
+        <mesh
+          castShadow
+          shadows
+          receiveShadow
+          geometry={nodes.Object_5.geometry}
+        >
           <meshStandardMaterial {...textureLegsProps} />
         </mesh>
-        <mesh castShadow shadows geometry={nodes.Object_6.geometry}>
+        <mesh
+          castShadow
+          shadows
+          receiveShadow
+          geometry={nodes.Object_6.geometry}
+        >
           <meshStandardMaterial {...textureLegsProps} />
         </mesh>
       </group>

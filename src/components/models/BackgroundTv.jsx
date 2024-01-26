@@ -7,13 +7,13 @@ export default function BackgroudTv(props) {
   return (
     <group {...props} dispose={null}>
       <group scale={0.225}>
-        <mesh geometry={nodes.Tv1_0.geometry} castShadow shadows>
+        <mesh geometry={nodes.Tv1_0.geometry} castShadow shadows receiveShadow>
           <meshStandardMaterial color={furniture_color} />
         </mesh>
-        <mesh geometry={nodes.Tv1_1.geometry} castShadow shadows>
+        <mesh geometry={nodes.Tv1_1.geometry} castShadow shadows receiveShadow>
           <meshStandardMaterial color={furniture_color} />
         </mesh>
-        <mesh geometry={nodes.Tv1_2.geometry} castShadow shadows>
+        <mesh geometry={nodes.Tv1_2.geometry} castShadow shadows receiveShadow>
           <meshStandardMaterial color={furniture_color} />
         </mesh>
       </group>
