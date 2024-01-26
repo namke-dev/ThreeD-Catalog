@@ -3,8 +3,8 @@ import {
   room_floor_color,
   room_wall_color,
 } from "@/helpers/light-color-helper";
-import { MeshReflectorMaterial, useTexture } from "@react-three/drei";
-import { useFrame, useLoader } from "@react-three/fiber";
+import { MeshReflectorMaterial } from "@react-three/drei";
+import { useLoader } from "@react-three/fiber";
 import React, { useEffect } from "react";
 import * as THREE from "three";
 import { FloatingGrid } from "./FloatingGrid";
