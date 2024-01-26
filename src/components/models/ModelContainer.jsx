@@ -1,12 +1,12 @@
 import { Canvas } from "@react-three/fiber";
 import BackgroundScene from "@/components/models/BackgroundScene";
 import { Float } from "@react-three/drei";
-import BackgroundRoom from "@/components/models/BackgroundRoom";
-import Windows from "@/components/models/Windows";
-
-import { CustomBackdrop } from "./Backdrop";
 import CustomCameraControls from "./CustomCameraControl";
 import { page_background, room_area } from "@/helpers/light-color-helper";
+
+import BackgroundRoom from "@/components/models/BackgroundRoom";
+import Windows from "@/components/models/Windows";
+import { CustomBackdrop } from "./Backdrop";
 
 export default function ModelContainer({ children }) {
   return (
@@ -31,7 +31,6 @@ export default function ModelContainer({ children }) {
         speed={5}
         position={[0, 0.3, 0]}
       >
-        {/* SHOWCASE */}
         {children}
       </Float>
     </Canvas>
