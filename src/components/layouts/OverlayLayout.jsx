@@ -1,7 +1,7 @@
 import React from "react";
 import ProductInfo from "./ProductInfo";
 import Logo from "./Logo";
-import ProductCustomPanel from "./ProductCustomPanel";
+import CustomProductPanel from "./CustomProductPanel";
 import Footer from "./Footer";
 
 export default function OverlayLayout() {
@@ -9,7 +9,7 @@ export default function OverlayLayout() {
     <>
       <Logo />
       <ProductInfo />
-      <ProductCustomPanel />
+      <CustomProductPanel />
       <Footer />
     </>
   );

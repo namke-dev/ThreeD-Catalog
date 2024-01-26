@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Cart from "./Cart";
 
-export default function ProductCustomPanel() {
+export default function CustomProductPanel() {
   const [isActive, setIsActive] = useState(false);
 
   return (
