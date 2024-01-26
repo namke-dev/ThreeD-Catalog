@@ -22,14 +22,16 @@ export function CustomBackdrop() {
       alphaTest={0.85}
       scale={room_area}
       position={[0, -0.499, 0]}
-      opacity={0.95}
+      opacity={1}
+      color={"white"}
     >
       <RandomizedLight
         amount={1}
         radius={10}
-        intensity={2.2}
-        ambient={0.8}
+        intensity={3.9}
+        ambient={0.5}
         position={[15, 5, -10]}
+        color={"white"}
       />
     </AccumulativeShadows>
   );
