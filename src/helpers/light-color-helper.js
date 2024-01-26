@@ -1,17 +1,19 @@
-// lighting
-export const ambient_light = "pink";
-export const ambient_light_intensity = 0.55;
-export const directional_light_intensity = 3.5;
+// light object color
+export const ambient_light = "lightblue";
+export const ambient_light_intensity = 0.6;
+
+// light whiteness
+export const directional_light_intensity = 3;
 
 // scene
 export const room_area = 15;
 
 // wall color
-export const room_wall_color = "#ffffff";
-export const room_floor_color = "#ffffff";
+export const room_wall_color = "#fefefe";
+export const room_floor_color = "#e0e0e0";
 
 //furniture color
-export const furniture_color = "lightblue";
+export const furniture_color = "white";
 
 //backdrop
 export const backdrop_light_intensity = 1;

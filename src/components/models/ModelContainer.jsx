@@ -31,7 +31,7 @@ export default function ModelContainer({ children }) {
         rotationIntensity={0.2}
         floatIntensity={0.5}
         speed={5}
-        position={[0, 0.3, 0]}
+        position={[0, 0.1, 0]}
       >
         {children}
       </Float>
