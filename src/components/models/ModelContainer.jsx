@@ -5,7 +5,7 @@ import CustomCameraControls from "./CustomCameraControl";
 import { page_background, room_area } from "@/helpers/light-color-helper";
 
 import BackgroundRoom from "@/components/models/BackgroundRoom";
-import Windows from "@/components/models/Windows";
+import CustomLight from "@/components/models/CustomLight";
 import { CustomBackdrop } from "./Backdrop";
 
 export default function ModelContainer({ children }) {
@@ -24,7 +24,7 @@ export default function ModelContainer({ children }) {
       {/* <CustomBackdrop /> */}
       <BackgroundScene />
       <BackgroundRoom />
-      <Windows />
+      <CustomLight />
       <Float
         rotationIntensity={0.2}
         floatIntensity={0.5}

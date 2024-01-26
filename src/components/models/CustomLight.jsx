@@ -1,13 +1,7 @@
 import React from "react";
-import { useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import {
-  SoftShadows,
-  Float,
-  CameraControls,
-  Sky,
-  PerformanceMonitor,
-} from "@react-three/drei";
+import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
+import { SoftShadows, Float, Sky, PerformanceMonitor } from "@react-three/drei";
 
 import { easing } from "maath";
 import {
@@ -16,7 +10,7 @@ import {
   directional_light_intensity,
 } from "@/helpers/light-color-helper";
 
-export default function Windows() {
+export default function CustomLight() {
   return (
     <>
       <color attach="background" args={["#d0d0d0"]} />
