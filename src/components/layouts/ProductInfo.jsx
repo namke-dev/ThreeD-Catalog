@@ -42,23 +42,31 @@ export default function ProductInfo() {
       >
         <p
           className={`flex justify-center 
-        text-xl font-semibold
-        py-2.5
+          text-xl font-semibold
+          py-2.5
         `}
         >
           {product_detail_data[0].Name}
         </p>
 
         {product_detail_data.map((product, index) => (
-          <div key={index} className="mx-3">
+          <div key={index} className="mx-3 pt-2 pb-5">
             {Object.keys(product).map((key) => (
               <div
                 key={key}
-                className={`flex justify-between border-b border-black/10
+                className={`\
+                  flex justify-between 
+                  border-b border-black/10
+                  pt-2
                 ${key == "About" ? "flex-col" : "flex-row"}`}
               >
                 <span className="font-semibold">{key}</span>
-                <span style={{ whiteSpace: "pre-line" }}>{product[key]}</span>
+                <span
+                  style={{ whiteSpace: "pre-line" }}
+                  className={`${key == "About" ? "pt-3 text-justify" : ""}`}
+                >
+                  {product[key]}
+                </span>
               </div>
             ))}
           </div>

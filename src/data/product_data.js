@@ -9,7 +9,7 @@ export const product_detail_data = [
     "Special Feature": "Washable",
     Price: "$139.99",
     About: `Ideal for small apartments and limited spaces. Our drop leaf table would fully folded and stored in a small corver when not in use, maximizing your space.
-    
+
     Perfect as the folding kitchen table and folding dinner table!
     
     Just folding one tabletop, it could as an office desk placed your computer, books, camera on the tabletop！
