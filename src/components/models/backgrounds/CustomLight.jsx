@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Float, SoftShadows } from "@react-three/drei";
-
 import { easing } from "maath";
+
 import {
   ambient_light,
   ambient_light_intensity,
   directional_light_intensity,
 } from "@/helpers/light-color-helper";
+
 import { useControls } from "leva";
 
 export default function CustomLight() {
-  const { impl, debug, enabled, samples, ...config } = useControls({
-    debug: true,
-    enabled: true,
+  const { impl, soft_shadow, samples, ...config } = useControls({
+    soft_shadow: true,
     size: { value: 35, min: 0, max: 100, step: 0.1 },
     focus: { value: 0.5, min: 0, max: 2, step: 0.1 },
     samples: { value: 12, min: 6, max: 40, step: 1 },
@@ -25,7 +25,7 @@ export default function CustomLight() {
       <fog attach="fog" args={["#d0d0d0", 8, 35]} />
       <ambientLight intensity={0.55} />
       <Light />
-      {enabled && <SoftShadows {...config} samples={samples} />}
+      {soft_shadow && <SoftShadows {...config} samples={samples} />}
 
       <Sphere scale={0.45} position={[0, 5, -7]} />
       <Sphere position={[2, 4, -7]} scale={0.45} />

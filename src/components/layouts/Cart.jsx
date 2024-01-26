@@ -11,7 +11,7 @@ export default function Cart({ className, children, ...props }) {
       
       p-0 m-0
       
-      rounded-3xl
+      rounded-sm
       
       transition-all
       duration-300

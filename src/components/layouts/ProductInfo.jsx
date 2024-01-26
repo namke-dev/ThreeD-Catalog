@@ -12,11 +12,7 @@ export default function ProductInfo() {
         w-[190px] h-[52px] 
         !ml-4
         
-        ${
-          isActive
-            ? "!top-[12vh] !h-[65vh] !w-[25vw] !ml-20 !bg-white/85 !rounded-sm"
-            : ""
-        }
+        ${isActive ? "!top-[12vh] !h-[65vh] !w-[25vw] !ml-20 !bg-white/85" : ""}
       `}
       onClick={() => {
         setIsActive(!isActive);

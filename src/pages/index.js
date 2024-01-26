@@ -2,6 +2,7 @@ import OverlayLayout from "@/components/layouts/OverlayLayout";
 import ModelContainer from "@/components/models/ModelContainer";
 import { DeskModel } from "@/components/models/showcases/DeskModel";
 import { Sofa2 } from "@/components/models/showcases/Sofa2";
+import { Leva } from "leva";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
             <DeskModel />
             {/* <Sofa2 /> */}
           </ModelContainer>
+          <Leva collapsed />
         </div>
         <OverlayLayout />
       </div>
