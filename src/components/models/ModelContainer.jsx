@@ -6,7 +6,6 @@ import { page_background, room_area } from "@/helpers/light-color-helper";
 
 import BackgroundRoom from "@/components/models/BackgroundRoom";
 import CustomLight from "@/components/models/CustomLight";
-import { CustomBackdrop } from "./Backdrop";
 
 export default function ModelContainer({ children }) {
   return (
@@ -19,12 +18,15 @@ export default function ModelContainer({ children }) {
         far: room_area * 1.42,
       }}
     >
+      {/* Setup */}
       <color attach="background" args={[page_background]} />
       <CustomCameraControls />
-      {/* <CustomBackdrop /> */}
+
       <BackgroundScene />
-      <BackgroundRoom />
       <CustomLight />
+
+      {/* Model */}
+      <BackgroundRoom />
       <Float
         rotationIntensity={0.2}
         floatIntensity={0.5}

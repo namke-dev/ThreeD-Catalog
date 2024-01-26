@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
-import { SoftShadows, Float, Sky, PerformanceMonitor } from "@react-three/drei";
+import { Float, Sky } from "@react-three/drei";
 
 import { easing } from "maath";
 import {
@@ -15,7 +15,7 @@ export default function CustomLight() {
     <>
       <color attach="background" args={["#d0d0d0"]} />
       <fog attach="fog" args={["#d0d0d0", 8, 35]} />
-      <ambientLight intensity={0.4} />
+      <ambientLight intensity={0.55} />
       <Light />
       <Sphere />
       <Sphere position={[2, 4, -8]} scale={0.9} />
@@ -31,7 +31,7 @@ function Sphere({
   scale = 1,
 }) {
   return (
-    <Float floatIntensity={floatIntensity}>
+    <Float floatIntensity={floatIntensity} speed={0.2}>
       <mesh castShadow position={position} scale={scale}>
         <sphereGeometry />
         <meshBasicMaterial color={color} roughness={1} />
