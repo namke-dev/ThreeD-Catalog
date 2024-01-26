@@ -23,7 +23,7 @@ export default function BackgroundScene() {
         position={[-1.2, -0.5, 2.8]}
         rotation={[0, -Math.PI / 1.5, 0]}
       />
-      <BackgroundPlant2 position={[-1.2, 0.12, 2.8]} scale={0.7} />
+      <BackgroundPlant2 position={[-1.2, 0.12, 2.8]} scale={0.6} />
       <BackgroundTvTable
         scale={0.6}
         position={[-2, -0.15, 0]}
@@ -43,7 +43,7 @@ export default function BackgroundScene() {
         position={[-1.8, -0.5, -1.5]}
         rotation={[0, Math.PI / 2, 0]}
       />
-      <WallShelve position={[-2.6, 1, 2]} rotation={[0, Math.PI / 2, 0]} />
+      <WallShelve position={[-2.6, 0.8, 2]} rotation={[0, Math.PI / 2, 0]} />
       <FrameTable position={[-2, -0.5, -3]} rotation={[0, Math.PI / 2, 0]} />
     </group>
   );
