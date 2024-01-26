@@ -3,7 +3,7 @@ import Cart from "./Cart";
 import { product_detail_data } from "@/data/product_data";
 
 export default function ProductInfo() {
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(true);
 
   return (
     <Cart

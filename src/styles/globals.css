@@ -37,7 +37,8 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 3px;
+  height: 3px;              /* height of horizontal scrollbar */
+  width: 3px;               /* width of vertical scrollbar */
 }
 
 /* Track */
@@ -47,7 +48,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #aaa;
   border-radius: 5px;
 }
 

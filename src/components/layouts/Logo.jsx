@@ -5,7 +5,7 @@ export default function Logo() {
     <div
       className=" 
       absolute
-      top-0 left-0
+      top-4 left-0
       m-2 px-4 py-2
       bg-black/10
       text-white/90
