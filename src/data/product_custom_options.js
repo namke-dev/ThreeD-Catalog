@@ -1,4 +1,4 @@
-export const options = {
+export const product_custom_options = {
   Color: ["black", "white", "blue", "red", "cream"],
   Material: ["fabric", "wood", "metal"],
   "Background Color": ["white", "blue", "orange", "green", "purple"],

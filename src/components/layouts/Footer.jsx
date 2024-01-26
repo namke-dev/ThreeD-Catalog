@@ -1,7 +1,7 @@
 import {
   furniture_category,
   list_product_img_url,
-} from "@/data/product_config_options";
+} from "@/data/product_custom_options";
 import React from "react";
 
 export default function Footer() {

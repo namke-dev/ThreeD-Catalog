@@ -45,11 +45,11 @@ export default function CustomProductPanel() {
       >
         <p
           className={`flex justify-center 
-        text-xl font-semibold
-        py-2.5
+          text-xl font-semibold
+          py-2.5
         `}
         >
-          Title
+          Get Your Own Style
         </p>
       </div>
     </Cart>
