@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Cart from "./Cart";
 
-export default function ControlPanel() {
+export default function ProductCustomPanel() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -34,7 +34,7 @@ export default function ControlPanel() {
           duration-300 
       ${isHovered ? "border-black/10" : ""}`}
       >
-        Control panel
+        Custom
       </p>
     </Cart>
   );
