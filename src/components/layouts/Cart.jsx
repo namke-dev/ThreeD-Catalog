@@ -7,11 +7,12 @@ export default function Cart({ className, children, ...props }) {
       className={`
       bg-white/50
       text-black/70
-      p-1 md:p-3 
       hover:bg-white/95
-
+      
+      p-0 m-0
+      
       rounded-3xl
-      md:mx-2
+      cursor-pointer
       
       transition-all
       duration-300

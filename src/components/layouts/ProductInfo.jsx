@@ -3,56 +3,66 @@ import Cart from "./Cart";
 import { product_detail_data } from "@/data/product_data";
 
 export default function ProductInfo() {
-  const [isHovered, setIsHovered] = useState(false);
-  const product_data = product_detail_data[0];
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <Cart
-      className="
-        absolute left-0
-        top-[33vh] 
-        hover:top-[20vh] 
+      className={`
+        absolute left-0 top-[33vh] 
         w-[190px] h-[52px] 
-        hover:h-[40vh] 
-        hover:w-[400px]"
-      onMouseEnter={() => {
-        setIsHovered(true);
-      }}
-      onMouseLeave={() => {
-        setIsHovered(false);
+        !ml-4
+        
+        ${
+          isActive
+            ? "!top-[12vh] !h-[65vh] !w-[25vw] !ml-20 !bg-white/85 !rounded-sm"
+            : ""
+        }
+      `}
+      onClick={() => {
+        setIsActive(!isActive);
       }}
     >
-      <p
-        className={`flex justify-center text-xl font-semibold
-          border-b border-black/0 
-          transition-all
-          ease-in-out
-          duration-500 
-          
-      `}
-      >
-        {isHovered ? product_detail_data[0].Name : "Information"}
-      </p>
+      {!isActive && (
+        <p
+          className={`flex justify-center 
+        text-xl font-semibold
+        py-2.5
+        `}
+        >
+          Information
+        </p>
+      )}
+
       <div
-        className={`font-normal text-md text-left mx-3 mt-4
+        className={`font-normal text-md text-left px-3
           flex flex-col
           transition-all
           ease-in-out
           duration-300 
           origin-top-left
-          h-[32vh]
-          gap-3
-        ${isHovered ? "scale-100" : "scale-0"}`}
+          h-full
+          overflow-y-scroll          
+        ${isActive ? "scale-100" : "scale-0"}`}
       >
+        <p
+          className={`flex justify-center 
+        text-xl font-semibold
+        py-2.5
+        `}
+        >
+          {product_detail_data[0].Name}
+        </p>
+
         {product_detail_data.map((product, index) => (
-          <div key={index}>
+          <div key={index} className="mx-3">
             {Object.keys(product).map((key) => (
               <div
                 key={key}
-                className="flex flex-row justify-between border-b border-black/10"
+                className={`flex justify-between border-b border-black/10
+                ${key == "About" ? "flex-col" : "flex-row"}`}
               >
-                <span className="">{key}:</span>
-                <span className="">{product[key]}</span>
+                <span className="font-semibold">{key}</span>
+                <span style={{ whiteSpace: "pre-line" }}>{product[key]}</span>
               </div>
             ))}
           </div>
