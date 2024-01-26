@@ -43,7 +43,7 @@ export default function BackgroundScene() {
         position={[-1.8, -0.5, -1.5]}
         rotation={[0, Math.PI / 2, 0]}
       />
-      <WallShelve position={[-2.6, 0.8, 2]} rotation={[0, Math.PI / 2, 0]} />
+      <WallShelve position={[-3.6, 0.8, 2]} rotation={[0, Math.PI / 2, 0]} />
       <FrameTable position={[-2, -0.5, -3]} rotation={[0, Math.PI / 2, 0]} />
     </group>
   );
