@@ -4,8 +4,8 @@ import { Float } from "@react-three/drei";
 import CustomCameraControls from "./CustomCameraControl";
 import { page_background, room_area } from "@/helpers/light-color-helper";
 
-import BackgroundRoom from "@/components/models/BackgroundRoom";
-import CustomLight from "@/components/models/CustomLight";
+import BackgroundRoom from "@/components/models/backgrounds/BackgroundRoom";
+import CustomLight from "@/components/models/backgrounds/CustomLight";
 
 export default function ModelContainer({ children }) {
   return (

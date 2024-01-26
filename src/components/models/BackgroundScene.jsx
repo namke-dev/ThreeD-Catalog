@@ -1,14 +1,14 @@
 import React from "react";
-import BackgroundPlant2 from "./BackgroundPlant2";
-import { BackgroundPlant1 } from "./BackgroundPlant1";
-import { BackgroudPlantTable } from "./BackgroundPlantTable";
-import { BackgroundTvTable } from "./BackgroundTvTable";
-import BackgroudTv from "./BackgroundTv";
-import BambooChair from "./Bamboo-chair";
-import { ModernLight } from "./ModernLight";
-import { EliasChest } from "./EliasChest";
-import WallShelve from "./WallShelve";
-import { FrameTable } from "./FrameTable";
+import BackgroundPlant2 from "./backgrounds/BackgroundPlant2";
+import { BackgroundPlant1 } from "./backgrounds/BackgroundPlant1";
+import { BackgroudPlantTable } from "./backgrounds/BackgroundPlantTable";
+import { BackgroundTvTable } from "./backgrounds/BackgroundTvTable";
+import BackgroudTv from "./backgrounds/BackgroundTv";
+import BambooChair from "./backgrounds/Bamboo-chair";
+import { ModernLight } from "./backgrounds/ModernLight";
+import { EliasChest } from "./backgrounds/EliasChest";
+import WallShelve from "./backgrounds/WallShelve";
+import { FrameTable } from "./backgrounds/FrameTable";
 
 export default function BackgroundScene() {
   return (

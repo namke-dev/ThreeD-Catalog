@@ -1,6 +1,6 @@
 import OverlayLayout from "@/components/layouts/OverlayLayout";
-import { DeskModel } from "@/components/models/DeskModel";
 import ModelContainer from "@/components/models/ModelContainer";
+import { DeskModel } from "@/components/models/showcases/DeskModel";
 
 export default function App() {
   return (
