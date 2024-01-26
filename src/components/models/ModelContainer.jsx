@@ -1,4 +1,4 @@
-import { Environment } from "@react-three/drei";
+import { Environment, Sky } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { CustomBackdrop } from "./Backdrop";
 import CustomCameraControls from "./CustomCameraControl";
@@ -21,10 +21,9 @@ export default function ModelContainer({ children }) {
       }}
     >
       <color attach="background" args={[page_background]} />
-      <ambientLight intensity={ambient_light_intensity} color={ambient_light} />
-      <Environment preset="city" intensity={0} />
+
       <CustomCameraControls />
-      <CustomBackdrop />
+      {/* <CustomBackdrop /> */}
 
       {children}
     </Canvas>

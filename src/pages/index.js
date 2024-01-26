@@ -6,6 +6,7 @@ import { Sofa2 } from "@/components/models/Sofa2";
 import { Float } from "@react-three/drei";
 import BackgroundRoom from "@/components/models/BackgroundRoom";
 import OverlayLayout from "@/components/layouts/OverlayLayout";
+import Windows from "@/components/models/Windows";
 
 export default function App() {
   return (
@@ -14,15 +15,14 @@ export default function App() {
         <ModelContainer>
           <BackgroundScene />
           <BackgroundRoom />
+          <Windows />
           <Float
             rotationIntensity={0.2}
             floatIntensity={0.5}
             speed={5}
             position={[0, 0.3, 0]}
           >
-            {/* <Sofa2 /> */}
             <DeskModel />
-            {/* <UniqueSofa /> */}
           </Float>
         </ModelContainer>
         <OverlayLayout />

@@ -10,6 +10,8 @@ export default function WallShelve(props) {
         geometry={nodes.Object_6.geometry}
         position={[0, 19, 0]}
         scale={49.166}
+        castShadow
+        shadows
       >
         <meshStandardMaterial color={furniture_color} />
       </mesh>

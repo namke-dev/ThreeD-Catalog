@@ -9,7 +9,11 @@ import React from "react";
 export default function BackgroundRoom() {
   return (
     <group>
-      <mesh position={[-4.5, 1.5, 0]} rotation={[0, Math.PI / 2, 0]}>
+      <mesh
+        position={[-4, 1.5, 0]}
+        rotation={[0, Math.PI / 2, 0]}
+        receiveShadow
+      >
         <planeGeometry args={[room_area, 4]} />
         <MeshReflectorMaterial
           blur={[300, 100]}
@@ -24,15 +28,19 @@ export default function BackgroundRoom() {
           metalness={0}
         />
       </mesh>
-      <mesh position={[0, 1.5, -room_area / 2]}>
+      {/* <mesh position={[0, 1.5, -room_area / 2]}>
         <planeGeometry args={[room_area, 4]} />
         <meshPhysicalMaterial color={room_wall_color} />
       </mesh>
       <mesh position={[0, 1.5, room_area / 2]} rotation={[0, Math.PI, 0]}>
         <planeGeometry args={[room_area, 4]} />
         <meshPhysicalMaterial color={room_wall_color} />
-      </mesh>
-      <mesh position={[0, -0.5, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+      </mesh> */}
+      <mesh
+        position={[0, -0.5, 0]}
+        rotation={[-Math.PI / 2, 0, 0]}
+        receiveShadow
+      >
         <planeGeometry args={[room_area, room_area]} />
         <meshPhysicalMaterial color={room_floor_color} />
       </mesh>
