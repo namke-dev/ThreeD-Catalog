@@ -2,14 +2,11 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <div
-      className="      
-      absolute top-0
-      h-auto w-full
-      bg-black/10
-      z-50"
-    >
-      navbar
-    </div>
+    <header className="w-full">
+      <div className="flex flex-row flex-wrap items-center justify-start bg-black/80 text-gray-300 text-sm px-3 py-0.5 gap-5">
+        <button>Market Rrend</button>
+        <button>Time Series Data</button>
+      </div>
+    </header>
   );
 }
