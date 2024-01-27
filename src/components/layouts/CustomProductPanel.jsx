@@ -26,7 +26,7 @@ export default function CustomProductPanel() {
         ${
           isActive
             ? "top-[10vh] h-[65vh] z-10 w-full md:w-[25vw] md:ml-10 bg-white/100 md:bg-white/85 rounded-none"
-            : "top-[27vh] md:top-[18vh] md:translate-y-[67px] w-[100px] md:w-[220px] h-[52px] bg-white/50"
+            : "top-[27vh] md:top-[18vh] md:translate-y-[67px] w-[100px] md:w-[220px]  h-[43px] md:h-[52px] bg-white/50"
         }
       `}
     >
@@ -37,7 +37,7 @@ export default function CustomProductPanel() {
             items-center justify-center
             text-center
             gap-2 
-            text-md md:text-xl font-semibold
+            text-sm md:text-xl font-semibold
             px-2 
             md:py-2.5
             md:-translate-x-2

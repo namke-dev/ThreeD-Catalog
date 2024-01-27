@@ -16,7 +16,7 @@ export default function ProductInfo() {
         ${
           isActive
             ? "top-[10vh] h-[65vh] z-10 w-full  md:w-[25vw] md:ml-10 bg-white/100 md:bg-white/85 rounded-none"
-            : "top-[18vh] md:top-[18vh] w-[100px] md:w-[220px] h-[52px] bg-white/50 "
+            : "top-[18vh] md:top-[18vh] w-[100px] md:w-[220px] h-[25px] md:h-[52px] bg-white/50 "
         }
       `}
     >
@@ -26,13 +26,13 @@ export default function ProductInfo() {
             className={`flex flex-row 
             items-center ]
             justify-center gap-2 
-            text-md md:text-xl font-semibold
+            text-sm md:text-xl font-semibold
             px-2
-            py-2.5
+            md:py-2.5
             md:-translate-x-2
             md:hover:translate-x-0
             group
-            h-[10%]
+            md:h-[10%]
             transition-transform
         `}
             onClick={() => {
