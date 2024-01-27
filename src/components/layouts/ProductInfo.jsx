@@ -11,11 +11,11 @@ export default function ProductInfo() {
       className={`
         md:ml-4 
         absolute left-0 top-[33vh] 
-        w-[190px] h-[52px] 
+        
         ${
           isActive
             ? "!top-[12vh] !h-[65vh] z-10 w-full  md:w-[25vw] bg-white/100 md:bg-white/85"
-            : ""
+            : "w-[190px] h-[52px] "
         }
       `}
     >

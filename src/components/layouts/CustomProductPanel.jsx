@@ -20,12 +20,11 @@ export default function CustomProductPanel() {
     <Cart
       className={`
         absolute right-0 top-[33vh] 
-        w-[220px] h-[52px] 
         md:mr-4
         ${
           isActive
-            ? "!top-[12vh] !h-[65vh] z-10 w-full md:w-[25vw] mr-10 bg-white/100 md:bg-white/85"
-            : ""
+            ? "!top-[12vh] !h-[65vh] z-10 w-full md:w-[25vw] md:mr-10 bg-white/100 md:bg-white/85"
+            : "w-[220px] h-[52px] "
         }
       `}
     >
@@ -79,7 +78,7 @@ export default function CustomProductPanel() {
 
       <div
         className={`font-normal text-md text-left 
-          px-1 md:px-8
+          px-6 md:px-8
           flex flex-col
           transition-all
           ease-in-out
