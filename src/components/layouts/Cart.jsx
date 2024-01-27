@@ -9,7 +9,6 @@ export default function Cart({ className, children, ...props }) {
       text-black/70
       hover:bg-white/100
       md:hover:scale-105
-      rounded-sm
       
       transition-all
       duration-300

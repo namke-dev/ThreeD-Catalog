@@ -23,8 +23,8 @@ export default function CustomProductPanel() {
         md:mr-4
         ${
           isActive
-            ? "!top-[12vh] !h-[65vh] z-10 w-full md:w-[25vw] md:mr-10 bg-white/100 md:bg-white/85"
-            : "w-[220px] h-[52px] "
+            ? "!top-[12vh] !h-[65vh] z-10 w-full md:w-[25vw] md:mr-10 bg-white/100 md:bg-white/85 rounded-none"
+            : "w-[220px] h-[52px] rounded-2xl"
         }
       `}
     >

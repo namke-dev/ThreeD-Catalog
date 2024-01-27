@@ -8,15 +8,25 @@ export default function Footer() {
   return (
     <div
       className=" 
-        w-full h-[18vh]
-        
+        w-full 
+        h-[18vh]
         fixed bottom-0
+        text-black/80
         bg-white/80
-        text-black/70
-
         flex flex-row
         shadow-gray-300
-        shadow-inner
+        rounded-3xl
+
+        scale-90
+        hover:rounded-none
+        translate-y-1
+        hover:scale-100
+        hover:translate-y-0
+        opacity-70
+        hover:opacity-100
+
+        transition-all
+        duration-500
         "
     >
       {/* Category choice */}
@@ -28,7 +38,6 @@ export default function Footer() {
               key={key}
               className="bg-gray-100 text-black/80 
               hover:bg-gray-300
-              hover:scale-105
               border border-gray-300
               
               rounded-xl
@@ -42,7 +51,7 @@ export default function Footer() {
       </div>
 
       {/* Product choice */}
-      <div className="w-2/3 p-1">
+      <div className="w-2/3 px-1 pt-1">
         <p className="h-1/6 pl-3 font-semibold text-md">Cabinet Product</p>
         <div
           className="
@@ -60,10 +69,13 @@ export default function Footer() {
               style={{ flexShrink: 0 }}
               className="w-[150px] h-[102px]
               bg-white
-            border border-black/30
-            flex justify-center
-            rounded-xl
-            scale-90"
+              border-black/30
+              hover:border 
+              flex justify-center
+              rounded-xl
+              scale-90
+              hover:scale-100
+              transition-all"
             >
               <img src={value} alt="placeholder" className="h-[100px]" />
             </div>
