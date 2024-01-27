@@ -32,8 +32,9 @@ export default function Footer() {
         md:hover:pt-2
 
 
-        md:transition-all
-        md:duration-500
+        
+        transition-all
+        duration-500
         "
     >
       {/* Category choice */}
@@ -41,7 +42,9 @@ export default function Footer() {
         className="md:w-1/3 md:p-1
       "
       >
-        <p className="md:h-1/6 pl-3 font-semibold text-md">Categories</p>
+        <p className="md:h-1/6 pl-3 font-semibold text-xs md:text-md">
+          Categories
+        </p>
         <div
           className="
           flex flex-row
@@ -56,16 +59,17 @@ export default function Footer() {
             <button
               key={key}
               className="
-              group-hover:border
+              border
               group-hover:border-gray-300
               hover:bg-gray-200
               bg-white/60
               rounded-md
-              transition-all
               md:w-auto
               md:px-0
               px-6
               whitespace-nowrap
+              text-xs md:text-md
+              transition-all
               "
             >
               {value}
@@ -75,18 +79,14 @@ export default function Footer() {
       </div>
 
       {/* Product choice */}
-      <div
-        className="md:w-2/3 md:pl-1 pt-1
-
-      "
-      >
-        <p className="md:h-1/6 pl-3 font-semibold text-md">
+      <div className="md:w-2/3 md:pl-1 pt-1">
+        <p className="md:h-1/6 pl-3 font-semibold text-xs md:text-md">
           Category's Product
         </p>
         <div
           className="
           md:h-5/6
-          pb-3 pt-1
+          pb-1 md:pb-3 md:pt-1
           flex flex-row
           overflow-x-scroll
           overflow-hidden
@@ -96,13 +96,14 @@ export default function Footer() {
             <div
               key={key}
               style={{ flexShrink: 0 }}
-              className="w-[150px] h-[102px]
+              className="w-[150px] h-[82px]
               bg-white
               flex justify-center
               rounded-md
               opacity-60
               hover:opacity-100
-              py-6
+              py-3
+              md:py-6
               ml-3
               group-hover:border
               group-hover:border-gray-300
