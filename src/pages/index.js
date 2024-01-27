@@ -4,12 +4,8 @@ import Showcase from "./show-case";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" exact element={<Showcase />} />
-        <Route path="/showcase" element={<Showcase />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Showcase />
+    </>
   );
 }
