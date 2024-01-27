@@ -5,11 +5,13 @@ export default function Navbar() {
   return (
     <header className="w-full">
       <div
-        className="flex flex-row flex-wrap 
+        className="
+        flex flex-row flex-wrap 
         items-center justify-start 
-        bg-white/20 text-black/50
+        bg-gray-50 text-black/50
         text-xs
-        px-3 py-0.5 gap-5"
+        px-3 py-0.5 gap-5
+        "
       >
         <Logo
           className="

@@ -9,12 +9,8 @@ export default function Logo({ className, children, ...props }) {
       md:mx-2
       md:px-4
       px-2 py-1
-      hover:scale-110
       rounded-sm
       flex flex-col items-center justify-center
-      transition-all
-      ease-in-out
-      duration-300 
       ${className}
       `}
     >

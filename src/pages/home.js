@@ -5,7 +5,7 @@ import HomePageIntro from "@/components/layouts/HomePageIntro";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-gradient-to-tr from-sky-100 via-slate-200 to-gray-100">
       <Navbar />
       <HomePageIntro />
       <Footer />

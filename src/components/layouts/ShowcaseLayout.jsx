@@ -19,6 +19,11 @@ export default function ShowcaseLayout() {
         text-white/95
         hover:bg-white/50
         hover:text-black/60
+
+        transition-all
+        hover:scale-105
+        ease-in-out
+        duration-300 
         "
       />
       <ShowcaseProductInfo />
