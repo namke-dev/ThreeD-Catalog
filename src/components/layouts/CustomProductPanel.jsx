@@ -5,6 +5,9 @@ import { FaTimes } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
 
 export default function CustomProductPanel() {
+  const isLargeDivide =
+    typeof window !== "undefined" && window.innerWidth >= 768;
+  console.log(`is large divice: ${isLargeDivide}`);
   const [isActive, setIsActive] = useState(true);
 
   const [selectedOptions, setSelectedOptions] = useState({});
@@ -19,16 +22,17 @@ export default function CustomProductPanel() {
   return (
     <Cart
       className={`
-        absolute right-0 top-[33vh] 
+        absolute
         md:mr-4
         ${
           isActive
-            ? "!top-[12vh] !h-[65vh] z-10 w-full md:w-[25vw] md:mr-10 bg-white/100 md:bg-white/85 rounded-none"
-            : "w-[220px] h-[52px] rounded-2xl"
+            ? "top-[12vh] h-[65vh] z-10 w-full md:w-[25vw] md:mr-10 bg-white/100 md:bg-white/85 rounded-none"
+            : " top-[25vh] md:top-[33vh] bg-white/50 hover:bg-white/100 w-[220px] h-[52px] rounded-2xl"
         }
+      ${isLargeDivide ? "!right-0" : "left-0"}
       `}
     >
-      <div className="h-[10%]">
+      <div className="">
         {!isActive && (
           <div
             className={`flex flex-row 
@@ -36,6 +40,7 @@ export default function CustomProductPanel() {
             text-xl font-semibold
             px-2 py-2.5
             group
+            h-[10%]
           `}
             onClick={() => {
               setIsActive(!isActive);
@@ -47,9 +52,9 @@ export default function CustomProductPanel() {
         )}
 
         {isActive && (
-          <>
+          <div className="h-[10%]">
             <div
-              className={`flex justify-center 
+              className={`flex justify-center
                 text-xl font-semibold
                 py-2.5
               `}
@@ -72,7 +77,7 @@ export default function CustomProductPanel() {
             >
               <FaTimes className="h-4 w-4 fill-gray-400" />
             </button>
-          </>
+          </div>
         )}
       </div>
 

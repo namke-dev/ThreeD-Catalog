@@ -12,10 +12,10 @@ export default function Footer() {
         h-[18vh]
         fixed bottom-0
         text-black/80
-        bg-white/80
+        bg-white
         flex flex-row
         shadow-gray-300
-        rounded-3xl
+        rounded-xl
 
         scale-90
         hover:rounded-none

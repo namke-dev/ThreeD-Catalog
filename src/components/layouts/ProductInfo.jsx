@@ -10,16 +10,16 @@ export default function ProductInfo() {
     <Cart
       className={`
         md:ml-4 
-        absolute left-0 top-[33vh] 
-        
+        absolute  
+        left-0
         ${
           isActive
-            ? "!top-[12vh] !h-[65vh] z-10 w-full  md:w-[25vw] bg-white/100 md:bg-white/85 rounded-none"
-            : "w-[190px] h-[52px] rounded-2xl"
+            ? "!top-[12vh] h-[65vh] z-10 w-full  md:w-[25vw] bg-white/100 md:bg-white/85 rounded-none"
+            : "top-[18vh] md:top-[33vh] bg-white/50 hover:bg-white/100 w-[190px] h-[52px] rounded-2xl"
         }
       `}
     >
-      <div className="h-[10%]">
+      <div className="">
         {!isActive && (
           <div
             className={`flex flex-row 
@@ -28,6 +28,7 @@ export default function ProductInfo() {
             px-2
             py-2.5
             group
+            h-[10%]
         `}
             onClick={() => {
               setIsActive(true);
@@ -40,11 +41,11 @@ export default function ProductInfo() {
         )}
 
         {isActive && (
-          <>
+          <div className="h-[10%]">
             <p
               className={`flex justify-center 
-          text-xl font-semibold
-          py-2.5
+              text-xl font-semibold
+              py-2.5
         `}
             >
               {product_detail_data[0].Name}
@@ -65,7 +66,7 @@ export default function ProductInfo() {
             >
               <FaTimes className="h-4 w-4 fill-gray-400" />
             </button>
-          </>
+          </div>
         )}
       </div>
 
