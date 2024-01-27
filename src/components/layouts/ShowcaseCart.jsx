@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Cart({ className, children, ...props }) {
+export default function ShowcaseCart({ className, children, ...props }) {
   return (
     <div
       {...props}

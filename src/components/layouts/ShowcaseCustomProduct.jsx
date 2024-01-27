@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Cart from "./Cart";
+import ShowcaseCart from "./ShowcaseCart";
 import { product_custom_options } from "@/data/product_custom_options";
 import { FaAngleDoubleRight, FaTimes } from "react-icons/fa";
 
-export default function CustomProductPanel() {
+export default function ShowcaseCustomProduct() {
   const [isActive, setIsActive] = useState(false);
 
   const [selectedOptions, setSelectedOptions] = useState({});
@@ -16,7 +16,7 @@ export default function CustomProductPanel() {
   };
 
   return (
-    <Cart
+    <ShowcaseCart
       className={`
         absolute left-0  
         md:ml-2
@@ -129,6 +129,6 @@ export default function CustomProductPanel() {
           ))}
         </div>
       </div>
-    </Cart>
+    </ShowcaseCart>
   );
 }

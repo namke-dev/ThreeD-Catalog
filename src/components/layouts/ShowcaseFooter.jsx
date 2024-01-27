@@ -5,7 +5,7 @@ import {
 import useWindowDimensions from "@/helpers/WindowSizeHelper";
 import React from "react";
 
-export default function Footer() {
+export default function ShowcaseFooter() {
   const { width } = useWindowDimensions() || {};
   return (
     <div

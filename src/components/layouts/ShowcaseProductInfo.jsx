@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import Cart from "./Cart";
+import ShowcaseCart from "./ShowcaseCart";
 import { product_detail_data } from "@/data/product_data";
 import { FaAngleRight, FaTimes } from "react-icons/fa";
 
-export default function ProductInfo() {
+export default function ShowcaseProductInfo() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <Cart
+    <ShowcaseCart
       className={`
         absolute left-0
         md:ml-2
@@ -116,6 +116,6 @@ export default function ProductInfo() {
           </div>
         ))}
       </div>
-    </Cart>
+    </ShowcaseCart>
   );
 }

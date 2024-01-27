@@ -1,4 +1,4 @@
-import OverlayLayout from "@/components/layouts/OverlayLayout";
+import ShowcaseLayout from "@/components/layouts/ShowcaseLayout";
 import ModelContainer from "@/components/models/ModelContainer";
 import { DeskModel } from "@/components/models/showcases/DeskModel";
 import { Leva } from "leva";
@@ -13,7 +13,7 @@ export default function Showcase() {
           </ModelContainer>
           <Leva collapsed hidden />
         </div>
-        <OverlayLayout />
+        <ShowcaseLayout />
       </div>
     </div>
   );
