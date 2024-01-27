@@ -26,9 +26,12 @@ export default function Footer() {
         md:rounded-md
         md:hover:rounded-none
         md:translate-y-0
-        md:hover:-translate-y-14
         md:opacity-90
         md:hover:opacity-100
+        md:hover:pb-20
+        md:hover:pt-2
+
+
         md:transition-all
         md:duration-500
         "

@@ -15,7 +15,7 @@ export default function ProductInfo() {
         hover:bg-white/100
         ${
           isActive
-            ? "top-[12vh] h-[65vh] z-10 w-full  md:w-[25vw] bg-white/100 md:bg-white/85 rounded-none"
+            ? "top-[10vh] h-[65vh] z-10 w-full  md:w-[25vw] md:ml-10 bg-white/100 md:bg-white/85 rounded-none"
             : "top-[18vh] md:top-[18vh] w-[100px] md:w-[220px] h-[52px] bg-white/50 "
         }
       `}
