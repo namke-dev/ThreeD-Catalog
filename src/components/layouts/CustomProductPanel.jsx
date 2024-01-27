@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Cart from "./Cart";
 import { product_custom_options } from "@/data/product_custom_options";
-import { FaAngleDoubleRight, FaAngleRight, FaTimes } from "react-icons/fa";
-import { FaAngleLeft } from "react-icons/fa";
+import { FaAngleDoubleRight, FaTimes } from "react-icons/fa";
 
 export default function CustomProductPanel() {
   const [isActive, setIsActive] = useState(false);
@@ -24,15 +23,15 @@ export default function CustomProductPanel() {
         hover:bg-white/100
         ${
           isActive
-            ? "top-[10vh] h-[65vh] z-10 w-full md:w-[25vw] md:ml-10 bg-white/100 md:bg-white/85 rounded-none"
-            : "top-[27vh] md:top-[18vh] md:translate-y-[67px] w-[100px] md:w-[220px]  h-[43px] md:h-[52px] bg-white/50"
+            ? "top-[10vh] h-[65vh] z-10 w-full md:w-[25vw] md:ml-5 bg-white/100 md:bg-white/85 rounded-none"
+            : "top-[27vh] md:top-[18vh] md:translate-y-[67px] w-[140px] md:w-[220px]  h-[43px] md:h-[52px] bg-white/50"
         }
       `}
     >
-      <div className="h-[10%]">
-        {!isActive && (
-          <div
-            className={`flex flex-row 
+      {!isActive && (
+        <div
+          className={`flex flex-row 
+            w-full h-full
             items-center justify-center
             text-center
             gap-2 
@@ -44,37 +43,37 @@ export default function CustomProductPanel() {
             group
             transition-transform
           `}
-            onClick={() => {
-              setIsActive(!isActive);
-            }}
-          >
-            Custom Product
-            <FaAngleDoubleRight
-              className="mt-1.5 -mr-44 absolute group-hover:translate-x-4 opacity-60 
+          onClick={() => {
+            setIsActive(!isActive);
+          }}
+        >
+          Custom Product
+          <FaAngleDoubleRight
+            className="mt-1.5 -mr-44 absolute group-hover:translate-x-4 opacity-60 
             transition 
             scale-0 md:scale-100 
             md:group-hover:scale-125
             md:group-hover:opacity-25"
-            />
-          </div>
-        )}
-
-        {isActive && (
-          <>
-            <div
-              className={`flex justify-center 
+          />
+        </div>
+      )}
+      {isActive && (
+        <>
+          <div
+            className={`flex justify-center 
                 text-lg font-semibold
                 py-2.5
+                h-[10%]
               `}
-            >
-              Get Your Own Style
-            </div>
-            <button
-              onClick={() => {
-                setIsActive(false);
-                console.log("setIsActive(false);");
-              }}
-              className="
+          >
+            Get Your Own Style
+          </div>
+          <button
+            onClick={() => {
+              setIsActive(false);
+              console.log("setIsActive(false);");
+            }}
+            className="
               absolute top-0 right-0 
               m-1
               w-8 h-8
@@ -82,12 +81,11 @@ export default function CustomProductPanel() {
               flex justify-center items-center
               hover:scale-125
               transition-all"
-            >
-              <FaTimes className="h-4 w-4 fill-gray-400" />
-            </button>
-          </>
-        )}
-      </div>
+          >
+            <FaTimes className="h-4 w-4 fill-gray-400" />
+          </button>
+        </>
+      )}
 
       <div
         className={`font-normal text-md text-left 

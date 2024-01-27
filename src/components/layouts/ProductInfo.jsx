@@ -14,16 +14,16 @@ export default function ProductInfo() {
         hover:bg-white/100
         ${
           isActive
-            ? "top-[10vh] h-[65vh] z-10 w-full  md:w-[25vw] md:ml-10 bg-white/100 md:bg-white/85 rounded-none"
-            : "top-[18vh] md:top-[18vh] w-[100px] md:w-[220px] h-[29px] md:h-[52px] bg-white/50 "
+            ? "top-[10vh] h-[65vh] z-10 w-full  md:w-[25vw] md:ml-5 bg-white/100 md:bg-white/85 rounded-none"
+            : "top-[18vh] md:top-[18vh] w-[140px] md:w-[220px] h-[43px] md:h-[52px] bg-white/50 "
         }
       `}
     >
-      <div className="">
-        {!isActive && (
-          <div
-            className={`flex flex-row 
-            items-center ]
+      {!isActive && (
+        <div
+          className={`flex flex-row 
+            w-full h-full
+            items-center 
             justify-center gap-2 
             text-sm md:text-lg font-semibold
             px-2
@@ -32,40 +32,39 @@ export default function ProductInfo() {
             md:-translate-x-2
             md:hover:translate-x-0
             group
-            md:h-[10%]
+            
             transition-transform
         `}
-            onClick={() => {
-              setIsActive(true);
-              console.log("setIsActive(true)");
-            }}
-          >
-            Information
-            <FaAngleRight
-              className="mt-1.5 -mr-44 absolute group-hover:translate-x-4 opacity-60 transition
+          onClick={() => {
+            setIsActive(true);
+            console.log("setIsActive(true)");
+          }}
+        >
+          Information
+          <FaAngleRight
+            className="mt-1.5 -mr-44 absolute group-hover:translate-x-4 opacity-60 transition
               scale-0 md:scale-100 
               md:group-hover:scale-125
               md:group-hover:opacity-25"
-            />
-          </div>
-        )}
-
-        {isActive && (
-          <div className="h-[10%]">
-            <p
-              className={`flex justify-center 
+          />
+        </div>
+      )}
+      {isActive && (
+        <div className="h-[10%]">
+          <p
+            className={`flex justify-center 
               text-lg font-semibold
               py-2.5
         `}
-            >
-              {product_detail_data[0].Name}
-            </p>
-            <button
-              onClick={() => {
-                setIsActive(false);
-                console.log("setIsActive(false);");
-              }}
-              className="
+          >
+            {product_detail_data[0].Name}
+          </p>
+          <button
+            onClick={() => {
+              setIsActive(false);
+              console.log("setIsActive(false);");
+            }}
+            className="
               absolute top-0 right-0 
               m-1
               w-8 h-8
@@ -73,12 +72,11 @@ export default function ProductInfo() {
               flex justify-center items-center
               hover:scale-125
               transition-all"
-            >
-              <FaTimes className="h-4 w-4 fill-gray-400" />
-            </button>
-          </div>
-        )}
-      </div>
+          >
+            <FaTimes className="h-4 w-4 fill-gray-400" />
+          </button>
+        </div>
+      )}
 
       <div
         className={`font-normal 
