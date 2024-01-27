@@ -6,7 +6,7 @@ import useWindowDimensions from "@/helpers/WindowSizeHelper";
 import React from "react";
 
 export default function Footer() {
-  const { width } = useWindowDimensions();
+  const { width } = useWindowDimensions() || {};
   return (
     <div
       className=" 
@@ -66,6 +66,7 @@ export default function Footer() {
               md:w-auto
               md:px-0
               px-6
+              py-0.5
               whitespace-nowrap
               text-xs md:text-md
               transition-all
