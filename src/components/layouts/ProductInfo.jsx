@@ -12,11 +12,9 @@ export default function ProductInfo() {
         md:ml-4 
         absolute left-0 top-[33vh] 
         w-[190px] h-[52px] 
-        group
-        
         ${
           isActive
-            ? "!top-[12vh] !h-[65vh] z-10 w-full  md:w-[25vw] !bg-white/85"
+            ? "!top-[12vh] !h-[65vh] z-10 w-full  md:w-[25vw] bg-white/100 md:bg-white/85"
             : ""
         }
       `}
@@ -29,6 +27,7 @@ export default function ProductInfo() {
             text-xl font-semibold
             px-2
             py-2.5
+            group
         `}
             onClick={() => {
               setIsActive(true);

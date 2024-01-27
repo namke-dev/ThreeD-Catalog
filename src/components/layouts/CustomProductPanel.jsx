@@ -21,10 +21,10 @@ export default function CustomProductPanel() {
       className={`
         absolute right-0 top-[33vh] 
         w-[220px] h-[52px] 
-        mr-4
+        md:mr-4
         ${
           isActive
-            ? "!top-[12vh] !h-[65vh] z-10 w-full md:w-[25vw] !ml-20 !bg-white/85  "
+            ? "!top-[12vh] !h-[65vh] z-10 w-full md:w-[25vw] mr-10 bg-white/100 md:bg-white/85"
             : ""
         }
       `}

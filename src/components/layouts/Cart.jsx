@@ -7,7 +7,7 @@ export default function Cart({ className, children, ...props }) {
       className={`
       bg-white/50
       text-black/70
-      hover:bg-white/95
+      hover:bg-white/100
       md:hover:scale-105
       rounded-sm
       
