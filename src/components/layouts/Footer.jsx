@@ -9,39 +9,61 @@ export default function Footer() {
     <div
       className=" 
         w-full 
-        h-[18vh]
-        fixed bottom-0
+        h-auto
+        
+
+        bg-white/50
+        hover:bg-white
         text-black/80
-        bg-white
-        flex flex-row
-        shadow-gray-300
-        rounded-xl
 
-        scale-90
-        hover:rounded-none
-        translate-y-1
-        hover:scale-100
-        hover:translate-y-0
-        opacity-90
-        hover:opacity-100
+        group
 
-        transition-all
-        duration-500
-        "
+        fixed bottom-0
+        flex 
+        flex-col
+        md:flex-row
+        md:gap-1
+        md:rounded-md
+        md:hover:rounded-none
+        md:translate-y-1
+        md:hover:translate-y-0
+        md:opacity-90
+        md:scale-90
+        md:hover:scale-100
+        md:hover:opacity-100
+        md:transition-all
+        md:duration-500"
     >
       {/* Category choice */}
-      <div className="w-1/3 p-1">
-        <p className="h-1/6 pl-3 font-semibold text-md">Category</p>
-        <div className="grid grid-cols-3 grid-rows-2 gap-2 h-5/6 w-full pb-2 pl-3 pt-1">
+      <div
+        className="md:w-1/3 md:p-1
+      "
+      >
+        <p className="md:h-1/6 pl-3 font-semibold text-md">Category</p>
+        <div
+          className="
+          flex flex-row
+          md:grid md:grid-cols-3
+          gap-2 md:h-5/6 w-full
+          pb-1 md:pb-2 
+          pl-3 pt-1
+          overflow-x-scroll
+          "
+        >
           {Object.entries(furniture_category).map(([key, value]) => (
             <button
               key={key}
-              className="bg-gray-100 text-black/80 
-              hover:bg-gray-300
-              border border-gray-300
-              
-              rounded-xl
+              className="
+              group-hover:border
+              group-hover:border-gray-300
+              hover:bg-gray-200
+              bg-white/60
+              rounded-md
               transition-all
+              md:w-auto
+              md:px-0
+              px-6
+              whitespace-nowrap
               "
             >
               {value}
@@ -51,16 +73,19 @@ export default function Footer() {
       </div>
 
       {/* Product choice */}
-      <div className="w-2/3 px-1 pt-1">
-        <p className="h-1/6 pl-3 font-semibold text-md">Cabinet Product</p>
+      <div
+        className="md:w-2/3 md:pl-1 pt-1
+
+      "
+      >
+        <p className="md:h-1/6 pl-3 font-semibold text-md">Cabinet Product</p>
         <div
           className="
-          h-5/6
-          pb-3 pt-1 mx-3
+          md:h-5/6
+          pb-3 pt-1
           flex flex-row
           overflow-x-scroll
           overflow-hidden
-          gap-2.5
           "
         >
           {Object.entries(list_product_img_url).map(([key, value]) => (
@@ -69,15 +94,15 @@ export default function Footer() {
               style={{ flexShrink: 0 }}
               className="w-[150px] h-[102px]
               bg-white
-              border-black/20
-              hover:border 
               flex justify-center
-              rounded-xl
-              scale-90
-              hover:scale-100
-              transition-all"
+              rounded-md
+              transition-all
+              opacity-60
+              hover:opacity-100
+              py-6
+              ml-3"
             >
-              <img src={value} alt="placeholder" className="h-[100px]" />
+              <img src={value} alt="placeholder" className="h-[60px]" />
             </div>
           ))}
         </div>

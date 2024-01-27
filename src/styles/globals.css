@@ -37,8 +37,8 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  height: 3px;              /* height of horizontal scrollbar */
-  width: 3px;               /* width of vertical scrollbar */
+  height: 0px;              /* height of horizontal scrollbar */
+  width: 0px;               /* width of vertical scrollbar */
 }
 
 /* Track */

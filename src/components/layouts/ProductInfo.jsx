@@ -17,7 +17,7 @@ export default function ProductInfo() {
         ${
           isActive
             ? "top-[12vh] h-[65vh] z-10 w-full  md:w-[25vw] bg-white/100 md:bg-white/85 rounded-none"
-            : "top-[18vh] md:top-[33vh]  w-[100px] md:w-[220px] h-[52px] bg-white/50 md:bg-white/85"
+            : "top-[18vh] md:top-[33vh]  w-[100px] md:w-[220px] h-[52px] bg-white/50 "
         }
       `}
     >
