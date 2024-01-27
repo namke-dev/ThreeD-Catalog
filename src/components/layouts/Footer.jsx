@@ -22,7 +22,7 @@ export default function Footer() {
         translate-y-1
         hover:scale-100
         hover:translate-y-0
-        opacity-70
+        opacity-90
         hover:opacity-100
 
         transition-all
