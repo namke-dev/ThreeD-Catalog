@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Cart from "./Cart";
 import { product_custom_options } from "@/data/product_custom_options";
-import { FaTimes } from "react-icons/fa";
+import { FaAngleDoubleRight, FaAngleRight, FaTimes } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa";
 
 export default function CustomProductPanel() {
@@ -19,13 +19,14 @@ export default function CustomProductPanel() {
   return (
     <Cart
       className={`
-        absolute md:right-0  
-        md:mr-4
+        absolute left-0  
+        ml-1
+        md:ml-2
         hover:bg-white/100
         ${
           isActive
             ? "top-[12vh] h-[65vh] z-10 w-full md:w-[25vw] md:mr-10 bg-white/100 md:bg-white/85 rounded-none"
-            : "top-[27vh] md:top-[33vh] w-[100px] md:w-[220px] h-[52px] bg-white/50"
+            : "top-[27vh] md:top-[18vh] md:translate-y-[67px] w-[100px] md:w-[220px] h-[52px] bg-white/50"
         }
       `}
     >
@@ -37,15 +38,25 @@ export default function CustomProductPanel() {
             text-center
             gap-2 
             text-md md:text-xl font-semibold
-            px-2 md:py-2.5
+            px-2 
+            md:py-2.5
+            md:-translate-x-2
+            md:hover:translate-x-0
             group
+            transition-transform
           `}
             onClick={() => {
               setIsActive(!isActive);
             }}
           >
-            <FaAngleLeft className="absolute -ml-44 mt-1.5 group-hover:-translate-x-2 opacity-60 transition scale-0 md:scale-100" />
             Custom Product
+            <FaAngleDoubleRight
+              className="mt-1.5 -mr-44 absolute group-hover:translate-x-4 opacity-60 
+            transition 
+            scale-0 md:scale-100 
+            md:group-hover:scale-125
+            md:group-hover:opacity-25"
+            />
           </div>
         )}
 

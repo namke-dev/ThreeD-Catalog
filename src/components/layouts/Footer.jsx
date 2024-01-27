@@ -25,21 +25,20 @@ export default function Footer() {
         md:gap-1
         md:rounded-md
         md:hover:rounded-none
-        md:translate-y-1
-        md:hover:translate-y-0
+        md:translate-y-0
+        md:hover:-translate-y-14
         md:opacity-90
-        md:scale-90
-        md:hover:scale-100
         md:hover:opacity-100
         md:transition-all
-        md:duration-500"
+        md:duration-500
+        "
     >
       {/* Category choice */}
       <div
         className="md:w-1/3 md:p-1
       "
       >
-        <p className="md:h-1/6 pl-3 font-semibold text-md">Category</p>
+        <p className="md:h-1/6 pl-3 font-semibold text-md">Categories</p>
         <div
           className="
           flex flex-row
@@ -78,7 +77,9 @@ export default function Footer() {
 
       "
       >
-        <p className="md:h-1/6 pl-3 font-semibold text-md">Cabinet Product</p>
+        <p className="md:h-1/6 pl-3 font-semibold text-md">
+          Category's Product
+        </p>
         <div
           className="
           md:h-5/6
@@ -96,11 +97,15 @@ export default function Footer() {
               bg-white
               flex justify-center
               rounded-md
-              transition-all
               opacity-60
               hover:opacity-100
               py-6
-              ml-3"
+              ml-3
+              group-hover:border
+              group-hover:border-gray-300
+              transition-all
+              duration-500 
+              "
             >
               <img src={value} alt="placeholder" className="h-[60px]" />
             </div>

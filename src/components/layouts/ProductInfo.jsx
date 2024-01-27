@@ -9,15 +9,14 @@ export default function ProductInfo() {
   return (
     <Cart
       className={`
-        md:ml-4 
-        absolute  
-        left-0
-        
+        absolute left-0
+        ml-1
+        md:ml-2
         hover:bg-white/100
         ${
           isActive
             ? "top-[12vh] h-[65vh] z-10 w-full  md:w-[25vw] bg-white/100 md:bg-white/85 rounded-none"
-            : "top-[18vh] md:top-[33vh]  w-[100px] md:w-[220px] h-[52px] bg-white/50 "
+            : "top-[18vh] md:top-[18vh] w-[100px] md:w-[220px] h-[52px] bg-white/50 "
         }
       `}
     >
@@ -30,8 +29,11 @@ export default function ProductInfo() {
             text-md md:text-xl font-semibold
             px-2
             py-2.5
+            md:-translate-x-2
+            md:hover:translate-x-0
             group
             h-[10%]
+            transition-transform
         `}
             onClick={() => {
               setIsActive(true);
@@ -39,7 +41,12 @@ export default function ProductInfo() {
             }}
           >
             Information
-            <FaAngleRight className="mt-1.5 -mr-44 absolute group-hover:translate-x-2 opacity-60 transition scale-0 md:scale-100" />
+            <FaAngleRight
+              className="mt-1.5 -mr-44 absolute group-hover:translate-x-4 opacity-60 transition
+              scale-0 md:scale-100 
+              md:group-hover:scale-125
+              md:group-hover:opacity-25"
+            />
           </div>
         )}
 
