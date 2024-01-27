@@ -15,9 +15,9 @@ import { useControls } from "leva";
 export default function CustomLight() {
   const { impl, soft_shadow, samples, ...config } = useControls({
     soft_shadow: true,
-    size: { value: 35, min: 0, max: 100, step: 0.1 },
-    focus: { value: 0.5, min: 0, max: 2, step: 0.1 },
-    samples: { value: 12, min: 6, max: 40, step: 1 },
+    size: { value: 25, min: 0, max: 100, step: 0.1 },
+    focus: { value: 1, min: 0, max: 2, step: 0.1 },
+    samples: { value: 6, min: 6, max: 40, step: 1 },
   });
   return (
     <>
