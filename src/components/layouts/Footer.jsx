@@ -85,7 +85,7 @@ export default function Footer() {
         <div
           className="
           md:h-5/6
-          pb-1 md:pb-3 md:pt-1
+          py-1 md:pb-3
           flex flex-row
           overflow-x-scroll
           overflow-hidden
@@ -96,7 +96,7 @@ export default function Footer() {
               key={key}
               style={{ flexShrink: 0 }}
               className={`w-[150px] 
-              ${width > 768 ? "h-[102px]" : "h-[82px]"}
+              ${width > 768 ? "h-[102px]" : "h-[80px]"}
               bg-white
               flex justify-center
               rounded-md
