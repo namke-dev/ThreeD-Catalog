@@ -13,7 +13,7 @@ export default function App() {
             <DeskModel />
             {/* <Sofa2 /> */}
           </ModelContainer>
-          <Leva collapsed />
+          <Leva collapsed hidden />
         </div>
         <OverlayLayout />
       </div>
