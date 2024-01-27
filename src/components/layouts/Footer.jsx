@@ -2,9 +2,11 @@ import {
   furniture_category,
   list_product_img_url,
 } from "@/data/product_custom_options";
+import useWindowDimensions from "@/helpers/WindowSizeHelper";
 import React from "react";
 
 export default function Footer() {
+  const { width } = useWindowDimensions();
   return (
     <div
       className=" 
@@ -15,9 +17,7 @@ export default function Footer() {
         bg-white/50
         hover:bg-white
         text-black/80
-
         group
-
         fixed bottom-0
         flex 
         flex-col
@@ -29,8 +29,8 @@ export default function Footer() {
         md:opacity-90
         md:hover:opacity-100
         md:py-3
-        pt-1
-        md:hover:pb-20
+        py-1
+        hover:pb-20
         md:hover:pt-2
         transition-all
         duration-500
@@ -49,7 +49,7 @@ export default function Footer() {
           flex flex-row
           md:grid md:grid-cols-3
           gap-2 md:h-5/6 w-full
-          pb-1 md:pb-2 
+          pb-0.5
           pl-3 pt-1
           overflow-x-scroll
           "
@@ -95,7 +95,8 @@ export default function Footer() {
             <div
               key={key}
               style={{ flexShrink: 0 }}
-              className="w-[150px] h-[82px]
+              className={`w-[150px] 
+              ${width > 768 ? "h-[102px]" : "h-[82px]"}
               bg-white
               flex justify-center
               rounded-md
@@ -107,8 +108,7 @@ export default function Footer() {
               group-hover:border
               group-hover:border-gray-300
               transition-all
-              duration-500 
-              "
+              duration-500 `}
             >
               <img src={value} alt="placeholder" className="h-[60px]" />
             </div>
