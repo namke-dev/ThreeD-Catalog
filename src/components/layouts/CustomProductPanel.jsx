@@ -20,7 +20,6 @@ export default function CustomProductPanel() {
     <Cart
       className={`
         absolute left-0  
-        ml-1
         md:ml-2
         hover:bg-white/100
         ${
@@ -37,7 +36,7 @@ export default function CustomProductPanel() {
             items-center justify-center
             text-center
             gap-2 
-            text-sm md:text-xl font-semibold
+            text-sm md:text-lg font-semibold
             px-2 
             md:py-2.5
             md:-translate-x-2
@@ -64,7 +63,7 @@ export default function CustomProductPanel() {
           <>
             <div
               className={`flex justify-center 
-                text-xl font-semibold
+                text-lg font-semibold
                 py-2.5
               `}
             >
@@ -105,7 +104,9 @@ export default function CustomProductPanel() {
         <div className="flex flex-col">
           {Object.entries(product_custom_options).map(([category, options]) => (
             <div key={category} className="mb-4">
-              <h3 className="text-md font-medium mb-2">{category}</h3>
+              <h3 className="text-sm md:text-md font-medium mb-2">
+                {category}
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {options.map((option) => (
                   <button

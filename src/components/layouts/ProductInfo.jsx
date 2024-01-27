@@ -10,13 +10,12 @@ export default function ProductInfo() {
     <Cart
       className={`
         absolute left-0
-        ml-1
         md:ml-2
         hover:bg-white/100
         ${
           isActive
             ? "top-[10vh] h-[65vh] z-10 w-full  md:w-[25vw] md:ml-10 bg-white/100 md:bg-white/85 rounded-none"
-            : "top-[18vh] md:top-[18vh] w-[100px] md:w-[220px] h-[25px] md:h-[52px] bg-white/50 "
+            : "top-[18vh] md:top-[18vh] w-[100px] md:w-[220px] h-[29px] md:h-[52px] bg-white/50 "
         }
       `}
     >
@@ -26,8 +25,9 @@ export default function ProductInfo() {
             className={`flex flex-row 
             items-center ]
             justify-center gap-2 
-            text-sm md:text-xl font-semibold
+            text-sm md:text-lg font-semibold
             px-2
+            py-1
             md:py-2.5
             md:-translate-x-2
             md:hover:translate-x-0
@@ -54,7 +54,7 @@ export default function ProductInfo() {
           <div className="h-[10%]">
             <p
               className={`flex justify-center 
-              text-xl font-semibold
+              text-lg font-semibold
               py-2.5
         `}
             >
@@ -81,7 +81,10 @@ export default function ProductInfo() {
       </div>
 
       <div
-        className={`font-normal text-md text-left 
+        className={`font-normal 
+          
+          text-sm md:text-md
+          text-left 
           px-1 md:px-3
           flex flex-col
           transition-all

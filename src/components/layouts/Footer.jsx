@@ -28,11 +28,10 @@ export default function Footer() {
         md:translate-y-0
         md:opacity-90
         md:hover:opacity-100
+        md:py-3
+        pt-1
         md:hover:pb-20
         md:hover:pt-2
-
-
-        
         transition-all
         duration-500
         "
