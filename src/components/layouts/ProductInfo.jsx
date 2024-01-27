@@ -4,7 +4,7 @@ import { product_detail_data } from "@/data/product_data";
 import { FaAngleRight, FaTimes } from "react-icons/fa";
 
 export default function ProductInfo() {
-  const [isActive, setIsActive] = useState(true);
+  const [isActive, setIsActive] = useState(false);
 
   return (
     <Cart
@@ -12,10 +12,13 @@ export default function ProductInfo() {
         md:ml-4 
         absolute  
         left-0
+        
+        bg-white/50 hover:bg-white/100
+        md:bg-white/85
         ${
           isActive
-            ? "!top-[12vh] h-[65vh] z-10 w-full  md:w-[25vw] bg-white/100 md:bg-white/85 rounded-none"
-            : "top-[18vh] md:top-[33vh] bg-white/50 hover:bg-white/100 w-[190px] h-[52px] rounded-2xl"
+            ? "top-[12vh] h-[65vh] z-10 w-full  md:w-[25vw] bg-white/100 md:bg-white/85 rounded-none"
+            : "top-[18vh] md:top-[33vh]  w-[190px] h-[52px] rounded-2xl"
         }
       `}
     >
