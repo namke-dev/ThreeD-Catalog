@@ -11,7 +11,6 @@ export default function App() {
         <div className="cursor-move w-full h-full">
           <ModelContainer>
             <DeskModel />
-            {/* <Sofa2 /> */}
           </ModelContainer>
           <Leva collapsed hidden />
         </div>

@@ -69,7 +69,7 @@ export default function Footer() {
               py-0.5
               whitespace-nowrap
               text-xs md:text-md
-              transition-all
+              transition-colors
               "
             >
               {value}
@@ -108,8 +108,9 @@ export default function Footer() {
               ml-3
               group-hover:border
               group-hover:border-gray-300
-              transition-all
-              duration-500 `}
+              transition-opacity
+              duration-500
+              `}
             >
               <img src={value} alt="placeholder" className="h-[60px]" />
             </div>
