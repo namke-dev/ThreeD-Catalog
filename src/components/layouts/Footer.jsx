@@ -56,7 +56,7 @@ export default function Footer() {
         <div
           className="
           h-5/6
-          pb-3 pl-3 pt-1
+          pb-3 pt-1 mx-3
           flex flex-row
           overflow-x-scroll
           overflow-hidden
@@ -69,7 +69,7 @@ export default function Footer() {
               style={{ flexShrink: 0 }}
               className="w-[150px] h-[102px]
               bg-white
-              border-black/30
+              border-black/20
               hover:border 
               flex justify-center
               rounded-xl

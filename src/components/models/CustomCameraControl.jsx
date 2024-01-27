@@ -15,8 +15,8 @@ export default function CustomCameraControls() {
       minPolarAngle={Math.PI / 4}
       maxPolarAngle={Math.PI / 2.32}
       rotateSpeed={0.3}
+      autoRotate
+      autoRotateSpeed={0.1}
     />
   );
-  // minAzimuthAngle={Math.PI / 6}
-  //     maxAzimuthAngle={Math.PI / 1.3}
 }

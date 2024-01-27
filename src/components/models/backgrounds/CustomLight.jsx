@@ -35,7 +35,7 @@ export default function CustomLight() {
 }
 
 function Sphere({
-  color = "hotpink",
+  color = "lightblue",
   floatIntensity = 15,
   position = [0, 5, -8],
   scale = 1,
