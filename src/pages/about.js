@@ -1,11 +1,9 @@
-import Navbar from "@/components/layouts/Navbar";
-import Footer from "@/components/layouts/Footer";
 import React from "react";
+import Layout from "@/components/layouts/Layout";
 
 export default function About() {
   return (
-    <div className="bg-gradient-to-tr from-sky-100 via-slate-200 to-gray-100">
-      <Navbar />
+    <Layout>
       <div className="container mx-auto p-8">
         <h1 className="text-3xl font-bold mb-4">About Us</h1>
         <p className="mb-6">
@@ -57,7 +55,6 @@ export default function About() {
           feedback, feel free to [contact us].
         </p>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }

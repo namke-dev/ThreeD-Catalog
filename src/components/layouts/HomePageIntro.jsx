@@ -27,20 +27,22 @@ export default function HomePageIntro() {
             font-medium rounded-2xl
 
             flex flex-row items-center justify-center
-            w-[120px]
             group
 
             text-sm md:text-lg
             px-2 
-            md:py-2.5
-            md:-translate-x-2
-            md:hover:translate-x-0
             group
-            transition-transform
-            
             "
             >
-              Go to showcase
+              <span
+                className="
+                md:py-2.5
+                md:-translate-x-2
+                md:hover:translate-x-0                
+                transition-transform"
+              >
+                Go to showcase
+              </span>
               <FaAngleRight
                 className="mt-0.5 -mr-14 absolute group-hover:translate-x-4 opacity-60 transition
               scale-0 md:scale-100 

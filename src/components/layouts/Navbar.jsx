@@ -44,7 +44,7 @@ function NavbartButton({ className, children, ...props }) {
       {...props}
       className={`
       px-5
-      py-1
+      py-2
       my-1
       rounded-2xl
       font-medium
