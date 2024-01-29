@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Logo({ className, children, ...props }) {
@@ -14,9 +15,11 @@ export default function Logo({ className, children, ...props }) {
       ${className}
       `}
     >
-      <p className="md:text-lg font-semibold">D3 CATALOG</p>
-      <p className="text-xs font-thin">namke group</p>
-      {children}
+      <Link href="/">
+        <p className="md:text-lg font-semibold">D3 CATALOG</p>
+        <p className="text-xs font-thin">namke group</p>
+        {children}
+      </Link>
     </div>
   );
 }
