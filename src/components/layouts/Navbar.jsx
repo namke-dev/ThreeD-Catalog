@@ -46,8 +46,9 @@ function NavbartButton({ className, children, ...props }) {
       px-5
       py-2
       my-1
-      rounded-2xl
-      font-medium
+      rounded-3xl
+      font-medium 
+      text-sm
       hover:bg-black/10
       hover:text-black
       hover:text-black/40
