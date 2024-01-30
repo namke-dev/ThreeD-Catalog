@@ -8,9 +8,8 @@ export default function About() {
         <h1 className="text-3xl font-bold mb-4">About Us</h1>
         <p className="mb-6">
           Welcome to our 3D Furniture Catalog, where we bring your interior
-          design dreams to life! At [Your Company Name], we are passionate about
-          creating unique and stylish furniture pieces to enhance your living
-          space.
+          design dreams to life! We are passionate about creating unique and
+          stylish furniture pieces to enhance your living space.
         </p>
 
         <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
@@ -22,26 +21,26 @@ export default function About() {
         </p>
 
         <h2 className="text-2xl font-bold mb-4">Meet the Team</h2>
-        <div className="flex flex-wrap justify-center">
+        <div className="flex flex-wrap justify-center gap-36">
           {/* Team member 1 */}
           <div className="max-w-sm mx-4 my-4">
             <img
-              src="team_member1.jpg" // Replace with the actual image URL
+              src="textures/Wood_white.jpg"
               alt="Team Member 1"
-              className="w-full h-48 object-cover rounded-md"
+              className="w-full h-48 object-cover rounded-full"
             />
-            <h3 className="text-lg font-semibold mt-2">John Doe</h3>
+            <h3 className="text-lg font-semibold mt-2">Hai Ngo</h3>
             <p className="text-gray-600">Co-Founder & 3D Designer</p>
           </div>
 
           {/* Team member 2 */}
-          <div className="max-w-sm mx-4 my-4">
+          <div className="max-w-sm mx-4 my-4 ">
             <img
-              src="team_member2.jpg" // Replace with the actual image URL
+              src="textures/Wood_white.jpg"
               alt="Team Member 2"
-              className="w-full h-48 object-cover rounded-md"
+              className="w-full h-48 object-cover rounded-full"
             />
-            <h3 className="text-lg font-semibold mt-2">Jane Smith</h3>
+            <h3 className="text-lg font-semibold mt-2">Hai Ngo</h3>
             <p className="text-gray-600">Lead Developer</p>
           </div>
 
@@ -52,7 +51,7 @@ export default function About() {
           Thank you for exploring our 3D furniture catalog. We are dedicated to
           providing you with a seamless and enjoyable experience as you discover
           the perfect pieces for your space. If you have any questions or
-          feedback, feel free to [contact us].
+          feedback, feel free to contact us.
         </p>
       </div>
     </Layout>
