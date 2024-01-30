@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "@/components/layouts/Layout";
 import NewsList from "@/components/layouts/NewsList";
 import { news_data } from "@/data/news_data";
+import ReviewNewsList from "@/components/layouts/ReviewNewsList";
 
 export default function News() {
   return (
@@ -15,7 +16,7 @@ export default function News() {
           <NewsList newsList={news_data} isExpanded={false} />
         </div>
         <div className="w-1/3 py-8 pr-8 bg-black/5 relative -top-72">
-          <NewsList newsList={news_data} isExpanded={false} />
+          <ReviewNewsList newsList={news_data} />
         </div>
       </div>
     </Layout>

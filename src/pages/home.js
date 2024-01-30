@@ -4,6 +4,7 @@ import Layout from "@/components/layouts/Layout";
 import HomePageCart from "@/components/layouts/HomePageCart";
 import NewsList from "@/components/layouts/NewsList";
 import { news_data } from "@/data/news_data";
+import ReviewNewsList from "@/components/layouts/ReviewNewsList";
 
 export default function Home() {
   return (
@@ -19,8 +20,13 @@ export default function Home() {
 
       {/* New */}
       <HomePageCart className="col-span-2 ">
-        <div className="container mx-auto md:p-8">
-          <NewsList newsList={news_data} />
+        <div className="flex flex-row gap-5">
+          <div className="w-2/3 py-8 pl-8 bg-black/5 relative ">
+            <NewsList newsList={news_data} isExpanded={false} />
+          </div>
+          <div className="w-1/3 py-8 pr-8 bg-black/5 relative ">
+            <ReviewNewsList newsList={news_data} />
+          </div>
         </div>
       </HomePageCart>
 
