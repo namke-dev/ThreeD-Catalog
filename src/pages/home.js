@@ -7,21 +7,19 @@ import { news_data } from "@/data/news_data";
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout className="bg-gradient-to-r from-zinc-800 via-neutral-800 to-slate-900">
       {/* intro */}
       <HomePageIntro />
 
       {/* Feature */}
-      <HomePageCart className="col-span-2 bg-yellow-100 h-[300px]">
+      {/* <HomePageCart className="col-span-2 bg-yellow-100 h-[300px]">
         Feature demo: Website design; Brading design consultant; Scan funiture
         to 3d model;
-      </HomePageCart>
+      </HomePageCart> */}
 
       {/* New */}
-      <HomePageCart className="col-span-2 bg-green-100">
-        <div className="text-2xl">News</div>
-        <div className="container mx-auto p-8">
-          <h1 className="text-3xl font-bold mb-4">Latest News</h1>
+      <HomePageCart className="col-span-2 ">
+        <div className="container mx-auto md:p-8">
           <NewsList newsList={news_data} />
         </div>
       </HomePageCart>

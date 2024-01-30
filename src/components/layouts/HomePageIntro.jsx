@@ -15,30 +15,35 @@ export default function HomePageIntro() {
         />
       </div>
 
-      <HomePageCart className="flex flex-row h-[95vh] w-full bg-zinc-800 text-zinc-300 z-20">
-        <div className="h-auto w-1/2 flex justify-end pt-8 z-20 pr-20">
+      <HomePageCart className="flex flex-row  w-full  text-zinc-300 z-20">
+        <div className="w-1/2 flex justify-end pt-8 z-20 pr-20 h-[95vh]">
           <img
             src="/images/homepage_img.jpg"
             alt="placeholder"
             className="h-[82vh] rounded-[10px] shadow-2xl shadow-gray-950"
           />
         </div>
-        <div className="flex flex-col pl-8 w-1/2 mr-32 z-20 pr-20">
+        <div className="flex flex-col pl-8 w-1/2 mr-32 z-20 pr-20  pt-6">
           <div
             className="text-6xl text-amber-700          
-           font-thin font-sans mt-20"
+           font-thin font-sans mt-16"
           >
             We present your{" "}
             <div className="text-amber-500 font-mono font-semibold pt-6">
               Designed funiture
             </div>
           </div>
-          <div className="w-full text-lg text-justify mt-14 mb-10 pl-14">
-            Where Elegance Meets Innovation!
-            <br /> At Finitude, we take pride in presenting our curated catalog,
-            a symphony of timeless design and cutting-edge technology. Immerse
-            yourself in a world where every piece tells a story, and every
-            detail is meticulously crafted to elevate your living spaces.
+          <div
+            className="w-full text-lg text-justify mt-14 mb-10 pl-14
+          flex flex-col gap-4"
+          >
+            <p className="font-medium mb-2 text-amber-600 text-justify">
+              Virtual Reality Showroom - Where Style Meets Innovation!
+            </p>
+            <p>
+              We offered services in presenting desinged funiture through our
+              crafted catalog - A classic design with modern technology.
+            </p>
           </div>
 
           <Link href="/show-case">

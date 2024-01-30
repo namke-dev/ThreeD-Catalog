@@ -4,9 +4,10 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className=" w-full z-50 bg-zinc-900 text-white/70">
+    <div className="w-full z-50 bg-zinc-900 text-white/70">
       <div
         className="
+        pl-20
         bg-white/5
         sticky
         top-0
@@ -22,7 +23,7 @@ export default function Navbar() {
           text-white/80
           md:top-10 md:left-5"
         />
-        <div className="flex flex-row gap-8 ml-12">
+        <div className="flex flex-row gap-8 ml-20">
           <NavbartButton>
             <Link href={"/"}>HOME</Link>
           </NavbartButton>
