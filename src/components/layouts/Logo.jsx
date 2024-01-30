@@ -17,7 +17,7 @@ export default function Logo({ className, children, ...props }) {
     >
       <Link href="/">
         <p className="md:text-lg font-semibold">3D CATALOG</p>
-        <p className="text-xs font-thin">THAM team</p>
+        <p className="text-xs font-thin">DHMA team</p>
         {children}
       </Link>
     </div>
