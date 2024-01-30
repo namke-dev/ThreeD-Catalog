@@ -5,51 +5,77 @@ import Link from "next/link";
 
 export default function HomePageIntro() {
   return (
-    <div className="grid grid-cols-2">
-      <HomePageCart className="h-[500px]">
-        Car1
-        <div>Model place holder</div>
-      </HomePageCart>
-      <HomePageCart className="">
-        <div className="text-3xl">Home Style</div>
-        <div>
-          We present our <span>Modern funiture</span>
+    <div className="">
+      {/* background */}
+      <div className="absolute top-20 w-full opacity-10 z-10">
+        <img
+          src="/textures/Wood_gray.jpg"
+          alt="placeholder"
+          className="h-[88vh] w-[50vw] pl-16 rounded-[500px]"
+        />
+      </div>
+
+      <HomePageCart className="flex flex-row h-[95vh] w-full bg-zinc-800 text-zinc-300 z-20">
+        <div className="h-auto w-1/2 flex justify-end pt-8 z-20 pr-20">
+          <img
+            src="/images/homepage6.jpg"
+            alt="placeholder"
+            className="h-[82vh] rounded-[10px] shadow-2xl shadow-gray-950"
+          />
         </div>
-        <div>Go to catolog</div>
-        <Link href="/show-case">
-          <button
-            className="py-2 
-            bg-blue-200 
-            text-gray-80000
-            hover:text-white
-            hover:bg-blue-400
-            font-medium rounded-2xl
-
-            flex flex-row items-center justify-center
-            group
-
-            text-sm md:text-lg
-            px-2 
-            group
-            "
+        <div className="flex flex-col pl-8 w-1/2 mr-32 z-20 pr-20">
+          <div
+            className="text-6xl text-amber-700          
+           font-thin font-sans mt-20"
           >
-            <span
-              className="
-                md:py-2.5
-                md:-translate-x-2
-                md:hover:translate-x-0                
-                transition-transform"
+            We present your{" "}
+            <div className="text-amber-500 font-mono font-semibold pt-6">
+              Designed funiture
+            </div>
+          </div>
+          <div className="w-full text-lg text-justify mt-14 mb-10 pl-14">
+            A Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </div>
+
+          <Link href="/show-case">
+            <button
+              className="h-[60px] px-10
+              bg-amber-300
+              text-gray-800
+              hover:bg-amber-500
+              flex flex-row items-center justify-center
+              group
+              rounded-lg
+              ml-10
+            "
             >
-              Go to showcase
-            </span>
-            <FaAngleRight
-              className="mt-0.5 -mr-14 absolute group-hover:translate-x-4 opacity-60 transition
-              scale-0 md:scale-100 
-              md:group-hover:scale-125
-              md:group-hover:opacity-25"
-            />
-          </button>
-        </Link>
+              <span
+                className="
+                md:-translate-x-2
+                md:group-hover:translate-x-0                
+                transition-transform
+                font-medium rounded-md
+                font-sans
+                group-hover:text-white
+                text-sm md:text-lg"
+              >
+                GO TO SHOWCASE
+              </span>
+              <FaAngleRight
+                className="mt-0.5 -mr-48 absolute 
+                group-hover:translate-x-4 opacity-60 transition
+                scale-0 md:scale-100
+                text-xl
+                md:group-hover:scale-125
+                md:group-hover:opacity-50
+                group-hover:text-white"
+              />
+            </button>
+          </Link>
+        </div>
       </HomePageCart>
     </div>
   );
