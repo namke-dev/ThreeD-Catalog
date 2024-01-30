@@ -1,4 +1,4 @@
-const news = [
+export const news_data = [
   {
     id: "1",
     title: "Feather & Black partners with Next",

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ShowcaseCart from "./ShowcaseCart";
 import { product_detail_data } from "@/data/product_data";
 import { FaAngleRight, FaTimes } from "react-icons/fa";
+import ShowcaseButton from "./ShowcaseButton";
 
 export default function ShowcaseProductInfo() {
   const [isActive, setIsActive] = useState(false);
@@ -20,21 +21,7 @@ export default function ShowcaseProductInfo() {
       `}
     >
       {!isActive && (
-        <div
-          className={`flex flex-row 
-            w-full h-full
-            items-center 
-            justify-center gap-2 
-            text-sm md:text-lg font-semibold
-            px-2
-            py-1
-            md:py-2.5
-            md:-translate-x-2
-            md:hover:translate-x-0
-            group
-            
-            transition-transform
-        `}
+        <ShowcaseButton
           onClick={() => {
             setIsActive(true);
             console.log("setIsActive(true)");
@@ -47,7 +34,7 @@ export default function ShowcaseProductInfo() {
               md:group-hover:scale-125
               md:group-hover:opacity-25"
           />
-        </div>
+        </ShowcaseButton>
       )}
       {isActive && (
         <div className="h-[10%]">

@@ -34,10 +34,11 @@ export default function HomePageIntro() {
             </div>
           </div>
           <div className="w-full text-lg text-justify mt-14 mb-10 pl-14">
-            A Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Where Elegance Meets Innovation!
+            <br /> At Finitude, we take pride in presenting our curated catalog,
+            a symphony of timeless design and cutting-edge technology. Immerse
+            yourself in a world where every piece tells a story, and every
+            detail is meticulously crafted to elevate your living spaces.
           </div>
 
           <Link href="/show-case">
