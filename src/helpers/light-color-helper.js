@@ -1,6 +1,6 @@
 // light object color
-export const ambient_light = "lightblue";
-export const ambient_light_intensity = 1;
+export const ambient_light = "#cf9c2d";
+export const ambient_light_intensity = 1.5;
 
 // light whiteness
 export const directional_light_intensity = 3;

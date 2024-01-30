@@ -12,8 +12,6 @@ export default function ShowcaseFooter() {
       className=" 
         w-full 
         h-auto
-        
-
         bg-white/50
         hover:bg-white
         text-black/80
