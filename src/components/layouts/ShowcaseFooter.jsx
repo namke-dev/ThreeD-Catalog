@@ -12,9 +12,9 @@ export default function ShowcaseFooter() {
       className=" 
         w-full 
         h-auto
-        bg-white/50
-        hover:bg-white
-        text-black/80
+        bg-black/50
+        hover:bg-black/70
+        text-white/80
         group
         fixed bottom-0
         flex 
@@ -56,10 +56,9 @@ export default function ShowcaseFooter() {
             <button
               key={key}
               className="
-              border
-              group-hover:border-gray-300
-              hover:bg-gray-200
-              bg-white/60
+         
+              hover:bg-black/70
+              bg-black/30
               rounded-md
               md:w-auto
               md:px-0
