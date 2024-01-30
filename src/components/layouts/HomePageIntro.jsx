@@ -18,7 +18,7 @@ export default function HomePageIntro() {
       <HomePageCart className="flex flex-row h-[95vh] w-full bg-zinc-800 text-zinc-300 z-20">
         <div className="h-auto w-1/2 flex justify-end pt-8 z-20 pr-20">
           <img
-            src="/images/homepage6.jpg"
+            src="/images/homepage_img.jpg"
             alt="placeholder"
             className="h-[82vh] rounded-[10px] shadow-2xl shadow-gray-950"
           />
