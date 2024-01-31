@@ -3,14 +3,14 @@ import React from "react";
 export default function ReviewNewsCart({ news }) {
   return (
     <div
-      className="bg-white/95 text-gray800
+      className="text-white/95 bg-zinc-700/80
       rounded-sm py-3 pb-2 md:px-8 mb-0
       max-w-[1200px] 
       max-h-[250px]
       flex flex-col justify-between"
     >
       <div>
-        <h2 className="text-md font-semibold text-gray-800">{news.title}</h2>
+        <h2 className="text-md font-semibold text-gray-200">{news.title}</h2>
         <div className="flex flex-row gap-2 font-thin text-xs mb-2">
           <p>Published on {news.date}, </p>
         </div>
@@ -23,7 +23,7 @@ export default function ReviewNewsCart({ news }) {
 
         <p
           className=" w-2/3
-          text-gray-600 pl-5 text-sm
+          pl-5 text-sm
           text-justify whitespace-pre-line "
         >
           {truncateText(news.summary, 150)}

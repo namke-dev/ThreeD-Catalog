@@ -15,10 +15,33 @@ export default function Home() {
       <HomePageIntro />
 
       {/* Feature */}
-      {/* <HomePageCart className="col-span-2 bg-yellow-100 h-[300px]">
-        Feature demo: Website design; Brading design consultant; Scan funiture
-        to 3d model;
-      </HomePageCart> */}
+      <Link href={"/news"} className="flex flex-row mt-20 group w-auto">
+        <p
+          className="text-3xl 
+           ml-24
+           text-amber-500 font-mono font-semibold"
+        >
+          Feature
+        </p>
+        <FaAngleRight
+          className="mt-2 ml-2
+          text-amber-500
+          group-hover:translate-x-4 opacity-90 transition
+          scale-0 md:scale-100
+          text-2xl
+          md:group-hover:scale-125
+          md:group-hover:opacity-50
+          "
+        />
+      </Link>
+      <HomePageCart className="col-span-2 flex items-center justify-center">
+        <div className="flex flex-row gap-4 mt-5">
+          <FeatureCart>Latest news about furniture industry</FeatureCart>
+          <FeatureCart>Website design</FeatureCart>
+          <FeatureCart>Brading design consultant</FeatureCart>
+          <FeatureCart>Scan funiture to 3d model</FeatureCart>
+        </div>
+      </HomePageCart>
 
       {/* New */}
       <Link href={"/news"} className="flex flex-row mt-20 group w-auto">
@@ -55,9 +78,48 @@ export default function Home() {
       </HomePageCart>
 
       {/* Charge plant */}
-      <HomePageCart className="col-span-2 bg-orange-100 h-[300px]">
-        Charge Plant
+      <Link href={"/news"} className="flex flex-row mt-20 group w-auto">
+        <p
+          className="text-3xl 
+           ml-24
+           text-amber-500 font-mono font-semibold"
+        >
+          Feature
+        </p>
+        <FaAngleRight
+          className="mt-2 ml-2
+          text-amber-500
+          group-hover:translate-x-4 opacity-90 transition
+          scale-0 md:scale-100
+          text-2xl
+          md:group-hover:scale-125
+          md:group-hover:opacity-50
+          "
+        />
+      </Link>
+      <HomePageCart className="col-span-2 flex items-center justify-center">
+        <div className="flex flex-row gap-4 mt-5">
+          <FeatureCart>$30 per month</FeatureCart>
+          <FeatureCart>$300 peryear</FeatureCart>
+          <FeatureCart>$1000 life time</FeatureCart>
+        </div>
       </HomePageCart>
     </Layout>
+  );
+}
+
+function FeatureCart({ children }) {
+  return (
+    <div
+      className="h-[120px] w-auto
+     px-5 
+     bg-amber-600/90 text-white 
+     flex
+      justify-center items-center 
+     rounded-2xl
+     uppercase"
+    >
+      {children}
+    </div>
   );
 }
