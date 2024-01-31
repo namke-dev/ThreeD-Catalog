@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function HomePageIntro() {
   return (
-    <div className="">
+    <div className="pt-16">
       {/* background */}
       <div className="absolute top-20 w-full opacity-10 z-10">
         <img

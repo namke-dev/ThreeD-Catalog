@@ -4,13 +4,14 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="w-full z-50 bg-zinc-800 text-white/70">
+    <div
+      className="          fixed
+    w-full z-50 bg-zinc-800 text-white/70"
+    >
       <div
         className="
         pl-20
         bg-white/5
-        sticky
-        top-0
         flex flex-row flex-wrap 
         items-center justify-start 
         text-xs
