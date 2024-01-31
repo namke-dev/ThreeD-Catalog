@@ -1,36 +1,41 @@
+import Link from "next/link";
 import React from "react";
 
 export default function ReviewNewsCart({ news }) {
   return (
-    <div
-      className="text-white/95 bg-zinc-700/80
+    <Link href={`newsdetail/${news.id}`}>
+      <div
+        className="text-white/95 bg-zinc-700/80
       rounded-sm py-3 pb-2 md:px-8 mb-0
       max-w-[1200px] 
-      max-h-[250px]
+      h-[200px]
       flex flex-col justify-between
       border border-zinc-700 hover:border-amber-800 transition-colors duration-500"
-    >
-      <div>
-        <h2 className="text-md font-semibold text-gray-200">{news.title}</h2>
-        <div className="flex flex-row gap-2 font-thin text-xs mb-2">
-          <p>Published on {news.date}, </p>
-        </div>
-      </div>
-
-      <div className="flex flex-row w-full mb-4">
-        <div className="flex items-center justify-center h-auto w-1/3">
-          <img src={news.img_url} className="w-full h-auto rounded-xl"></img>
+      >
+        <div>
+          <h2 className="text-md font-semibold text-gray-200">
+            {truncateText(news.title, 80)}
+          </h2>
+          <div className="flex flex-row gap-2 font-thin text-xs mb-2">
+            <p>Published on {news.date}, </p>
+          </div>
         </div>
 
-        <p
-          className=" w-2/3
+        <div className="flex flex-row w-full mb-4">
+          <div className="flex items-center justify-center h-auto w-1/3">
+            <img src={news.img_url} className="w-full h-auto rounded-xl"></img>
+          </div>
+
+          <p
+            className=" w-2/3
           pl-5 text-sm
           text-justify whitespace-pre-line "
-        >
-          {truncateText(news.summary, 150)}
-        </p>
+          >
+            {truncateText(news.summary, 150)}
+          </p>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

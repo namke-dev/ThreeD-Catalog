@@ -13,7 +13,7 @@ export default function News() {
         className="text-6xl font-bold mb-8 text-amber-500 font-serif 
         ml-10 relative -top-80 h-0 left-20"
       >
-        LASTEST NEWS
+        Lastest news
       </h1>
       <HomePageCart
         className="col-span-2 max-w-[1400px] 
