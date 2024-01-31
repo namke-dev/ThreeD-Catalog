@@ -9,6 +9,7 @@ export default function Showcase() {
     <div className="App bg-[#ffffff] flex flex-col select-none">
       <div className="w-full h-full">
         <div className="cursor-move w-full h-full">
+          <Navbar />
           <ModelContainer>
             <DeskModel />
           </ModelContainer>
