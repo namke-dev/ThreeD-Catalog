@@ -3,7 +3,7 @@ import NewsCard from "./NewsCart";
 
 const NewsList = ({ newsList, isExpanded }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-5">
+    <div className="flex flex-col items-center justify-center gap-1.5">
       {newsList.map((news) => (
         <NewsCard key={news.id} news={news} isExpanded={isExpanded} />
       ))}

@@ -54,7 +54,7 @@ function NavbartButton({ className, children, ...props }) {
       rounded-3xl
       font-medium 
       text-sm
-      hover:bg-black/10
+      hover:bg-white/10
       hover:text-black
       hover:text-white/90
       transition-colors

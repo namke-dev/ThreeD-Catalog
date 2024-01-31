@@ -51,7 +51,7 @@ export const news_data = [
     date: "April 5, 2024",
     publisher: "Art & Design Weekly",
     category: "Artistic Collaboration",
-    img_url: "/images/news1.jpg",
+    img_url: "/images/news2.jpg",
     summary: `In a creative collaboration that bridges art and design, local artists have joined forces with skilled furniture craftsmen to produce a one-of-a-kind collection. This fusion of artistic expression and functional design results in furniture pieces that are not just functional but also serve as captivating works of art in their own right.`,
     content: `In a creative collaboration that bridges art and design, local artists have joined forces with skilled furniture craftsmen to produce a one-of-a-kind collection. This fusion of artistic expression and functional design results in furniture pieces that are not just functional but also serve as captivating works of art in their own right.
 

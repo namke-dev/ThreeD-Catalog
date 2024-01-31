@@ -4,7 +4,7 @@ const NewsCard = ({ news, isExpanded }) => {
   return (
     <div
       className="bg-white/95 text-gray800
-      rounded-xl pt-10 pb-2 md:px-16 mb-4
+      rounded-sm pt-10 pb-2 md:px-16 mb-0
       max-w-[1200px]"
     >
       <h2 className="text-3xl font-bold mb-2 text-amber-800">{news.title}</h2>
