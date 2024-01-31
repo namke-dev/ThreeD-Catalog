@@ -10,6 +10,16 @@ export default function NewsDetail() {
   const { id } = router.query;
   const news = news_data.find((news) => news.id == id);
 
+  // Check if news is undefined before accessing its properties
+  if (!news) {
+    // Handle the case when news is not found
+    return (
+      <Layout>
+        <p>News not found</p>
+      </Layout>
+    );
+  }
+
   return (
     <Layout>
       <img src="images/news-header.jpg" className="brightness-50 opacity-70" />
