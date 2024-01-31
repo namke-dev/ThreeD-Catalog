@@ -36,7 +36,7 @@ export default function Home() {
       </Link>
       <HomePageCart className="col-span-2 flex items-center justify-center">
         <div className="flex flex-row gap-4 mt-5">
-          <FeatureCart>Latest news about furniture industry</FeatureCart>
+          <FeatureCart>Latest industry's news</FeatureCart>
           <FeatureCart>Website design</FeatureCart>
           <FeatureCart>Brading design consultant</FeatureCart>
           <FeatureCart>Scan funiture to 3d model</FeatureCart>
@@ -84,7 +84,7 @@ export default function Home() {
            ml-24
            text-amber-500 font-mono font-semibold"
         >
-          Feature
+          Charge Plans
         </p>
         <FaAngleRight
           className="mt-2 ml-2
@@ -98,7 +98,7 @@ export default function Home() {
         />
       </Link>
       <HomePageCart className="col-span-2 flex items-center justify-center">
-        <div className="flex flex-row gap-4 mt-5">
+        <div className="flex flex-row mt-5 gap-20">
           <FeatureCart>$30 per month</FeatureCart>
           <FeatureCart>$300 peryear</FeatureCart>
           <FeatureCart>$1000 life time</FeatureCart>
@@ -109,17 +109,27 @@ export default function Home() {
 }
 
 function FeatureCart({ children }) {
+  const backgroundImageStyle = {
+    backgroundImage: `url('/images/news2.jpg')`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    filter: "brightness(100%)",
+  };
   return (
     <div
-      className="h-[120px] w-auto
-     px-5 
-     bg-amber-600/90 text-white 
-     flex
+      className="py-20 w-auto
+      px-10
+     text-white
+      flex
       justify-center items-center 
-     rounded-2xl
-     uppercase"
+      rounded-2xl
+      uppercase
+      font-medium
+      text-lg"
+      style={backgroundImageStyle}
     >
-      {children}
+      <div className="bg-neutral-950/60 w-full h-full absolute top-0"></div>
+      <div className="z-30">{children}</div>
     </div>
   );
 }
