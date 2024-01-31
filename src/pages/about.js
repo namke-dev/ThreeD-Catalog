@@ -1,12 +1,22 @@
 import React from "react";
 import Layout from "@/components/layouts/Layout";
+import HomePageCart from "@/components/layouts/HomePageCart";
 
 export default function About() {
   return (
     <Layout>
-      <div className="pt-16 bg-zinc-800 text-gray-200 pb-20">
+      <img src="images/news-header.jpg" className="brightness-50 opacity-70" />
+      <h1
+        className="text-6xl font-bold mb-8 text-amber-500 font-serif 
+        ml-10 relative -top-80 h-0 left-20"
+      >
+        About Us
+      </h1>
+      <HomePageCart
+        className="bg-zinc-700/80 pb-20 
+        relative -top-60 z-50 text-gray-200 m-14 py-10"
+      >
         <div className="max-w-[1200px] mx-auto">
-          <h1 className="text-3xl font-bold mb-4 text-amber-400">About Us</h1>
           <p className="mb-6">
             Welcome to our 3D Furniture Catalog, where we bring your interior
             design dreams to life! We are passionate about creating unique and
@@ -59,7 +69,7 @@ export default function About() {
             questions or feedback, feel free to contact us.
           </p>
         </div>
-      </div>
+      </HomePageCart>
     </Layout>
   );
 }
