@@ -7,7 +7,8 @@ export default function ReviewNewsCart({ news }) {
       rounded-sm py-3 pb-2 md:px-8 mb-0
       max-w-[1200px] 
       max-h-[250px]
-      flex flex-col justify-between"
+      flex flex-col justify-between
+      border border-zinc-700 hover:border-amber-800 transition-colors duration-500"
     >
       <div>
         <h2 className="text-md font-semibold text-gray-200">{news.title}</h2>

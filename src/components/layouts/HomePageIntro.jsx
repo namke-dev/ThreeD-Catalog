@@ -15,15 +15,15 @@ export default function HomePageIntro() {
         />
       </div>
 
-      <HomePageCart className="flex flex-row w-full  text-zinc-300 z-20">
-        <div className="w-1/2 flex justify-end z-20 md:pr-20 h-[95vh]">
+      <HomePageCart className="flex flex-col md:flex-row w-full  text-zinc-300 z-20">
+        <div className="md:w-1/2 flex justify-end z-20 md:pr-20 md:h-[95vh]">
           <img
             src="/images/homepage_img.jpg"
             alt="placeholder"
             className="md:h-[82vh] mt-10 rounded-[10px] shadow-2xl shadow-gray-950"
           />
         </div>
-        <div className="flex flex-col pl-8 w-1/2 md:mr-20 z-20  mt-14">
+        <div className="flex flex-col pl-8 md:w-1/2 md:mr-20 z-20  mt-14">
           <div
             className="text-6xl text-amber-700          
            font-thin font-sans mt-16"

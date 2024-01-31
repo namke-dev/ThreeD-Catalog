@@ -15,7 +15,10 @@ export default function Home() {
       <HomePageIntro />
 
       {/* Feature */}
-      <Link href={"/news"} className="flex flex-row mt-20 group w-auto">
+      <Link
+        href={"/news"}
+        className="flex md:flex-row flex-col mt-20 group w-auto"
+      >
         <p
           className="text-3xl 
            ml-24
