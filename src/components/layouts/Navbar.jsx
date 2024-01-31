@@ -5,18 +5,23 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div
-      className="          fixed
-    w-full z-50 bg-zinc-800 text-white/70"
+      className="          
+      fixed
+      w-full z-50
+      bg-zinc-700 text-white/70
+      "
     >
       <div
         className="
         pl-20
-        bg-white/5
+        
         flex flex-row flex-wrap 
         items-center justify-start 
         text-xs
         px-3 py-0.5 gap-5
         z-50
+        m-auto
+        max-w-[1400px]
         "
       >
         <Logo

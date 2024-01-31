@@ -4,7 +4,7 @@ import Layout from "@/components/layouts/Layout";
 export default function About() {
   return (
     <Layout>
-      <div className="container p-8 bg-zinc-800 text-gray-200 pb-20">
+      <div className="pt-16 bg-zinc-800 text-gray-200 pb-20">
         <div className="max-w-[1200px] mx-auto">
           <h1 className="text-3xl font-bold mb-4 text-amber-400">About Us</h1>
           <p className="mb-6">

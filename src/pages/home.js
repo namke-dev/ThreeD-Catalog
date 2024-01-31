@@ -10,7 +10,7 @@ import { FaAngleRight } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <Layout className="bg-gradient-to-r from-zinc-800 via-neutral-800 to-slate-900">
+    <Layout>
       {/* intro */}
       <HomePageIntro />
 
