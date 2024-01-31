@@ -1,3 +1,4 @@
+import Navbar from "@/components/layouts/Navbar";
 import ShowcaseLayout from "@/components/layouts/ShowcaseLayout";
 import ModelContainer from "@/components/models/ModelContainer";
 import { DeskModel } from "@/components/models/showcases/DeskModel";

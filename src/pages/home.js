@@ -97,7 +97,7 @@ export default function Home() {
           "
         />
       </Link>
-      <HomePageCart className="col-span-2 flex items-center justify-center">
+      <HomePageCart className="col-span-2 flex items-center justify-center pb-28">
         <div className="flex flex-row mt-5 gap-20">
           <FeatureCart>$30 per month</FeatureCart>
           <FeatureCart>$300 peryear</FeatureCart>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="w-full z-50 bg-zinc-900 text-white/70">
+    <div className="w-full z-50 bg-zinc-800 text-white/70">
       <div
         className="
         pl-20
@@ -24,19 +24,21 @@ export default function Navbar() {
           md:top-10 md:left-5"
         />
         <div className="flex flex-row gap-8 ml-20">
-          <NavbartButton>
-            <Link href={"/"}>HOME</Link>
-          </NavbartButton>
-          <NavbartButton>
-            <Link href={"/show-case"}>SHOW CASE</Link>
-          </NavbartButton>
-          <NavbartButton>
-            <Link href={"/news"}>NEWS</Link>
-          </NavbartButton>
-          <NavbartButton>
-            {" "}
-            <Link href={"/about"}>ABOUT</Link>
-          </NavbartButton>
+          <Link href={"/"}>
+            <NavbartButton>HOME</NavbartButton>
+          </Link>
+
+          <Link href={"/show-case"}>
+            <NavbartButton>SHOW CASE</NavbartButton>
+          </Link>
+
+          <Link href={"/news"}>
+            <NavbartButton>NEWS</NavbartButton>
+          </Link>
+
+          <Link href={"/about"}>
+            <NavbartButton>ABOUT</NavbartButton>
+          </Link>
         </div>
       </div>
     </div>

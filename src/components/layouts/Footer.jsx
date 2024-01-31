@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="w-full">
       <div
         className="flex flex-col px-5 md:px-14 py-8 
-        bg-gray-950 text-white/70 text-xs md:text-sm gap-0 md:mt-32"
+        bg-gray-950 text-white/70 text-xs md:text-sm gap-0 "
       >
         <p className="font-semibold pb-2">DEV STOCK - Project by @namke.dev</p>
         <p className="pb-2">
