@@ -1,11 +1,15 @@
+import { Router, useRouter } from "next/router";
 import React from "react";
 
-const NewsCard = ({ news, isExpanded }) => {
+const NewsCard = ({ news, isExpanded, className }) => {
+  const router = useRouter();
+
   return (
     <div
-      className="bg-zinc-700/80 text-gray-100
+      className={`text-gray-100
       rounded-sm pt-10 pb-2 md:px-16 mb-0
-      max-w-[1200px]"
+      max-w-[1200px] ${className}`}
+      onClick={() => router.push(`/newsdetail/?id=${news.id}`)}
     >
       <h2 className="text-3xl font-bold mb-2 text-amber-600">{news.title}</h2>
       <div className="flex flex-row gap-2 font-thin mb-5 ml-5">
@@ -29,7 +33,7 @@ const NewsCard = ({ news, isExpanded }) => {
       </p>
       {isExpanded && (
         <p
-          className="text-gray-800 font-normal 
+          className="font-normal 
         whitespace-pre-line 
         text-justify
         pb-16"

@@ -1,17 +1,13 @@
 import React from "react";
 import Layout from "@/components/layouts/Layout";
 import HomePageCart from "@/components/layouts/HomePageCart";
+import PageHeader from "@/components/layouts/PageHeader";
 
 export default function About() {
   return (
     <Layout>
       <img src="images/news-header.jpg" className="brightness-50 opacity-70" />
-      <h1
-        className="text-6xl font-bold mb-8 text-amber-500 font-serif 
-        ml-10 relative -top-80 h-0 left-20"
-      >
-        About Us
-      </h1>
+      <PageHeader>About Us</PageHeader>
       <HomePageCart
         className="bg-zinc-700/80 pb-20 
         relative -top-60 z-50 text-gray-200 m-14 py-10"

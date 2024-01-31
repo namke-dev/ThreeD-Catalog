@@ -2,7 +2,6 @@ import React from "react";
 import HomePageIntro from "@/components/layouts/HomePageIntro";
 import Layout from "@/components/layouts/Layout";
 import HomePageCart from "@/components/layouts/HomePageCart";
-import NewsList from "@/components/layouts/NewsList";
 import { news_data } from "@/data/news_data";
 import ReviewNewsList from "@/components/layouts/ReviewNewsList";
 import Link from "next/link";
@@ -41,7 +40,7 @@ export default function Home() {
         <div className="flex flex-row gap-10 mt-5">
           <FeatureCart>Latest industry's news</FeatureCart>
           <FeatureCart>Website design</FeatureCart>
-          <FeatureCart>Brading design consultant</FeatureCart>
+          <FeatureCart>Brading design</FeatureCart>
           <FeatureCart>Scan funiture to 3d model</FeatureCart>
         </div>
       </HomePageCart>
@@ -103,8 +102,9 @@ export default function Home() {
       <HomePageCart className="col-span-2 flex items-center justify-center pb-28">
         <div className="flex flex-row mt-5 gap-10">
           <FeatureCart>$30 per month</FeatureCart>
-          <FeatureCart>$300 peryear</FeatureCart>
-          <FeatureCart>$1000 life time</FeatureCart>
+          <FeatureCart>$300 per year</FeatureCart>
+          <FeatureCart>$1,000 for life time</FeatureCart>
+          <FeatureCart>$3,000 for full life time and Support</FeatureCart>
         </div>
       </HomePageCart>
     </Layout>
@@ -131,7 +131,9 @@ function FeatureCart({ children }) {
       text-lg
       hover:scale-110
       duration-500
-      transition-transform"
+      transition-transform
+      hover:text-amber-500
+      "
       style={backgroundImageStyle}
     >
       <div className="bg-neutral-950/60 w-full h-full absolute top-0"></div>

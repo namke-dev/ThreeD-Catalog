@@ -1,16 +1,18 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 export default function ReviewNewsCart({ news }) {
+  const router = useRouter();
+
   return (
-    <Link href={`newsdetail/${news.id}`}>
+    <div onClick={() => router.push(`/newsdetail/?id=${news.id}`)}>
       <div
         className="text-white/95 bg-zinc-700/80
-      rounded-sm py-3 pb-2 md:px-8 mb-0
-      max-w-[1200px] 
-      h-[200px]
-      flex flex-col justify-between
-      border border-zinc-700 hover:border-amber-800 transition-colors duration-500"
+        rounded-sm py-3 pb-2 md:px-8 mb-0
+        max-w-[1200px] 
+        h-[200px]
+        flex flex-col justify-between
+        border border-zinc-700 hover:border-amber-800 transition-colors duration-500"
       >
         <div>
           <h2 className="text-md font-semibold text-gray-200">
@@ -28,14 +30,14 @@ export default function ReviewNewsCart({ news }) {
 
           <p
             className=" w-2/3
-          pl-5 text-sm
-          text-justify whitespace-pre-line "
+            pl-5 text-sm
+            text-justify whitespace-pre-line "
           >
             {truncateText(news.summary, 150)}
           </p>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
 
