@@ -35,7 +35,7 @@ export default function Home() {
         />
       </Link>
       <HomePageCart className="col-span-2 flex items-center justify-center">
-        <div className="flex flex-row gap-4 mt-5">
+        <div className="flex flex-row gap-10 mt-5">
           <FeatureCart>Latest industry's news</FeatureCart>
           <FeatureCart>Website design</FeatureCart>
           <FeatureCart>Brading design consultant</FeatureCart>
@@ -98,7 +98,7 @@ export default function Home() {
         />
       </Link>
       <HomePageCart className="col-span-2 flex items-center justify-center pb-28">
-        <div className="flex flex-row mt-5 gap-20">
+        <div className="flex flex-row mt-5 gap-10">
           <FeatureCart>$30 per month</FeatureCart>
           <FeatureCart>$300 peryear</FeatureCart>
           <FeatureCart>$1000 life time</FeatureCart>
@@ -125,7 +125,10 @@ function FeatureCart({ children }) {
       rounded-2xl
       uppercase
       font-medium
-      text-lg"
+      text-lg
+      hover:scale-110
+      duration-500
+      transition-transform"
       style={backgroundImageStyle}
     >
       <div className="bg-neutral-950/60 w-full h-full absolute top-0"></div>

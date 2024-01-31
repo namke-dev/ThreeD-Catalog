@@ -7,7 +7,6 @@ export default function ShowcaseCart({ className, children, ...props }) {
       className={`
       text-black/70
       md:hover:scale-105
-      
       transition-all
       duration-300
       ease-in-out

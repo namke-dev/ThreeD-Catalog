@@ -10,20 +10,15 @@ export default function ShowcaseFooter() {
   return (
     <div
       className=" 
-        w-full 
+        w-full
         h-auto
         bg-black/50
-        hover:bg-black/70
         text-white/80
         group
-        fixed bottom-0
-        flex 
-        flex-col
-        md:flex-row
+        fixed bottom-0 left-0
         md:gap-1
         md:rounded-md
         md:hover:rounded-none
-        md:translate-y-0
         md:opacity-90
         md:hover:opacity-100
         md:py-3
@@ -34,16 +29,21 @@ export default function ShowcaseFooter() {
         duration-500
         "
     >
-      {/* Category choice */}
       <div
-        className="md:w-1/3 md:p-1
-      "
+        className=" max-w-[1400px] mx-auto flex
+        flex-col
+        md:flex-row"
       >
-        <p className="md:h-1/6 pl-3 font-semibold text-xs md:text-md">
-          Categories
-        </p>
+        {/* Category choice */}
         <div
-          className="
+          className="md:w-1/3 md:p-1
+      "
+        >
+          <p className="md:h-1/6 pl-3 font-semibold text-xs md:text-md">
+            Categories
+          </p>
+          <div
+            className="
           flex flex-row
           md:grid md:grid-cols-3
           gap-2 md:h-5/6 w-full
@@ -51,11 +51,11 @@ export default function ShowcaseFooter() {
           pl-3 pt-1
           overflow-x-scroll
           "
-        >
-          {Object.entries(furniture_category).map(([key, value]) => (
-            <button
-              key={key}
-              className="
+          >
+            {Object.entries(furniture_category).map(([key, value]) => (
+              <button
+                key={key}
+                className="
          
               hover:bg-black/70
               bg-black/30
@@ -68,32 +68,32 @@ export default function ShowcaseFooter() {
               text-xs md:text-md
               transition-colors
               "
-            >
-              {value}
-            </button>
-          ))}
+              >
+                {value}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
 
-      {/* Product choice */}
-      <div className="md:w-2/3 md:pl-1 pt-1">
-        <p className="md:h-1/6 pl-3 font-semibold text-xs md:text-md">
-          Category's Product
-        </p>
-        <div
-          className="
+        {/* Product choice */}
+        <div className="md:w-2/3 md:pl-1 pt-1">
+          <p className="md:h-1/6 pl-3 font-semibold text-xs md:text-md">
+            Category's Product
+          </p>
+          <div
+            className="
           md:h-5/6
           py-1 md:pb-3
           flex flex-row
           overflow-x-scroll
           overflow-hidden
           "
-        >
-          {Object.entries(list_product_img_url).map(([key, value]) => (
-            <div
-              key={key}
-              style={{ flexShrink: 0 }}
-              className={`w-[150px] 
+          >
+            {Object.entries(list_product_img_url).map(([key, value]) => (
+              <div
+                key={key}
+                style={{ flexShrink: 0 }}
+                className={`w-[150px] 
               ${width > 768 ? "h-[102px]" : "h-[80px]"}
               bg-white
               flex justify-center
@@ -108,10 +108,11 @@ export default function ShowcaseFooter() {
               transition-opacity
               duration-500
               `}
-            >
-              <img src={value} alt="placeholder" className="h-[60px]" />
-            </div>
-          ))}
+              >
+                <img src={value} alt="placeholder" className="h-[60px]" />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

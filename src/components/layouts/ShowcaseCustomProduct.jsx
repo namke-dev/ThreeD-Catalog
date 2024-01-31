@@ -21,11 +21,10 @@ export default function ShowcaseCustomProduct() {
       className={`
         absolute left-0  
         md:ml-2
-        hover:bg-white/100
         ${
           isActive
-            ? "top-[10vh] h-[65vh] z-10 w-full md:w-[25vw] md:ml-5 bg-white/100 md:bg-white/85 rounded-none"
-            : "top-[27vh] md:top-[18vh] md:translate-y-[67px] w-[140px] md:w-[220px]  h-[43px] md:h-[52px] bg-white/50"
+            ? "top-[10vh] h-[65vh] z-10 w-full md:w-[25vw] md:ml-5 bg-white/100 md:bg-white/85 rounded-none hover:bg-white/100"
+            : "top-[27vh] md:top-[18vh] md:translate-y-[67px] w-[140px] md:w-[220px]  h-[43px] md:h-[52px]"
         }
       `}
     >
