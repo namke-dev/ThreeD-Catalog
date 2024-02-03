@@ -7,7 +7,7 @@ export default function HomePageIntro() {
   return (
     <div>
       {/* background */}
-      <div className="absolute top-20 w-full max-w-[1400px] opacity-10 z-10">
+      <div className="absolute w-full max-w-[1400px] opacity-10 z-10">
         <img
           src="/textures/Wood_gray.jpg"
           alt="placeholder"
@@ -15,12 +15,12 @@ export default function HomePageIntro() {
         />
       </div>
 
-      <HomePageCart className="flex flex-col md:flex-row w-full  text-zinc-300 z-20">
+      <HomePageCart className="flex flex-col md:flex-row w-full text-zinc-300 z-20">
         <div className="md:w-1/2 flex justify-end z-20 md:pr-20 md:h-[95vh]">
           <img
             src="/images/homepage_img.jpg"
             alt="placeholder"
-            className="md:h-[82vh] mt-10 rounded-[10px] shadow-2xl shadow-gray-950"
+            className="md:h-[82vh] mt-10 md:rounded-[10px] shadow-2xl shadow-gray-950"
           />
         </div>
         <div className="flex flex-col pl-8 md:w-1/2 md:mr-20 z-20  mt-14">

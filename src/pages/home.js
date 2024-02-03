@@ -36,7 +36,7 @@ export default function Home() {
           "
         />
       </Link>
-      <HomePageCart className="col-span-2 flex items-center justify-center">
+      <HomePageCart className="col-span-2 flex items-center justify-center overflow-x-auto">
         <div className="flex flex-row gap-10 mt-5">
           <FeatureCart>Latest industry's news</FeatureCart>
           <FeatureCart>Website design</FeatureCart>
@@ -99,8 +99,8 @@ export default function Home() {
           "
         />
       </Link>
-      <HomePageCart className="col-span-2 flex items-center justify-center pb-28">
-        <div className="flex flex-row mt-5 gap-10">
+      <HomePageCart className="col-span-2 flex items-center justify-center mb-28">
+        <div className="flex flex-row mt-5 gap-10 overflow-x-scroll">
           <FeatureCart>$30 per month</FeatureCart>
           <FeatureCart>$300 per year</FeatureCart>
           <FeatureCart>$1,000 for life time</FeatureCart>
@@ -136,7 +136,7 @@ function FeatureCart({ children }) {
       "
       style={backgroundImageStyle}
     >
-      <div className="bg-neutral-950/60 w-full h-full absolute top-0"></div>
+      <div className="bg-neutral-950/60 rounded-2xl w-full h-full absolute top-0"></div>
       <div className="z-30">{children}</div>
     </div>
   );
