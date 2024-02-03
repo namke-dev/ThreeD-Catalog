@@ -80,7 +80,10 @@ export default function Home() {
       </HomePageCart>
 
       {/* Charge plant */}
-      <Link href={"/news"} className="flex flex-row mt-20 group w-auto">
+      <Link
+        href={"/news"}
+        className="flex md:flex-row flex-col mt-20 group w-auto"
+      >
         <p
           className="text-3xl 
            ml-24
@@ -99,8 +102,8 @@ export default function Home() {
           "
         />
       </Link>
-      <HomePageCart className="col-span-2 flex items-center justify-center mb-28">
-        <div className="flex flex-row mt-5 gap-10 overflow-x-scroll">
+      <HomePageCart className="col-span-2 flex items-center justify-center overflow-x-auto mb-32">
+        <div className="flex flex-row gap-10 mt-5">
           <FeatureCart>$30 per month</FeatureCart>
           <FeatureCart>$300 per year</FeatureCart>
           <FeatureCart>$1,000 for life time</FeatureCart>

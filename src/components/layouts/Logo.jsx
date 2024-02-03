@@ -12,6 +12,7 @@ export default function Logo({ className, children, ...props }) {
       px-2 py-1
       rounded-sm
       flex flex-col items-center justify-center
+      hover:text-amber-600
       ${className}
       `}
     >
