@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
+import LoginButton from "./login-btn";
 
 export default function Navbar() {
   return (
@@ -8,14 +9,14 @@ export default function Navbar() {
       className="          
       fixed
       w-full z-50
-      bg-zinc-700 text-white/70
+      bg-zinc-900/80 text-white/70
       "
     >
       <div
         className="
         pl-5
         flex flex-row
-        items-center justify-start 
+        items-center justify-between
         text-xs
         px-3 py-0.5 md:gap-5 gap-1
         z-50
@@ -29,8 +30,8 @@ export default function Navbar() {
           md:top-10 md:left-0
           md:ml-5"
         />
-        <div className="flex flex-row gap-8 md:ml-20">
-          <Link href={"/"}>
+        <div className="flex flex-row gap-8 lg:pr-40 lg:pl-20">
+          <Link href={"/home"}>
             <NavbartButton>HOME</NavbartButton>
           </Link>
 
@@ -46,6 +47,7 @@ export default function Navbar() {
             <NavbartButton>ABOUT</NavbartButton>
           </Link>
         </div>
+        <LoginButton />
       </div>
     </div>
   );
