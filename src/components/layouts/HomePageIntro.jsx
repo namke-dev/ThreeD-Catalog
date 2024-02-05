@@ -2,12 +2,15 @@ import React from "react";
 import HomePageCart from "./HomePageCart";
 import { FaAngleRight } from "react-icons/fa";
 import Link from "next/link";
+import useWindowDimensions from "@/helpers/WindowSizeHelper";
 
 export default function HomePageIntro() {
+  const { width } = useWindowDimensions() || {};
+
   return (
     <div>
       {/* background */}
-      <div className="absolute w-full max-w-[1400px] opacity-10 z-10 md:-mt-32 md:-ml-40">
+      <div className="absolute w-full max-w-[1400px] opacity-10 z-10 md:-mt-10 md:-ml-28">
         <img
           src="/textures/Wood_gray.jpg"
           alt="placeholder"
@@ -15,18 +18,29 @@ export default function HomePageIntro() {
         />
       </div>
 
-      <HomePageCart className="flex flex-col md:flex-row w-full text-zinc-300 z-20">
-        <div className="md:w-1/2 flex justify-center z-20 md:pr-20 md:h-[95vh]">
+      <HomePageCart className="flex flex-col md:flex-row w-full text-zinc-300 z-20 md:h-auto h-[110vh]">
+        <div className="md:w-1/2 flex justify-center z-20 md:pr-20 md:h-[95vh] mt-[50px] md:mt-0">
           <img
             src="/images/homepage_img.jpg"
             alt="placeholder"
-            className="md:h-[82vh] mt-6 md:rounded-[10px] shadow-2xl shadow-gray-950"
+            className="
+            md:static absolute
+            h-[100vh] md:h-[82vh] md:mt-6 md:rounded-[10px] shadow-2xl shadow-gray-950
+            "
           />
+          {width > 768 ? (
+            ""
+          ) : (
+            <div
+              className="absolute
+            h-[100vh] md:h-[82vh] w-[100%] md:mt-6 md:rounded-[10px] bg-black/70"
+            />
+          )}
         </div>
-        <div className="flex flex-col pl-8 md:w-1/2 md:mr-20 z-20  mt-14">
+        <div className="flex flex-col pl-8 md:w-1/2 mr-20 z-20  md:mt-30 mt-12 md:mt-10">
           <div
             className="text-6xl text-amber-700          
-           font-thin font-sans mt-16"
+           font-thin font-sans"
           >
             We present your{" "}
             <div className="text-amber-500 font-mono font-semibold pt-6">
@@ -34,10 +48,10 @@ export default function HomePageIntro() {
             </div>
           </div>
           <div
-            className="w-full text-lg text-justify mt-24 mb-14 pl-14
+            className="w-full text-lg md:text-justify mt-24 mb-14 pl-14
           flex flex-col gap-4"
           >
-            <p className="font-medium mb-2 text-amber-500 text-justify">
+            <p className="font-medium mb-2 text-amber-500">
               Virtual Reality Showroom - Where Style Meets Innovation!
             </p>
             <p>

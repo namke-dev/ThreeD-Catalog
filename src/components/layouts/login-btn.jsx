@@ -5,7 +5,7 @@ export default function LoginButton() {
   if (session) {
     return (
       <>
-        User {session.user.email} <br />
+        {/* User {session.user.email} <br /> */}
         <button
           className="md:my-1
          md:mx-1

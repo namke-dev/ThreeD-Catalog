@@ -8,11 +8,12 @@ export default function ReviewNewsCart({ news }) {
     <div onClick={() => router.push(`/newsdetail/?id=${news.id}`)}>
       <div
         className="text-white/95 bg-zinc-700/80
-        rounded-sm py-3 pb-2 md:px-8 mb-0
+        py-5 md:px-8 mb-0
         max-w-[1200px] 
         h-[200px]
         flex flex-col justify-between
-        border border-zinc-700 hover:border-amber-800 transition-colors duration-500"
+        border border-zinc-700 hover:border-amber-800 transition-colors duration-500
+        px-7 rounded-2xl"
       >
         <div>
           <h2 className="text-md font-semibold text-gray-200">
