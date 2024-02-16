@@ -1,13 +1,3 @@
-// import Home from "./home";
-
-// export default function App() {
-//   return (
-//     <>
-//       <Home />
-//     </>
-//   );
-// }
-
 import { useSession, signIn, signOut } from "next-auth/react";
 import Link from "next/link";
 export default function IndexPage() {

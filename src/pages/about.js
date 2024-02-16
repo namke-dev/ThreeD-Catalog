@@ -10,7 +10,7 @@ export default function About() {
       <PageHeader>About Us</PageHeader>
       <HomePageCart
         className="bg-zinc-700/80
-        relative -top-60 z-10 text-gray-200 m-14 !pt-10 !pb-32 -mb-32"
+        relative -top-60 z-10 text-gray-200 m-14 !pt-10 !pb-32 -mb-52"
       >
         <div className="max-w-[1200px] mx-auto">
           <p className="mb-6">

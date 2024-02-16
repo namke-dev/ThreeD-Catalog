@@ -16,32 +16,11 @@ export default function Home() {
       {/* intro */}
       <HomePageIntro />
 
-      {/* Feature */}
-      <Link
-        href={"/news"}
-        className="flex md:flex-row flex-col mt-20 group w-auto"
-      >
-        <p
-          className="text-3xl 
-           ml-24
-           text-amber-500 font-mono font-semibold"
-        >
-          Feature
-        </p>
-        <FaAngleRight
-          className="mt-2 ml-2
-          text-amber-500
-          group-hover:translate-x-4 opacity-90 transition
-          scale-0 md:scale-100
-          text-2xl
-          md:group-hover:scale-125
-          md:group-hover:opacity-50
-          "
-        />
-      </Link>
+      <HomeTitle>App Feature</HomeTitle>
+
       <HomePageCart
         className="col-span-2 flex items-center 
-      justify-center md:justify-start overflow-x-auto w-full"
+        justify-center md:justify-start overflow-x-auto w-full"
       >
         <div className="flex flex-col md:flex-row gap-10 my-5 mx-20  w-full">
           <FeatureCart>Latest industry's news</FeatureCart>
@@ -52,24 +31,8 @@ export default function Home() {
       </HomePageCart>
 
       {/* New */}
-      <Link href={"/news"} className="flex flex-row mt-20 group w-auto">
-        <p
-          className="text-3xl 
-           ml-24
-           text-amber-500 font-mono font-semibold"
-        >
-          Today's News
-        </p>
-        <FaAngleRight
-          className="mt-2 ml-2
-          text-amber-500
-          group-hover:translate-x-4 opacity-90 transition
-          scale-0 md:scale-100
-          text-2xl
-          md:group-hover:scale-125
-          md:group-hover:opacity-50
-          "
-        />
+      <Link href={"/news"} className="group">
+        <HomeTitle>Lastest News</HomeTitle>
       </Link>
       <HomePageCart
         className="col-span-2 
@@ -89,12 +52,20 @@ export default function Home() {
         </div>
       </HomePageCart>
 
-      {/* Charge plant */}
+      {/* Charges Plan */}
+      <HomeTitle>Charges Plan</HomeTitle>
 
-      {/* <FeatureCart>$30 per month</FeatureCart>
+      <HomePageCart
+        className="col-span-2 flex items-center 
+      justify-center md:justify-start overflow-x-auto w-full"
+      >
+        <div className="flex flex-col md:flex-row gap-10 my-5 mx-20  w-full">
+          <FeatureCart>$30 per month</FeatureCart>
           <FeatureCart>$300 per year</FeatureCart>
           <FeatureCart>$1,000 for life time</FeatureCart>
-          <FeatureCart>$3,000 for full life time and Support</FeatureCart> */}
+          <FeatureCart>$3,000 for full life time and Support</FeatureCart>
+        </div>
+      </HomePageCart>
     </Layout>
   );
 }
@@ -126,6 +97,31 @@ function FeatureCart({ children }) {
     >
       <div className="bg-neutral-950/60 rounded-2xl w-full h-full absolute top-0"></div>
       <div className="z-30">{children}</div>
+    </div>
+  );
+}
+
+function HomeTitle({ children }) {
+  return (
+    <div className="mt-20 flex flex-row">
+      <p
+        className="text-3xl 
+        ml-24
+      text-amber-500 font-mono font-semibold
+        flex flex-row"
+      >
+        {children}
+      </p>
+      <FaAngleRight
+        className="mt-2 ml-2
+        text-amber-500
+        group-hover:translate-x-4 opacity-90 transition
+        scale-0 md:scale-100
+        text-2xl
+        md:group-hover:scale-125
+        md:group-hover:opacity-50
+    "
+      />
     </div>
   );
 }
