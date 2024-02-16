@@ -10,8 +10,9 @@ export default function Navbar() {
       fixed
       w-full z-50
       md:h-auto
-      bg-zinc-900/80 text-white/70
+      bg-zinc-700/95 text-white/70
       pb-2
+      
       "
     >
       <LoginOption />
@@ -48,6 +49,12 @@ export default function Navbar() {
 
           <Link href={"/about"}>
             <NavbartButton>ABOUT</NavbartButton>
+          </Link>
+          <Link href={"/policy-google"}>
+            <NavbartButton>POLICY</NavbartButton>
+          </Link>
+          <Link href={"/terms-of-service"}>
+            <NavbartButton>TERMS OF USE</NavbartButton>
           </Link>
         </div>
       </div>

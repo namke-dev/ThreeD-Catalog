@@ -8,7 +8,7 @@ export default function HomePageIntro() {
   const { width } = useWindowDimensions() || {};
 
   return (
-    <div>
+    <div className=" md:mt-8">
       {/* background */}
       <div className="absolute w-full max-w-[1400px] opacity-10 z-10 md:-mt-10 md:-ml-28">
         <img
