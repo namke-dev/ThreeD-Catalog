@@ -1,5 +1,5 @@
 // light object color
-export const ambient_light = "#cf9c2d";
+export const ambient_light = "white";
 export const ambient_light_intensity = 1.5;
 
 // light whiteness

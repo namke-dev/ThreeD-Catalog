@@ -13,6 +13,7 @@ export default function ShowcaseFooter() {
         w-full
         h-auto
         bg-black/50
+        hover:bg-neutral-700
         text-white/80
         group
         fixed bottom-0 left-0
@@ -57,7 +58,8 @@ export default function ShowcaseFooter() {
                 key={key}
                 className="
          
-              hover:bg-black/70
+              hover:bg-white/90
+              hover:text-black/90
               bg-black/30
               rounded-md
               md:w-auto
