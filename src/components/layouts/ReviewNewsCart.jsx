@@ -12,7 +12,7 @@ export default function ReviewNewsCart({ news }) {
         max-w-[1200px] 
         h-[200px]
         flex flex-col justify-between
-        border border-zinc-700 hover:border-amber-800 transition-colors duration-500
+        border-2 border-zinc-700 hover:border-zinc-600 transition-colors duration-500
         px-7 rounded-2xl"
       >
         <div>

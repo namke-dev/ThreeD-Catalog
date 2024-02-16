@@ -81,8 +81,8 @@ function FeatureCart({ children }) {
     <div
       className="py-20 w-auto
       px-10
-     text-white
       flex
+      text-zinc-100
       justify-center items-center 
       rounded-2xl
       uppercase
@@ -91,7 +91,7 @@ function FeatureCart({ children }) {
       hover:scale-110
       duration-500
       transition-transform
-      hover:text-amber-500
+      hover:text-white
       "
       style={backgroundImageStyle}
     >
@@ -107,7 +107,8 @@ function HomeTitle({ children }) {
       <p
         className="text-3xl 
         ml-24
-      text-amber-500 font-mono font-semibold
+        text-amber-500
+        font-mono font-semibold
         flex flex-row"
       >
         {children}

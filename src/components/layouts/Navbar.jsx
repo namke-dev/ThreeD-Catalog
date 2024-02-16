@@ -10,8 +10,9 @@ export default function Navbar() {
       fixed
       w-full z-50
       md:h-auto
-      bg-zinc-700/95 text-white/70
+      text-white/70
       pb-2
+      bg-gradient-to-r from-zinc-700 via-neutral-700 to-stone-800
       
       "
     >
