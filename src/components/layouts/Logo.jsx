@@ -9,17 +9,16 @@ export default function Logo({ className, children, ...props }) {
     <div
       {...props}
       className={`
-      md:my-1
       md:mx-2
       md:px-4
-      px-2 py-1
+      px-2 
       rounded-sm
       flex flex-col items-center justify-center
       hover:text-amber-600
       ${className}
       `}
     >
-      <Link href="/">
+      <Link href="/home">
         <p className="md:text-lg font-semibold">3D CATALOG</p>
         {width >= 786 && <p className="text-xs font-thin">DHMA team</p>}
 

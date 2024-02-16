@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
-import LoginButton from "./login-btn";
+import LoginOption from "./login-btn";
 
 export default function Navbar() {
   return (
@@ -9,11 +9,12 @@ export default function Navbar() {
       className="          
       fixed
       w-full z-50
-      
       md:h-auto
       bg-zinc-900/80 text-white/70
+      pb-2
       "
     >
+      <LoginOption />
       <div
         className="
         pl-5
@@ -49,7 +50,6 @@ export default function Navbar() {
             <NavbartButton>ABOUT</NavbartButton>
           </Link>
         </div>
-        <LoginButton />
       </div>
     </div>
   );
