@@ -12,7 +12,7 @@ export default function Navbar() {
       md:h-auto
       text-white/70
       pb-2
-      bg-gradient-to-r from-zinc-700 via-neutral-700 to-stone-800
+      bg-gradient-to-r from-zinc-700 via-neutral-700 to-neutral-700
       
       "
     >

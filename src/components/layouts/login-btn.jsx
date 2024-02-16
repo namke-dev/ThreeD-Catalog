@@ -10,6 +10,7 @@ export default function LoginOption() {
           className="md:mt-1
           md:mx-1
           md:px-4
+          md:ml-5
           rounded-sm
           flex-col items-center justify-center
           hover:text-amber-600
