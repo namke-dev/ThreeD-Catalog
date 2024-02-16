@@ -9,7 +9,7 @@ export default function Navbar() {
       className="          
       fixed
       w-full z-50
-      h-[50px]
+      
       md:h-auto
       bg-zinc-900/80 text-white/70
       "

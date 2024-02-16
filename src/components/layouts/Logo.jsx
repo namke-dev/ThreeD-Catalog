@@ -1,7 +1,10 @@
+import useWindowDimensions from "@/helpers/WindowSizeHelper";
 import Link from "next/link";
 import React from "react";
 
 export default function Logo({ className, children, ...props }) {
+  const { width } = useWindowDimensions() || {};
+
   return (
     <div
       {...props}
@@ -18,7 +21,8 @@ export default function Logo({ className, children, ...props }) {
     >
       <Link href="/">
         <p className="md:text-lg font-semibold">3D CATALOG</p>
-        <p className="text-xs font-thin">DHMA team</p>
+        {width >= 786 && <p className="text-xs font-thin">DHMA team</p>}
+
         {children}
       </Link>
     </div>

@@ -9,8 +9,8 @@ export default function About() {
       <img src="images/news-header.jpg" className="brightness-50 opacity-70" />
       <PageHeader>About Us</PageHeader>
       <HomePageCart
-        className="bg-zinc-700/80 pb-20 
-        relative -top-60 z-50 text-gray-200 m-14 py-10"
+        className="bg-zinc-700/80
+        relative -top-60 z-10 text-gray-200 m-14 !pt-10 !pb-32 -mb-32"
       >
         <div className="max-w-[1200px] mx-auto">
           <p className="mb-6">
