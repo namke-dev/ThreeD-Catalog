@@ -1,4 +1,4 @@
-# D3 Catalog - 3D furniture Showcase
+# 3D Furniture Catalog Showcase
 
 **Demo:** [D3 Catalog Showcase](https://d3catalog.vercel.app/show-case)
 
