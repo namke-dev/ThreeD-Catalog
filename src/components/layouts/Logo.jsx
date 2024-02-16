@@ -9,6 +9,7 @@ export default function Logo({ className, children, ...props }) {
     <div
       {...props}
       className={`
+      h-full
       md:mx-2
       md:px-4
       px-2 
@@ -19,8 +20,8 @@ export default function Logo({ className, children, ...props }) {
       `}
     >
       <Link href="/home">
-        <p className="md:text-lg font-semibold">3D CATALOG</p>
-        {width >= 786 && <p className="text-xs font-thin">DHMA team</p>}
+        <p className="md:text-lg font-bold">3D CATALOG</p>
+        {/* {width >= 786 && <p className="text-xs font-thin">DHMA team</p>} */}
 
         {children}
       </Link>

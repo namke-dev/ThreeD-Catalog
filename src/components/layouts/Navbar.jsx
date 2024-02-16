@@ -12,13 +12,12 @@ export default function Navbar() {
       md:h-auto
       text-white/70
       pb-2
-      bg-gradient-to-r from-zinc-700 via-neutral-700 to-neutral-700
-      
       "
     >
       <LoginOption />
       <div
         className="
+        pt-5
         pl-5
         flex flex-row
         items-center justify-between
@@ -29,15 +28,21 @@ export default function Navbar() {
         max-w-[1400px]
         "
       >
-        <Logo
+        {/* <Logo
           className="
           text-white/80
-          md:top-10 md:left-0
-          md:ml-5"
-        />
-        <div className="flex flex-row gap-8 lg:pr-40 lg:pl-20">
+          md:top-10 md:left-0"
+        /> */}
+        <div
+          className="flex flex-row gap-6 lg:px-3
+        bg-zinc-700/80
+        rounded-3xl
+        mx-auto
+        py-0.5"
+        >
           <Link href={"/home"}>
-            <NavbartButton>HOME</NavbartButton>
+            {/* <NavbartButton>HOME</NavbartButton> */}
+            <Logo />
           </Link>
 
           <Link href={"/show-case"}>
@@ -70,8 +75,8 @@ function NavbartButton({ className, children, ...props }) {
       className={`
       px-3
       md:px-5
-      py-2
-      my-1
+      py-1.5
+      my-2
       rounded-3xl
       font-medium 
       md:text-sm

@@ -4,7 +4,10 @@ export default function LoginOption() {
   const { data: session } = useSession();
   if (session) {
     return (
-      <div className="flex w-full justify-end items-center">
+      <div
+        className="flex w-full justify-end items-center
+        "
+      >
         <span className="text-xs">{session.user.email}</span>
         <button
           className="md:mt-1
