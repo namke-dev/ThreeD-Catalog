@@ -23,7 +23,7 @@ const NewsList = ({ newsList, isExpanded, itemsPerPage }) => {
           key={news.id}
           news={news}
           isExpanded={isExpanded}
-          className="bg-zinc-700/80"
+          className="bg-neutral-700/90"
         />
       ))}
 

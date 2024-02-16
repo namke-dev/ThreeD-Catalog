@@ -30,7 +30,7 @@ export default function NewsDetail() {
         News detail
       </h1>
       <HomePageCart
-        className="bg-zinc-700/80 pb-20 
+        className="bg-neutral-700/90
         relative -top-60 z-10 text-gray-200 m-14 py-10"
       >
         <NewsCard key={news.id} news={news} isExpanded={true} />

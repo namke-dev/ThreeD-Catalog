@@ -7,7 +7,7 @@ export default function ReviewNewsCart({ news }) {
   return (
     <div onClick={() => router.push(`/newsdetail/?id=${news.id}`)}>
       <div
-        className="text-white/95 bg-zinc-700/80
+        className="text-white/95 bg-neutral-700/90
         py-5 md:px-8 mb-0
         max-w-[1200px] 
         h-[200px]
