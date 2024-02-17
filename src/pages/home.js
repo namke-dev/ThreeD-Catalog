@@ -107,7 +107,7 @@ function HomeTitle({ children }) {
       <p
         className="text-3xl 
         ml-24
-        text-amber-500
+        text-amber-600
         font-mono font-semibold
         flex flex-row"
       >
@@ -115,7 +115,7 @@ function HomeTitle({ children }) {
       </p>
       <FaAngleRight
         className="mt-2 ml-2
-        text-amber-500
+        text-amber-600
         group-hover:translate-x-4 opacity-90 transition
         scale-0 md:scale-100
         text-2xl

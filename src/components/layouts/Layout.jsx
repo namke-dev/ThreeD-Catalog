@@ -8,7 +8,7 @@ export default function Layout({ children, className }) {
       className={`bg-gradient-to-b from-zinc-800 via-zinc-800 to-zinc-950 ${className}`}
     >
       <Navbar />
-      <div className="max-w-[1400px] m-auto md:pt-16 md:pb-20">{children}</div>
+      <div className="max-w-[1400px] m-auto md:pt-10 md:pb-20">{children}</div>
       <Footer />
     </div>
   );

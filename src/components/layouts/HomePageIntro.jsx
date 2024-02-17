@@ -10,11 +10,15 @@ export default function HomePageIntro() {
   return (
     <div className=" md:mt-2">
       {/* background */}
-      <div className="absolute w-full max-w-[1400px] opacity-10 z-10 md:-mt-10 md:-ml-28">
+      <div
+        className="absolute 
+        w-full max-w-[1400px] opacity-5 z-10 
+        md:mt-5 md:-ml-24"
+      >
         <img
           src="/textures/Wood_gray.jpg"
           alt="placeholder"
-          className="h-[100vh] rounded-[500px]"
+          className="h-[92vh] rounded-[500px]"
         />
       </div>
 
@@ -25,7 +29,7 @@ export default function HomePageIntro() {
             alt="placeholder"
             className="
             md:static absolute
-            h-[100vh] md:h-[82vh] md:mt-6 md:rounded-[10px] shadow-2xl shadow-gray-950
+            h-[100vh] md:h-[80vh] md:mt-6 md:rounded-[10px] shadow-2xl shadow-gray-950
             "
           />
           {width > 768 ? (
