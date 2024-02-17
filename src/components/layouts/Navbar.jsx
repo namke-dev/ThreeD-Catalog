@@ -2,8 +2,12 @@ import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
 import LoginOption from "./login-btn";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
+  const router = useRouter();
+  const isCurrentPage = (pathname) => router.pathname === pathname;
+
   return (
     <div
       className="          
@@ -17,7 +21,7 @@ export default function Navbar() {
       <LoginOption />
       <div
         className="
-        pt-5
+        pt-3
         pl-5
         flex flex-row
         items-center justify-between
@@ -25,42 +29,48 @@ export default function Navbar() {
         px-3 py-0.5 md:gap-5 gap-1
         z-50
         m-auto
-        max-w-[1400px]
         "
       >
-        {/* <Logo
-          className="
-          text-white/80
-          md:top-10 md:left-0"
-        /> */}
         <div
           className="flex flex-row gap-6 lg:px-3
-        bg-zinc-700/80
+        bg-zinc-700
+        bg-opacity-85
         rounded-3xl
         mx-auto
         py-0.5"
         >
           <Link href={"/home"}>
-            {/* <NavbartButton>HOME</NavbartButton> */}
             <Logo />
           </Link>
 
+          <Link href={"/home"}>
+            <NavbartButton active={isCurrentPage("/home")}>HOME</NavbartButton>
+          </Link>
+
           <Link href={"/show-case"}>
-            <NavbartButton>SHOW CASE</NavbartButton>
+            <NavbartButton active={isCurrentPage("/show-case")}>
+              SHOW CASE
+            </NavbartButton>
           </Link>
 
           <Link href={"/news"}>
-            <NavbartButton>NEWS</NavbartButton>
+            <NavbartButton active={isCurrentPage("/news")}>NEWS</NavbartButton>
           </Link>
 
           <Link href={"/about"}>
-            <NavbartButton>ABOUT</NavbartButton>
+            <NavbartButton active={isCurrentPage("/about")}>
+              ABOUT
+            </NavbartButton>
           </Link>
           <Link href={"/policy-google"}>
-            <NavbartButton>POLICY</NavbartButton>
+            <NavbartButton active={isCurrentPage("/policy-google")}>
+              POLICY
+            </NavbartButton>
           </Link>
           <Link href={"/terms-of-service"}>
-            <NavbartButton>TERMS OF USE</NavbartButton>
+            <NavbartButton active={isCurrentPage("/terms-of-service")}>
+              TERMS OF USE
+            </NavbartButton>
           </Link>
         </div>
       </div>
@@ -68,7 +78,7 @@ export default function Navbar() {
   );
 }
 
-function NavbartButton({ className, children, ...props }) {
+function NavbartButton({ active, className, children, ...props }) {
   return (
     <button
       {...props}
@@ -85,6 +95,12 @@ function NavbartButton({ className, children, ...props }) {
       hover:text-black
       hover:text-white/90
       transition-colors
+      ${
+        active
+          ? "bg-white/10 text-white/90"
+          : "hover:bg-white/10 hover:text-black hover:text-white/90"
+      }
+
       ${className}`}
     >
       {children}

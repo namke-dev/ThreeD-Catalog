@@ -6,6 +6,7 @@ export default function LoginOption() {
     return (
       <div
         className="flex w-full justify-end items-center
+        bg-black/10
         "
       >
         <span className="text-xs">{session.user.email}</span>
