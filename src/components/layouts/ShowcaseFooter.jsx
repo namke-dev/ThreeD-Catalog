@@ -1,10 +1,9 @@
+import React from "react";
 import {
   furniture_category,
   list_product_img_url,
 } from "@/data/product_custom_options";
 import useWindowDimensions from "@/helpers/WindowSizeHelper";
-import React from "react";
-
 export default function ShowcaseFooter() {
   const { width } = useWindowDimensions() || {};
   return (

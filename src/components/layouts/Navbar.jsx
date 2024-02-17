@@ -11,12 +11,12 @@ export default function Navbar() {
   return (
     <div
       className="          
-      fixed
-      w-full z-50
-      md:h-auto
-      text-white/70
-      pb-2
-      "
+    fixed
+    w-full z-50
+    md:h-auto
+    text-white/70
+    pb-2
+    "
     >
       <LoginBar />
       <div
@@ -77,31 +77,17 @@ export default function Navbar() {
     </div>
   );
 }
-
 function NavbartButton({ active, className, children, ...props }) {
   return (
     <button
       {...props}
-      className={`
-      px-3
-      md:px-5
-      py-1.5
-      my-2
-      rounded-3xl
-      font-medium 
-      md:text-sm
-      text-xs
-      hover:bg-white/10
-      hover:text-black
-      hover:text-white/90
-      transition-colors
-      ${
-        active
-          ? "bg-white/10 text-white/90"
-          : "hover:bg-white/10 hover:text-black hover:text-white/90"
-      }
-
-      ${className}`}
+      className={` px-3 md:px-5 py-1.5 my-2 rounded-3xl font-medium md:text-sm text-bs hover:bg-white/10
+        hover:text-black hover:text-white/90 transition-colors 
+        ${
+          active
+            ? "bg-white/10 text-white/90"
+            : "hover:bg-white/10 hover:text-black hover:text-white/90"
+        } ${className}`}
     >
       {children}
     </button>
