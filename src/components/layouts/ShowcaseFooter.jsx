@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  LIST_FURNITURE,
   furniture_category,
   list_product_img_url,
 } from "@/data/product_custom_options";
@@ -90,9 +91,9 @@ export default function ShowcaseFooter() {
             overflow-hidden
             "
           >
-            {Object.entries(list_product_img_url).map(([key, value]) => (
+            {LIST_FURNITURE.map(({ name, img_url }) => (
               <div
-                key={key}
+                key={name}
                 style={{ flexShrink: 0 }}
                 className={`w-[150px] 
               ${width > 768 ? "h-[102px]" : "h-[80px]"}
@@ -110,7 +111,7 @@ export default function ShowcaseFooter() {
               duration-500
               `}
               >
-                <img src={value} alt="placeholder" className="h-[60px]" />
+                <img src={img_url} alt="placeholder" className="h-[60px]" />
               </div>
             ))}
           </div>

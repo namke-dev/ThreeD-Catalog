@@ -6,7 +6,7 @@ export default function LoginBar() {
     return (
       <div
         className="flex w-full justify-end items-center
-        bg-black/10
+        bg-black/30
         "
       >
         <span className="text-xs">{session.user.email}</span>
@@ -26,7 +26,7 @@ export default function LoginBar() {
 function AuthButton({ onClick, children }) {
   return (
     <button
-      className="md:my-1
+      className="md:mb-0.5
       md:mx-1
       md:px-4
       rounded-sm
@@ -35,8 +35,8 @@ function AuthButton({ onClick, children }) {
       hover:border-amber-600
       font-medium
       text-xs
-      md:text-sm
-      border border-white/70"
+      underline
+      "
       onClick={onClick}
     >
       {children}
