@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "./Logo";
 import Link from "next/link";
-import LoginOption from "./login-btn";
+import LoginBar from "./LoginBar";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
@@ -18,7 +18,7 @@ export default function Navbar() {
       pb-2
       "
     >
-      <LoginOption />
+      <LoginBar />
       <div
         className="
         pt-3
