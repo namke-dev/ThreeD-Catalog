@@ -83,12 +83,12 @@ export default function ShowcaseFooter() {
           </p>
           <div
             className="
-          md:h-5/6
-          py-1 md:pb-3
-          flex flex-row
-          overflow-x-scroll
-          overflow-hidden
-          "
+            md:h-5/6
+            py-1 md:pb-3
+            flex flex-row
+            overflow-x-scroll
+            overflow-hidden
+            "
           >
             {Object.entries(list_product_img_url).map(([key, value]) => (
               <div

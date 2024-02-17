@@ -1,6 +1,7 @@
 import ShowcaseLayout from "@/components/layouts/ShowcaseLayout";
 import ModelContainer from "@/components/models/ModelContainer";
 import { DeskModel } from "@/components/models/showcases/DeskModel";
+import { Sofa2 } from "@/components/models/showcases/Sofa2";
 import { Leva } from "leva";
 
 export default function Showcase() {
@@ -10,7 +11,8 @@ export default function Showcase() {
         <ShowcaseLayout />
         <div className="cursor-move w-full h-full">
           <ModelContainer>
-            <DeskModel />
+            {/* <DeskModel /> */}
+            <Sofa2 />
           </ModelContainer>
           <Leva collapsed hidden />
         </div>
