@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   LIST_FURNITURE,
   furniture_category,
-  list_product_img_url,
 } from "@/data/product_custom_options";
-import useWindowDimensions from "@/helpers/WindowSizeHelper";
+import DisplayModelContext from "../context/model-context";
+
 export default function ShowcaseFooter() {
-  const { width } = useWindowDimensions() || {};
+  const { setDisplayModel } = useContext(DisplayModelContext);
+
+  const handleSetModelOnClick = (item) => {
+    if (item && item.name) {
+      setDisplayModel(item);
+      console.log("setDisplayModel = " + item.name);
+    } else {
+      console.error("Invalid item:", item);
+    }
+  };
+
   return (
     <div
       className=" 
@@ -70,6 +80,7 @@ export default function ShowcaseFooter() {
               text-xs md:text-md
               transition-colors
               "
+                onClick={handleSetModelOnClick()}
               >
                 {value}
               </button>
@@ -91,27 +102,14 @@ export default function ShowcaseFooter() {
             overflow-hidden
             "
           >
-            {LIST_FURNITURE.map(({ name, img_url }) => (
+            {LIST_FURNITURE.map((item) => (
               <div
-                key={name}
+                key={item.name}
                 style={{ flexShrink: 0 }}
-                className={`w-[150px] 
-              ${width > 768 ? "h-[102px]" : "h-[80px]"}
-              bg-white
-              flex justify-center
-              rounded-md
-              opacity-60
-              hover:opacity-100
-              py-3
-              md:py-6
-              ml-3
-              group-hover:border
-              group-hover:border-gray-300
-              transition-opacity
-              duration-500
-              `}
+                className="w-[150px] h-[102px] bg-white flex justify-center rounded-md opacity-60 hover:opacity-100 py-3 md:py-6 ml-3 group-hover:border group-hover:border-gray-300 transition-opacity duration-500"
+                onClick={() => handleSetModelOnClick(item)}
               >
-                <img src={img_url} alt="placeholder" className="h-[60px]" />
+                <img src={item.img_url} alt={item.name} className="h-[60px]" />
               </div>
             ))}
           </div>
