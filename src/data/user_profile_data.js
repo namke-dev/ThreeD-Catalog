@@ -1,0 +1,38 @@
+export const USER_PROFILE_DATA = [
+  {
+    id: 1,
+    firstName: "John",
+    lastName: "Doe",
+    email: "john.doe@example.com",
+    phone: "555-1234",
+    address: "123 Main St, Cityville, USA",
+    company: "Tech Solutions Inc.",
+  },
+  {
+    id: 2,
+    firstName: "Jane",
+    lastName: "Smith",
+    email: "jane.smith@example.com",
+    phone: "555-5678",
+    address: "456 Oak Ave, Townsville, Canada",
+    company: "Innovate Labs",
+  },
+  {
+    id: 3,
+    firstName: "Nam",
+    lastName: "Ke",
+    email: "namke.dev@gmail.com",
+    phone: "555-5678",
+    address: "456 Oak Ave, Townsville, Canada",
+    company: "Innovate Labs",
+  },
+  {
+    id: 4,
+    firstName: "Nam",
+    lastName: "Ke",
+    email: "namnguyenke1999@gmail.com",
+    phone: "555-5678",
+    address: "456 Oak Ave, Townsville, Canada",
+    company: "Innovate Labs",
+  },
+];
