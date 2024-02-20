@@ -10,7 +10,7 @@ export default function LoginBar() {
     return (
       <div
         className="flex w-full justify-end items-center
-        bg-black/30"
+        bg-black/5"
       >
         <div class="relative inline-block text-left">
           <button
@@ -38,8 +38,8 @@ export default function LoginBar() {
           </button>
 
           {toggle && (
-            <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <div class="py-1" role="none">
+            <div class="origin-top-right absolute right-3 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <div class="py-1 px-1 md:px-2" role="none">
                 <Link
                   href="/user-profile"
                   class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
@@ -54,13 +54,6 @@ export default function LoginBar() {
                 >
                   Billing
                 </Link>
-                <button
-                  onclick="signOut()"
-                  class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                  role="menuitem"
-                >
-                  Sign Out
-                </button>
                 <button
                   onclick="toggleDarkMode()"
                   class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
@@ -93,14 +86,12 @@ function AuthButton({ onClick, children }) {
   return (
     <button
       className="md:mb-0.5
-      md:mx-1
-      md:px-4
       rounded-sm
       flex-col items-center justify-center
       hover:text-amber-600
       hover:border-amber-600
       font-medium
-      text-xs
+      text-sm
       underline
       "
       onClick={onClick}

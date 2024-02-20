@@ -62,7 +62,7 @@ export default function Navbar() {
               ABOUT
             </NavbartButton>
           </Link>
-          <Link href={"/policy-google"}>
+          {/* <Link href={"/policy-google"}>
             <NavbartButton active={isCurrentPage("/policy-google")}>
               POLICY
             </NavbartButton>
@@ -71,7 +71,7 @@ export default function Navbar() {
             <NavbartButton active={isCurrentPage("/terms-of-service")}>
               TERMS OF USE
             </NavbartButton>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>
