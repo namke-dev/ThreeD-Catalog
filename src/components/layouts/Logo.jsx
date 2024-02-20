@@ -1,10 +1,6 @@
-import useWindowDimensions from "@/helpers/WindowSizeHelper";
-import Link from "next/link";
 import React from "react";
 
 export default function Logo({ className, children, ...props }) {
-  const { width } = useWindowDimensions() || {};
-
   return (
     <div
       {...props}
@@ -16,11 +12,12 @@ export default function Logo({ className, children, ...props }) {
       m-auto
       rounded-sm
       flex flex-col items-center justify-center
+      text-white/80
       hover:text-amber-600
       ${className}
       `}
     >
-      <p className="md:text-lg font-bold">3D CATALOG</p>
+      <p className="md:text-xl font-bold">3D KATALOG</p>
       {/* {width >= 786 && <p className="text-xs font-thin">DHMA team</p>} */}
 
       {children}

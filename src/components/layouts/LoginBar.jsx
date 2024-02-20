@@ -8,15 +8,12 @@ export default function LoginBar() {
 
   if (session) {
     return (
-      <div
-        className="flex w-full justify-end items-center
-        bg-black/5"
-      >
+      <div className="flex w-full justify-end items-center">
         <div class="relative inline-block text-left">
           <button
             type="button"
             class="inline-flex items-center justify-center px-4 py-0.5
-            text-white text-sm hover:bg-white/20 focus:outline-none"
+            text-white text-xs hover:bg-white/20 focus:outline-none"
             onClick={() => {
               setToggle(!toggle);
             }}

@@ -16,36 +16,35 @@ export default function Navbar() {
     md:h-auto
     text-white/70
     pb-2
+    bg-black/10
+    rounded-none
     "
     >
       <LoginBar />
       <div
         className="
-        pt-3
-        pl-5
-        flex flex-row
-        items-center justify-between
+        mt-0
+        flex flex-row flex-wrap
+        justify-center
         text-xs
-        px-3 py-0.5 md:gap-5 gap-1
+        md:gap-5 
+        gap-1
         z-50
-        m-auto
         "
       >
+        <Link href={"/home"}>
+          <Logo />
+        </Link>
         <div
-          className="flex flex-row gap-6 lg:px-3
+          className="flex flex-row flex-wrap gap-6 lg:px-3
         bg-zinc-700
         bg-opacity-85
         rounded-3xl
-        mx-auto
         py-0.5"
         >
-          <Link href={"/home"}>
-            <Logo />
-          </Link>
-
-          <Link href={"/home"}>
+          {/* <Link href={"/home"}>
             <NavbartButton active={isCurrentPage("/home")}>HOME</NavbartButton>
-          </Link>
+          </Link> */}
 
           <Link href={"/show-case"}>
             <NavbartButton active={isCurrentPage("/show-case")}>
