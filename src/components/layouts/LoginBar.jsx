@@ -15,7 +15,7 @@ export default function LoginBar() {
         <div class="relative inline-block text-left">
           <button
             type="button"
-            class="inline-flex items-center justify-center px-4 py-2
+            class="inline-flex items-center justify-center px-4 py-0.5
             text-white text-sm hover:bg-white/20 focus:outline-none"
             onClick={() => {
               setToggle(!toggle);
