@@ -62,6 +62,11 @@ export default function Navbar() {
               ABOUT
             </NavbartButton>
           </Link>
+          <Link href={"/contact"}>
+            <NavbartButton active={isCurrentPage("/contact")}>
+              CONTACT
+            </NavbartButton>
+          </Link>
           {/* <Link href={"/policy-google"}>
             <NavbartButton active={isCurrentPage("/policy-google")}>
               POLICY
