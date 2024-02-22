@@ -1,9 +1,7 @@
 import React, { useContext } from "react";
-import {
-  LIST_FURNITURE,
-  furniture_category,
-} from "@/data/product_custom_options";
+import { furniture_category } from "@/data/product_custom_options";
 import DisplayModelContext from "../context/model-context";
+import { LIST_FURNITURE } from "@/data/product_data";
 
 export default function ShowcaseFooter() {
   const { setDisplayModel } = useContext(DisplayModelContext);

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import ShowcaseCart from "./ShowcaseCart";
-import { product_detail_data } from "@/data/product_data";
 import { FaAngleRight, FaTimes } from "react-icons/fa";
 import ShowcaseButton from "./ShowcaseButton";
+import { PRODUCT_DATA } from "@/data/product_data";
 
 export default function ShowcaseProductInfo() {
   const [isActive, setIsActive] = useState(false);
-
+  const chosenProduct = PRODUCT_DATA[0];
   return (
     <ShowcaseCart
       className={`
@@ -43,7 +43,7 @@ export default function ShowcaseProductInfo() {
               py-2.5
         `}
           >
-            {product_detail_data[0].Name}
+            {chosenProduct.Name}
           </p>
           <button
             onClick={() => {
@@ -79,28 +79,26 @@ export default function ShowcaseProductInfo() {
           overflow-y-scroll          
         ${isActive ? "scale-100" : "scale-0"}`}
       >
-        {product_detail_data.map((product, index) => (
-          <div key={index} className="mx-3 pt-2 pb-5">
-            {Object.keys(product).map((key) => (
-              <div
-                key={key}
-                className={`\
+        <div className="mx-3 pt-2 pb-5">
+          {Object.keys(chosenProduct).map((key) => (
+            <div
+              key={key}
+              className={`\
                   flex justify-between 
                   border-b border-black/10
                   pt-2
                 ${key == "About" ? "flex-col" : "flex-row"}`}
+            >
+              <span className="font-semibold">{key}</span>
+              <span
+                style={{ whiteSpace: "pre-line" }}
+                className={`${key == "About" ? "pt-3 text-justify" : ""}`}
               >
-                <span className="font-semibold">{key}</span>
-                <span
-                  style={{ whiteSpace: "pre-line" }}
-                  className={`${key == "About" ? "pt-3 text-justify" : ""}`}
-                >
-                  {product[key]}
-                </span>
-              </div>
-            ))}
-          </div>
-        ))}
+                {chosenProduct[key]}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
     </ShowcaseCart>
   );
