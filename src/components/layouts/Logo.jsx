@@ -7,13 +7,17 @@ export default function Logo({ className, children, ...props }) {
       className={`
       h-full
       md:mx-2
-      md:px-4
+      md:px-7
       px-2
       m-auto
-      rounded-sm
       flex flex-col items-center justify-center
       text-white/80
       hover:text-amber-600
+      bg-zinc-700
+      bg-opacity-85
+      rounded-3xl
+      transition-colors
+      duration-500
       ${className}
       `}
     >

@@ -8,11 +8,18 @@ export default function LoginBar() {
 
   if (session) {
     return (
-      <div className="flex w-full justify-end items-center">
-        <div className="relative inline-block text-left">
+      <div
+        className="flex w-full justify-end items-center
+        mb-2"
+      >
+        <div
+          className="
+        flex justify-center
+        h-auto text-left bg-black/40 "
+        >
           <button
             type="button"
-            className="inline-flex items-center justify-center px-4 py-0.5
+            className="inline-flex items-center justify-center px-4 py-0
             text-white text-xs hover:bg-white/20 focus:outline-none"
             onClick={() => {
               setToggle(!toggle);
@@ -47,18 +54,10 @@ export default function LoginBar() {
                 >
                   Billing
                 </Link>
-                <button
-                  onclick="toggleDarkMode()"
-                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                  role="menuitem"
-                >
+                <button className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                   Toggle Dark Mode
                 </button>
-                <button
-                  onclick="toggleDarkMode()"
-                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                  role="menuitem"
-                >
+                <button className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
                   <AuthButton onClick={() => signOut()}>Sign out</AuthButton>
                 </button>
               </div>
@@ -77,7 +76,7 @@ export default function LoginBar() {
 
 function AuthButton({ onClick, children }) {
   return (
-    <button
+    <div
       className="md:mb-0.5
       rounded-sm
       flex-col items-center justify-center
@@ -90,6 +89,6 @@ function AuthButton({ onClick, children }) {
       onClick={onClick}
     >
       {children}
-    </button>
+    </div>
   );
 }

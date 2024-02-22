@@ -16,7 +16,6 @@ export default function Navbar() {
     md:h-auto
     text-white/70
     pb-2
-    bg-black/10
     rounded-none
     "
     >
@@ -42,10 +41,6 @@ export default function Navbar() {
         rounded-3xl
         py-0.5"
         >
-          {/* <Link href={"/home"}>
-            <NavbartButton active={isCurrentPage("/home")}>HOME</NavbartButton>
-          </Link> */}
-
           <Link href={"/show-case"}>
             <NavbartButton active={isCurrentPage("/show-case")}>
               SHOW CASE
