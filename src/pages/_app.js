@@ -1,5 +1,5 @@
 import DisplayModelContext from "@/components/context/model-context";
-import { LIST_FURNITURE } from "@/data/product_custom_options";
+import { LIST_FURNITURE } from "@/data/product_data";
 import "@/styles/globals.css";
 import { SessionProvider } from "next-auth/react";
 import { useState } from "react";

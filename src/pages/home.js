@@ -42,7 +42,7 @@ export default function Home() {
           className="flex flex-row gap-1.5
             max-w-[88%] overflow-x-scroll"
         >
-          <div className="w-full py-8 bg-black/5 relative">
+          <div className="w-full py-8 relative">
             {width > 768 ? (
               <ReviewNewsList newsList={news_data} isHorizontal={true} />
             ) : (

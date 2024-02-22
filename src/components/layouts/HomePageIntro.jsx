@@ -23,7 +23,7 @@ export default function HomePageIntro() {
       </div>
 
       <HomePageCart className="flex flex-col md:flex-row w-full text-zinc-300 z-20 md:h-auto h-[110vh]">
-        <div className="md:w-1/2 flex justify-center z-20 md:pr-20 md:h-[95vh] mt-[50px] md:mt-0">
+        <div className="md:w-1/2 flex justify-center z-20 md:pr-20 md:h-[95vh]">
           <img
             src="/images/homepage_img.jpg"
             alt="placeholder"
@@ -41,9 +41,9 @@ export default function HomePageIntro() {
             />
           )}
         </div>
-        <div className="flex flex-col pl-8 md:w-1/2 mr-20 z-20  md:mt-30 mt-12 md:mt-10">
+        <div className="flex flex-col md:w-1/2 md:mx-14 mx-8 z-20  md:mt-30 mt-36 md:mt-10">
           <div
-            className="text-6xl text-amber-700          
+            className="text-5xl md:text-6xl text-amber-700          
            font-thin font-sans"
           >
             We present your{" "}
@@ -52,7 +52,7 @@ export default function HomePageIntro() {
             </div>
           </div>
           <div
-            className="w-full text-lg md:text-justify mt-24 mb-14 pl-14
+            className="w-full text-lg md:text-justify md:mt-24 mt-12 mb-14 pl-14
           flex flex-col gap-4"
           >
             <p className="font-medium mb-2 text-amber-500">

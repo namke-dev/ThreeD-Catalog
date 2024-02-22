@@ -1,3 +1,6 @@
+import { DeskModel } from "@/components/models/showcases/DeskModel";
+import { Sofa2 } from "@/components/models/showcases/Sofa2";
+
 export const product_detail_data = [
   {
     Name: "Modern office desk",
@@ -15,5 +18,32 @@ export const product_detail_data = [
     Just folding one tabletop, it could as an office desk placed your computer, books, camera on the tabletop！
     
     Easily moved and locked in place for stability in your home. Both wheels are equipped with brakes, which are convenient for moving and folding`,
+  },
+];
+
+export const LIST_FURNITURE = [
+  {
+    name: "desk",
+    label: "Desk Model",
+    img_url: "/images/cabinet1.png",
+    component: <DeskModel />,
+  },
+  {
+    name: "sofa",
+    label: "Sofa2",
+    img_url: "/images/cabinet2.png",
+    component: <Sofa2 />,
+  },
+  {
+    name: "chair1",
+    label: "Chair",
+    img_url: "/images/chair1.png",
+    component: <DeskModel />,
+  },
+  {
+    name: "chair2",
+    label: "Chair 2",
+    img_url: "/images/chair2.png",
+    component: <Sofa2 />,
   },
 ];

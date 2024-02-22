@@ -9,10 +9,10 @@ export default function LoginBar() {
   if (session) {
     return (
       <div className="flex w-full justify-end items-center">
-        <div class="relative inline-block text-left">
+        <div className="relative inline-block text-left">
           <button
             type="button"
-            class="inline-flex items-center justify-center px-4 py-0.5
+            className="inline-flex items-center justify-center px-4 py-0.5
             text-white text-xs hover:bg-white/20 focus:outline-none"
             onClick={() => {
               setToggle(!toggle);
@@ -20,47 +20,43 @@ export default function LoginBar() {
           >
             {session.user.email}
             <svg
-              class="-mr-1 h-2 w-5 "
+              className="-mr-1 h-2 w-5 "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 10 20"
               fill="currentColor"
               aria-hidden="true"
             >
-              <path
-                fill-rule="evenodd"
-                d="M10 19a1 1 0 01-.7-.29l-8-8a1 1 0 011.4-1.42L10 16.58l7.3-7.3a1 1 0 111.4 1.42l-8 8a1 1 0 01-.7.3z"
-                clip-rule="evenodd"
-              />
+              <path d="M10 19a1 1 0 01-.7-.29l-8-8a1 1 0 011.4-1.42L10 16.58l7.3-7.3a1 1 0 111.4 1.42l-8 8a1 1 0 01-.7.3z" />
             </svg>
           </button>
 
           {toggle && (
-            <div class="origin-top-right absolute right-3 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
-              <div class="py-1 px-1 md:px-2" role="none">
+            <div className="origin-top-right absolute right-3 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <div className="py-1 px-1 md:px-2" role="none">
                 <Link
                   href="/user-profile"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   role="menuitem"
                 >
                   Profile
                 </Link>
                 <Link
                   href="/billing"
-                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   role="menuitem"
                 >
                   Billing
                 </Link>
                 <button
                   onclick="toggleDarkMode()"
-                  class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   role="menuitem"
                 >
                   Toggle Dark Mode
                 </button>
                 <button
                   onclick="toggleDarkMode()"
-                  class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                   role="menuitem"
                 >
                   <AuthButton onClick={() => signOut()}>Sign out</AuthButton>
