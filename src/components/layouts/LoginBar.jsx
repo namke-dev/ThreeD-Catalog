@@ -38,26 +38,26 @@ export default function LoginBar() {
           </button>
 
           {toggle && (
-            <div className="origin-top-right absolute right-3 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <div className="origin-top-right absolute right-1 top-8 w-56 rounded-md shadow-lg bg-neutral-800 text-white ring-1 ring-gray-600 ring-opacity-5 focus:outline-none">
               <div className="py-1 px-1 md:px-2" role="none">
                 <Link
                   href="/user-profile"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  className="block px-4 py-2 text-sm hover:bg-gray-600 hover:text-white"
                   role="menuitem"
                 >
                   Profile
                 </Link>
                 <Link
                   href="/billing"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                  className="block px-4 py-2 text-sm hover:bg-gray-600 hover:text-white"
                   role="menuitem"
                 >
                   Billing
                 </Link>
-                <button className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-600 hover:text-white">
                   Toggle Dark Mode
                 </button>
-                <button className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-600 hover:text-white">
                   <AuthButton onClick={() => signOut()}>Sign out</AuthButton>
                 </button>
               </div>
