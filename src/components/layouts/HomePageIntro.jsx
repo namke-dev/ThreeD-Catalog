@@ -49,11 +49,17 @@ export default function HomePageIntro() {
         </div>
         <div className="flex flex-col md:w-1/2 md:mx-14 mx-8 z-20  md:mt-30 mt-36 md:mt-10">
           <div
-            className="text-5xl md:text-6xl text-amber-700          
+            className="text-5xl md:text-6xl 
+            text-amber-800          
+            dark:text-amber-700          
            font-thin font-sans"
           >
             We present your{" "}
-            <div className="text-amber-500 font-mono font-semibold pt-6">
+            <div
+              className="
+              text-amber-600
+              dark:text-amber-500 font-mono font-semibold pt-6"
+            >
               Designed funiture
             </div>
           </div>
@@ -61,7 +67,11 @@ export default function HomePageIntro() {
             className="w-full text-lg md:text-justify md:mt-24 mt-12 mb-14 pl-14
           flex flex-col gap-4"
           >
-            <p className="font-medium text-2xl mb-2 text-amber-500">
+            <p
+              className="font-medium text-2xl mb-2 
+              text-amber-600
+              dark:text-amber-500"
+            >
               Virtual Reality Showroom - Where Style Meets Innovation!
             </p>
             <p>
@@ -73,12 +83,17 @@ export default function HomePageIntro() {
           <Link href="/show-case">
             <button
               className="h-[60px] px-10
-              border-2 
+              border-amber-400
               dark:border-amber-500
+
               dark:text-white/90
               dark:hover:bg-amber-500
-              bg-amber-500
-              text-white
+
+              bg-amber-400
+              dark:bg-amber-500/90
+
+              text-amber-900
+              dark:text-white
               flex flex-row items-center justify-center
               group
               rounded-lg
@@ -90,10 +105,11 @@ export default function HomePageIntro() {
                 md:-translate-x-2
                 md:group-hover:translate-x-0                
                 transition-transform
-                font-medium rounded-md
+                rounded-md
                 font-sans
                 group-hover:text-black
-                text-sm md:text-lg"
+                text-sm md:text-lg
+                font-bold"
               >
                 GO TO SHOWCASE
               </span>

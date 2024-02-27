@@ -82,20 +82,21 @@ function FeatureCart({ children }) {
       className="py-20 w-auto
       px-10
       flex
-      text-zinc-100
+      text-amber-400
       justify-center items-center 
       rounded-2xl
       uppercase
-      font-medium
+      font-bold
       text-lg
       hover:scale-110
       duration-500
       transition-transform
       hover:text-white
+      font-mono
       "
       style={backgroundImageStyle}
     >
-      <div className="bg-neutral-950/60 rounded-2xl w-full h-full absolute top-0"></div>
+      <div className="bg-neutral-950/60 rounded-2xl w-full h-full absolute top-0 z-30"></div>
       <div className="z-30">{children}</div>
     </div>
   );
