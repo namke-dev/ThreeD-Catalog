@@ -1,6 +1,6 @@
 # 3D Furniture Catalog Showcase
 
-**Demo:** [D3 Catalog Showcase](https://d3catalog.vercel.app/show-case)
+**Demo:** [Katalog3D.com](https://katalog3d.com/)
 
 ## Knowledge Gained from this Project
 
