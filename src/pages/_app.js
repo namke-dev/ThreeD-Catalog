@@ -3,6 +3,7 @@ import ThemeContext from "@/components/context/theme-context";
 import { LIST_FURNITURE } from "@/data/product_data";
 import "@/styles/globals.css";
 import { SessionProvider } from "next-auth/react";
+import Head from "next/head";
 import { useState } from "react";
 
 export default function App({
