@@ -3,8 +3,8 @@ import ThemeContext from "@/components/context/theme-context";
 import { LIST_FURNITURE } from "@/data/product_data";
 import "@/styles/globals.css";
 import { SessionProvider } from "next-auth/react";
-import Head from "next/head";
 import { useState } from "react";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 export default function App({
   Component,
@@ -15,26 +15,10 @@ export default function App({
 
   return (
     <SessionProvider session={session}>
-      <Head>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-9VQ6L866ZV"
-        ></script>
-        <script>
-          dangerouslySetInnerHTML=
-          {{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments)}
-              gtag('js', new Date()); 
-              gtag('config', 'G-9VQ6L866ZV');
-            `,
-          }}
-        </script>
-      </Head>
       <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
         <DisplayModelContext.Provider value={{ displayModel, setDisplayModel }}>
           <Component {...pageProps} />
+          <GoogleTagManager gtmId="G-9VQ6L866ZV" />
         </DisplayModelContext.Provider>
       </ThemeContext.Provider>
     </SessionProvider>
