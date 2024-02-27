@@ -49,3 +49,7 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.has-value label {
+  transform: translateY(-1.15rem) scale(0.8);
+}
