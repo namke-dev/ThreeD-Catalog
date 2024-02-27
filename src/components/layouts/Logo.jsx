@@ -20,7 +20,7 @@ export default function Logo({ className, children, ...props }) {
       rounded-3xl
       transition-colors
       shadow-md
-      dark:shadow-zinc-900
+      dark:shadow-zinc-800
       ${className}
       `}
     >

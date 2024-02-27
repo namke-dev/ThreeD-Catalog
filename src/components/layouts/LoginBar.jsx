@@ -1,10 +1,41 @@
 import { useSession, signIn, signOut } from "next-auth/react";
 import Link from "next/link";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import ThemeContext from "../context/theme-context";
 
 export default function LoginBar() {
   const { data: session } = useSession();
   const [toggle, setToggle] = useState(false);
+
+  const { darkMode, setDarkMode } = useContext(ThemeContext);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+
+    if (!darkMode) {
+      window.localStorage.setItem("theme", "dark");
+      document.documentElement.classList.add("dark");
+    } else {
+      window.localStorage.setItem("theme", "light");
+      document.documentElement.classList.remove("dark");
+    }
+  };
+
+  useEffect(() => {
+    const localTheme = window.localStorage.getItem("theme");
+    if (localTheme) {
+      if (localTheme === "dark") {
+        setDarkMode(true);
+        document.documentElement.classList.add("dark");
+      } else {
+        setDarkMode(false);
+        document.documentElement.classList.remove("dark");
+      }
+    } else {
+      setDarkMode(true);
+      document.documentElement.classList.add("dark");
+    }
+  }, []);
 
   if (session) {
     return (
@@ -38,26 +69,40 @@ export default function LoginBar() {
           </button>
 
           {toggle && (
-            <div className="origin-top-right absolute right-1 top-8 w-56 rounded-md shadow-lg bg-neutral-800 text-white ring-1 ring-gray-600 ring-opacity-5 focus:outline-none">
-              <div className="py-1 px-1 md:px-2" role="none">
-                <Link
-                  href="/user-profile"
-                  className="block px-4 py-2 text-sm hover:bg-gray-600 hover:text-white"
+            <div
+              className="origin-top-right absolute right-1 top-5 w-56 
+            rounded-md 
+            shadow-lg 
+            dark:bg-zinc-700
+            bg-amber-50
+            dark:text-white 
+            text-black/80
+            ring-1 ring-gray-600 ring-opacity-5 focus:outline-none"
+            >
+              <div className="p-1" role="none">
+                <ProfileOption link="/user-profile">Profile</ProfileOption>
+                <ProfileOption link="/billing">Billing</ProfileOption>
+                <button
+                  className="
+                block px-4 py-2 text-sm 
+                dark:hover:bg-white/20 
+                hover:bg-black/5
+                dark:hover:text-white
+                rounded-md w-full text-left
+                font-semibold"
                   role="menuitem"
+                  onClick={toggleDarkMode}
                 >
-                  Profile
-                </Link>
-                <Link
-                  href="/billing"
-                  className="block px-4 py-2 text-sm hover:bg-gray-600 hover:text-white"
-                  role="menuitem"
-                >
-                  Billing
-                </Link>
-                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-600 hover:text-white">
                   Toggle Dark Mode
                 </button>
-                <button className="block w-full text-left px-4 py-2 text-sm hover:bg-gray-600 hover:text-white">
+                <button
+                  className="
+                block px-4 py-2 text-sm 
+                dark:hover:bg-white/20 
+                dark:hover:text-white
+                rounded-md w-full text-left
+                hover:bg-black/5"
+                >
                   <AuthButton onClick={() => signOut()}>Sign out</AuthButton>
                 </button>
               </div>
@@ -69,7 +114,22 @@ export default function LoginBar() {
   }
   return (
     <div className="flex w-full justify-end items-center">
-      <AuthButton onClick={() => signIn()}>Sign in</AuthButton>
+      {/* <AuthButton onClick={() => signIn()}>Sign in</AuthButton> */}
+      <div
+        className="
+        flex justify-center
+        h-auto text-left bg-black/40 "
+      >
+        <Link
+          href="/"
+          className="text-black/60 inline-flex items-center justify-center px-4 py-0
+          text-white text-xs hover:bg-white/20 focus:outline-none
+          underline
+          "
+        >
+          Sign in to access all feature
+        </Link>
+      </div>
     </div>
   );
 }
@@ -80,7 +140,6 @@ function AuthButton({ onClick, children }) {
       className="md:mb-0.5
       rounded-sm
       flex-col items-center justify-center
-      hover:text-amber-600
       hover:border-amber-600
       font-medium
       text-sm
@@ -90,5 +149,22 @@ function AuthButton({ onClick, children }) {
     >
       {children}
     </div>
+  );
+}
+
+function ProfileOption({ children, link }) {
+  return (
+    <Link
+      href={link}
+      className="block px-4 py-2 text-sm 
+      font-semibold
+      dark:hover:bg-white/20
+      hover:bg-black/5
+      dark:hover:text-white
+      rounded-md"
+      role="menuitem"
+    >
+      {children}
+    </Link>
   );
 }

@@ -51,7 +51,7 @@ export default function Navbar() {
           py-0.5
           shadow-md
           duration-300
-          dark:shadow-zinc-900"
+          dark:shadow-zinc-800"
         >
           <Link href={"/show-case"}>
             <NavbartButton active={isCurrentPage("/show-case")}>
