@@ -2,13 +2,25 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import Link from "next/link";
 export default function IndexPage() {
   const { data, status } = useSession();
-  if (status === "loading") return <h1> loading... please wait</h1>;
+  if (status === "loading")
+    return (
+      <div className="flex flex-col items-center justify-center h-full w-full">
+        <h1 className="text-amber-500 font-medium text-2xl">
+          loading... please wait
+        </h1>
+      </div>
+    );
   if (status === "authenticated") {
     return (
       <div
         className="h-[80vh] w-full
       flex flex-col items-center justify-center gap-5"
       >
+        <Link href={"/home"}>
+          <button className="px-4 py-2 bg-white text-zinc-900 font-medium rounded-lg border-2 border-zinc-600">
+            Got to home page
+          </button>
+        </Link>
         <h1> D3 Catalog</h1>
         <h1> Hi {data.user.name}</h1>
         <img src={data.user.image} alt={data.user.name + " photo"} />
@@ -18,11 +30,6 @@ export default function IndexPage() {
         >
           sign out
         </button>
-        <Link href={"/home"}>
-          <button className="px-4 py-2 bg-white text-zinc-900 font-medium rounded-lg border-2 border-zinc-600">
-            Got to home page
-          </button>
-        </Link>
       </div>
     );
   }

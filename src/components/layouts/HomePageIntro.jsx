@@ -75,11 +75,10 @@ export default function HomePageIntro() {
               className="h-[60px] px-10
               border-2 
               dark:border-amber-500
-              dark:text-amber-500
+              dark:text-white/90
               dark:hover:bg-amber-500
               bg-amber-500
               text-white
-              
               flex flex-row items-center justify-center
               group
               rounded-lg
