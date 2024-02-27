@@ -97,16 +97,15 @@ function NavbartButton({ active, className, children, ...props }) {
         dark:text-white/80
         dark:bg-white/5
         dark:hover:bg-white/10
-        
         dark:hover:text-white/90
 
-        bg-zinc-200/30
+        bg-amber-600/5
          transition-colors 
          duration-500
         ${
           active
-            ? "dark:bg-white/20 bg-white/30"
-            : "text-black/60 hover:text-black hover:bg-white/50 "
+            ? "dark:bg-white/20 bg-amber-500/30 text-neutral-700"
+            : "dark:text-black/60 text-neutral-600 bg-amber-600/15"
         } ${className}`}
     >
       {children}

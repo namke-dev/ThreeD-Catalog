@@ -82,6 +82,8 @@ export default function LoginBar() {
               <div className="p-1" role="none">
                 <ProfileOption link="/user-profile">Profile</ProfileOption>
                 <ProfileOption link="/billing">Billing</ProfileOption>
+                <ProfileOption link="/dashboard">Dashboard</ProfileOption>
+
                 <button
                   className="
                 block px-4 py-2 text-sm 

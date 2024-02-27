@@ -113,14 +113,17 @@ export default function IndexPage() {
                   </div>
 
                   {/* Forgot Password Link */}
-                  <a href="#!">Forgot password?</a>
+                  <a href="#!" className="text-black/30 underline">
+                    Forgot password?
+                  </a>
                 </div>
 
                 {/* Login Button */}
-                <div className="text-center lg:text-left">
+                <div className="text-center lg:text-left w-full">
                   <button
                     type="button"
-                    className="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] bg-amber-600"
+                    className="inline-block rounded bg-primary px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] 
+                      bg-yellow-500 w-full"
                     data-te-ripple-init
                     data-te-ripple-color="light"
                   >
@@ -134,22 +137,30 @@ export default function IndexPage() {
                       href="#!"
                       className="text-blue-500 underline pl-3 transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
                     >
-                      Register
+                      Register Here
                     </a>
                   </p>
                 </div>
               </form>
 
-              {/* Or Section */}
-              <div>Or</div>
+              <div className="w-[70%]">
+                {/* Or Section */}
+                <div className="flex items-center my-6">
+                  <hr className="flex-grow border-t border-gray-300" />
+                  <span className="mx-4 text-gray-500 font-semibold">Or</span>
+                  <hr className="flex-grow border-t border-gray-300" />
+                </div>
 
-              {/* Sign in with Google Button */}
-              <button
-                onClick={() => signIn("google")}
-                className="px-4 py-2 bg-rose-500 text-zinc-100 font-medium rounded-lg"
-              >
-                Sign in with Google
-              </button>
+                {/* Sign in with Google Button */}
+                <button
+                  onClick={() => signIn("google")}
+                  className="px-4 py-3
+                  w-full
+                  bg-rose-500 text-zinc-100 font-medium rounded-lg"
+                >
+                  Sign in with Google
+                </button>
+              </div>
             </div>
           </div>
         </div>
