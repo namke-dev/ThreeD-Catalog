@@ -11,10 +11,11 @@ export default function Logo({ className, children, ...props }) {
       px-2
       m-auto
       flex flex-col items-center justify-center
-      text-white/80
+      dark:text-white/80
+      text-black/60
       hover:text-amber-600
-      bg-zinc-700
-      bg-opacity-85
+      dark:bg-zinc-700
+      bg-white/80
       rounded-3xl
       transition-colors
       duration-500

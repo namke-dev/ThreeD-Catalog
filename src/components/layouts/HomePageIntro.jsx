@@ -22,14 +22,20 @@ export default function HomePageIntro() {
         />
       </div>
 
-      <HomePageCart className="flex flex-col md:flex-row w-full text-zinc-300 z-20 md:h-auto h-[110vh]">
+      <HomePageCart
+        className="flex flex-col md:flex-row w-full 
+        font-semibold
+        z-20 md:h-auto h-[110vh]"
+      >
         <div className="md:w-1/2 flex justify-center z-20 md:pr-20 md:h-[95vh]">
           <img
             src="/images/homepage_img.jpg"
             alt="placeholder"
             className="
             md:static absolute
-            h-[100vh] md:h-[80vh] md:mt-6 md:rounded-[10px] shadow-2xl shadow-gray-950
+            h-[100vh] md:h-[80vh] md:mt-6 md:rounded-[10px] shadow-2xl 
+            dark:shadow-gray-950
+            shadow-zinc-700
             "
           />
           {width > 768 ? (
@@ -55,7 +61,7 @@ export default function HomePageIntro() {
             className="w-full text-lg md:text-justify md:mt-24 mt-12 mb-14 pl-14
           flex flex-col gap-4"
           >
-            <p className="font-medium mb-2 text-amber-500">
+            <p className="font-medium text-2xl mb-2 text-amber-500">
               Virtual Reality Showroom - Where Style Meets Innovation!
             </p>
             <p>
@@ -67,9 +73,13 @@ export default function HomePageIntro() {
           <Link href="/show-case">
             <button
               className="h-[60px] px-10
-              border-2 border-amber-500
-              text-amber-500
-              hover:bg-amber-500
+              border-2 
+              dark:border-amber-500
+              dark:text-amber-500
+              dark:hover:bg-amber-500
+              bg-amber-500
+              text-white
+              
               flex flex-row items-center justify-center
               group
               rounded-lg

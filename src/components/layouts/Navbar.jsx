@@ -36,8 +36,11 @@ export default function Navbar() {
         </Link>
         <div
           className="flex flex-row flex-wrap gap-6 lg:px-3
-        bg-zinc-700
-        bg-opacity-85
+          dark:text-white/80
+          text-black/80
+          hover:text-amber-600
+          dark:bg-zinc-700
+          bg-white/80
         rounded-3xl
         py-0.5"
         >
@@ -80,12 +83,18 @@ function NavbartButton({ active, className, children, ...props }) {
   return (
     <button
       {...props}
-      className={` px-3 md:px-5 py-1.5 my-2 rounded-3xl font-medium md:text-sm text-bs hover:bg-white/10
-        hover:text-black hover:text-white/90 transition-colors 
+      className={` px-3 md:px-5 py-1.5 my-2 rounded-3xl font-medium md:text-sm text-bs 
+      dark:text-white/80
+      text-black/60
+      hover:text-black
+      dark:bg-white/5
+      bg-zinc-200/30
+         transition-colors 
+         duration-500
         ${
           active
-            ? "bg-white/10 text-white/90"
-            : "hover:bg-white/10 hover:text-black hover:text-white/90"
+            ? "dark:bg-white/10 dark:text-white/90 bg-black/5 !text-black"
+            : "dark:hover:bg-white/10 hover:bg-black/5 dark:hover:text-black dark:hover:text-white/90"
         } ${className}`}
     >
       {children}
