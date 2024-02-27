@@ -92,7 +92,7 @@ function NavbartButton({ active, className, children, ...props }) {
   return (
     <button
       {...props}
-      className={` px-3 md:px-5 py-1.5 my-2 rounded-3xl font-bold md:text-sm text-bs 
+      className={` px-3 md:px-5 py-1.5 my-2 rounded-3xl font-medium md:text-sm text-bs 
 
         dark:text-white/80
         dark:bg-white/5
@@ -105,7 +105,7 @@ function NavbartButton({ active, className, children, ...props }) {
         ${
           active
             ? "dark:bg-white/20 bg-amber-500/30 text-neutral-700"
-            : "dark:text-black/60 text-neutral-600 bg-amber-600/15"
+            : "dark:text-white/60 text-neutral-600 bg-amber-600/15"
         } ${className}`}
     >
       {children}
