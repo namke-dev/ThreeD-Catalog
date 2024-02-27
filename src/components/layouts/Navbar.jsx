@@ -11,12 +11,12 @@ export default function Navbar() {
   return (
     <div
       className="          
-    fixed
-    w-full z-50
-    md:h-auto
-    text-white/70
-    pb-2
-    rounded-none
+      fixed
+      w-full z-50
+      md:h-auto
+      text-white/70
+      pb-2
+      rounded-none
     "
     >
       <LoginBar />
@@ -39,10 +39,19 @@ export default function Navbar() {
           dark:text-white/80
           text-black/80
           hover:text-amber-600
-          dark:bg-zinc-700
-          bg-white/80
-        rounded-3xl
-        py-0.5"
+          bg-gradient-to-r
+          from-amber-50/90
+          via-amber-50/90
+          to-yellow-50/90
+          dark:from-zinc-700
+          dark:via-zinc-700/90
+          dark:to-zinc-700/90
+
+          rounded-3xl
+          py-0.5
+          shadow-md
+          duration-300
+          dark:shadow-zinc-900"
         >
           <Link href={"/show-case"}>
             <NavbartButton active={isCurrentPage("/show-case")}>
@@ -83,18 +92,21 @@ function NavbartButton({ active, className, children, ...props }) {
   return (
     <button
       {...props}
-      className={` px-3 md:px-5 py-1.5 my-2 rounded-3xl font-medium md:text-sm text-bs 
-      dark:text-white/80
-      text-black/60
-      hover:text-black
-      dark:bg-white/5
-      bg-zinc-200/30
+      className={` px-3 md:px-5 py-1.5 my-2 rounded-3xl font-bold md:text-sm text-bs 
+
+        dark:text-white/80
+        dark:bg-white/5
+        dark:hover:bg-white/10
+        
+        dark:hover:text-white/90
+
+        bg-zinc-200/30
          transition-colors 
          duration-500
         ${
           active
-            ? "dark:bg-white/10 dark:text-white/90 bg-black/5 !text-black"
-            : "dark:hover:bg-white/10 hover:bg-black/5 dark:hover:text-black dark:hover:text-white/90"
+            ? "dark:bg-white/20 bg-white/30"
+            : "text-black/60 hover:text-black hover:bg-white/50 "
         } ${className}`}
     >
       {children}

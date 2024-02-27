@@ -14,11 +14,13 @@ export default function Logo({ className, children, ...props }) {
       dark:text-white/80
       text-black/60
       hover:text-amber-600
-      dark:bg-zinc-700
-      bg-white/80
+      bg-amber-50/90
+      
+      dark:bg-zinc-700/90
       rounded-3xl
       transition-colors
-      duration-500
+      shadow-md
+      dark:shadow-zinc-900
       ${className}
       `}
     >
