@@ -8,7 +8,7 @@ import PageHeader from "@/components/layouts/PageHeader";
 
 export default function News() {
   return (
-    <Layout className="bg-gradient-to-r from-zinc-800 to-slate-800">
+    <Layout>
       <img src="images/news-header.jpg" className="brightness-50 opacity-70" />
       <PageHeader>Lastest news</PageHeader>
       <HomePageCart
