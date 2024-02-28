@@ -18,7 +18,7 @@ export default function App({
       <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
         <DisplayModelContext.Provider value={{ displayModel, setDisplayModel }}>
           <Component {...pageProps} />
-          <GoogleTagManager gtmId="G-9VQ6L866ZV" />
+          <GoogleTagManager gtmId="G-LMR0MMBBQ7" />
         </DisplayModelContext.Provider>
       </ThemeContext.Provider>
     </SessionProvider>
