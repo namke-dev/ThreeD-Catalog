@@ -18,7 +18,7 @@ const getAuthToken = async () => {
       private_key: keys.private_key,
     };
 
-    console.log("Service Account Keys:", auth);
+    // console.log("Service Account Keys:", auth);
 
     return auth;
   } catch (error) {
@@ -44,8 +44,8 @@ export default async function handler(req, res) {
     const thirtyDaysAgo = new Date();
     thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
-    // Run a simple report
-    const [response] = await analyticsDataClient.runReport({
+    //Define report option
+    const reportOption = {
       property: `properties/${propertyId}`,
       dateRanges: [
         {
@@ -57,16 +57,25 @@ export default async function handler(req, res) {
         {
           name: "city",
         },
+        {
+          name: "date",
+        },
       ],
       metrics: [
         {
           name: "activeUsers",
         },
+        {
+          name: "eventCount",
+        },
       ],
-    });
+    };
+
+    // Run a report
+    const [response] = await analyticsDataClient.runReport(reportOption);
 
     // Send the report result as the response
-    res.status(200).json({ report: response.rows });
+    res.status(200).json({ report: response });
   } catch (error) {
     console.error("Error running Google Analytics report:", error);
     throw error;

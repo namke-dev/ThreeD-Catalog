@@ -1,6 +1,6 @@
 # 3D Furniture Catalog Showcase
 
-**Demo:** [Katalog3D.com](https://katalog3d.com/)
+**Demo:** [katalog3d.com](https://katalog3d.com/)
 
 ## Knowledge Gained from this Project
 

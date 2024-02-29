@@ -22,7 +22,7 @@ export default function DashBoardCard() {
     <div>
       {reportData ? (
         <div>
-          <h2>Google Analytics Report:</h2>
+          <h2 className="text-xl my-2">Google Analytics Report</h2>
           <pre>{JSON.stringify(reportData, null, 2)}</pre>
         </div>
       ) : (
