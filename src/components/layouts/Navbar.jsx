@@ -53,6 +53,9 @@ export default function Navbar() {
           duration-300
           dark:shadow-zinc-800"
         >
+          <Link href={"/home"}>
+            <NavbartButton active={isCurrentPage("/home")}>HOME</NavbartButton>
+          </Link>
           <Link href={"/show-case"}>
             <NavbartButton active={isCurrentPage("/show-case")}>
               SHOW CASE
@@ -63,11 +66,11 @@ export default function Navbar() {
             <NavbartButton active={isCurrentPage("/news")}>NEWS</NavbartButton>
           </Link>
 
-          <Link href={"/about"}>
+          {/* <Link href={"/about"}>
             <NavbartButton active={isCurrentPage("/about")}>
               ABOUT
             </NavbartButton>
-          </Link>
+          </Link> */}
           <Link href={"/contact"}>
             <NavbartButton active={isCurrentPage("/contact")}>
               CONTACT
