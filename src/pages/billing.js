@@ -6,38 +6,109 @@ import PageHeader from "@/components/layouts/PageHeader";
 export default function Billing() {
   return (
     <Layout>
-      <img src="images/news-header.jpg" className="brightness-50 opacity-70" />
       <PageHeader>Billing & Cost Management</PageHeader>
       <HomePageCart
-        className="bg-neutral-700/90
-        relative -top-60 z-10 text-gray-200 m-14 !pt-10 !pb-32 -mb-52"
+        className="
+        !pt-10 !pb-32 "
       >
-        <div className="max-w-[1200px] mx-auto">
-          <p className="mb-6">
-            Welcome to our 3D Furniture Catalog, where we bring your interior
-            design dreams to life! We are passionate about creating unique and
-            stylish furniture pieces to enhance your living space.
-          </p>
+        <div className="flex flex-row gap-4 text-lg">
+          <div className="flex-1">
+            <div className="h-full py-10 px-16 rounded-lg bg-white text-black">
+              <div className="text-2xl font-semibold mb-8 text-center">
+                Phương thức thanh toán
+              </div>
 
-          <h2 className="text-2xl font-bold mb-4 text-amber-400">
-            Our Mission
-          </h2>
-          <p className="mb-6">
-            Our mission is to provide high-quality and customizable 3D furniture
-            models that cater to diverse tastes and preferences. We believe in
-            blending aesthetics with functionality to transform your home or
-            office into a place you'll love.
-          </p>
+              <ul className="list-disc mb-6">
+                <li className="mb-2">Quét mã QR trên App ngân hàng của bạn</li>
+                <li className="mb-2">Nội dung chuyển tiền: 2rxqz</li>
+              </ul>
+              <hr className="my-4 border-t" />
 
-          <h2 className="text-2xl font-bold mb-4 text-amber-400">
-            Meet the Team
-          </h2>
-          <p className="mt-8">
-            Thank you for exploring our 3D furniture catalog. We are dedicated
-            to providing you with a seamless and enjoyable experience as you
-            discover the perfect pieces for your space. If you have any
-            questions or feedback, feel free to contact us.
-          </p>
+              <div className="flex justify-center items-center">
+                <img src="/images/bankQr.jpg" className="w-[400px]" />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex-1">
+            <div className="h-full py-10 px-16 rounded-lg bg-white text-black">
+              <div className="text-2xl font-semibold mb-8 text-center">
+                Charge Option
+              </div>
+              <form>
+                <div className="mb-2">
+                  <label
+                    htmlFor="chargePlan"
+                    className="block text-lg font-semibold mb-2"
+                  >
+                    Charge Plan:
+                  </label>
+                  <select
+                    id="chargePlan"
+                    name="chargePlan"
+                    className="w-full p-2 border rounded-md"
+                  >
+                    <option value="basic">Gói cơ bản</option>
+                    <option value="premium">Gói cao cấp</option>
+                    <option value="fullySupport">Gói hỗ trợ đầy đủ</option>
+                  </select>
+                  <p className="italic text-sm pl-5 pt-2">
+                    Price: 100$ per month
+                  </p>
+                </div>
+
+                <div className="mb-2">
+                  <label
+                    htmlFor="period"
+                    className="block text-lg font-semibold mb-2"
+                  >
+                    Chọn kỳ hạn:
+                  </label>
+                  <select
+                    id="period"
+                    name="period"
+                    className="w-full p-2 border rounded-md"
+                  >
+                    <option value="1month">1 tháng</option>
+                    <option value="6months">6 tháng</option>
+                    <option value="1year">1 năm</option>
+                  </select>
+                </div>
+                <button
+                  type="submit"
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                >
+                  Confirm
+                </button>
+              </form>
+              <hr className="my-6 border-t" />
+
+              <div className="mb-2">
+                <div className="text-2xl font-semibold mb-4">Hoá Đơn</div>
+                <p>Premium plan ($100 per Month)</p>
+                <p>Period: 6 months</p>
+                <p>Total</p>
+                <div
+                  className="pl-3 w-[200px] border p-4 shadow-inner 
+                  text-right
+                  my-2"
+                >
+                  <p>$100</p>
+                  <p>x</p>
+                  <p>6</p>
+                  <hr className="my-1 border-t" />
+                  <p>$600</p>
+                </div>
+                <div className="mt-8">
+                  <p>Thanh toán qua tài khoảng ngân hàng phía trên</p>
+                  <p>
+                    Tổng cộng:{" "}
+                    <span className="font-semibold">$600 (14.793.000 VND)</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </HomePageCart>
     </Layout>
