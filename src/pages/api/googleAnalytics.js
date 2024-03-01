@@ -36,8 +36,8 @@ const getAuthToken = async () => {
     const keys = JSON.parse(content);
 
     const auth = {
-      client_email: keys.client_email,
-      private_key: keys.private_key,
+      client_email: process.env.NEXT_PUBLIC_GA_CLIENT_EMAIL,
+      private_key: process.env.NEXT_PUBLIC_GA_PRIVATE_KEY,
     };
 
     // console.log("Service Account Keys:", auth);

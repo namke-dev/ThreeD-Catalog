@@ -55,9 +55,7 @@ export default function DashBoardCard() {
           <div className="flex flex-row flex-wrap -mx-4">
             <div className="w-full md:w-2/3  px-4">
               <div className="bg-white rounded-lg shadow-md p-6">
-                <h2 className="text-xl my-2">
-                  Google Analytics Overview Report
-                </h2>
+                <h2 className="text-xl my-2">Active Users and Event count</h2>
                 <CustomLineChart rawData={overviewReportData} />
               </div>
             </div>
