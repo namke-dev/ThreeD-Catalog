@@ -27,10 +27,12 @@ const getAuthToken = async () => {
   try {
     const auth = {
       client_email: process.env.NEXT_PUBLIC_GA_CLIENT_EMAIL,
-      private_key: process.env.NEXT_PUBLIC_GA_PRIVATE_KEY,
+      private_key: process.env.NEXT_PUBLIC_GA_PRIVATE_KEY.split(
+        String.raw`\n`
+      ).join("\n"),
     };
 
-    console.log("Service Account Keys:", auth);
+    // console.log("Service Account Keys:", auth);
 
     return auth;
   } catch (error) {
