@@ -1,14 +1,10 @@
 import { BetaAnalyticsDataClient } from "@google-analytics/data";
-import { google } from "googleapis";
 import fs from "fs";
-import { attributeList1, demensionList1 } from "./reportOptions";
 
 const CREDENTIALS_PATH =
   "C:\\Users\\Namng\\Downloads\\d3catalog-cb9310abe884.json";
 
 export default async function handler(req, res) {
-  const propertyId = req.query.propertyId;
-
   try {
     // Get OAuth token
     const authToken = await getAuthToken();
@@ -18,12 +14,7 @@ export default async function handler(req, res) {
       credentials: authToken,
     });
 
-    const reportOption = generateReportOption(
-      propertyId,
-      demensionList1,
-      attributeList1,
-      30
-    );
+    const reportOption = req.body.reportOption; // Use the report option from the request body
 
     // Run a report
     const [response] = await analyticsDataClient.runReport(reportOption);
@@ -57,35 +48,3 @@ const getAuthToken = async () => {
     throw error; // Rethrow the error to be caught in the calling function
   }
 };
-
-function generateReportOption(
-  propertyId,
-  demensionList,
-  attributeList,
-  period
-) {
-  const beginDate = new Date();
-  beginDate.setDate(beginDate.getDate() - period);
-
-  const dateRanges = [
-    {
-      startDate: beginDate.toISOString().split("T")[0], // Format as "YYYY-MM-DD"
-      endDate: "today",
-    },
-  ];
-
-  const dimensions = demensionList.map((demension) => ({
-    name: demension,
-  }));
-
-  const metrics = attributeList.map((attribute) => ({
-    name: attribute,
-  }));
-
-  return {
-    property: `properties/${propertyId}`,
-    dateRanges,
-    dimensions,
-    metrics,
-  };
-}
