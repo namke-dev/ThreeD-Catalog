@@ -1,0 +1,42 @@
+   <!-- public/sitemap.xml -->
+   <xml version="1.0" encoding="UTF-8">
+   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+     <url>
+       <loc>https://katalog3d.com/</loc>
+     </url>
+
+      <url>
+       <loc>https://katalog3d.com/home</loc>
+     </url>
+      
+      <url>
+       <loc>https://katalog3d.com/show-case</loc>
+     </url>
+      
+      <url>
+       <loc>https://katalog3d.com/news</loc>
+      </url>
+      
+      <url>
+       <loc>https://katalog3d.com/contact</loc>
+      </url>
+      
+      <url>
+       <loc>https://katalog3d.com/user-profile</loc>
+      </url>
+
+      <url>
+       <loc>https://katalog3d.com/dashboard</loc>
+      </url>      
+
+      <url>
+       <loc>https://katalog3d.com/billing</loc>
+      </url>      
+
+      <url>
+       <loc>https://katalog3d.com/newsdetail</loc>
+      </url>
+      
+   </urlset>
+   </xml>
