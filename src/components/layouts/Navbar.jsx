@@ -12,7 +12,7 @@ export default function Navbar() {
     <div
       className="          
       fixed
-      w-full z-50
+      w-full z-40
       md:h-auto
       text-white/70
       pb-2
