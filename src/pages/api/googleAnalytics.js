@@ -1,8 +1,4 @@
 import { BetaAnalyticsDataClient } from "@google-analytics/data";
-import fs from "fs";
-
-const CREDENTIALS_PATH =
-  "C:\\Users\\Namng\\Downloads\\d3catalog-cb9310abe884.json";
 
 export default async function handler(req, res) {
   try {
@@ -29,12 +25,6 @@ export default async function handler(req, res) {
 
 const getAuthToken = async () => {
   try {
-    const content = fs.readFileSync(CREDENTIALS_PATH, {
-      encoding: "utf8",
-      flag: "r",
-    });
-    const keys = JSON.parse(content);
-
     const auth = {
       client_email: process.env.NEXT_PUBLIC_GA_CLIENT_EMAIL,
       private_key: process.env.NEXT_PUBLIC_GA_PRIVATE_KEY,
