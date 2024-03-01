@@ -2,54 +2,84 @@ import { useEffect, useState } from "react";
 import CustomLineChart from "./CustomLineChart";
 import {
   attributeList1,
+  attributeList2,
   attributeList3,
   demensionList1,
+  demensionList2,
   demensionList3,
 } from "@/pages/api/reportOptions";
+import HorizontalBarChart from "./HorizontalBarChart";
+import CountryTable from "./CountryTable";
 
 export default function DashBoardCard() {
-  const [reportData, setReportData] = useState(null);
+  const [overviewReportData, setOverviewReportData] = useState(null);
+  const [eventTypeReportData, setEventTypeReportData] = useState(null);
+  const [countryReportData, setCountryReportData] = useState(null);
 
   useEffect(() => {
-    // Replace 'YOUR_PROPERTY_ID' with the actual Google Analytics property ID
     const propertyId = "429693073";
+    const period = 30;
 
-    const reportOption = generateReportOption(
+    // Fetch data for Overview Report
+    const reportOptionOverview = generateReportOption(
       propertyId,
       demensionList1,
       attributeList1,
-      30
+      period
     );
+    fetchDataAndSetState(reportOptionOverview, setOverviewReportData);
 
-    // Fetch data from the API route
-    fetch(`/api/googleAnalytics?propertyId=${propertyId}`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ reportOption }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        setReportData(data.report);
-      })
-      .catch((error) => {
-        console.error("Error fetching Google Analytics data:", error);
-      });
+    // Fetch data for Event Type Report
+    const reportOptionByEventType = generateReportOption(
+      propertyId,
+      demensionList2,
+      attributeList2,
+      period
+    );
+    fetchDataAndSetState(reportOptionByEventType, setEventTypeReportData);
+
+    // Fetch data for Country Report
+    const reportOptionByCountry = generateReportOption(
+      propertyId,
+      demensionList3,
+      attributeList3,
+      period
+    );
+    fetchDataAndSetState(reportOptionByCountry, setCountryReportData);
   }, []);
 
   return (
-    <div>
-      {reportData ? (
-        <div>
-          <h2 className="text-xl my-2">Google Analytics Report</h2>
-          <pre>{JSON.stringify(reportData, null, 2)}</pre>
-          <CustomLineChart rawData={reportData} />
+    <>
+      {overviewReportData && eventTypeReportData && countryReportData ? (
+        <div className="flex flex-col space-y-8 dark:text-black mt-20">
+          <div className="flex flex-row flex-wrap -mx-4">
+            <div className="w-full md:w-2/3  px-4">
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h2 className="text-xl my-2">
+                  Google Analytics Overview Report
+                </h2>
+                <CustomLineChart rawData={overviewReportData} />
+              </div>
+            </div>
+
+            <div className="w-full md:w-1/3 px-4">
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h2 className="text-xl my-2">Event Type Report</h2>
+                <HorizontalBarChart rawData={eventTypeReportData} />
+              </div>
+            </div>
+          </div>
+          <div className="w-full">
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h2 className="text-xl my-2">Country Report</h2>
+              <CountryTable rawData={countryReportData} />
+            </div>
+          </div>
         </div>
       ) : (
         <p>Loading...</p>
       )}
-    </div>
+    </>
   );
 }
 
@@ -84,3 +114,23 @@ function generateReportOption(
     metrics,
   };
 }
+
+const fetchDataAndSetState = (reportOption, setStateFunction) => {
+  fetch(
+    `/api/googleAnalytics?propertyId=${reportOption.property.split("/")[1]}`,
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ reportOption }),
+    }
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      setStateFunction(data.report);
+    })
+    .catch((error) => {
+      console.error("Error fetching Google Analytics data:", error);
+    });
+};

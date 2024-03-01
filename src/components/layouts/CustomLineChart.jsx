@@ -1,6 +1,6 @@
-// LineChart.js
 import React, { useEffect, useState } from "react";
 import {
+  ResponsiveContainer,
   LineChart,
   Line,
   XAxis,
@@ -25,8 +25,8 @@ export default function CustomLineChart({ rawData }) {
   }, [rawData]);
 
   return (
-    <div>
-      <LineChart width={800} height={400} data={data}>
+    <ResponsiveContainer width="100%" height={400}>
+      <LineChart data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="label" />
         <YAxis />
@@ -35,7 +35,7 @@ export default function CustomLineChart({ rawData }) {
         <Line type="monotone" dataKey="activeUsers" stroke="#8884d8" />
         <Line type="monotone" dataKey="eventCount" stroke="#82ca9d" />
       </LineChart>
-    </div>
+    </ResponsiveContainer>
   );
 }
 
