@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import CustomLineChart from "./CustomLineChart";
 
 export default function DashBoardCard() {
   const [reportData, setReportData] = useState(null);
@@ -24,6 +25,7 @@ export default function DashBoardCard() {
         <div>
           <h2 className="text-xl my-2">Google Analytics Report</h2>
           <pre>{JSON.stringify(reportData, null, 2)}</pre>
+          <CustomLineChart rawData={reportData} />
         </div>
       ) : (
         <p>Loading...</p>
