@@ -5,6 +5,7 @@ import React from "react";
 
 export default function UserProfileCard() {
   const { data: session } = useSession();
+
   const list_product = LIST_FURNITURE;
   console.log(list_product);
   if (session) {
@@ -16,12 +17,26 @@ export default function UserProfileCard() {
       return (
         <div
           className="flex md:flex-row flex-col gap-2 
-        
         w-full 
         h-[80vh]
         mx-3"
         >
-          <div className="bg-gray-800 text-white p-6 rounded-sm shadow-md max-w-md min-w-[300px] w-1/3">
+          <div
+            className="
+            p-6 rounded-lg 
+            bg-white text-black
+            
+            max-w-md min-w-[300px] w-1/3"
+          >
+            <div className="my-3 w-full flex justify-center items-center">
+              {session && session.user.image && (
+                <img
+                  src={session.user.image}
+                  alt={`${session.user.name}'s avatar`}
+                  className="rounded-full h-[120px] "
+                />
+              )}
+            </div>
             <div className="mb-1">
               <label className="block text-sm font-bold mb-2">
                 First Name:
@@ -56,18 +71,21 @@ export default function UserProfileCard() {
           </div>
 
           <div
-            className="bg-gray-800 rounded-sm shadow-md 
+            className="
             w-2/3 h-full
-            overflow-auto"
+            overflow-auto
+            
+            p-0 rounded-lg 
+            bg-neutral-600 text-black"
           >
             <table className="w-[1200px]">
-              <thead>
+              <thead className="bg-neutral-600 text-white">
                 <tr>
                   {PRODUCT_DATA.length > 0 &&
                     Object.keys(PRODUCT_DATA[0])
                       .filter((key) => key !== "component")
                       .map((key) => (
-                        <th key={key} className="text-white p-2">
+                        <th key={key} className=" p-2">
                           {key}
                         </th>
                       ))}
@@ -76,9 +94,14 @@ export default function UserProfileCard() {
               <tbody>
                 {PRODUCT_DATA &&
                   PRODUCT_DATA.map((product, index) => (
-                    <tr key={index} className="bg-black text-white">
+                    <tr key={index} className="">
                       {Object.values(product).map((value, subIndex) => (
-                        <td key={subIndex} className="p-2  align-top">
+                        <td
+                          key={subIndex}
+                          className={`p-2  align-top ${
+                            index % 2 === 0 ? "bg-gray-200" : "bg-white"
+                          } border border-neutral-300`}
+                        >
                           {value}
                         </td>
                       ))}
