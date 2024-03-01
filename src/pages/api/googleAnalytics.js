@@ -34,7 +34,7 @@ const getAuthToken = async () => {
 
     return auth;
   } catch (error) {
-    console.error("Error reading or parsing service account key:", error);
+    console.error("==> Error reading or parsing service account key:", error);
     throw error; // Rethrow the error to be caught in the calling function
   }
 };
