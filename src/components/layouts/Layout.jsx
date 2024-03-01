@@ -2,6 +2,8 @@ import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 import React from "react";
 import ThemeSwitch from "./ThemeSwitch";
+import MessengerBuble from "./MessengerBuble";
+import HamburgerMenu from "./HamburgerMenu";
 
 export default function Layout({ children, className }) {
   return (
@@ -16,6 +18,8 @@ export default function Layout({ children, className }) {
       <div className="max-w-[1400px] m-auto md:pt-10 md:pb-20">{children}</div>
       <Footer />
       {/* <ThemeSwitch /> */}
+      <MessengerBuble />
+      <HamburgerMenu />
     </div>
   );
 }
