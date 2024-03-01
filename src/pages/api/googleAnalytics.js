@@ -30,7 +30,7 @@ const getAuthToken = async () => {
       private_key: process.env.NEXT_PUBLIC_GA_PRIVATE_KEY,
     };
 
-    // console.log("Service Account Keys:", auth);
+    console.log("Service Account Keys:", auth);
 
     return auth;
   } catch (error) {
