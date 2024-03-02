@@ -47,54 +47,22 @@ export default function LoginPage() {
             <div className="mt-3 w-full flex flex-col justify-center items-center py-10">
               <form className="w-[70%]">
                 {/* Email Input */}
-                <div
-                  className={`relative mb-6 ${emailValue ? "has-value" : ""}`}
-                >
-                  <input
-                    type="text"
-                    className="
-                    border border-black/30
-                    peer block min-h-[auto] w-full rounded bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                    id="exampleFormControlInput2"
-                    placeholder="Email address"
-                    value={emailValue}
-                    onChange={handleEmailChange}
-                  />
-                  <label
-                    htmlFor="exampleFormControlInput2"
-                    className={`pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out dark:text-neutral-200 ${
-                      emailValue ? "-translate-y-[1.15rem] scale-[0.8]" : ""
-                    }`}
-                  >
-                    Email address
-                  </label>
-                </div>
+                <InputField
+                  type="text"
+                  id="exampleFormControlInput2"
+                  placeholder="Email address"
+                  value={emailValue}
+                  onChange={handleEmailChange}
+                />
 
                 {/* Password Input */}
-                <div
-                  className={`relative mb-6 ${
-                    passwordValue ? "has-value" : ""
-                  }`}
-                >
-                  <input
-                    type="password"
-                    className="
-                    border border-black/30
-                    peer block min-h-[auto] w-full rounded bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-                    id="exampleFormControlInput3"
-                    placeholder="Password"
-                    value={passwordValue}
-                    onChange={handlePasswordChange}
-                  />
-                  <label
-                    htmlFor="exampleFormControlInput3"
-                    className={`pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out dark:text-neutral-200 ${
-                      passwordValue ? "-translate-y-[1.15rem] scale-[0.8]" : ""
-                    }`}
-                  >
-                    Password
-                  </label>
-                </div>
+                <InputField
+                  type="password"
+                  id="exampleFormControlInput3"
+                  placeholder="Password"
+                  value={passwordValue}
+                  onChange={handlePasswordChange}
+                />
 
                 <div className="mb-6 flex items-center justify-between">
                   {/* Remember me Checkbox */}
@@ -133,7 +101,7 @@ export default function LoginPage() {
                   <p className="mb-0 mt-2 pt-1 text-sm font-semibold">
                     Don't have an account?
                     <a
-                      href="#!"
+                      href="/register"
                       className="text-blue-500 underline pl-3 transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
                     >
                       Register Here
@@ -164,6 +132,31 @@ export default function LoginPage() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+export function InputField({ type, id, placeholder, value, onChange }) {
+  const hasValue = value && value.length > 0;
+
+  return (
+    <div className={`relative mb-6 ${hasValue ? "has-value" : ""}`}>
+      <input
+        type={type}
+        className="border-b border-black/30 peer block min-h-[auto] w-full rounded-none bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+        id={id}
+        placeholder=""
+        value={value}
+        onChange={onChange}
+      />
+      <label
+        htmlFor={id}
+        className={`pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out dark:text-neutral-200 ${
+          hasValue ? "-translate-y-[1.15rem] scale-[0.8]" : ""
+        }`}
+      >
+        {placeholder}
+      </label>
     </div>
   );
 }
