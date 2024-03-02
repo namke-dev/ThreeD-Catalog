@@ -19,6 +19,9 @@ export default function LoginPage() {
     try {
       const res = await signInWithEmailAndPassword(emailValue, passwordValue);
       console.log(res);
+      if (user) {
+        router.push("/");
+      }
     } catch (error) {
       console.log(error);
     }
@@ -41,9 +44,10 @@ export default function LoginPage() {
   };
 
   // Redirect to home page if user is authenticated
-  if (user) {
-    router.push("/");
-  }
+  // if (user) {
+  //   router.push("/");
+  // }
+
   return (
     <div className="h-[100vh] px-6 w-full relative">
       <div className="absolute top-0 left-0 w-screen h-screen flex items-center justify-center -z-10">

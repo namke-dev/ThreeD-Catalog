@@ -1,9 +1,14 @@
 "use client";
+import { UserAuth } from "@/components/context/auth-context";
 import { auth } from "@/services/firebase";
+import { sendEmailVerification } from "firebase/auth";
 import { useState } from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useRouter } from "next/router";
 
 export default function RegisterPage() {
+  const router = useRouter();
+
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [emailValue, setEmailValue] = useState("");
@@ -12,6 +17,8 @@ export default function RegisterPage() {
   const [phoneNumberValue, setPhoneNumberValue] = useState("");
   const [addressValue, setAddressValue] = useState("");
   const [companyNameValue, setCompanyNameValue] = useState("");
+
+  const [registrationStatus, setRegistrationStatus] = useState(null);
 
   const [createUserWithEmailAndPassword] =
     useCreateUserWithEmailAndPassword(auth);
@@ -49,16 +56,30 @@ export default function RegisterPage() {
   };
 
   const handleRegisterNewAccount = async () => {
-    console.log("==> Sign in new user, " + emailValue + ", " + passwordValue);
     try {
       const res = await createUserWithEmailAndPassword(
         emailValue,
         passwordValue
       );
       console.log(res);
+
+      // Registration successful
+      setRegistrationStatus("success");
+
+      // Send email verification
+      console.log("Verification email sent to " + res.user.email);
+      await sendEmailVerification(res.user);
     } catch (error) {
       console.log(error);
+
+      // Registration failed
+      setRegistrationStatus("failure");
     }
+  };
+
+  const handleOKButtonClick = () => {
+    // Redirect to the sign-in page
+    router.push("/signin");
   };
 
   return (
@@ -177,6 +198,12 @@ export default function RegisterPage() {
                     Register
                   </button>
 
+                  {/* Notification for failed registration */}
+                  {registrationStatus === "failure" && (
+                    <p className="text-red-500 mt-2">
+                      Registration failed. Please try again.
+                    </p>
+                  )}
                   {/* Login Link */}
                   <p className="mb-0 mt-2 pt-1 text-sm font-semibold">
                     Already have an account?
@@ -193,6 +220,23 @@ export default function RegisterPage() {
           </div>
         </div>
       </div>
+
+      {/* Notification Modal */}
+      {registrationStatus === "success" && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="bg-white p-8 rounded-md shadow-md flex flex-col items-center justify-center">
+            <p className="text-green-500 mb-4">
+              Account registered successfully! Please verify your email.
+            </p>
+            <button
+              className="bg-amber-500 w-[300px] text-white px-4 py-2 rounded-md"
+              onClick={handleOKButtonClick}
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
