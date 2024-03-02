@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 import { SessionProvider } from "next-auth/react";
 import { useState } from "react";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { AuthContextProvider } from "@/components/context/authContext";
+import { AuthContextProvider } from "@/components/context/auth-context";
 
 export default function App({
   Component,

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import ThemeContext from "../context/theme-context";
-import { UserAuth } from "../context/authContext";
+import { UserAuth } from "../context/auth-context";
 
 export default function LoginBar() {
   const { user, logOut } = UserAuth();

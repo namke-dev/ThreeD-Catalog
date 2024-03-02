@@ -1,7 +1,7 @@
 import { LIST_FURNITURE, PRODUCT_DATA } from "@/data/product_data";
 import { USER_PROFILE_DATA } from "@/data/user_profile_data";
 import React from "react";
-import { UserAuth } from "../context/authContext";
+import { UserAuth } from "../context/auth-context";
 
 export default function UserProfileCard() {
   const { user } = UserAuth();
