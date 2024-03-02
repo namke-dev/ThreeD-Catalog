@@ -1,13 +1,22 @@
-import { useSession, signIn, signOut } from "next-auth/react";
 import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import ThemeContext from "../context/theme-context";
+import { UserAuth } from "../context/authContext";
 
 export default function LoginBar() {
-  const { data: session } = useSession();
+  const { user, logOut } = UserAuth();
+
   const [toggle, setToggle] = useState(false);
 
   const { darkMode, setDarkMode } = useContext(ThemeContext);
+
+  const handleSignOut = async () => {
+    try {
+      await logOut();
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
@@ -37,11 +46,11 @@ export default function LoginBar() {
     }
   }, []);
 
-  if (session) {
+  if (user) {
     return (
       <div
         className="flex w-full justify-end items-center
-        mb-2"
+        mb-2 h-5"
       >
         <div
           className="
@@ -56,7 +65,7 @@ export default function LoginBar() {
               setToggle(!toggle);
             }}
           >
-            {session.user.email}
+            {user.displayName}
             <svg
               className="-mr-1 h-2 w-5 "
               xmlns="http://www.w3.org/2000/svg"
@@ -71,13 +80,13 @@ export default function LoginBar() {
           {toggle && (
             <div
               className="origin-top-right absolute right-1 top-5 w-56 
-            rounded-md 
-            shadow-lg 
-            dark:bg-zinc-700
-            bg-amber-50
-            dark:text-white 
-            text-black/80
-            ring-1 ring-gray-600 ring-opacity-5 focus:outline-none"
+              rounded-md 
+              shadow-lg 
+              dark:bg-zinc-700
+              bg-amber-50
+              dark:text-white 
+              text-black/80
+              ring-1 ring-gray-600 ring-opacity-5 focus:outline-none"
             >
               <div className="p-1" role="none">
                 <ProfileOption link="/user-profile">Profile</ProfileOption>
@@ -105,7 +114,9 @@ export default function LoginBar() {
                 rounded-md w-full text-left
                 hover:bg-black/5"
                 >
-                  <AuthButton onClick={() => signOut()}>Sign out</AuthButton>
+                  <AuthButton onClick={() => handleSignOut()}>
+                    Sign out
+                  </AuthButton>
                 </button>
               </div>
             </div>
@@ -115,12 +126,14 @@ export default function LoginBar() {
     );
   }
   return (
-    <div className="flex w-full justify-end items-center">
-      {/* <AuthButton onClick={() => signIn()}>Sign in</AuthButton> */}
+    <div
+      className="flex w-full justify-end items-center
+    mb-2 h-5"
+    >
       <div
         className="
         flex justify-center
-        h-auto text-left bg-black/40 "
+        text-left bg-black/40 h-5"
       >
         <Link
           href="/login"

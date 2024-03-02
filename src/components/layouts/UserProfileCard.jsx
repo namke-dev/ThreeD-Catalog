@@ -1,15 +1,15 @@
 import { LIST_FURNITURE, PRODUCT_DATA } from "@/data/product_data";
 import { USER_PROFILE_DATA } from "@/data/user_profile_data";
-import { useSession } from "next-auth/react";
 import React from "react";
+import { UserAuth } from "../context/authContext";
 
 export default function UserProfileCard() {
-  const { data: session } = useSession();
+  const { user } = UserAuth();
 
   const list_product = LIST_FURNITURE;
   console.log(list_product);
-  if (session) {
-    const userEmail = session.user.email;
+  if (user) {
+    const userEmail = user.email;
     const userProfile = USER_PROFILE_DATA.find(
       (user) => user.email == userEmail
     );
@@ -29,10 +29,10 @@ export default function UserProfileCard() {
             max-w-md min-w-[300px] w-1/3"
           >
             <div className="my-3 w-full flex justify-center items-center">
-              {session && session.user.image && (
+              {user && user.photoURL && (
                 <img
-                  src={session.user.image}
-                  alt={`${session.user.name}'s avatar`}
+                  src={user.photoURL}
+                  alt={`${user.email}'s avatar`}
                   className="rounded-full h-[120px] "
                 />
               )}

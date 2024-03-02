@@ -1,3 +1,5 @@
+import { auth } from "@/services/firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { useSession, signIn } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -42,6 +44,11 @@ export default function RegisterPage() {
 
   const handleCompanyNameChange = (event) => {
     setCompanyNameValue(event.target.value);
+  };
+
+  const handleRegisterNewAccount = () => {
+    console.log("==> Sign in new user, " + emailValue + ", " + passwordValue);
+    signInWithEmailAndPassword(auth, emailValue, passwordValue);
   };
 
   return (
@@ -155,6 +162,7 @@ export default function RegisterPage() {
                     bg-yellow-500 w-full"
                     data-te-ripple-init
                     data-te-ripple-color="light"
+                    onClick={() => handleRegisterNewAccount()}
                   >
                     Register
                   </button>

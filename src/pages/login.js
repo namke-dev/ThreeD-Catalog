@@ -1,12 +1,20 @@
-import { useSession, signIn } from "next-auth/react";
+import { UserAuth } from "@/components/context/authContext";
 import { useRouter } from "next/router";
 import { useState } from "react";
 
 export default function LoginPage() {
-  const { data, status } = useSession();
   const [emailValue, setEmailValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
   const router = useRouter();
+
+  const { user, googleSignIn, logOut } = UserAuth();
+  const handleSignIn = async () => {
+    try {
+      await googleSignIn();
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   const handleEmailChange = (event) => {
     setEmailValue(event.target.value);
@@ -16,13 +24,13 @@ export default function LoginPage() {
     setPasswordValue(event.target.value);
   };
 
-  const isAuthenticated = status === "authenticated";
+  console.log("==> Print out user account:");
+  console.log(user);
 
-  if (isAuthenticated) {
+  // Redirect to home page if user is authenticated
+  if (user) {
     router.push("/");
-    return null;
   }
-
   return (
     <div className="h-[100vh] px-6 w-full relative">
       <div className="absolute top-0 left-0 w-screen h-screen flex items-center justify-center -z-10">
@@ -120,7 +128,8 @@ export default function LoginPage() {
 
                 {/* Sign in with Google Button */}
                 <button
-                  onClick={() => signIn("google")}
+                  // onClick={() => signIn("google")}
+                  onClick={handleSignIn}
                   className="px-4 py-3
                   w-full
                   bg-rose-500 text-zinc-100 font-medium rounded-lg"

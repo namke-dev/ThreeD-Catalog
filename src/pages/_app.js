@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import { SessionProvider } from "next-auth/react";
 import { useState } from "react";
 import { GoogleTagManager } from "@next/third-parties/google";
+import { AuthContextProvider } from "@/components/context/authContext";
 
 export default function App({
   Component,
@@ -14,13 +15,13 @@ export default function App({
   const [darkMode, setDarkMode] = useState(false);
 
   return (
-    <SessionProvider session={session}>
+    <AuthContextProvider>
       <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
         <DisplayModelContext.Provider value={{ displayModel, setDisplayModel }}>
           <Component {...pageProps} />
           <GoogleTagManager gtmId="G-LMR0MMBBQ7" />
         </DisplayModelContext.Provider>
       </ThemeContext.Provider>
-    </SessionProvider>
+    </AuthContextProvider>
   );
 }
