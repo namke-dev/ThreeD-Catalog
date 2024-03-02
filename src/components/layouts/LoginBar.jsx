@@ -123,7 +123,7 @@ export default function LoginBar() {
         h-auto text-left bg-black/40 "
       >
         <Link
-          href="/"
+          href="/login"
           className="text-black/60 inline-flex items-center justify-center px-4 py-0
           text-white text-xs hover:bg-white/20 focus:outline-none
           underline
