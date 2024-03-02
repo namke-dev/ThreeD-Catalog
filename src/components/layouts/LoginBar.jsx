@@ -136,7 +136,7 @@ export default function LoginBar() {
         text-left bg-black/40 h-5"
       >
         <Link
-          href="/login"
+          href="/signin"
           className="text-black/60 inline-flex items-center justify-center px-4 py-0
           text-white text-xs hover:bg-white/20 focus:outline-none
           underline

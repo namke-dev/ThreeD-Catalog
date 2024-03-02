@@ -123,7 +123,7 @@ export default function LoginPage() {
                   <p className="mb-0 mt-2 pt-1 text-sm font-semibold">
                     Don't have an account?
                     <a
-                      href="/register"
+                      href="/signup"
                       className="text-blue-500 underline pl-3 transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
                     >
                       Register Here

@@ -181,7 +181,7 @@ export default function RegisterPage() {
                   <p className="mb-0 mt-2 pt-1 text-sm font-semibold">
                     Already have an account?
                     <a
-                      href="/login"
+                      href="/signin"
                       className="text-blue-500 underline pl-3 transition duration-150 ease-in-out hover:text-danger-600 focus:text-danger-600 active:text-danger-700"
                     >
                       Login Here
