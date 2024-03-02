@@ -11,7 +11,7 @@ import {
 import HorizontalBarChart from "./HorizontalBarChart";
 import CountryTable from "./CountryTable";
 
-export default function DashBoardCard() {
+export default function DashBoardUser() {
   const [overviewReportData, setOverviewReportData] = useState(null);
   const [eventTypeReportData, setEventTypeReportData] = useState(null);
   const [countryReportData, setCountryReportData] = useState(null);
@@ -51,7 +51,7 @@ export default function DashBoardCard() {
   return (
     <>
       {overviewReportData && eventTypeReportData && countryReportData ? (
-        <div className="flex flex-col space-y-8 dark:text-black mt-20">
+        <div className="flex flex-col space-y-8 dark:text-black">
           <div className="flex flex-row flex-wrap -mx-4">
             <div className="w-full md:w-2/3  px-4">
               <div className="bg-white rounded-lg shadow-md p-6">
