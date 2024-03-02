@@ -1,13 +1,23 @@
-import { LIST_FURNITURE, PRODUCT_DATA } from "@/data/product_data";
+import { PRODUCT_DATA } from "@/data/product_data";
 import { USER_PROFILE_DATA } from "@/data/user_profile_data";
 import React from "react";
 import { UserAuth } from "../context/auth-context";
+import { sendEmailVerification } from "firebase/auth";
 
 export default function UserProfileCard() {
   const { user } = UserAuth();
+  console.log("User obj: ");
+  console.log(user);
 
-  const list_product = LIST_FURNITURE;
-  console.log(list_product);
+  const handleUserVerification = async () => {
+    try {
+      console.log("Verification email sent to " + user.email);
+      sendEmailVerification(user);
+    } catch (error) {
+      console.error("Failed to send verification email:", error);
+    }
+  };
+
   if (user) {
     const userEmail = user.email;
     const userProfile = USER_PROFILE_DATA.find(
@@ -53,7 +63,18 @@ export default function UserProfileCard() {
               <label className="text-sm font-bold mb-2">Email:</label>
               <p className="text-md">{userProfile.email}</p>
             </div>
-
+            {!user.emailVerified ? (
+              <button
+                onClick={handleUserVerification}
+                className="bg-yellow-500 text-white px-4 py-2 rounded-md mt-4"
+              >
+                Verify Email
+              </button>
+            ) : (
+              <div className="bg-green-600 text-white text-center rounded-lg w-[70px]">
+                Verified
+              </div>
+            )}
             <div className="mb-1">
               <label className="text-sm font-bold mb-2">Phone:</label>
               <p className="text-md">{userProfile.phone}</p>

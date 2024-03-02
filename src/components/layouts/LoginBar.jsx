@@ -65,7 +65,7 @@ export default function LoginBar() {
               setToggle(!toggle);
             }}
           >
-            {user.displayName}
+            {user.email}
             <svg
               className="-mr-1 h-2 w-5 "
               xmlns="http://www.w3.org/2000/svg"
