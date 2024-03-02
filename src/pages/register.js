@@ -1,8 +1,7 @@
+"use client";
 import { auth } from "@/services/firebase";
-import { signInWithEmailAndPassword } from "firebase/auth";
-import { useSession, signIn } from "next-auth/react";
-import { useRouter } from "next/router";
 import { useState } from "react";
+import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 export default function RegisterPage() {
   const [firstName, setFirstName] = useState("");
@@ -13,6 +12,9 @@ export default function RegisterPage() {
   const [phoneNumberValue, setPhoneNumberValue] = useState("");
   const [addressValue, setAddressValue] = useState("");
   const [companyNameValue, setCompanyNameValue] = useState("");
+
+  const [createUserWithEmailAndPassword] =
+    useCreateUserWithEmailAndPassword(auth);
 
   const handleFirstNameChange = (event) => {
     setFirstName(event.target.value);
@@ -46,9 +48,17 @@ export default function RegisterPage() {
     setCompanyNameValue(event.target.value);
   };
 
-  const handleRegisterNewAccount = () => {
+  const handleRegisterNewAccount = async () => {
     console.log("==> Sign in new user, " + emailValue + ", " + passwordValue);
-    signInWithEmailAndPassword(auth, emailValue, passwordValue);
+    try {
+      const res = await createUserWithEmailAndPassword(
+        emailValue,
+        passwordValue
+      );
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

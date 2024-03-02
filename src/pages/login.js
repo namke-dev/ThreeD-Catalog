@@ -1,14 +1,30 @@
+"use client";
+
 import { UserAuth } from "@/components/context/authContext";
+import { auth } from "@/services/firebase";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 
 export default function LoginPage() {
   const [emailValue, setEmailValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
   const router = useRouter();
 
-  const { user, googleSignIn, logOut } = UserAuth();
+  const { user, googleSignIn } = UserAuth();
+
+  const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
+
   const handleSignIn = async () => {
+    try {
+      const res = await signInWithEmailAndPassword(emailValue, passwordValue);
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const handleSignInWithGoogle = async () => {
     try {
       await googleSignIn();
     } catch (error) {
@@ -23,9 +39,6 @@ export default function LoginPage() {
   const handlePasswordChange = (event) => {
     setPasswordValue(event.target.value);
   };
-
-  console.log("==> Print out user account:");
-  console.log(user);
 
   // Redirect to home page if user is authenticated
   if (user) {
@@ -101,6 +114,7 @@ export default function LoginPage() {
                       bg-yellow-500 w-full"
                     data-te-ripple-init
                     data-te-ripple-color="light"
+                    onClick={handleSignIn}
                   >
                     Login
                   </button>
@@ -129,7 +143,7 @@ export default function LoginPage() {
                 {/* Sign in with Google Button */}
                 <button
                   // onClick={() => signIn("google")}
-                  onClick={handleSignIn}
+                  onClick={handleSignInWithGoogle}
                   className="px-4 py-3
                   w-full
                   bg-rose-500 text-zinc-100 font-medium rounded-lg"
