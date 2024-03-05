@@ -51,7 +51,7 @@ export default function DashBoardUser() {
   return (
     <>
       {overviewReportData && eventTypeReportData && countryReportData ? (
-        <div className="flex flex-col space-y-8 dark:text-black">
+        <div className="flex flex-col space-y-8 dark:text-black p-5">
           <div className="flex flex-row flex-wrap -mx-4">
             <div className="w-full md:w-2/3  px-4">
               <div className="bg-white rounded-lg shadow-md p-6">
