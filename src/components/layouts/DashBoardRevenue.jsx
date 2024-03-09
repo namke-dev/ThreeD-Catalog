@@ -11,6 +11,7 @@ import {
   PieChart,
   Legend,
 } from "recharts";
+import TransactionsTable from "./TransactionsTable";
 
 // RevenueDashboard component
 export default function DashboardRevenue() {
@@ -106,6 +107,8 @@ export default function DashboardRevenue() {
           </table>
         </div>
       </div>
+
+      <TransactionsTable />
     </div>
   );
 }
