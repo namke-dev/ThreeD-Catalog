@@ -44,4 +44,13 @@ export const USER_PROFILE_DATA = [
     address: "Đại Học FPT, quận 9, TP Hồ Chí Minh",
     company: "CR Company",
   },
+  {
+    id: 4,
+    firstName: "Hai",
+    lastName: "Ngo Quang",
+    email: "katalog3d.admin@gmail.com",
+    phone: "093 234 234",
+    address: "Đại Học FPT, quận 9, TP Hồ Chí Minh",
+    company: "CR Company",
+  },
 ];
