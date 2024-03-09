@@ -35,4 +35,13 @@ export const USER_PROFILE_DATA = [
     address: "456 Oak Ave, Townsville, Canada",
     company: "Innovate Labs",
   },
+  {
+    id: 4,
+    firstName: "Hai",
+    lastName: "Ngo Quang",
+    email: "haingo.cr@gmail.com",
+    phone: "093 234 234",
+    address: "Đại Học FPT, quận 9, TP Hồ Chí Minh",
+    company: "CR Company",
+  },
 ];
