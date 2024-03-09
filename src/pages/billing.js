@@ -20,13 +20,23 @@ export default function Billing() {
 
               <ul className="list-disc mb-6">
                 <p className="mb-2">Quét mã QR trên App ngân hàng của bạn</p>
-                <p className="mb-2">Tổng chi phí sẽ bao gồm</p>
-                <li className="mb-2">
-                  1. Phí membership (chi phí duy trì trang Web)
-                </li>
-                <li className="mb-2">
-                  2. Phí tạo model sản phẩm (300 000 VND cho mỗi model sản phẩm)
-                </li>
+                <div className="border-2 p-3 border-gray-500">
+                  <p className="mb-2">Tổng chi phí sẽ bao gồm</p>
+                  <p className="mb-2">
+                    1. Phí membership (chi phí duy trì trang Web)
+                  </p>
+                  <p className="mb-2">2. Phí tạo model sản phẩm</p>
+                  <div className="pl-3 italic text-sm">
+                    <p>
+                      Dưới 10 sản phẩm, phí: 300 000 VND cho mỗi model sản phẩm
+                    </p>
+                    <p>
+                      Từ sản phẩm thứ 10, phí: 200 000 VND cho mỗi model sản
+                      phẩm
+                    </p>
+                    <a className="text-blue-600 underline">Learn more here</a>
+                  </div>
+                </div>
               </ul>
               <hr className="my-4 border-t" />
 
@@ -105,6 +115,8 @@ export default function Billing() {
                   <hr className="my-1 border-t" />
                   <p>$600</p>
                 </div>
+                <hr className="my-6 border-t" />
+
                 <div className="mt-8">
                   <p>Thanh toán qua tài khoảng ngân hàng phía trên</p>
                   <p>
