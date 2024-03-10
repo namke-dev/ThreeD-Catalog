@@ -3,22 +3,17 @@
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://katalog3d.com/home</loc>
+  <loc>https://katalog3d.com</loc>
   <lastmod>2024-03-01T17:51:55+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://katalog3d.com/</loc>
-  <lastmod>2024-03-01T17:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://katalog3d.com/show-case</loc>
   <lastmod>2024-03-01T17:51:55+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.60</priority>
 </url>
 <url>
   <loc>https://katalog3d.com/news</loc>
@@ -28,13 +23,7 @@
 <url>
   <loc>https://katalog3d.com/contact</loc>
   <lastmod>2024-03-01T17:51:55+00:00</lastmod>
-  <priority>0.80</priority>
+  <priority>0.60</priority>
 </url>
-<url>
-  <loc>https://katalog3d.com/dashboard</loc>
-  <lastmod>2024-03-01T17:51:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
 
 </urlset>
