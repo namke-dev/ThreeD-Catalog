@@ -3,12 +3,29 @@ import Layout from "@/components/layouts/Layout";
 import NewsCard from "@/components/layouts/NewsCart";
 import { news_data } from "@/data/news_data";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function NewsDetail() {
   const router = useRouter();
   const { id } = router.query;
   const news = news_data.find((news) => news.id == id);
+  useEffect(() => {
+    if (news) {
+      document.title = news.key_word; // Set your desired page title here
+
+      const metaDescriptionTag = document.querySelector(
+        'meta[name="description"]'
+      );
+      if (metaDescriptionTag) {
+        metaDescriptionTag.content = news.meta_script;
+      } else {
+        const newMetaTag = document.createElement("meta");
+        newMetaTag.name = "description";
+        newMetaTag.content = news.meta_script;
+        document.head.appendChild(newMetaTag);
+      }
+    }
+  }, [news]);
 
   // Check if news is undefined before accessing its properties
   if (!news) {
@@ -30,8 +47,8 @@ export default function NewsDetail() {
         News detail
       </h1>
       <HomePageCart
-        className="bg-neutral-100/90
-        relative -top-60 z-10 text-gray-800 m-14 py-10"
+        className="
+        relative -top-60 z-10 text-gray-800 mx-14 py-10"
       >
         <NewsCard key={news.id} news={news} isExpanded={true} />
       </HomePageCart>
