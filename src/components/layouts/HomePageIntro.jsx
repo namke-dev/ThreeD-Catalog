@@ -82,7 +82,7 @@ export default function HomePageIntro() {
           </div>
 
           <Link href="/show-case" alt="check out our catalog showcase">
-            <button
+            <div
               className="h-[75px] px-10
               dark:text-white/90
               dark:hover:bg-amber-500
@@ -95,7 +95,8 @@ export default function HomePageIntro() {
               flex flex-row items-center justify-center
               group
               rounded-lg
-              ml-10"
+              ml-10
+              w-[320px]"
             >
               <button
                 className="
@@ -119,7 +120,7 @@ export default function HomePageIntro() {
                 md:group-hover:opacity-50
                 group-hover:text-black"
               />
-            </button>
+            </div>
           </Link>
         </div>
       </HomePageCart>

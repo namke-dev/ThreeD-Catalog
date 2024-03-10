@@ -13,16 +13,16 @@ export default function Navbar() {
     <div className="fixed w-full z-40 md:h-auto text-white/70 pb-2 rounded-none">
       <LoginBar />
       <div className="mt-0 flex flex-row flex-wrap justify-center text-xs md:gap-5 gap-1 z-50">
-        <Link href={"/"}>
+        <Link href={"/"} title="Trang chủ">
           <Logo />
         </Link>
         <div className="flex flex-row flex-wrap gap-6 lg:px-3 dark:text-white/80 text-black/80 hover:text-amber-600 bg-gradient-to-r from-amber-50/90 via-amber-50/90 to-yellow-50/90 dark:from-zinc-700 dark:via-zinc-700/90 dark:to-zinc-700/90 rounded-3xl py-0.5 shadow-md duration-300 dark:shadow-zinc-800">
-          <Link href={"/"}>
+          <Link href={"/"} title="Trang chủ">
             <NavbartButton active={isCurrentPage("/")} icon={<FaHome />}>
-              HOME
+              TRANG CHỦ
             </NavbartButton>
           </Link>
-          <Link href={"/show-case"}>
+          <Link href={"/show-case"} title="Xem các mẫu catalog của chúng tôi">
             <NavbartButton
               active={isCurrentPage("/show-case")}
               icon={<FaImages />}
@@ -30,20 +30,20 @@ export default function Navbar() {
               SHOW CASE
             </NavbartButton>
           </Link>
-          <Link href={"/news"}>
+          <Link href={"/news"} title="Xem tin tức mới nhất">
             <NavbartButton
               active={isCurrentPage("/news")}
               icon={<FaNewspaper />}
             >
-              NEWS
+              TIN TỨC
             </NavbartButton>
           </Link>
-          <Link href={"/contact"}>
+          <Link href={"/contact"} title="Liên hệ với chúng tôi">
             <NavbartButton
               active={isCurrentPage("/contact")}
               icon={<FaEnvelope />}
             >
-              CONTACT
+              LIÊN HỆ
             </NavbartButton>
           </Link>
         </div>

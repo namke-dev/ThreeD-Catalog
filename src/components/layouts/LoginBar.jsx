@@ -59,13 +59,17 @@ export default function LoginBar() {
         >
           <button
             type="button"
-            className="inline-flex items-center justify-center px-4 py-0
-            text-white text-xs hover:bg-white/20 focus:outline-none"
+            className="inline-flex items-center justify-center
+            text-white text-[17px]
+            bg-amber-500/80
+            pt-2 px-7 pb-0.5
+            hover:bg-amber-500 focus:outline-none"
             onClick={() => {
               setToggle(!toggle);
             }}
+            title="Quản lý tài khoản"
           >
-            {user.email}
+            Tài khoản
             <svg
               className="-mr-1 h-2 w-5 "
               xmlns="http://www.w3.org/2000/svg"
@@ -178,6 +182,7 @@ function ProfileOption({ children, link }) {
       dark:hover:text-white
       rounded-md"
       role="menuitem"
+      title={children}
     >
       {children}
     </Link>

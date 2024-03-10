@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HomePageIntro from "@/components/layouts/HomePageIntro";
 import Layout from "@/components/layouts/Layout";
 import HomePageCart from "@/components/layouts/HomePageCart";
@@ -9,6 +9,9 @@ import { FaAngleRight } from "react-icons/fa";
 import useWindowDimensions from "@/helpers/WindowSizeHelper";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Katalog 3D - Thiết kế catalogue ba chiều"; // Set your desired page title here
+  }, []);
   const { width } = useWindowDimensions() || {};
 
   return (
@@ -16,23 +19,23 @@ export default function Home() {
       {/* intro */}
       <HomePageIntro />
 
-      <HomeTitle>App Feature</HomeTitle>
+      <HomeTitle>Dịch vụ của chúng tôi</HomeTitle>
 
       <HomePageCart
         className="col-span-2 flex items-center 
         justify-center md:justify-start overflow-x-auto w-full"
       >
         <div className="flex flex-col md:flex-row gap-10 my-5 mx-20  w-full">
-          <FeatureCart>Latest industry's news</FeatureCart>
+          <FeatureCart>Tin tức về thiết kế</FeatureCart>
           <FeatureCart>Website design</FeatureCart>
-          <FeatureCart>Brading design</FeatureCart>
-          <FeatureCart>Scan funiture to 3d model</FeatureCart>
+          <FeatureCart>Thiết kế Catalog</FeatureCart>
+          <FeatureCart>Thiết kế model 3D</FeatureCart>
         </div>
       </HomePageCart>
 
       {/* New */}
-      <Link href={"/news"} className="group">
-        <HomeTitle>Lastest News</HomeTitle>
+      <Link href={"/news"} className="group" title="Xem tin tức mới nhất">
+        <HomeTitle>Tin tức</HomeTitle>
       </Link>
       <HomePageCart
         className="col-span-2 
@@ -53,17 +56,16 @@ export default function Home() {
       </HomePageCart>
 
       {/* Charges Plan */}
-      <HomeTitle>Charges Plan</HomeTitle>
+      <HomeTitle>Các gói dịch vụ</HomeTitle>
 
       <HomePageCart
         className="col-span-2 flex items-center 
       justify-center md:justify-start overflow-x-auto w-full"
       >
         <div className="flex flex-col md:flex-row gap-10 my-5 mx-20  w-full">
-          <FeatureCart>$30 per month</FeatureCart>
-          <FeatureCart>$300 per year</FeatureCart>
-          <FeatureCart>$1,000 for life time</FeatureCart>
-          <FeatureCart>$3,000 for full life time and Support</FeatureCart>
+          <FeatureCart>Gói cơ bản</FeatureCart>
+          <FeatureCart>Gói cao cấp</FeatureCart>
+          <FeatureCart>Gới hỗ trợ đầy đủ</FeatureCart>
         </div>
       </HomePageCart>
     </Layout>
@@ -82,7 +84,7 @@ function FeatureCart({ children }) {
       className="py-20 w-auto
       px-10
       flex
-      text-amber-400
+      text-neutral-100
       justify-center items-center 
       rounded-2xl
       uppercase
@@ -108,7 +110,8 @@ function HomeTitle({ children }) {
       <p
         className="text-3xl 
         ml-24
-        text-amber-600
+        text-amber-500
+        dark:text-amber-400
         font-mono font-semibold
         flex flex-row"
       >
@@ -116,7 +119,8 @@ function HomeTitle({ children }) {
       </p>
       <FaAngleRight
         className="mt-2 ml-2
-        text-amber-600
+        text-amber-500
+        dark:text-amber-400
         group-hover:translate-x-4 opacity-90 transition
         scale-0 md:scale-100
         text-2xl

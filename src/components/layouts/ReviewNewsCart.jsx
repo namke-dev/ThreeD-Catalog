@@ -7,16 +7,16 @@ export default function ReviewNewsCart({ news }) {
   return (
     <div onClick={() => router.push(`/newsdetail/?id=${news.id}`)}>
       <div
-        className="text-white/95 bg-neutral-700/90
+        className="text-neutral-800 bg-neutral-100/90
         py-5 md:px-8 mb-0
         max-w-[1200px] 
         h-[200px]
         flex flex-col justify-between
         border-2 border-zinc-700 hover:border-zinc-600 transition-colors duration-500
-        px-7 rounded-2xl"
+        px-7 rounded-md"
       >
         <div>
-          <h3 className="text-md font-semibold text-gray-200">
+          <h3 className="text-md font-semibold text-amber-800">
             {truncateText(news.title, 80)}
           </h3>
           <div className="flex flex-row gap-2 font-thin text-xs mb-2">
