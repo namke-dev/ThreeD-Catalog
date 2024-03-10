@@ -11,20 +11,20 @@ const NewsCard = ({ news, isExpanded, className }) => {
       max-w-[1200px] ${className}`}
       onClick={() => router.push(`/newsdetail/?id=${news.id}`)}
     >
-      <h2 className="text-3xl font-bold mb-2 text-amber-600">{news.title}</h2>
+      <h1 className="text-3xl font-bold mb-2 text-amber-600">{news.title}</h1>
       <div className="flex flex-row gap-2 font-thin mb-5 ml-5">
         <p>Published on {news.date}, </p>
         <p>Category - {news.category}</p>
       </div>
 
-      <p
+      <h2
         className="
         text-gray-200 font-medium 
         border-l-2 border-gray-500 pl-5 ml-5
         text-justify whitespace-pre-line "
       >
         {news.summary}
-      </p>
+      </h2>
       <div className="flex items-center justify-center pt-10">
         <img src={news.img_url} className="max-h-[400px] rounded-xl"></img>
       </div>

@@ -16,9 +16,9 @@ export default function ReviewNewsCart({ news }) {
         px-7 rounded-2xl"
       >
         <div>
-          <h2 className="text-md font-semibold text-gray-200">
+          <h3 className="text-md font-semibold text-gray-200">
             {truncateText(news.title, 80)}
-          </h2>
+          </h3>
           <div className="flex flex-row gap-2 font-thin text-xs mb-2">
             <p>Published on {news.date}, </p>
           </div>

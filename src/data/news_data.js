@@ -1,6 +1,27 @@
 export const news_data = [
   {
     id: "1",
+    title: "3 Xu Hướng Thiết Kế Catalog 3D Độc Đáo",
+    date: "January 15, 2024",
+    publisher: "Furniture Gazette",
+    category: "Trend",
+    img_url: "/images/news4.jpg",
+    summary:
+      "Tạo ấn tượng mạnh mẽ với khách hàng tiềm năng bằng catalog 3D độc đáo! Khám phá 3 xu hướng thiết kế Catalog 3D mới nhất 2024: tương tác trực quan, trải nghiệm cá nhân hóa & AR. Nâng tầm thương hiệu của bạn ngay hôm nay!",
+    content:
+      "Trong thời đại công nghệ 4.0, việc sáng tạo và áp dụng các xu hướng thiết kế mới là điều không thể thiếu trong mọi lĩnh vực, đặc biệt là trong lĩnh vực marketing. Trơn tru, hiện đại và đầy ấn tượng, thiết kế Catalog 3D đang là một trong những xu hướng hot nhất hiện nay. Hãy cùng chúng tôi khám phá 3 xu hướng thiết kế Catalog 3D độc đáo mà bạn không thể bỏ lỡ trong bài viết này nhé!",
+  },
+  {
+    id: "2",
+    title: "Test",
+    date: "January 15, 2024",
+    publisher: "Test",
+    category: "Test",
+    summary: "Test",
+    content: "Test",
+  },
+  {
+    id: "11",
     title: "Feather & Black partners with Next",
     date: "January 15, 2024",
     publisher: "Furniture Gazette",
@@ -15,7 +36,7 @@ export const news_data = [
     This collaboration not only expands the reach of Feather & Black but also offers Next customers access to a carefully curated selection of high-quality furniture. The partnership emphasizes the significance of blending established brands to enhance the online shopping experience for consumers seeking both style and comfort in their home furnishings.`,
   },
   {
-    id: "2",
+    id: "12",
     title:
       "Innovative Eco-Friendly Furniture Line Unveiled by Sustainable Design Studio",
     date: "February 2, 2024",
@@ -30,7 +51,7 @@ export const news_data = [
     This collection not only exemplifies the design studio's dedication to environmental responsibility but also serves as an inspiration for the broader design industry. By introducing a range that prioritizes sustainability without sacrificing style, the studio paves the way for a more conscious approach to furnishing our homes.`,
   },
   {
-    id: "3",
+    id: "13",
     title:
       "Modern Minimalism Takes Center Stage in New Scandinavian Furniture Collection",
     date: "March 10, 2024",
@@ -45,7 +66,7 @@ export const news_data = [
     The introduction of this collection aligns with the enduring global appreciation for Scandinavian design, known for its emphasis on functionality, craftsmanship, and a connection to nature. Whether furnishing a contemporary home or adding a touch of simplicity to traditional interiors, this collection provides a versatile and timeless option for design enthusiasts.`,
   },
   {
-    id: "4",
+    id: "14",
     title:
       "Artistic Fusion: Collaboration Between Local Artists and Furniture Craftsmen Yields Unique Collection",
     date: "April 5, 2024",
@@ -60,7 +81,7 @@ export const news_data = [
     This artistic fusion not only celebrates the creativity of local talents but also highlights the potential for collaboration between different artistic disciplines. It serves as a reminder of the transformative power of art in redefining the boundaries of traditional furniture design.`,
   },
   {
-    id: "5",
+    id: "15",
     title: "Smart Living: Furniture Tech Integration Redefines Home Interiors",
     date: "May 20, 2024",
     publisher: "Tech Homes Monthly",
@@ -74,7 +95,7 @@ export const news_data = [
     As our homes become more connected, this collection sets the stage for a new way of living, where furniture goes beyond mere aesthetics to enhance the way we interact with our living spaces. It marks a significant shift in the design landscape, redefining the possibilities for home interiors in the digital age.`,
   },
   {
-    id: "6",
+    id: "16",
     title:
       "Revolutionary Materials: Furniture Designer Pioneers Use of Recycled Ocean Plastics",
     date: "June 8, 2024",
@@ -89,7 +110,7 @@ export const news_data = [
     By choosing recycled ocean plastics, this designer sets an example for the entire furniture design community, illustrating how creativity can be harnessed to address pressing environmental issues. This collection stands as a testament to the transformative power of design in fostering a more sustainable and responsible future.`,
   },
   {
-    id: "7",
+    id: "17",
     title:
       "Heritage Meets Contemporary: Iconic Furniture Brand Reimagines Classic Designs",
     date: "July 15, 2024",
@@ -102,65 +123,5 @@ export const news_data = [
     The juxtaposition of traditional design elements with modern twists creates a collection that is both nostalgic and relevant. From ornate detailing on chairs to updated finishes on wooden furniture, each piece tells a story of craftsmanship passed down through generations. This collection is a celebration of the rich heritage of furniture design, seamlessly adapted to suit the preferences of a contemporary audience.
 
     By marrying the past with the present, this iconic furniture brand demonstrates the enduring appeal of classic designs. The collection invites consumers to bring a touch of history into their homes while enjoying the functionality and style that meets the demands of modern living.`,
-  },
-  {
-    id: "8",
-    title:
-      "Bold Colors and Playful Patterns Define Latest Bohemian-inspired Furniture Collection",
-    date: "August 5, 2024",
-    publisher: "Boho Living Magazine",
-    category: "Bohemian Style",
-    img_url: "/images/news2.jpg",
-    summary: `Breaking away from conventional norms, a furniture designer has unleashed a vibrant and eclectic Bohemian-inspired collection. Bold colors, intricate patterns, and unconventional shapes define this spirited collection that encourages homeowners to embrace a free-spirited and expressive approach to interior design.`,
-    content: `Breaking away from conventional norms, a furniture designer has unleashed a vibrant and eclectic Bohemian-inspired collection. Bold colors, intricate patterns, and unconventional shapes define this spirited collection that encourages homeowners to embrace a free-spirited and expressive approach to interior design.
-
-    The Bohemian-inspired furniture collection is a celebration of individuality and creativity. From colorful upholstery to whimsical patterns, each piece exudes a sense of bohemian flair that adds character and vibrancy to any living space. This collection is an invitation to break free from the ordinary and infuse spaces with personality and charm.
-
-    In a world where self-expression is valued, this collection provides a canvas for homeowners to experiment with bold colors and unconventional designs. It's a testament to the idea that furniture can be a form of artistic expression, allowing individuals to create living spaces that reflect their unique tastes and personalities.`,
-  },
-  {
-    id: "9",
-    title:
-      "Virtual Reality Showroom: Furniture Retailer Transforms the Shopping Experience",
-    date: "September 10, 2024",
-    publisher: "Tech Innovations Digest",
-    category: "Retail Technology",
-    img_url: "/images/news2.jpg",
-    summary: `Revolutionizing the way we shop for furniture, a forward-thinking retailer has introduced a virtual reality showroom. This immersive experience allows customers to explore and visualize furniture pieces in a virtual environment, providing a unique and interactive way to make informed purchasing decisions.`,
-    content: `Revolutionizing the way we shop for furniture, a forward-thinking retailer has introduced a virtual reality showroom. This immersive experience allows customers to explore and visualize furniture pieces in a virtual environment, providing a unique and interactive way to make informed purchasing decisions.
-
-    The virtual reality showroom is a game-changer in the furniture retail industry, offering customers an unparalleled shopping experience from the comfort of their homes. Through VR technology, shoppers can virtually walk through showrooms, examine details of furniture pieces, and even visualize how items will look in their own living spaces.
-
-    This innovative approach not only enhances the convenience of furniture shopping but also addresses common challenges, such as limited physical showroom space. As technology continues to shape the retail landscape, the virtual reality showroom represents a leap forward in creating a more immersive and personalized shopping journey for consumers.`,
-  },
-  {
-    id: "10",
-    title:
-      "Antique Revival: Rediscovering Timeless Elegance in Vintage Furniture Restorations",
-    date: "October 3, 2024",
-    publisher: "Vintage Treasures Gazette",
-    category: "Antique Restorations",
-    img_url: "/images/news2.jpg",
-    summary: `Breathing new life into the past, furniture artisans are leading an antique revival by restoring vintage pieces to their former glory. This dedicated effort not only preserves the timeless elegance of bygone eras but also offers collectors and enthusiasts an opportunity to own a piece of history.`,
-    content: `Breathing new life into the past, furniture artisans are leading an antique revival by restoring vintage pieces to their former glory. This dedicated effort not only preserves the timeless elegance of bygone eras but also offers collectors and enthusiasts an opportunity to own a piece of history.
-
-    The antique revival movement is driven by a passion for craftsmanship and a desire to celebrate the unique character of vintage furniture. Skilled artisans meticulously restore each piece, paying attention to intricate details and ensuring that the furniture retains its original charm. This collection appeals to those who appreciate the stories embedded in each piece of antique furniture.
-
-    As the world of design embraces modern trends, the antique revival movement stands as a counterbalance, reminding us of the enduring beauty and craftsmanship found in pieces from previous centuries. It's a nod to the past that seamlessly integrates with contemporary interiors, creating a harmonious blend of old and new.`,
-  },
-  {
-    id: "11",
-    title:
-      "Futuristic Comfort: Ergonomic Design Meets Aesthetics in Next-Gen Furniture Line",
-    date: "November 12, 2024",
-    publisher: "Future Living Magazine",
-    category: "Next-Gen Design",
-    img_url: "/images/news2.jpg",
-    summary: `Pushing the boundaries of design and comfort, a trailblazing furniture designer has unveiled a next-generation collection that seamlessly combines ergonomic principles with aesthetic appeal. This forward-thinking approach redefines the concept of comfort in furniture, catering to the evolving needs of the modern lifestyle.`,
-    content: `Pushing the boundaries of design and comfort, a trailblazing furniture designer has unveiled a next-generation collection that seamlessly combines ergonomic principles with aesthetic appeal. This forward-thinking approach redefines the concept of comfort in furniture, catering to the evolving needs of the modern lifestyle.
-
-    The next-gen furniture line introduces cutting-edge designs that prioritize both form and function. From ergonomic chairs that support optimal posture to innovative materials that enhance comfort, each piece in this collection is crafted with a keen understanding of the demands of contemporary living. The fusion of technology and design results in furniture that not only looks stylish but also enhances the well-being of those who use it.
-
-    As our understanding of comfort evolves, this collection sets a new standard for ergonomic furniture. It's a testament to the idea that comfort should not be compromised for style, and that the future of furniture design lies in seamlessly integrating ergonomic features with aesthetic appeal.`,
   },
 ];
