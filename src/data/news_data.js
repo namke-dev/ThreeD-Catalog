@@ -6,20 +6,23 @@ export const news_data = [
     publisher: "Furniture Gazette",
     category: "Trend",
     img_url: "/images/news4.jpg",
-    summary:
+    meta_script:
       "Tạo ấn tượng mạnh mẽ với khách hàng tiềm năng bằng catalog 3D độc đáo! Khám phá 3 xu hướng thiết kế Catalog 3D mới nhất 2024: tương tác trực quan, trải nghiệm cá nhân hóa & AR. Nâng tầm thương hiệu của bạn ngay hôm nay!",
-    content:
+    key_word: "Thiết kế catalogue",
+    summary:
       "Trong thời đại công nghệ 4.0, việc sáng tạo và áp dụng các xu hướng thiết kế mới là điều không thể thiếu trong mọi lĩnh vực, đặc biệt là trong lĩnh vực marketing. Trơn tru, hiện đại và đầy ấn tượng, thiết kế Catalog 3D đang là một trong những xu hướng hot nhất hiện nay. Hãy cùng chúng tôi khám phá 3 xu hướng thiết kế Catalog 3D độc đáo mà bạn không thể bỏ lỡ trong bài viết này nhé!",
+    content:
+      "Thiết Kế Catalog 3D Nghệ Thuật [H2] \n\nXu hướng thiết kế 3D nghệ thuật đang làm mưa làm gió trong cộng đồng “dân chơi” thiết kế. Thông qua việc áp dụng công nghệ 3D mới nhất, các catalog được tạo ra không chỉ đơn thuần là một phương tiện truyền thông mà còn trở thành tác phẩm nghệ thuật đầy sáng tạo và ấn tượng.\n\nThiết Kế Catalog 3D Tương Tác [H2] \n\n Với việc sử dụng kỹ thuật 3D tương tác, các catalog không chỉ giúp người xem hiểu rõ hơn về sản phẩm mà còn truyền đạt thông điệp marketing một cách sinh động và sáng tạo. Tương tác thông qua 3D đã mở ra một cánh cửa mới cho việc tiếp cận và thu hút khách hàng một cách hiệu quả. Xu hướng thiết kế Catalog 3D đang trở thành điểm nhấn quan trọng trong chiến lược marketing của nhiều doanh nghiệp hiện nay. \n\nBằng việc áp dụng các xu hướng thiết kế 3D độc đáo, chắc chắn bạn sẽ thu hút được sự chú ý của khách hàng và tạo nên ấn tượng mạnh mẽ trong lòng họ. Hãy để 3DKatalog và đội ngũ nhân viên chuyên nghiệp của chúng tôi giúp bạn biến ý tưởng thành sự thật!\n\nThiết Kế Catalog 3D Thực Tế Ảo (AR) [H2]\n\n Xu hướng thiết kế 3D sử dụng công nghệ thực tế ảo (AR) đem lại trải nghiệm hết sức thú vị cho người dùng. Nhờ vào AR, khách hàng có thể tương tác với sản phẩm một cách trực quan và sinh động, giúp họ hiểu rõ hơn về sản phẩm trước khi quyết định mua sắm.\n\nXu hướng thiết kế Catalog 3D đang trở thành điểm nhấn quan trọng trong chiến lược marketing của nhiều doanh nghiệp hiện nay. Bằng việc áp dụng các xu hướng thiết kế 3D độc đáo, chắc chắn bạn sẽ thu hút được sự chú ý của khách hàng và tạo nên ấn tượng mạnh mẽ trong lòng họ.\n\nHãy để 3DKatalog và đội ngũ nhân viên chuyên nghiệp của chúng tôi giúp bạn biến ý tưởng thành sự thật!",
   },
-  {
-    id: "2",
-    title: "Test",
-    date: "January 15, 2024",
-    publisher: "Test",
-    category: "Test",
-    summary: "Test",
-    content: "Test",
-  },
+  // {
+  //   id: "2",
+  //   title: "Test",
+  //   date: "January 15, 2024",
+  //   publisher: "Test",
+  //   category: "Test",
+  //   summary: "Test",
+  //   content: "Test",
+  // },
   {
     id: "11",
     title: "Feather & Black partners with Next",
