@@ -1,6 +1,6 @@
 export const news_data = [
   {
-    id: "1",
+    id: "3-xu-huong-thiet-ke-3d-cataloge-doc-dao",
     title: "3 Xu Hướng Thiết Kế Catalog 3D Độc Đáo",
     date: "January 15, 2024",
     publisher: "Vương Ái",
@@ -20,7 +20,7 @@ export const news_data = [
     date: "January 15, 2024",
     publisher: "Vương Ái",
     category: "trend",
-    img_url: "/images/news4.jpg",
+    img_url: "/images/new1_img1.png",
     meta_script:
       "3D Catalogue là một công cụ trực tuyến giúp người dùng xem sản phẩm trong không gian 3 chiều. Vậy, bạn đã thật sự hiểu rõ tất tần tật về dịch vụ trên để lựa chọn và sử dụng 3D Catalogue một cách hiệu quả chưa?",
     key_word: "Catalogue 3 chiều",
@@ -35,7 +35,7 @@ export const news_data = [
     date: "January 15, 2024",
     publisher: "Furniture Gazette",
     category: "Partnerships",
-    img_url: "/images/news4.jpg",
+    img_url: "/images/new1_img2.png",
     summary: `Feather & Black, the British furniture brand owned by Dreams, has announced a partnership with Next which will see it bring an edited collection of furniture and beds to the latter's online audience. The edit has been chosen to complement the collections already available with Next online, and includes bestsellers such as the weathered oak Sienna rattan and Salcombe bed frames.
     `,
     content: `Feather & Black, the distinguished British furniture brand under Dreams ownership, has recently announced an exciting partnership with Next. This collaboration introduces an exclusive collection of furniture and beds, carefully curated to complement Next's existing online offerings. The collection includes bestsellers such as the weathered oak Sienna rattan and Salcombe bed frames, showcasing Feather & Black's commitment to luxurious and timeless designs.
@@ -51,7 +51,7 @@ export const news_data = [
     date: "February 2, 2024",
     publisher: "Green Living Magazine",
     category: "Sustainability",
-    img_url: "/images/news2.jpg",
+    img_url: "/images/new1_img3.png",
     summary: `Leading the charge in sustainable furniture design, a renowned design studio has launched a groundbreaking eco-friendly furniture line. This collection showcases a harmonious blend of contemporary aesthetics and environmentally conscious materials, marking a significant step towards greener and more sustainable living spaces.`,
     content: `In a significant leap towards sustainable living, a renowned design studio has launched an innovative eco-friendly furniture line. This groundbreaking collection showcases a harmonious blend of contemporary aesthetics and environmentally conscious materials, setting a new standard for greener and more sustainable living spaces.
 
@@ -66,7 +66,7 @@ export const news_data = [
     date: "March 10, 2024",
     publisher: "Nordic Living Journal",
     category: "Modern Design",
-    img_url: "/images/news3.jpg",
+    img_url: "/images/new1_img1.png",
     summary: `Embracing the timeless appeal of Scandinavian design, a prominent furniture brand has introduced a new collection that celebrates modern minimalism. The curated pieces showcase clean lines, functional elegance, and a commitment to simplicity, embodying the essence of Nordic-inspired aesthetics.`,
     content: `Embracing the timeless appeal of Scandinavian design, a prominent furniture brand introduces a new collection that celebrates modern minimalism. The curated pieces showcase clean lines, functional elegance, and a commitment to simplicity, embodying the essence of Nordic-inspired aesthetics.
 
@@ -81,7 +81,7 @@ export const news_data = [
     date: "April 5, 2024",
     publisher: "Art & Design Weekly",
     category: "Artistic Collaboration",
-    img_url: "/images/news2.jpg",
+    img_url: "/images/new1_img2.png",
     summary: `In a creative collaboration that bridges art and design, local artists have joined forces with skilled furniture craftsmen to produce a one-of-a-kind collection. This fusion of artistic expression and functional design results in furniture pieces that are not just functional but also serve as captivating works of art in their own right.`,
     content: `In a creative collaboration that bridges art and design, local artists have joined forces with skilled furniture craftsmen to produce a one-of-a-kind collection. This fusion of artistic expression and functional design results in furniture pieces that are not just functional but also serve as captivating works of art in their own right.
 
@@ -95,7 +95,7 @@ export const news_data = [
     date: "May 20, 2024",
     publisher: "Tech Homes Monthly",
     category: "Smart Furniture",
-    img_url: "/images/news2.jpg",
+    img_url: "/images/new1_img3.png",
     summary: `Enter the era of smart living with a trailblazing furniture line that seamlessly integrates technology into home interiors. From smart storage solutions to interactive furniture pieces, this innovative collection offers a glimpse into the future of intelligent and connected living spaces.`,
     content: `Step into the era of smart living with a groundbreaking furniture line that seamlessly integrates technology into home interiors. From smart storage solutions to interactive furniture pieces, this innovative collection offers a glimpse into the future of intelligent and connected living spaces.
 
@@ -110,7 +110,7 @@ export const news_data = [
     date: "June 8, 2024",
     publisher: "Sustainable Living Today",
     category: "Environmental Design",
-    img_url: "/images/news2.jpg",
+    img_url: "/images/new1_img4.png",
     summary: `A visionary furniture designer is making waves in the industry by pioneering the use of recycled ocean plastics in a new collection. This commitment to sustainability not only transforms waste into functional art but also highlights the urgent need for eco-conscious practices in the world of furniture design.`,
     content: `A visionary furniture designer is making waves in the industry by pioneering the use of recycled ocean plastics in a new collection. This commitment to sustainability not only transforms waste into functional art but also highlights the urgent need for eco-conscious practices in the world of furniture design.
 
@@ -125,7 +125,7 @@ export const news_data = [
     date: "July 15, 2024",
     publisher: "Heritage Home Magazine",
     category: "Classic Revival",
-    img_url: "/images/news2.jpg",
+    img_url: "/images/new1_img1.png",
     summary: `Embarking on a journey that melds heritage with contemporary sensibilities, an iconic furniture brand has reimagined classic designs for a modern audience. This collection pays homage to timeless craftsmanship while infusing a fresh perspective that resonates with the evolving tastes of today's consumers.`,
     content: `Embarking on a journey that melds heritage with contemporary sensibilities, an iconic furniture brand has reimagined classic designs for a modern audience. This collection pays homage to timeless craftsmanship while infusing a fresh perspective that resonates with the evolving tastes of today's consumers.
 
