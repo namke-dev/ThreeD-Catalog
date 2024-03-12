@@ -13,7 +13,7 @@ const NewsCard = ({ news, isExpanded, className }) => {
     >
       <h1
         className="text-4xl font-bold mb-10 text-amber-600 cursor-pointer"
-        onClick={() => router.push(`/newsdetail/?id=${news.id}`)}
+        onClick={() => router.push(`/bai-viet/?id=${news.id}`)}
       >
         {news.title}
       </h1>

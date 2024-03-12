@@ -6,13 +6,15 @@ import PageHeader from "@/components/layouts/PageHeader";
 export default function About() {
   return (
     <Layout>
-      <img src="images/news-header.jpg" className="brightness-50 opacity-70" />
-      <PageHeader>About Us</PageHeader>
+      {/* <img src="images/news-header.jpg" className="brightness-50 opacity-70" /> */}
+      {/* <PageHeader>About Us</PageHeader> */}
       <HomePageCart
-        className="bg-neutral-700/90
-        relative -top-60 z-10 text-gray-200 m-14 !pt-10 !pb-32 -mb-52"
+        className="max-w-[1400px] mx-auto
+        relative z-10 text-gray-900 m-14 !pt-10 !pb-32 -mb-52"
       >
-        <div className="max-w-[1200px] mx-auto">
+        <img src="images/news-header.jpg" className="opacity-90 px-8" />
+
+        <div className="px-16 mx-8 my-10 bg-neutral-100">
           <p className="mb-6">
             Welcome to our 3D Furniture Catalog, where we bring your interior
             design dreams to life! We are passionate about creating unique and
@@ -41,7 +43,7 @@ export default function About() {
                 className="w-full h-48 object-cover rounded-full"
               />
               <h3 className="text-lg font-semibold mt-2">Hai Ngo</h3>
-              <p className="text-gray-300">Co-Founder & 3D Designer</p>
+              <p>Co-Founder & 3D Designer</p>
             </div>
 
             {/* Team member 2 */}

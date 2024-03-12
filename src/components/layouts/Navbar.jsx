@@ -30,9 +30,9 @@ export default function Navbar() {
               SHOW CASE
             </NavbartButton>
           </Link>
-          <Link href={"/news"} title="Xem tin tức mới nhất">
+          <Link href={"/tin-tuc"} title="Xem tin tức mới nhất">
             <NavbartButton
-              active={isCurrentPage("/news")}
+              active={isCurrentPage("/tin-tuc")}
               icon={<FaNewspaper />}
             >
               TIN TỨC

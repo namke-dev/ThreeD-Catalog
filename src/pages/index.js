@@ -47,7 +47,7 @@ export default function Home() {
       </HomePageCart>
 
       {/* New */}
-      <Link href={"/news"} className="group" title="Xem tin tức mới nhất">
+      <Link href={"/tin-tuc"} className="group" title="Xem tin tức mới nhất">
         <HomeTitle>Tin tức</HomeTitle>
       </Link>
       <HomePageCart

@@ -8,14 +8,15 @@ import PageHeader from "@/components/layouts/PageHeader";
 
 export default function News() {
   return (
-    <Layout>
-      <img src="images/news-header.jpg" className="brightness-50 opacity-70" />
-      <PageHeader>Lastest news</PageHeader>
+    <Layout className="!bg-white/90">
+      {/* <PageHeader>Tin Tức</PageHeader> */}
       <HomePageCart
         className="col-span-2 max-w-[1400px] 
-        flex items-center 
-        mx-auto relative -top-60"
+        flex flex-col items-center 
+        mx-auto relative"
       >
+        <img src="images/news-header.jpg" className=" mt-10 opacity-90 px-8" />
+
         <div className="flex flex-row gap-1.5">
           <div className="w-2/3 py-8 pl-8 relative">
             <NewsList newsList={news_data} isExpanded={false} />
