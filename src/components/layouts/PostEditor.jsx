@@ -35,6 +35,8 @@ const PostEditor = ({ content, setContent }) => {
       value={content}
       onChange={setContent}
       placeholder="Write your post here..."
+      className="
+      h-[60vh]"
     />
   );
 };

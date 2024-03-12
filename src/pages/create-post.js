@@ -17,7 +17,7 @@ const CreatePost = () => {
       mt-32 
       text-xl text-neutral-800"
         >
-          Create a New Post
+          Create Post
         </h1>
 
         <div
@@ -25,11 +25,16 @@ const CreatePost = () => {
       flex flex-col
       mt-6
       w-[60vw]
-      h-[80vh]
-       bg-neutral-100 rounded-xl px-10 py-14"
+       bg-neutral-100 rounded-xl px-10 py-20"
         >
           <PostEditor content={content} setContent={setContent} />
-          {/* Add a button or form for submitting the post */}
+          <div
+            className="bg-neutral-500 text-neutral-100 
+                  w-[150px] text-center rounded-md
+                  mt-20 py-1"
+          >
+            Submit
+          </div>
         </div>
       </div>
     </Layout>
