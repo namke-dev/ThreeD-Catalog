@@ -17,6 +17,7 @@ export default function LoginPage() {
 
   const handleSignIn = async () => {
     try {
+      console.log("==> Sign in with google");
       const res = await signInWithEmailAndPassword(emailValue, passwordValue);
       console.log(res);
       if (user) {
@@ -29,6 +30,7 @@ export default function LoginPage() {
 
   const handleSignInWithGoogle = async () => {
     try {
+      console.log("==> handleSignInWithGoogle ");
       await googleSignIn();
     } catch (error) {
       console.log(error);
@@ -70,7 +72,7 @@ export default function LoginPage() {
             </div>
 
             <div className="mt-3 w-full flex flex-col justify-center items-center py-10">
-              <form className="w-[70%]">
+              <form className="w-[70%]" id="signin-form">
                 {/* Email Input */}
                 <InputField
                   type="text"
@@ -175,6 +177,7 @@ export function InputField({ type, id, placeholder, value, onChange }) {
         placeholder=""
         value={value}
         onChange={onChange}
+        autoComplete="current-password" // Add this line
       />
       <label
         htmlFor={id}

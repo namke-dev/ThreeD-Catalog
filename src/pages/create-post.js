@@ -1,5 +1,3 @@
-// pages/create-post.js
-
 import Layout from "@/components/layouts/Layout";
 import PostEditor from "@/components/layouts/PostEditor";
 import { useState } from "react";
@@ -8,6 +6,9 @@ const CreatePost = () => {
   const [content, setContent] = useState("");
 
   // Implement a function to handle post submission
+  function handleSubmitPost() {
+    console.log(content);
+  }
 
   return (
     <Layout className="">
@@ -32,6 +33,7 @@ const CreatePost = () => {
             className="bg-neutral-500 text-neutral-100 
                   w-[150px] text-center rounded-md
                   mt-20 py-1"
+            onClick={handleSubmitPost}
           >
             Submit
           </div>
