@@ -9,8 +9,21 @@ import { FaAngleRight } from "react-icons/fa";
 import useWindowDimensions from "@/helpers/WindowSizeHelper";
 
 export default function Home() {
+  const meta_script =
+    "Với dịch vụ của chúng tôi, sản phẩm của bạn sẽ được biến hoá, trình bài một cách sinh động Hãy cùng Katalog 3D khám phá mô hình sản phẩm trong không gian 3 chiều";
   useEffect(() => {
-    document.title = "Katalog 3D - Thiết kế catalogue ba chiều"; // Set your desired page title here
+    document.title = "Katalog 3D - Thiết kế catalogue ba chiều";
+    const metaDescriptionTag = document.querySelector(
+      'meta[name="description"]'
+    );
+    if (metaDescriptionTag) {
+      metaDescriptionTag.content = meta_script;
+    } else {
+      const newMetaTag = document.createElement("meta");
+      newMetaTag.name = "description";
+      newMetaTag.content = meta_script;
+      document.head.appendChild(newMetaTag);
+    }
   }, []);
   const { width } = useWindowDimensions() || {};
 
