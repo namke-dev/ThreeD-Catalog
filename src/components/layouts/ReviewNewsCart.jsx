@@ -7,13 +7,14 @@ export default function ReviewNewsCart({ news }) {
   return (
     <div>
       <div
-        className="text-neutral-800 bg-neutral-100/90
+        className="text-neutral-800 bg-white
         py-5 md:px-8 mb-0
         max-w-[1200px] 
-        h-auto
+        h-[220px]
         flex flex-col justify-between
-        border-2 border-zinc-700/20 hover:border-zinc-600/50 transition-colors duration-500
-        px-7 rounded-md"
+        border-2 border-zinc-700/20 hover:scale-110 duration-500
+        px-7 rounded-md
+        transition-all"
       >
         <div>
           <h3

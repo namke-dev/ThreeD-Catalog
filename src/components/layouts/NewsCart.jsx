@@ -7,7 +7,7 @@ const NewsCard = ({ news, isExpanded, className }) => {
   return (
     <div
       className={`text-gray-800 border-2 border-zinc-600/20
-      bg-neutral-100/90
+      bg-white
       rounded-md pt-10 pb-12 md:px-16 mb-0
       max-w-[1200px] ${className}`}
     >

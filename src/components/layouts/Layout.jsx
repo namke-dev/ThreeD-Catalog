@@ -10,7 +10,7 @@ export default function Layout({ children, className }) {
     <div
       className={`
       dark:bg-gradient-to-b dark:from-zinc-800/95 dark:via-zinc-800 dark:to-zinc-900
-      bg-gradient-to-br from-stone-300/50 via-amber-500/15 to-yellow-600/30
+      bg-gradient-to-br from-stone-300/20 via-amber-500/10 to-yellow-600/10
       text-black/80
       dark:text-white/80 ${className}`}
     >
