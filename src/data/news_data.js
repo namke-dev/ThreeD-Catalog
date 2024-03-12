@@ -3,7 +3,7 @@ export const news_data = [
     id: "1",
     title: "3 Xu Hướng Thiết Kế Catalog 3D Độc Đáo",
     date: "January 15, 2024",
-    publisher: "Furniture Gazette",
+    publisher: "Vương Ái",
     category: "Trend",
     img_url: "/images/news4.jpg",
     meta_script:
@@ -14,15 +14,21 @@ export const news_data = [
     content:
       "Thiết Kế Catalog 3D Nghệ Thuật [H2] \n\nXu hướng thiết kế 3D nghệ thuật đang làm mưa làm gió trong cộng đồng “dân chơi” thiết kế. Thông qua việc áp dụng công nghệ 3D mới nhất, các catalog được tạo ra không chỉ đơn thuần là một phương tiện truyền thông mà còn trở thành tác phẩm nghệ thuật đầy sáng tạo và ấn tượng.\n\nThiết Kế Catalog 3D Tương Tác [H2] \n\n Với việc sử dụng kỹ thuật 3D tương tác, các catalog không chỉ giúp người xem hiểu rõ hơn về sản phẩm mà còn truyền đạt thông điệp marketing một cách sinh động và sáng tạo. Tương tác thông qua 3D đã mở ra một cánh cửa mới cho việc tiếp cận và thu hút khách hàng một cách hiệu quả. Xu hướng thiết kế Catalog 3D đang trở thành điểm nhấn quan trọng trong chiến lược marketing của nhiều doanh nghiệp hiện nay. \n\nBằng việc áp dụng các xu hướng thiết kế 3D độc đáo, chắc chắn bạn sẽ thu hút được sự chú ý của khách hàng và tạo nên ấn tượng mạnh mẽ trong lòng họ. Hãy để 3DKatalog và đội ngũ nhân viên chuyên nghiệp của chúng tôi giúp bạn biến ý tưởng thành sự thật!\n\nThiết Kế Catalog 3D Thực Tế Ảo (AR) [H2]\n\n Xu hướng thiết kế 3D sử dụng công nghệ thực tế ảo (AR) đem lại trải nghiệm hết sức thú vị cho người dùng. Nhờ vào AR, khách hàng có thể tương tác với sản phẩm một cách trực quan và sinh động, giúp họ hiểu rõ hơn về sản phẩm trước khi quyết định mua sắm.\n\nXu hướng thiết kế Catalog 3D đang trở thành điểm nhấn quan trọng trong chiến lược marketing của nhiều doanh nghiệp hiện nay. Bằng việc áp dụng các xu hướng thiết kế 3D độc đáo, chắc chắn bạn sẽ thu hút được sự chú ý của khách hàng và tạo nên ấn tượng mạnh mẽ trong lòng họ.\n\nHãy để 3DKatalog và đội ngũ nhân viên chuyên nghiệp của chúng tôi giúp bạn biến ý tưởng thành sự thật!",
   },
-  // {
-  //   id: "2",
-  //   title: "Test",
-  //   date: "January 15, 2024",
-  //   publisher: "Test",
-  //   category: "Test",
-  //   summary: "Test",
-  //   content: "Test",
-  // },
+  {
+    id: "2",
+    title: "BẬT MÍ TẤT TẦN TẬT VỀ 3D CATALOGUE. CÓ THỂ BẠN CHƯA BIẾT?",
+    date: "January 15, 2024",
+    publisher: "Vương Ái",
+    category: "trend",
+    img_url: "/images/news4.jpg",
+    meta_script:
+      "3D Catalogue là một công cụ trực tuyến giúp người dùng xem sản phẩm trong không gian 3 chiều. Vậy, bạn đã thật sự hiểu rõ tất tần tật về dịch vụ trên để lựa chọn và sử dụng 3D Catalogue một cách hiệu quả chưa?",
+    key_word: "Catalogue 3 chiều",
+    summary:
+      "3D Catalogue là gì? Những lợi ích của việc sử dụng 3D Catalogue? Xu hướng thiết kế 3D Catalogue trong thời đại hiện nay như thế nào? Hãy cùng chúng tôi tìm hiểu về 3D Catalogue qua toàn bộ bài viết dưới đây để có kiến thức tổng quan hơn về dịch vụ này nhé!",
+    content:
+      '3D Catalogue là gì?\n\n3D Catalogue là một công cụ đặc biệt giúp các doanh nghiệp hiển thị sản phẩm của mình dưới dạng mô hình 3D sinh động với không gian 3 chiều. Từ đó, khách hàng có được cái nhìn tổng quan, chi tiết và chân thực hơn về sản phẩm trước khi quyết định mua hàng. Nhờ vậy, khả năng cao họ sẽ có thể mua được những sản phẩm ưng ý, phù hợp với kỳ vọng của bản thân.\n\nNgoài ra, 3D Catalogue không chỉ là dịch vụ giúp nâng cao trải nghiệm mua sắm trực tuyến mà còn giúp tạo ra sự độc đáo và ấn tượng cho sản phẩm của doanh nghiệp. Các doanh nghiệp có thể thực sự "bẻ khóa" tiềm năng tiếp cận và thu hút khách hàng mới thông qua việc tận dụng công nghệ 3D Catalogue này.\n\nNhững lợi ích của 3D Catalogue\n\n3D Catalogue là công cụ mang lại rất nhiều tiện lợi, lợi ích cho các doanh nghiệp hay kể cả những người tiêu dùng cá nhân. Một trong những lợi ích của 3D Catalogue phải kể đến như:\n\nTrải nghiệm tương tác tốt hơn\n\n3D Catalogue giúp khách hàng có cơ hội tương tác với sản phẩm một cách thực tế, hiểu rõ hơn về sản phẩm trước khi quyết định mua hàng.\n\nTăng cường trải nghiệm mua sắm trực tuyến\n\nThay vì chỉ xem hình ảnh tĩnh, người tiêu dùng có thể chuyển động, xoay sản phẩm và xem từ nhiều góc độ khác nhau. Vì vậy, họ sẽ cảm thấy mình như đang được trải nghiệm sản phẩm ngoài đời thực.\n\nTiết kiệm thời gian và chi phí \n\n3D Catalogue có thể làm giảm rủi ro trong việc trả lại sản phẩm do không phù hợp, hoặc không đáp ứng đúng mong đợi của khách hàng. Qua đó, doanh nghiệp sẽ tiết kiệm được chi phí hoặc thời gian vận chuyển hàng hóa.\n\nTăng cơ hội bán hàng\n\nKhi khách hàng có trải nghiệm tốt với sản phẩm thông qua 3D Catalogue, họ có động lực mạnh mẽ hơn để mua hàng dẫn đến tăng tỉ lệ bán hàng thành công.    ',
+  },
   {
     id: "11",
     title: "Feather & Black partners with Next",
