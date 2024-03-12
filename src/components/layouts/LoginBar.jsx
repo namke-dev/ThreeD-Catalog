@@ -50,7 +50,7 @@ export default function LoginBar() {
     return (
       <div
         className="flex w-full justify-end items-center
-        mb-2 h-5"
+        mb-2 h-auto"
       >
         <div
           className="
@@ -62,7 +62,7 @@ export default function LoginBar() {
             className="inline-flex items-center justify-center
             text-white text-[17px]
             bg-amber-500/80
-            pt-2 px-7 pb-0.5
+            px-5 pty-0.5
             hover:bg-amber-500 focus:outline-none"
             onClick={() => {
               setToggle(!toggle);
@@ -71,7 +71,7 @@ export default function LoginBar() {
           >
             Tài khoản
             <svg
-              className="-mr-1 h-2 w-5 "
+              className="h-2 w-5 "
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 10 20"
               fill="currentColor"
@@ -132,21 +132,23 @@ export default function LoginBar() {
   return (
     <div
       className="flex w-full justify-end items-center
-    mb-2 h-5"
+    mb-2 h-auto"
     >
       <div
         className="
         flex justify-center
-        text-left bg-black/40 h-5"
+        text-left bg-black/40 h-auto"
       >
         <Link
           href="/signin"
-          className="text-black/60 inline-flex items-center justify-center px-4 py-0
-          text-white text-xs hover:bg-white/20 focus:outline-none
-          underline
+          className="inline-flex items-center justify-center
+          text-white text-[17px]
+          bg-amber-500/80
+          pt-0.5 px-7
+          hover:bg-amber-500 focus:outline-none
           "
         >
-          Sign in to access all feature
+          Sign In
         </Link>
       </div>
     </div>

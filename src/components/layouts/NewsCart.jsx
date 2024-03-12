@@ -34,13 +34,9 @@ const NewsCard = ({ news, isExpanded, className }) => {
       </p>
       {isExpanded && (
         <p
-          className="font-normal 
-        whitespace-pre-line 
-        text-justify
-        pb-16"
-        >
-          {news.content}
-        </p>
+          className="font-normal whitespace-pre-line text-justify pb-16"
+          dangerouslySetInnerHTML={{ __html: news.content }}
+        ></p>
       )}
     </div>
   );

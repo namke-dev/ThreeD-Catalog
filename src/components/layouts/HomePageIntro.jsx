@@ -16,7 +16,7 @@ export default function HomePageIntro() {
         md:mt-5 md:-ml-24"
       >
         <div
-          className="h-[680px] w-[680px] rounded-full
+          className="md:h-[680px] md:w-[680px] rounded-full
          dark:bg-white/50 bg-black/50"
         ></div>
       </div>
@@ -42,7 +42,7 @@ export default function HomePageIntro() {
           ) : (
             <div
               className="absolute
-              h-[100vh] md:h-[82vh] w-[100%] md:mt-6 md:rounded-[10px] bg-black/70"
+              h-[100vh] md:h-[82vh] w-[100%] md:mt-6 md:rounded-[10px] bg-white/70 dark:bg-black/70"
             />
           )}
         </div>
