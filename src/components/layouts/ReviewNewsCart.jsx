@@ -5,7 +5,7 @@ export default function ReviewNewsCart({ news }) {
   const router = useRouter();
 
   return (
-    <div onClick={() => router.push(`/newsdetail/?id=${news.id}`)}>
+    <div>
       <div
         className="text-neutral-800 bg-neutral-100/90
         py-5 md:px-8 mb-0
@@ -16,7 +16,10 @@ export default function ReviewNewsCart({ news }) {
         px-7 rounded-md"
       >
         <div>
-          <h3 className="text-md font-semibold text-amber-800">
+          <h3
+            className="text-md font-semibold text-amber-800 cursor-pointer"
+            onClick={() => router.push(`/newsdetail/?id=${news.id}`)}
+          >
             {truncateText(news.title, 80)}
           </h3>
           <div className="flex flex-row gap-2 font-thin text-xs mb-2">
