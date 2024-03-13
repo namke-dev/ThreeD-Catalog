@@ -5,6 +5,7 @@ import { auth } from "@/services/firebase";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import {
+  useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
@@ -13,11 +14,13 @@ export default function LoginPage() {
   const [emailValue, setEmailValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
   const router = useRouter();
-
+  const actionCodeSettings = "https://katalog3d.com/";
   const { user } = UserAuth();
 
   const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
   const [signInWithGoogle] = useSignInWithGoogle(auth);
+  const [sendPasswordResetEmail, sending, error] =
+    useSendPasswordResetEmail(auth);
   const handleSignIn = async () => {
     try {
       console.log("==> Sign in with google");
@@ -30,6 +33,9 @@ export default function LoginPage() {
       console.log(error);
     }
   };
+  if (error) {
+    console.log(`==> reset password error: ${error}`);
+  }
 
   const handleSignInWithGoogle = async () => {
     try {
@@ -51,6 +57,22 @@ export default function LoginPage() {
   const handlePasswordChange = (event) => {
     setPasswordValue(event.target.value);
   };
+
+  const handleForgotPassword = async () => {
+    try {
+      console.log("==> Password reset");
+      const res = await sendPasswordResetEmail(emailValue, actionCodeSettings);
+      console.log(res);
+
+      if (res) {
+        alert("Sent email");
+        console.log("Password reset email sent successfully!");
+      }
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+
   useEffect(() => {
     if (user) {
       router.push("/");
@@ -114,9 +136,12 @@ export default function LoginPage() {
                   </div>
 
                   {/* Forgot Password Link */}
-                  <a href="#!" className="text-black/30 underline">
+                  <div
+                    onClick={handleForgotPassword}
+                    className="text-black/30 underline cursor-pointer"
+                  >
                     Forgot password?
-                  </a>
+                  </div>
                 </div>
 
                 {/* Login Button */}
