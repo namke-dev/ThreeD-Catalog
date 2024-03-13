@@ -19,7 +19,7 @@ export default function ReviewNewsCart({ news }) {
         <div>
           <h3
             className="text-md font-semibold text-amber-800 cursor-pointer"
-            onClick={() => router.push(`/bai-viet/?id=${news.id}`)}
+            onClick={() => router.push(`/bai-viet/${news.id}`)}
           >
             {truncateText(news.title, 80)}
           </h3>

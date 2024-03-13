@@ -1,17 +1,20 @@
+import { useRouter } from "next/router";
 import HomePageCart from "@/components/layouts/HomePageCart";
 import Layout from "@/components/layouts/Layout";
 import NewsCard from "@/components/layouts/NewsCart";
 import { news_data } from "@/data/news_data";
-import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 
 export default function NewsDetail() {
   const router = useRouter();
-  const { id } = router.query;
-  const news = news_data.find((news) => news.id == id);
+  const { slug } = router.query;
+  console.log(`==>  ${slug}`);
+
+  const news = news_data.find((news) => news.id === slug);
+
   useEffect(() => {
     if (news) {
-      document.title = news.key_word; // Set your desired page title here
+      document.title = news.key_word;
 
       const metaDescriptionTag = document.querySelector(
         'meta[name="description"]'
@@ -27,9 +30,7 @@ export default function NewsDetail() {
     }
   }, [news]);
 
-  // Check if news is undefined before accessing its properties
   if (!news) {
-    // Handle the case when news is not found
     return (
       <Layout>
         <p>News not found</p>
@@ -39,18 +40,19 @@ export default function NewsDetail() {
 
   return (
     <Layout>
-      <img src="images/news-header.jpg" className="brightness-50 opacity-70" />
-      <h1
-        className="text-6xl font-bold mb-8 text-amber-500 font-serif 
-        ml-10 relative -top-80 h-0 left-20"
-      >
-        News detail
-      </h1>
       <HomePageCart
-        className="
-        relative -top-60 z-10 text-gray-800 mx-14 py-10"
+        className="col-span-2 max-w-[1400px] 
+        flex flex-col items-center 
+        mx-auto relative"
       >
-        <NewsCard key={news.id} news={news} isExpanded={true} />
+        <img src="/images/news-header.jpg" className=" mt-10 opacity-90 px-8" />
+
+        <NewsCard
+          key={news.id}
+          news={news}
+          isExpanded={true}
+          className="mt-10 mx-8"
+        />
       </HomePageCart>
     </Layout>
   );

@@ -9,11 +9,11 @@ const NewsCard = ({ news, isExpanded, className }) => {
       className={`text-gray-800 border-2 border-zinc-600/20
       bg-white
       rounded-md pt-10 pb-12 md:px-16 mb-0
-      max-w-[1200px] ${className}`}
+      ${className}`}
     >
       <h1
         className="text-4xl font-bold mb-10 text-amber-600 cursor-pointer"
-        onClick={() => router.push(`/bai-viet/?id=${news.id}`)}
+        onClick={() => router.push(`/bai-viet/${news.id}`)}
       >
         {news.title}
       </h1>
