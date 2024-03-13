@@ -2,17 +2,22 @@ import Link from "next/link";
 import { useContext, useEffect, useState } from "react";
 import ThemeContext from "../context/theme-context";
 import { UserAuth } from "../context/auth-context";
+import { useRouter } from "next/router";
 
 export default function LoginBar() {
+  const router = useRouter();
+
   const { user, logOut } = UserAuth();
 
   const [toggle, setToggle] = useState(false);
 
   const { darkMode, setDarkMode } = useContext(ThemeContext);
 
-  const handleSignOut = async () => {
+  const handleSignOut = () => {
     try {
-      await logOut();
+      logOut();
+      console.log("==> sign out");
+      router.push("/signin");
     } catch (error) {
       console.log(error);
     }

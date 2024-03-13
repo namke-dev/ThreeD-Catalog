@@ -78,7 +78,6 @@ export default function RegisterPage() {
   };
 
   const handleOKButtonClick = () => {
-    // Redirect to the sign-in page
     router.push("/signin");
   };
 

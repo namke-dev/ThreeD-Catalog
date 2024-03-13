@@ -14,7 +14,10 @@ export default function LoginPage() {
   const [emailValue, setEmailValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
   const router = useRouter();
-  const actionCodeSettings = "https://katalog3d.com/";
+  const actionCodeSettings = {
+    url: "https://katalog3d.com/",
+    handleCodeInApp: true,
+  };
   const { user } = UserAuth();
 
   const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
@@ -26,9 +29,6 @@ export default function LoginPage() {
       console.log("==> Sign in with google");
       const res = await signInWithEmailAndPassword(emailValue, passwordValue);
       console.log(res);
-      if (user) {
-        router.push("/");
-      }
     } catch (error) {
       console.log(error);
     }
@@ -42,9 +42,6 @@ export default function LoginPage() {
       console.log("==> handleSignInWithGoogle ");
       const res = await signInWithGoogle(emailValue, passwordValue);
       console.log(res);
-      if (user) {
-        router.push("/");
-      }
     } catch (error) {
       console.log(error);
     }
