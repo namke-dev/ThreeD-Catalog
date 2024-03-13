@@ -3,18 +3,21 @@
 import { UserAuth } from "@/components/context/auth-context";
 import { auth } from "@/services/firebase";
 import { useRouter } from "next/router";
-import { useState } from "react";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useEffect, useState } from "react";
+import {
+  useSignInWithEmailAndPassword,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 
 export default function LoginPage() {
   const [emailValue, setEmailValue] = useState("");
   const [passwordValue, setPasswordValue] = useState("");
   const router = useRouter();
 
-  const { user, googleSignIn } = UserAuth();
+  const { user } = UserAuth();
 
   const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
-
+  const [signInWithGoogle] = useSignInWithGoogle(auth);
   const handleSignIn = async () => {
     try {
       console.log("==> Sign in with google");
@@ -31,7 +34,11 @@ export default function LoginPage() {
   const handleSignInWithGoogle = async () => {
     try {
       console.log("==> handleSignInWithGoogle ");
-      await googleSignIn();
+      const res = await signInWithGoogle(emailValue, passwordValue);
+      console.log(res);
+      if (user) {
+        router.push("/");
+      }
     } catch (error) {
       console.log(error);
     }
@@ -44,11 +51,11 @@ export default function LoginPage() {
   const handlePasswordChange = (event) => {
     setPasswordValue(event.target.value);
   };
-
-  // Redirect to home page if user is authenticated
-  // if (user) {
-  //   router.push("/");
-  // }
+  useEffect(() => {
+    if (user) {
+      router.push("/");
+    }
+  }, [user]);
 
   return (
     <div className="h-[100vh] px-6 w-full relative">
