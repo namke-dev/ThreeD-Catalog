@@ -245,7 +245,11 @@ function InputField({ type, id, placeholder, value, onChange }) {
   const hasValue = value && value.length > 0;
 
   return (
-    <div className={`relative mb-6 ${hasValue ? "has-value" : ""}`}>
+    <div
+      className={`relative mb-6 text-zinc-800 dark:text-zinc-800 ${
+        hasValue ? "has-value" : ""
+      }`}
+    >
       <input
         type={type}
         className="border-b border-black/30 peer block min-h-[auto] w-full rounded-none bg-transparent px-3 py-[0.32rem] leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
@@ -256,7 +260,7 @@ function InputField({ type, id, placeholder, value, onChange }) {
       />
       <label
         htmlFor={id}
-        className={`pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out dark:text-neutral-200 ${
+        className={`pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out dark:text-neutral-500 ${
           hasValue ? "-translate-y-[1.15rem] scale-[0.8]" : ""
         }`}
       >
