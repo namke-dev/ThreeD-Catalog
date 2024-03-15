@@ -21,7 +21,6 @@ const NewsCard = ({ news, isExpanded, className }) => {
         <p>Published on {news.date}, </p>
         <p>Category - {news.category}</p>
       </div>
-
       <h2
         className="
         text-gray-600 font-medium 
@@ -42,6 +41,7 @@ const NewsCard = ({ news, isExpanded, className }) => {
           dangerouslySetInnerHTML={{ __html: news.content }}
         ></p>
       )}
+      <p className="italic">Author: {news.publisher}</p>
     </div>
   );
 };
