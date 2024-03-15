@@ -17,7 +17,7 @@ export default function Billing() {
   const handlePeriodChange = (e) => {
     console.log(`==> ${e.target.value}`);
     setServiceInfo(chargePlan + " - " + e.target.value);
-    setTotal(serviceInfo.split("-")[1]);
+    setTotal(e.target.value.split("-")[0]);
   };
 
   const handleConfirm = (e) => {
@@ -53,7 +53,7 @@ export default function Billing() {
                       Từ sản phẩm thứ 10, phí: 200 000 VND cho mỗi model sản
                       phẩm
                     </p>
-                    <a className="text-blue-600 underline">Learn more here</a>
+                    {/* <a className="text-blue-600 underline">Learn more here</a> */}
                   </div>
                 </div>
               </ul>
@@ -66,15 +66,15 @@ export default function Billing() {
           <div className="flex-1">
             <div className="h-full py-10 px-16 rounded-lg bg-white text-black">
               <div className="text-2xl font-semibold mb-8 text-center">
-                Charge Option
+                Thông tin đặt hàng
               </div>
-              <form onSubmit={handleConfirm}>
+              <form onSubmit={() => handleConfirm}>
                 <div className="mb-2">
                   <label
                     htmlFor="chargePlan"
                     className="block text-lg font-semibold mb-2"
                   >
-                    Charge Plan:
+                    Gói dịch vụ:
                   </label>
                   <select
                     id="chargePlan"
@@ -95,7 +95,7 @@ export default function Billing() {
                     htmlFor="period"
                     className="block text-lg font-semibold mb-2"
                   >
-                    Chọn kỳ hạn:
+                    Kỳ hạn hỗ trợ:
                   </label>
                   <select
                     id="period"
@@ -139,16 +139,16 @@ export default function Billing() {
                 </div>
                 <button
                   type="submit"
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3"
                 >
-                  Confirm
+                  Xác nhận đã thanh toán
                 </button>
               </form>
-              <div className="mb-2 mt-5">
+              <div className="mb-2 mt-5 border border-dashed border-gray-600 px-3 py-6">
                 <div className="text-2xl font-semibold mb-4">
                   Thông tin đơn hàng
                 </div>
-                <p>{serviceInfo}</p>
+                <p className="">{serviceInfo}</p>
 
                 <hr className="my-6 border-t" />
                 <div className="mt-8">
