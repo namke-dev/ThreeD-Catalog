@@ -1,47 +1,66 @@
-import Link from "next/link";
 import React from "react";
 import { FaCheckCircle, FaDollarSign } from "react-icons/fa";
 
-function PricingCard() {
+function PricingCard({ pack }) {
   return (
     <div
-      className="max-w-[400px] min-h-[500px] bg-gray-50 border-2 border-dashed rounded hover:shadow-xl hover:scale-105 
-    p-8
-    transition-all"
+      className="min-w-[280px] max-w-[400px] min-h-[550px] bg-gray-50 border-2 border-dashed rounded hover:shadow-xl hover:scale-105 
+      p-8
+      transition-all"
     >
-      <div className="flex flex-col justify-between items-center mb-4">
+      <div className="flex flex-col mb-4 h-[9rem]">
         {/* Header */}
-        <h2 className="text-2xl font-bold">Business Pro</h2>
-        <p className="text-gray-500 pb-3">
-          Starting at <FaDollarSign className="inline mr-1" />
-          389 billed monthly
-        </p>
+        <h2 className="text-2xl font-bold pb-3 text-center">{pack.title}</h2>
+        {pack.priceMonth && (
+          <p className="text-gray-500 ">
+            Giá chỉ từ
+            <FaDollarSign className="inline h-3.5" />
+            {pack.priceMonth} / Tháng
+          </p>
+        )}
+        {pack.price3Months && (
+          <p className="text-gray-500 ">
+            Giá chỉ từ
+            <FaDollarSign className="inline h-3.5" />
+            {pack.price3Months} / 3 Tháng
+          </p>
+        )}
+        {pack.price6Months && (
+          <p className="text-gray-500 ">
+            Giá chỉ từ
+            <FaDollarSign className="inline h-3.5" />
+            {pack.price6Months} / 6 Tháng
+          </p>
+        )}
+        {pack.priceYear && (
+          <p className="text-gray-500 ">
+            Giá chỉ từ
+            <FaDollarSign className="inline h-3.5" />
+            {pack.priceYear} / Năm
+          </p>
+        )}
+        {pack.priceSpecial && (
+          <p className="text-gray-500 ">
+            Liên hệ với chúng tôi để biết thêm chi tiết
+          </p>
+        )}
       </div>
-      <ul className="list-none space-y-2 text-blue-700">
-        {/* Feature list */}
-        <li className="flex items-center">
-          <FaCheckCircle className="mr-2 text-blue-500" />
-          <span>3D asset management</span>
-        </li>
-        <li className="flex items-center">
-          <FaCheckCircle className="mr-2 text-blue-500" />
-          <span>Product variations & configurator</span>
-        </li>
-      </ul>
-      <Link title="Go to payment" href="/billing">
+      <a href="/billing" title="Go to payment">
         <div className="text-center my-8 bg-blue-500 hover:bg-blue-700 w-full text-white font-bold py-2 px-4 rounded">
-          Start Trial
+          Mua ngay
         </div>
-      </Link>
-      <div className="mt-4">
-        <p className="text-gray-900 mb-2">Gói dịch vụ sẽ hỗ trợ</p>
-        <ul className="text-gray-600 list-disc space-y-2 pl-8">
-          <li>100GB storage</li>
-          <li>20 Models</li>
-          <li>Unlimited bandwidth.</li>
-          <li>Custom foreground</li>
-        </ul>
-      </div>
+      </a>
+      <p className="text-gray-700 mb-2 font-semibold">Gói dịch vụ sẽ hỗ trợ</p>
+      <ul className="list-none space-y-2 text-gray-500">
+        {/* Feature list */}
+        {pack.includeService &&
+          pack.includeService.map((service, index) => (
+            <li key={index} className="flex items-center text-sm ">
+              <FaCheckCircle className="mr-2 text-blue-500" />
+              <span>{service}</span>
+            </li>
+          ))}
+      </ul>
     </div>
   );
 }

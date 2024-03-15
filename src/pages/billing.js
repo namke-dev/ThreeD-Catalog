@@ -2,50 +2,23 @@ import React, { useState } from "react";
 import Layout from "@/components/layouts/Layout";
 import HomePageCart from "@/components/layouts/HomePageCart";
 import PageHeader from "@/components/layouts/PageHeader";
+import { SERVICE_PACK } from "@/data/service_pack_data";
 
 export default function Billing() {
-  const [chargePlan, setChargePlan] = useState("basic");
-  const [period, setPeriod] = useState("1month");
-  const [totalAmount, setTotalAmount] = useState(60); // Default amount for basic plan and 1 month
-
+  const [chargePlan, setChargePlan] = useState(SERVICE_PACK[0].title);
+  const [period, setPeriod] = useState("");
   const handleChargePlanChange = (e) => {
+    console.log(`==> ${e.target.value}`);
     setChargePlan(e.target.value);
-    // Update total amount based on the selected charge plan and period
-    updateTotalAmount(e.target.value, period);
   };
 
   const handlePeriodChange = (e) => {
+    console.log(`==> ${e.target.value}`);
     setPeriod(e.target.value);
-    // Update total amount based on the selected charge plan and period
-    updateTotalAmount(chargePlan, e.target.value);
-  };
-
-  const updateTotalAmount = (selectedChargePlan, selectedPeriod) => {
-    // Update total amount based on the selected charge plan and period
-    let pricePerMonth;
-
-    switch (selectedChargePlan) {
-      case "basic":
-        pricePerMonth = 60;
-        break;
-      case "premium":
-        pricePerMonth = 100;
-        break;
-      case "fullySupport":
-        pricePerMonth = 200;
-        break;
-      default:
-        pricePerMonth = 60; // Default to basic plan if none selected
-    }
-
-    const calculatedAmount = pricePerMonth * months_options[selectedPeriod];
-    setTotalAmount(calculatedAmount);
   };
 
   const handleConfirm = (e) => {
     e.preventDefault();
-    // Handle the confirmation logic here
-    // You can perform any additional actions or API calls if needed
     console.log("Confirmation clicked!");
   };
 
@@ -56,11 +29,9 @@ export default function Billing() {
         <div className="flex flex-row gap-4 text-lg">
           <div className="flex-1">
             <div className="h-full py-10 px-16 rounded-lg bg-white text-black">
-              {/* ... Existing JSX code ... */}
               <div className="text-2xl font-semibold mb-8 text-center">
                 Phương thức thanh toán
               </div>
-
               <ul className="list-disc mb-6">
                 <p className="mb-2">Quét mã QR trên App ngân hàng của bạn</p>
                 <div className="border-2 p-3 border-gray-500">
@@ -68,7 +39,9 @@ export default function Billing() {
                   <p className="mb-2">
                     1. Phí membership (chi phí duy trì trang Web)
                   </p>
-                  <p className="mb-2">2. Phí tạo model sản phẩm</p>
+                  <p className="mb-2">
+                    2. Phí tạo model sản phẩm (vượt quá hạn mức gói )
+                  </p>
                   <div className="pl-3 italic text-sm">
                     <p>
                       Dưới 10 sản phẩm, phí: 300 000 VND cho mỗi model sản phẩm
@@ -82,13 +55,11 @@ export default function Billing() {
                 </div>
               </ul>
               <hr className="my-4 border-t" />
-
               <div className="flex justify-center items-center">
                 <img src="/images/bankQr.jpg" className="w-[400px]" />
               </div>
             </div>
           </div>
-
           <div className="flex-1">
             <div className="h-full py-10 px-16 rounded-lg bg-white text-black">
               <div className="text-2xl font-semibold mb-8 text-center">
@@ -106,21 +77,16 @@ export default function Billing() {
                     id="chargePlan"
                     name="chargePlan"
                     className="w-full p-2 border rounded-md"
+                    value={chargePlan}
                     onChange={handleChargePlanChange}
                   >
-                    <option value="basic">Gói cơ bản (60$ Per month)</option>
-                    <option value="premium">
-                      Gói cao cấp (100$ Per month)
-                    </option>
-                    <option value="fullySupport">
-                      Gói hỗ trợ đầy đủ (200$ Per month)
-                    </option>
+                    {SERVICE_PACK.map((pack) => (
+                      <option key={pack.title} value={pack.title}>
+                        {pack.title}
+                      </option>
+                    ))}
                   </select>
-                  <p className="italic text-sm pl-5 pt-2">
-                    Price: ${totalAmount} per month
-                  </p>
                 </div>
-
                 <div className="mb-2">
                   <label
                     htmlFor="period"
@@ -134,9 +100,32 @@ export default function Billing() {
                     className="w-full p-2 border rounded-md"
                     onChange={handlePeriodChange}
                   >
-                    <option value="1month">1 tháng</option>
-                    <option value="6months">6 tháng</option>
-                    <option value="1year">1 năm</option>
+                    {SERVICE_PACK.filter(
+                      (pack) => pack.title === chargePlan
+                    ).map((pack) => (
+                      <React.Fragment key={pack.title}>
+                        {pack.priceMonth && (
+                          <option value={`${pack.title} - thời hạn 1 tháng`}>
+                            {`${pack.priceMonth} / Tháng`}
+                          </option>
+                        )}
+                        {pack.price3Months && (
+                          <option value={`${pack.title} - thời hạn 3 tháng`}>
+                            {`${pack.price3Months} / 3 Tháng`}
+                          </option>
+                        )}
+                        {pack.price6Months && (
+                          <option value={`${pack.title} - thời hạn 6 tháng`}>
+                            {`${pack.price6Months} / 6 Tháng`}
+                          </option>
+                        )}
+                        {pack.priceYear && (
+                          <option value={`${pack.title} - thời hạn 1 năm`}>
+                            {`${pack.priceYear} / Năm`}
+                          </option>
+                        )}
+                      </React.Fragment>
+                    ))}
                   </select>
                 </div>
                 <button
@@ -146,34 +135,16 @@ export default function Billing() {
                   Confirm
                 </button>
               </form>
-              {/* ... Existing JSX code ... */}
               <div className="mb-2 mt-5">
-                <div className="text-2xl font-semibold mb-4">Hoá Đơn</div>
-                <p>
-                  {chargePlan} plan (${totalAmount} per Month)
-                </p>
-                <p>Period: {period}</p>
-                <p>Total</p>
-                <div
-                  className="pl-3 w-[200px] border p-4 shadow-inner 
-                  text-right
-                  my-2"
-                >
-                  <p>${totalAmount}</p>
-                  <p>x</p>
-                  <p>{months_options[period]}</p>
-                  <hr className="my-1 border-t" />
-                  <p>${totalAmount * months_options[period]}</p>
+                <div className="text-2xl font-semibold mb-4">
+                  Thông tin đơn hàng
                 </div>
-                <hr className="my-6 border-t" />
+                <p>{period}</p>
 
+                <hr className="my-6 border-t" />
                 <div className="mt-8">
-                  <p>Thanh toán qua tài khoảng ngân hàng phía trên</p>
                   <p>
-                    Tổng cộng:{" "}
-                    <span className="font-semibold">
-                      ${totalAmount * months_options[period]}
-                    </span>
+                    Tổng cộng: <span className="font-semibold">${0}</span>
                   </p>
                 </div>
               </div>
@@ -184,9 +155,3 @@ export default function Billing() {
     </Layout>
   );
 }
-
-const months_options = {
-  "1month": 1,
-  "6months": 6,
-  "1year": 12,
-};
