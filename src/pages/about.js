@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "@/components/layouts/Layout";
 import HomePageCart from "@/components/layouts/HomePageCart";
-import PageHeader from "@/components/layouts/PageHeader";
 
 export default function About() {
   return (

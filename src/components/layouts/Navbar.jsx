@@ -3,7 +3,13 @@ import Logo from "./Logo";
 import Link from "next/link";
 import LoginBar from "./LoginBar";
 import { useRouter } from "next/router";
-import { FaHome, FaImages, FaNewspaper, FaEnvelope } from "react-icons/fa";
+import {
+  FaHome,
+  FaImages,
+  FaNewspaper,
+  FaEnvelope,
+  FaDollarSign,
+} from "react-icons/fa";
 
 export default function Navbar() {
   const router = useRouter();
@@ -40,6 +46,14 @@ export default function Navbar() {
               icon={<FaNewspaper />}
             >
               TIN TỨC
+            </NavbartButton>
+          </Link>
+          <Link href={"/pricing"} title="Gói dịch vụ">
+            <NavbartButton
+              active={isCurrentPage("/pricing")}
+              icon={<FaDollarSign />}
+            >
+              PRICING
             </NavbartButton>
           </Link>
           <Link href={"/contact"} title="Liên hệ với chúng tôi">
