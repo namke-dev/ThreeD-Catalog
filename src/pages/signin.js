@@ -20,21 +20,26 @@ export default function LoginPage() {
   };
   const { user } = UserAuth();
 
-  const [signInWithEmailAndPassword] = useSignInWithEmailAndPassword(auth);
   const [signInWithGoogle] = useSignInWithGoogle(auth);
-  const [sendPasswordResetEmail, sending, error] =
-    useSendPasswordResetEmail(auth);
+  const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
+
+  const [signInWithEmailAndPassword, error] =
+    useSignInWithEmailAndPassword(auth);
   const handleSignIn = async () => {
     try {
       console.log("==> Sign in with google");
       const res = await signInWithEmailAndPassword(emailValue, passwordValue);
-      console.log(res);
+      console.log("==> Sigin response: " + res);
+      if (res == undefined) {
+        alert("Wrong username or password, please try again");
+      }
     } catch (error) {
-      console.log(error);
+      console.error("==> Error signing in:", error);
     }
   };
+
   if (error) {
-    console.log(`==> reset password error: ${error}`);
+    console.log(`==> Login hook error: ${error}`);
   }
 
   const handleSignInWithGoogle = async () => {
