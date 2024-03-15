@@ -12,6 +12,7 @@ import {
   Legend,
 } from "recharts";
 import TransactionsTable from "./TransactionsTable";
+import { MOCK_TRANSACTION_DATA } from "@/data/transaction_data";
 
 // RevenueDashboard component
 export default function DashboardRevenue() {
@@ -23,12 +24,12 @@ export default function DashboardRevenue() {
     { name: "Paid Search", value: 100 },
   ];
 
-  const barChartData = [
-    { date: "2022-03-01", revenue: 200 },
-    { date: "2022-03-02", revenue: 300 },
-    { date: "2022-03-03", revenue: 400 },
-    // Add more data as needed
-  ];
+  // const barChartData = [
+  //   { date: "2022-03-01", revenue: 200 },
+  //   { date: "2022-03-02", revenue: 300 },
+  //   { date: "2022-03-03", revenue: 400 },
+  // ];
+  const barChartData = convertToBarChartData(MOCK_TRANSACTION_DATA);
 
   const revenueData = [
     { date: "2022-03-01", revenue: 200, source: "Social" },
@@ -43,7 +44,7 @@ export default function DashboardRevenue() {
   return (
     <div className="flex flex-col space-y-8 dark:text-black p-5">
       <div className="flex flex-row flex-wrap -mx-4">
-        <div className="w-full md:w-3/5 px-4">
+        {/* <div className="w-full px-4 pb-5">
           <div className="bg-white rounded-lg shadow-md p-6">
             <h2 className="text-xl my-2">Conversion by Source</h2>
             <ResponsiveContainer width="100%" height={300}>
@@ -64,9 +65,9 @@ export default function DashboardRevenue() {
               </PieChart>
             </ResponsiveContainer>
           </div>
-        </div>
+        </div> */}
 
-        <div className="w-full md:w-2/5 px-4">
+        <div className="w-full px-4">
           <div className="bg-white rounded-lg shadow-md p-6">
             <h2 className="text-xl my-2">Revenue by Day</h2>
             <ResponsiveContainer width="100%" height={300}>
@@ -84,7 +85,7 @@ export default function DashboardRevenue() {
 
       {/* Add a table or any other components for the second row as needed */}
       {/* Revenue Details Table */}
-      <div className="w-full">
+      {/* <div className="w-full">
         <div className="bg-white rounded-lg shadow-md p-6">
           <h2 className="text-xl my-2">Revenue Details</h2>
           <table className="w-full">
@@ -106,9 +107,45 @@ export default function DashboardRevenue() {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
 
       <TransactionsTable />
     </div>
   );
+}
+
+function convertToBarChartData(transactions) {
+  const barChartData = [];
+
+  // Create an object to store revenue for each date
+  const revenueByDate = {};
+
+  // Iterate through each transaction
+  transactions.forEach((transaction) => {
+    // Extract date and revenue from the transaction
+    const { time, chargeamount } = transaction;
+
+    // Convert chargeamount to a numeric value
+    const revenue = parseFloat(chargeamount.replace(/[^\d.]/g, ""));
+
+    // Extract year, month, and day from the date
+    const [year, month, day] = time.split("-");
+
+    // Construct the date in YYYY-MM-DD format
+    const date = `${year}-${month}-${day}`;
+
+    // If the date already exists in revenueByDate, add revenue to existing revenue
+    if (revenueByDate[date]) {
+      revenueByDate[date] += revenue;
+    } else {
+      revenueByDate[date] = revenue;
+    }
+  });
+
+  // Convert revenueByDate object to an array of objects with date and revenue
+  for (const date in revenueByDate) {
+    barChartData.push({ date, revenue: revenueByDate[date] });
+  }
+
+  return barChartData;
 }

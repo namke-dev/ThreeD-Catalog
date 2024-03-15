@@ -1,3 +1,4 @@
+import { MOCK_TRANSACTION_DATA } from "@/data/transaction_data";
 import React from "react";
 
 // Sample data for the transactions table
@@ -94,24 +95,27 @@ const TransactionsTable = () => {
             <thead>
               <tr>
                 <th className="px-4 py-2">Transaction ID</th>
-                <th className="px-4 py-2">Name</th>
-                <th className="px-4 py-2">Company</th>
-                <th className="px-4 py-2">Time</th>
-                <th className="px-4 py-2">Product Type</th>
-                <th className="px-4 py-2">Amount</th>
+                <th className="px-4 py-2">Custormer Name</th>
+                <th className="px-4 py-2">Email</th>
+                <th className="px-4 py-2">Order Date</th>
+                <th className="px-4 py-2">Service Plan</th>
+                <th className="px-4 py-2">Charge Amount</th>
               </tr>
             </thead>
             <tbody>
-              {transactionsData.map((transaction) => (
+              {MOCK_TRANSACTION_DATA.map((transaction) => (
                 <tr key={transaction.id}>
                   <td className="border px-4 py-2">{transaction.id}</td>
-                  <td className="border px-4 py-2">{transaction.name}</td>
-                  <td className="border px-4 py-2">{transaction.company}</td>
+                  <td className="border px-4 py-2">{transaction.customer}</td>
+                  <td className="border px-4 py-2">{transaction.useremail}</td>
                   <td className="border px-4 py-2">{transaction.time}</td>
                   <td className="border px-4 py-2">
-                    {transaction.productType}
+                    {transaction.servicePlan}
                   </td>
-                  <td className="border px-4 py-2">${transaction.amount}</td>
+                  <td className="border px-4 py-2">{transaction.period}</td>
+                  <td className="border px-4 py-2 text-right">
+                    {transaction.chargeamount}
+                  </td>
                 </tr>
               ))}
             </tbody>
