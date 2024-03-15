@@ -6,7 +6,9 @@ import { SERVICE_PACK } from "@/data/service_pack_data";
 
 export default function Billing() {
   const [chargePlan, setChargePlan] = useState(SERVICE_PACK[0].title);
-  const [period, setPeriod] = useState("");
+  const [serviceInfo, setServiceInfo] = useState("");
+  const [total, setTotal] = useState(0);
+
   const handleChargePlanChange = (e) => {
     console.log(`==> ${e.target.value}`);
     setChargePlan(e.target.value);
@@ -14,7 +16,8 @@ export default function Billing() {
 
   const handlePeriodChange = (e) => {
     console.log(`==> ${e.target.value}`);
-    setPeriod(e.target.value);
+    setServiceInfo(chargePlan + " - " + e.target.value);
+    setTotal(serviceInfo.split("-")[1]);
   };
 
   const handleConfirm = (e) => {
@@ -105,22 +108,28 @@ export default function Billing() {
                     ).map((pack) => (
                       <React.Fragment key={pack.title}>
                         {pack.priceMonth && (
-                          <option value={`${pack.title} - thời hạn 1 tháng`}>
+                          <option
+                            value={`${pack.priceMonth} - thời hạn 1 tháng`}
+                          >
                             {`${pack.priceMonth} / Tháng`}
                           </option>
                         )}
                         {pack.price3Months && (
-                          <option value={`${pack.title} - thời hạn 3 tháng`}>
+                          <option
+                            value={`${pack.price3Months} - thời hạn 3 tháng`}
+                          >
                             {`${pack.price3Months} / 3 Tháng`}
                           </option>
                         )}
                         {pack.price6Months && (
-                          <option value={`${pack.title} - thời hạn 6 tháng`}>
+                          <option
+                            value={`${pack.price6Months} - thời hạn 6 tháng`}
+                          >
                             {`${pack.price6Months} / 6 Tháng`}
                           </option>
                         )}
                         {pack.priceYear && (
-                          <option value={`${pack.title} - thời hạn 1 năm`}>
+                          <option value={`${pack.priceYear} - thời hạn 1 năm`}>
                             {`${pack.priceYear} / Năm`}
                           </option>
                         )}
@@ -139,12 +148,12 @@ export default function Billing() {
                 <div className="text-2xl font-semibold mb-4">
                   Thông tin đơn hàng
                 </div>
-                <p>{period}</p>
+                <p>{serviceInfo}</p>
 
                 <hr className="my-6 border-t" />
                 <div className="mt-8">
                   <p>
-                    Tổng cộng: <span className="font-semibold">${0}</span>
+                    Tổng cộng: <span className="font-semibold">{total}</span>
                   </p>
                 </div>
               </div>
