@@ -4,6 +4,7 @@ import Layout from "@/components/layouts/Layout";
 import NewsCard from "@/components/layouts/NewsCart";
 import { news_data } from "@/data/news_data";
 import React, { useEffect } from "react";
+import ReviewNewsList from "@/components/layouts/ReviewNewsList";
 
 export default function NewsDetail() {
   const router = useRouter();
@@ -47,12 +48,14 @@ export default function NewsDetail() {
       >
         <img src="/images/news-header.jpg" className=" mt-10 opacity-90 px-8" />
 
-        <NewsCard
-          key={news.id}
-          news={news}
-          isExpanded={true}
-          className="mt-10 mx-8"
-        />
+        <div className="flex flex-row gap-1.5">
+          <div className="w-2/3 py-8 pl-8 relative">
+            <NewsCard key={news.id} news={news} isExpanded={true} />
+          </div>
+          <div className="w-1/3 py-8 pr-8 relative ">
+            <ReviewNewsList newsList={news_data} />
+          </div>
+        </div>
       </HomePageCart>
     </Layout>
   );
