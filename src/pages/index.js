@@ -39,10 +39,18 @@ export default function Home() {
         justify-center md:justify-start overflow-x-auto w-full"
       >
         <div className="flex flex-col md:flex-row gap-10 my-5 mx-20  w-full">
-          <FeatureCart>Tin tức về thiết kế</FeatureCart>
-          <FeatureCart>Website design</FeatureCart>
-          <FeatureCart>Thiết kế Catalog</FeatureCart>
-          <FeatureCart>Thiết kế model 3D</FeatureCart>
+          <FeatureCart imageUrl={"/images/new1_img2.png"}>
+            Tin tức về thiết kế
+          </FeatureCart>
+          <FeatureCart imageUrl={"/images/new1_img3.png"}>
+            Website design
+          </FeatureCart>
+          <FeatureCart imageUrl={"/images/new1_img1.png"}>
+            Thiết kế Catalog
+          </FeatureCart>
+          <FeatureCart imageUrl={"/images/new2_img2.png"}>
+            Thiết kế model 3D
+          </FeatureCart>
         </div>
       </HomePageCart>
 
@@ -76,18 +84,24 @@ export default function Home() {
       justify-center md:justify-start overflow-x-auto w-full"
       >
         <div className="flex flex-col md:flex-row gap-10 my-5 mx-20  w-full">
-          <FeatureCart>Gói cơ bản</FeatureCart>
-          <FeatureCart>Gói cao cấp</FeatureCart>
-          <FeatureCart>Gới hỗ trợ đầy đủ</FeatureCart>
+          <FeatureCart imageUrl={"/images/new2_img1.png"}>
+            Gói cơ bản
+          </FeatureCart>
+          <FeatureCart imageUrl={"/images/new2_img3.png"}>
+            Gói cao cấp
+          </FeatureCart>
+          <FeatureCart imageUrl={"/images/new2_img4.png"}>
+            Gới hỗ trợ đầy đủ
+          </FeatureCart>
         </div>
       </HomePageCart>
     </Layout>
   );
 }
 
-function FeatureCart({ children }) {
+function FeatureCart({ children, imageUrl }) {
   const backgroundImageStyle = {
-    backgroundImage: `url('/images/news2.jpg')`,
+    backgroundImage: `url(${imageUrl})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     filter: "brightness(100%)",
@@ -97,22 +111,21 @@ function FeatureCart({ children }) {
       className="py-20 w-auto
       px-10
       flex
-      text-neutral-100
       justify-center items-center 
       rounded-2xl
       uppercase
-      font-bold
       text-lg
       hover:scale-110
       duration-500
       transition-transform
       hover:text-white
-      font-mono
       "
       style={backgroundImageStyle}
     >
-      <div className="bg-neutral-950/60 rounded-2xl w-full h-full absolute top-0 z-30"></div>
-      <div className="z-30">{children}</div>
+      <div className="dark:bg-neutral-800/50 bg-white/70 rounded-2xl w-full h-full absolute top-0 z-30"></div>
+      <div className="z-30 font-bold font-sans dark:text-neutral-100 text-neutral-900">
+        {children}
+      </div>
     </div>
   );
 }

@@ -8,6 +8,7 @@ export default function ReviewNewsCart({ news }) {
     <div>
       <div
         className="text-neutral-800 bg-white
+        dark:text-white dark:bg-neutral-800/80
         py-5 md:px-8 mb-0
         max-w-[1200px] 
         h-[220px]
@@ -18,7 +19,7 @@ export default function ReviewNewsCart({ news }) {
       >
         <div>
           <h3
-            className="text-md font-semibold text-amber-800 cursor-pointer"
+            className="text-md font-semibold text-amber-600 dark:text-amber-500 cursor-pointer"
             onClick={() => router.push(`/bai-viet/${news.id}`)}
           >
             {truncateText(news.title, 80)}
