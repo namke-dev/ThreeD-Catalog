@@ -88,16 +88,156 @@ export const news_data = [
     <img src="/images/new3_img9.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
     `,
   },
+  {
+    id: "loi-ich-cua-viec-tao-mo-hinh-san-pham-3d",
+    title: "Lợi ích của việc tạo mô hình sản phẩm 3D",
+    date: "March 18, 2024",
+    publisher: "Vương Ái",
+    category: "trend",
+    img_url: "/images/new3_img10.png",
+    meta_script:
+      "Với công nghệ mới được giới thiệu hàng ngày hứa hẹn giúp công việc kinh doanh của bạn tốt hơn với các mô hình sản phẩm 3D",
+    key_word: "Nâng tầm sản phẩm của bạn với Trình quét 3D mới của Shopify",
+    summary:
+      "Với công nghệ mới được giới thiệu hàng ngày hứa hẹn giúp cuộc sống của bạn dễ dàng hơn và công việc kinh doanh của bạn tốt hơn, thật khó để biết công cụ nào đáng để bạn đầu tư thời gian vào, nhưng các vật thể 3D rất đáng giá.",
+    content: `
+    <h2 style="font-weight: bold; font-size: 1.5em;">1. Tiết kiệm tiền bạc và thời gian</h2>
+    Mặc dù mô hình hóa đối tượng 3D cho thương mại điện tử đã xuất hiện được một thời gian nhưng kỹ thuật này vẫn luôn gặp khó khăn. Các studio cung cấp dịch vụ được phép tự định giá vì máy móc và thiết bị cần thiết để tạo ra mô hình thường đắt tiền. Bởi vì điều này, mô hình 3D cho đến nay chỉ là một lựa chọn cho các công ty nổi tiếng bán hàng hóa đắt tiền.
+    <br>
+    Bất kỳ cửa hàng nào cũng có thể chỉ cần tạo mô hình của bất kỳ sản phẩm nào bằng cách làm theo phương pháp chụp ba lần đơn giản và sử dụng các mô hình đó ngay trong cửa hàng của họ vì ứng dụng Shopify cho phép người dùng tạo các mặt hàng 3D ngay lập tức.
+    <br>
+    Khi cách tiếp cận này trở nên dễ tiếp cận hơn, các mô hình 3D sẽ trở thành tiêu chuẩn trong quảng bá sản phẩm thương mại điện tử, đảo ngược tình trạng hiện tại. Giờ đây, khách hàng sẽ dễ dàng hiểu được sản phẩm và hình dung chúng trong cuộc sống của họ hơn, đó là một tin tuyệt vời. Tuy nhiên, người bán sẽ được hưởng lợi nhiều hơn từ các mô hình vì họ có thể sử dụng chúng như một công cụ hiệu quả để tăng cường chuyển đổi và giảm lợi nhuận
+    <br>
+    <h2 style="font-weight: bold; font-size: 1.5em;">2. Tăng niềm tin của người mua và tỷ lệ chuyển đổi</h2>
+    <img src="/images/new3_img11.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    Mọi người bán đều biết rằng sự không chắc chắn của người mua hàng có thể ảnh hưởng đáng kể đến tỷ lệ chuyển đổi. Mặc dù người bán cố gắng hết sức để đưa vào càng nhiều thông tin càng tốt thông qua mô tả văn bản và hình ảnh, và đôi khi là video, rất nhiều thông tin vẫn bị mất trong bản dịch do những hạn chế của các phương tiện đó.
+    <br>
+    Mô hình 3D giải quyết vấn đề đó. Cũng giống như trong cửa hàng, khách hàng có thể nhìn thấy sản phẩm từ mọi góc độ ở quy mô đầy đủ và độ trung thực cao. Họ có thể nhìn thấy kết cấu và điều tra từng inch của nó, dễ dàng hiểu được những khía cạnh không thể dịch tốt bằng cách chụp ảnh sản phẩm truyền thống.
+    <br>
+    Trong nhiều ngành, khía cạnh thuyết phục nhất của mô hình 3D là thứ mà trải nghiệm trong cửa hàng thậm chí không thể tái tạo được—khả năng xem các vật thể sẽ trông như thế nào trong không gian của người mua hàng. Không còn trí tưởng tượng và thước dây nữa. Khách hàng có thể xem tác phẩm điêu khắc trông như thế nào trên kệ của họ, liệu chiếc nồi chiên không khí đó có vừa với quầy bếp của họ hay không, hoặc kết cấu của chiếc ghế dài có phù hợp với thiết kế phòng khách của họ hay không.
+    <br>
+    Sự tự tin và rõ ràng này không chỉ làm tăng tỷ lệ chuyển đổi mà còn có thể dẫn đến ít trả lại và hoàn lại tiền hơn.
+    <br><br>
+    <h2 style="font-weight: bold; font-size: 1.5em;">3. Giảm thiểu hàng trả lại và nhu cầu dịch vụ khách hàng </h2>
+    <img src="/images/new3_img12.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    Trả lại và hoàn lại tiền là một chi phí không mong muốn đối với bất kỳ người bán nào. Họ không chỉ làm giảm doanh thu mà còn tốn tiền cả phí vận chuyển và nhân viên dịch vụ khách hàng cần thiết để quản lý chúng thành công.
+    <br>
+    Rất nhiều khách hàng mua sắm theo cách dẫn đến sự mơ hồ khi chỉ dựa vào hình ảnh. Họ đặt hàng với mong muốn có khả năng sẽ trả lại sản phẩm khi nhìn thấy nó ngoài đời thực.
+    <br>
+    Mối quan hệ với lợi nhuận này kém lý tưởng hơn đối với khách hàng và người bán, khiến khách hàng tốn thời gian và tiền bạc của người bán, cuối cùng dẫn đến việc mua hàng ít hài lòng hơn cho cả hai người.
+    <br>
+    Mặc dù mô hình 3D sẽ không loại bỏ tất cả lợi nhuận nhưng nó có thể làm giảm đáng kể lợi nhuận do thiếu rõ ràng về những thứ như kích thước, hình dạng và kết cấu. Mô hình 3D trả lời tất cả những câu hỏi này trước khi khách hàng đặt hàng và giảm số lượng khách hàng dựa vào việc trả lại hàng như một cách đơn giản để giải quyết tình trạng thiếu ngữ cảnh về sản phẩm. Điều này giúp người bán tiết kiệm tiền vận chuyển, trả lại và dịch vụ khách hàng.
+    `,
+  },
+  {
+    id: "IKEA-tich-hop-danh-muc-trong-google",
+    title: "IKEA tích hợp danh mục sản phẩm 3D đầy đủ của mình trong Google",
+    date: "March 18, 2024",
+    publisher: "Vương Ái",
+    category: "trend",
+    img_url: "/images/new3_img1.png",
+    meta_script:
+      "Danh mục sản phẩm đầy đủ của IKEA hiện đã có sẵn trong Google Tìm kiếm dưới dạng mô hình Thực tế tăng cường",
+    key_word: "IKEA hiện đã có sẵn trong Google Tìm kiếm",
+    summary:
+      "IKEA đã tích hợp mô hình 3D của toàn bộ dòng sản phẩm của mình vào Google Tìm kiếm. Giờ đây, người dùng có thể tìm kiếm các sản phẩm của IKEA trên Google và tận dụng Thực tế tăng cường (AR) để xem những sản phẩm này sẽ thực sự trông như thế nào trong nhà của họ.",
+    content: `IKEA đã tích hợp mô hình 3D của toàn bộ dòng sản phẩm của mình vào Google Tìm kiếm. Giờ đây, người dùng có thể tìm kiếm các sản phẩm của IKEA trên Google và tận dụng Thực tế tăng cường (AR) để xem những sản phẩm này sẽ thực sự trông như thế nào trong nhà của họ.
+    <br>
+    Việc tích hợp này bổ sung hơn 10.000 sản phẩm IKEA hỗ trợ 3D vào Google Tìm kiếm. Trước đây, việc xem AR các mô hình 3D của các sản phẩm IKEA chỉ có thể thực hiện được thông qua ứng dụng IKEA Place độc quyền trên iOS. Ứng dụng IKEA Place không cho phép bạn xem sản phẩm trong thực tế tăng cường.
+    <br>
+    Không rõ khi nào chức năng AR Google Search được thêm vào. Gần đây, nhiều nhà bán lẻ khác nhau đã hợp tác với Google để tích hợp danh sách hàng tồn kho của họ vào Google Tìm kiếm nhằm cho phép xem trước các mặt hàng này ở chế độ 3D trước khi khách hàng mua hàng. Tuy nhiên, số lượng nhà bán lẻ cung cấp chế độ xem 3D cho sản phẩm của họ trong Google Tìm kiếm vẫn còn ít.
+    `,
+  },
+  {
+    id: "cac-phan-mem-thiet-ke-3D-pho-bien",
+    title: "Các phần mềm thiết kế 3D phổ biến",
+    date: "March 18, 2024",
+    publisher: "Vương Ái",
+    category: "trend",
+    img_url: "/images/new3_img1.png",
+    meta_script:
+      "phần mềm thiết kế 3D là một trong những công cụ không thể thiếu đối với các kỹ sư cơ khí, thiết kế đồ họa hay kiến trúc sư. Để có thể xây dựng và hoàn thiện thiết kế cho 1 sản phẩm mới hay phối cảnh cho 1 không gian nội thất một cách nhanh chóng",
+    key_word: "phần mềm thiết kế 3D phổ biến",
+    summary:
+      "Hiện nay, phần mềm thiết kế 3D là một trong những công cụ không thể thiếu đối với các kỹ sư cơ khí, thiết kế đồ họa hay kiến trúc sư. Để có thể xây dựng và hoàn thiện thiết kế cho 1 sản phẩm mới hay phối cảnh cho 1 không gian nội thất một cách nhanh chóng, việc lựa chọn chính xác phần mềm thiết kế phù hợp với công việc là hết sức quan trọng. Nếu bạn đang tìm kiếm một phần mềm phù hợp với ngành nghề của mình thì hãy cùng 3D Smart Solutions tìm hiểu qua bài viết dưới đây nhé!",
+    content: `
+    <h1 style="font-weight: bold; font-size: 2em;">Các phần mềm thiết kế 3D phổ biến phân loại theo ngành nghề</h1>
+    <h2 style="font-weight: bold; font-size: 1.5em;">1. Đôi nét về phần mềm thiết kế 3D</h2>
+    3D là tên viết tắt của từ 3-Dimension, có nghĩa là kỹ thuật 3 chiều. Hiện nay, kỹ thuật thiết kế 3D đang sử dụng phổ biến và thường được đi kèm với khái niệm “đồ họa 3D”. Điều này có nghĩa là những hình ảnh, các vật thể trong cuộc sống hàng ngày được tái hiện và tạo dựng một cách chân thật nhờ sự trợ giúp của các phần mềm thiết kế 3D.
+    <br>
+    Thiết kế 3D thực chất là việc sử dụng các phần mềm để tạo ra những hình ảnh, vật thể mong muốn như: các công trình dự án, nhân vật, nhà cửa, mô phỏng các tác phẩm nghệ thuật,… Và ngày nay, thiết kế 3D đang dần được ưa chuộng và ứng dụng rất rộng rãi trong nhiều lĩnh vực: cơ khí chế tạo, ô tô, kiến trúc nội thất, … 
+    <h2 style="font-weight: bold; font-size: 1.5em;">Danh sách các phần mềm thiết kế 3D phổ biến</h2>
+    Hiện nay, có rất nhiều phần mềm thiết kế 3D chuyên nghiệp. Tuỳ vào từng ngành nghề khác nhau mà bạn nên cân nhắc lựa chọn sao cho phù hợp. 3D Smart Solutions xin gợi ý cho bạn một vài phần mềm phổ biến hiện nay như sau:
+    <h3 style="font-weight: bold; font-size: 1.2em;">2.1. AutoCAD</h3>
+    AutoCAD được xem như một tượng đài về phần mềm thiết kế 2D/3D ở Việt Nam. Bản thân AutoCAD cũng cung cấp rất nhiều lựa chọn khác nhau cho kỹ sư cơ khí, kiến trúc sư và kỹ sư công trình.
+    <br>
+    Với bộ công cụ cho phép ứng dụng ở nhiều ngành nghề khác như: cơ khí chế tạo, xây dựng, thiết kế nội thất, … AutoCAD là một phần không thể thiếu trong các quy trình thiết kế thông thường. 
+    <br>
+    Một vài tính năng nổi bật của AutoCAD:
+    \nDesign and annotate: bộ công cụ mạnh mẽ cho phép xây dựng và chú thích bản vẽ 2D/3D một cách nhanh chóng, đơn giản.
+    Automate tasks: Tự động và tối ưu hóa các thao tác thiết kế nhằm tối giản các thao tác, giúp người sử dụng đạt hiệu quả cao nhất trong công việc.
+    Create a customize space: Với AutoCAD, người dùng có thể tự do cá nhân hóa giao diện làm việc bằng các add-ons hay bộ API để tối đa hóa năng suất thiết kế.
+    <img src="/images/new4_img1.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    Giao diện thiết kế trên AutoCAD 3D (Nguồn: https://www.autodesk.com/)
+
+    <h3 style="font-weight: bold; font-size: 1.2em;">2.2. Autodesk 3DS Max</h3>
+    Autodesk 3DS Max là phần mềm thiết kế 3D giúp xây dựng và diễn hoạt các vật thể 3D một cách sinh động và chân thực. Cụ thể, 3DS Max giúp người dùng có thể dựng nên những mô hình 3D kết hợp với các hiệu ứng môi trường như hiệu ứng sương mù, phản chiếu, mưa, bóng đổ, khói, lửa,… Sau đó xuất ra các định dạng như ảnh, phim hoặc các mô hình thực tế ảo.
+
+    Đặc điểm nổi bật của Autodesk 3DS Max:
+    Cho phép người dùng sử dụng tùy chỉnh bóng tối, ánh sáng và chi tiết nổi cho mô hình 3D
+    Có thể mô phỏng lại các chi tiết da, tóc, vải và sợi lông thú 
+    Màu sắc và trạng thái bề mặt của các vật liệu như gỗ, đá, gạch, … có thể được tùy chỉnh và áp dụng trực tiếp lên đối tượng 3D.
+    Có thể mô phỏng lại bộ xương của động vật hoặc con người nhờ sự hỗ trợ của Forward Kinematics và Kinetic Inverse
+    <img src="/images/new4_img2.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+
+
+    <h3 style="font-weight: bold; font-size: 1.2em;">2.3. Blender</h3>
+    Blender là một phần mềm 3D Modeling mã nguồn mở được tích hợp nhiều tính năng và công cụ phục vụ đa ứng dụng như: 3D Modeling for Animation, Sculpture, VFX, AR/VR, … 
+
+    Blender chứa nhiều công cụ thiết kế và chỉnh sửa mô hình 3D rất mạnh mẽ, cho phép tùy chỉnh chuyên sâu. Đặc biệt, với việc kết hợp các module: Modeling và Sculpture, người dùng có thể dễ dàng tạo ra các mô hình 3D đơn giản theo ý muốn và sử dụng dữ liệu này cho quá trình: mô phỏng hoạt ảnh, phối cảnh, tạo đoạn phim, in 3D, …
+    
+    <img src="/images/new4_img3.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    Blender cho phép người dùng chỉnh sửa video và biên soạn phim dễ dàng (Nguồn: https://www.blender.org/)
+
+    <h3 style="font-weight: bold; font-size: 1.2em;">2.4. SketchUp</h3> 
+    SketchUp là phần mềm thiết kế 3D khá nổi tiếng dành cho nhà thiết kế chuyên nghiệp, các kiến trúc sư, các kỹ sư ngành xây dựng, cung cấp đầy đủ các công cụ vẽ đồ họa với các dạng hình học cơ bản giúp người dùng tạo ra những sản phẩm có thể sử dụng trong nhiều lĩnh vực khác nhau. SketchUp cũng cho phép bạn trích xuất các mô hình 3D ra các định dạng khác nhau sử dụng trong các phần mềm vẽ và thiết kế khác.   
+    <img src="/images/new4_img4.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    SketchUp cung cấp các tính năng trực quan và dễ dàng thao tác (Nguồn: https://www.sketchup.com/)    
+    <h3 style="font-weight: bold; font-size: 1.2em;">2.5. Revit</h3>
+    Revit là phần mềm thiết kế bản vẽ kiến trúc 3D được sử dụng phổ biến trong các ngành xây dựng và kiến trúc. Revit giúp người dùng mô hình hóa thông tin xây dựng, cơ học, điện, hàn, thiết kế kiến trúc và kỹ thuật cấu trúc. Phần mềm được ứng dụng để học tập, làm việc với công cụ hỗ trợ phác thảo và xây dựng mô hình 3D chi tiết.
+
+    Một số đặc điểm nổi bật của phần mềm:
+
+    Cung cấp đầy đủ các công cụ thiết kế và chỉnh sửa mạnh mẽ, hỗ trợ người dùng phác thảo và xây dựng mô hình 2D, 3D chính xác và chi tiết
+    Mối hàn, thiết kế điện và hệ thống sưởi ấm, thông gió
+    Cho phép người dùng tương tác với việc mô hình hóa thông tin xây dựng. Bên cạnh đó có thể chia sẻ công việc và đưa ra các lịch trình làm việc chi tiết, cụ thể.
+    Nhiều công cụ hiển thị phong cách thiết kế trong không gian 3 chiều, thiết kế ý tưởng, làm việc ở các góc nhìn khác nhau
+    Hỗ trợ nhiều ứng dụng và những dịch vụ công tác trực tuyến
+
+    <h3 style="font-weight: bold; font-size: 1.2em;">2.6. Inventor </h3>
+    Đây là phần mềm thiết kế 3D cho ngành cơ khí, giúp người dùng tạo hìn các sản phẩm. Inventor tạo ra những nguyên mẫu mô phỏng chính xác về áp lực, tải trọng, khối lượng, độ ma sát,… của các sản phẩm được chọn trong môi trường 3D. Các phân tích, mô phỏng được áp dụng trong Inventor cho phép người dùng thiết kế khuôn mẫu từ đơn giản cho đến nâng cao như thiết kế chi tiết máy, làm cho các sản phẩm trở nên chính xác và trực quan hơn. Inventor còn tích hợp những công cụ giao tiếp thiết kế và CAD với mục đích tăng thêm năng suất làm việc để giảm phát sinh lỗi và tiết kiệm thời gian.
+    <img src="/images/new4_img5.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    
+    <h2 style="font-weight: bold; font-size: 1.5em;">3. Tổng kết </h2>
+
+    Phần mềm thiết kế 3D là công cụ không thể thiếu trong quá trình tạo ra các mô hình 3D. Nhờ có những phần mềm này mà các kiến trúc sư hay các kỹ sư mô phỏng được những bản vẽ vô cũng chi tiết và chân thực. Chúng đã thể hiện được rằng thế giới 3 chiều rất phong phú. Từ đó vượt qua ranh giới giữa trí tưởng tượng và thực tế.
+    
+    `,
+  },
+  //  <h3 style="font-weight: bold; font-size: 1.2em;"></h3>
+  // <h1 style="font-weight: bold; font-size: 2em;"></h1>
+  // <img src="/images/new3_img12.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+  // <h2 style="font-weight: bold; font-size: 1.5em;"></h2>
   // {
   //   id: "",
   //   title: "",
-  //   date: "",
+  //   date: "March 18, 2024",
   //   publisher: "Vương Ái",
   //   category: "trend",
   //   img_url: "/images/new3_img1.png",
   //   meta_script: "",
   //   key_word: "",
   //   summary: "",
-  //   content: "",
+  //   content: ``,
   // },
 ];
