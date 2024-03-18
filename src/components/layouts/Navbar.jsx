@@ -25,11 +25,11 @@ export default function Navbar() {
         <div
           className="flex flex-row flex-wrap md:gap-6 gap-2 lg:px-3 
         dark:text-white/80 text-black/80 hover:text-amber-600 
-        bg-stone-50/90
-        dark:bg-gradient-to-r
+        md:bg-stone-50/90
+        md:dark:bg-gradient-to-r
         dark:from-zinc-700 dark:via-zinc-700/90 dark:to-zinc-700/90 
         rounded-3xl py-0.5 
-        shadow-sm
+        md:shadow-sm
         duration-300 dark:shadow-zinc-800"
         >
           <Link href={"/"} title="Trang chủ">
