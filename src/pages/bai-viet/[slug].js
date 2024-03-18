@@ -9,9 +9,8 @@ import ReviewNewsList from "@/components/layouts/ReviewNewsList";
 export default function NewsDetail() {
   const router = useRouter();
   const { slug } = router.query;
-  console.log(`==>  ${slug}`);
-
   const news = news_data.find((news) => news.id === slug);
+  const related_post = news_data.filter((item) => item.category === "");
 
   useEffect(() => {
     if (news) {
@@ -52,8 +51,18 @@ export default function NewsDetail() {
           <div className="w-2/3 py-8 pl-8 relative">
             <NewsCard key={news.id} news={news} isExpanded={true} />
           </div>
-          <div className="w-1/3 py-8 pr-8 relative ">
-            <ReviewNewsList newsList={news_data} />
+          <div className="flex flex-col w-1/3 py-8 pr-8  gap-10">
+            {related_post.length > 0 && (
+              <div className=" relative flex flex-col overflow-y-auto">
+                <div className="text-2xl mb-3 pl-4">Tin tức liên quan</div>
+                <ReviewNewsList newsList={related_post} className="h-[400px]" />
+              </div>
+            )}
+
+            <div className="relative flex flex-col overflow-y-auto">
+              <div className="text-2xl mb-3 pl-4">Tin tức khác</div>
+              <ReviewNewsList newsList={news_data} className="h-[700px]" />
+            </div>
           </div>
         </div>
       </HomePageCart>

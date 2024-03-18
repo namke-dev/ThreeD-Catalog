@@ -7,6 +7,7 @@ import HomePageCart from "@/components/layouts/HomePageCart";
 import PageHeader from "@/components/layouts/PageHeader";
 
 export default function News() {
+  const related_post = news_data.filter((item) => item.category === "");
   return (
     <Layout className="!bg-white/90">
       {/* <PageHeader>Tin Tức</PageHeader> */}
@@ -18,11 +19,24 @@ export default function News() {
         <img src="images/news-header.jpg" className=" mt-10 opacity-90 px-8" />
 
         <div className="flex flex-row gap-1.5">
-          <div className="w-2/3 py-8 pl-8 relative">
-            <NewsList newsList={news_data} isExpanded={false} />
+          <div
+            className="w-2/3 py-8 pl-8 relative 
+            flex flex-col"
+          >
+            <div className="text-2xl mb-6 pl-4">Tin tức </div>
+            <div className="overflow-y-auto ">
+              <NewsList
+                newsList={news_data}
+                isExpanded={false}
+                className="h-[700px]"
+              />
+            </div>
           </div>
-          <div className="w-1/3 py-8 pr-8 relative ">
-            <ReviewNewsList newsList={news_data} />
+          <div className="flex flex-col w-1/3 py-8 pr-8  gap-3">
+            <div className="text-2xl mb-3 pl-4">Tin tức khác</div>
+            <div className="relative flex flex-col overflow-y-auto">
+              <ReviewNewsList newsList={news_data} className="h-[700px]" />
+            </div>
           </div>
         </div>
       </HomePageCart>

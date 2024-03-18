@@ -13,7 +13,7 @@ export default function ReviewNewsCart({ news }) {
         max-w-[1200px] 
         h-[220px]
         flex flex-col justify-between
-        border-2 border-zinc-700/20 hover:scale-110 duration-500
+        border border-zinc-700/20 duration-500
         px-7 rounded-md
         transition-all"
       >

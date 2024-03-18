@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NewsCard from "./NewsCart";
 
-const NewsList = ({ newsList, isExpanded, itemsPerPage }) => {
+const NewsList = ({ newsList, isExpanded, itemsPerPage, className }) => {
   const [currentPage, setCurrentPage] = useState(1);
   itemsPerPage = 3;
   // Calculate the index range for the current page
@@ -17,7 +17,7 @@ const NewsList = ({ newsList, isExpanded, itemsPerPage }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center gap-1.5">
+    <div className={`flex flex-col gap-1.5 ${className}`}>
       {currentNews.map((news) => (
         <NewsCard
           key={news.id}
