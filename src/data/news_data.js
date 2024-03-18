@@ -4,7 +4,7 @@ export const news_data = [
     title: "3 Xu Hướng Thiết Kế Catalog 3D Độc Đáo",
     date: "January 15, 2024",
     publisher: "Vương Ái",
-    category: "Trend",
+    category: "trend",
     img_url: "/images/new1_img4.png",
     meta_script:
       "Tạo ấn tượng mạnh mẽ với khách hàng tiềm năng bằng catalog 3D độc đáo! Khám phá 3 xu hướng thiết kế Catalog 3D mới nhất 2024: tương tác trực quan, trải nghiệm cá nhân hóa & AR. Nâng tầm thương hiệu của bạn ngay hôm nay!",

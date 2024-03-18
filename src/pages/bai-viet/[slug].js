@@ -10,7 +10,10 @@ export default function NewsDetail() {
   const router = useRouter();
   const { slug } = router.query;
   const news = news_data.find((news) => news.id === slug);
-  const related_post = news_data.filter((item) => item.category === "");
+  const related_post = news_data.filter(
+    (item) => item.category === news.category
+  );
+  console.log(`==> ${related_post.length} `);
 
   useEffect(() => {
     if (news) {
@@ -55,7 +58,7 @@ export default function NewsDetail() {
             {related_post.length > 0 && (
               <div className=" relative flex flex-col overflow-y-auto">
                 <div className="text-2xl mb-3 pl-4">Tin tức liên quan</div>
-                <ReviewNewsList newsList={related_post} className="h-[400px]" />
+                <ReviewNewsList newsList={related_post} className="h-[460px]" />
               </div>
             )}
 
