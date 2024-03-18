@@ -30,107 +30,74 @@ export const news_data = [
       '<h2 style="font-weight: bold; font-size: 2.5em;">3D Catalogue là gì?\n\n</h2>3D Catalogue là một công cụ đặc biệt giúp các doanh nghiệp hiển thị sản phẩm của mình dưới dạng mô hình 3D sinh động với không gian 3 chiều. Từ đó, khách hàng có được cái nhìn tổng quan, chi tiết và chân thực hơn về sản phẩm trước khi quyết định mua hàng. \n\nNhờ vậy, khả năng cao họ sẽ có thể mua được những sản phẩm ưng ý, phù hợp với kỳ vọng của bản thân.</h2>Ngoài ra, 3D Catalogue không chỉ là dịch vụ giúp nâng cao trải nghiệm mua sắm trực tuyến mà còn giúp tạo ra sự độc đáo và ấn tượng cho sản phẩm của doanh nghiệp. \n\nCác doanh nghiệp có thể thực sự "bẻ khóa" tiềm năng tiếp cận và thu hút khách hàng mới thông qua việc tận dụng công nghệ 3D Catalogue này.<h3 style="font-weight: bold; font-size: 2em;"><br/>Những lợi ích của 3D Catalogue\n\n</h3>3D Catalogue là công cụ mang lại rất nhiều tiện lợi, lợi ích cho các doanh nghiệp hay kể cả những người tiêu dùng cá nhân. Một trong những lợi ích của 3D Catalogue phải kể đến như: \n\n<h3 style="font-weight: bold; font-size: 1.2em;">Trải nghiệm tương tác tốt hơn</h3><img src="/images/new2_img3.png" alt="Image 1" style="display: block; margin: auto;height: 400px;"><br/>3D Catalogue giúp khách hàng có cơ hội tương tác với sản phẩm một cách thực tế, hiểu rõ hơn về sản phẩm trước khi quyết định mua hàng.\n\n<h3 style="font-weight: bold; font-size: 1.2em;">Tăng cường trải nghiệm mua sắm trực tuyến</h3><img src="/images/new2_img4.png" alt="Image 1" style="display: block; margin: auto;height: 400px;">\nThay vì chỉ xem hình ảnh tĩnh, người tiêu dùng có thể chuyển động, xoay sản phẩm và xem từ nhiều góc độ khác nhau. Vì vậy, họ sẽ cảm thấy mình như đang được trải nghiệm sản phẩm ngoài đời thực.\n\n<h3 style="font-weight: bold; font-size: 1.2em;">Tiết kiệm thời gian và chi phí \n\n</h3><img src="/images/new2_img1.png" alt="Image 1" style="display: block; margin: auto;height: 400px;">3D Catalogue có thể làm giảm rủi ro trong việc trả lại sản phẩm do không phù hợp, hoặc không đáp ứng đúng mong đợi của khách hàng. Qua đó, doanh nghiệp sẽ tiết kiệm được chi phí hoặc thời gian vận chuyển hàng hóa.<h3 style="font-weight: bold; font-size: 1.2em;">\nTăng cơ hội bán hàng</h3><img src="/images/new2_img2.png" alt="Image 1" style="display: block; margin: auto;height: 400px;">\nKhi khách hàng có trải nghiệm tốt với sản phẩm thông qua 3D Catalogue, họ có động lực mạnh mẽ hơn để mua hàng dẫn đến tăng tỉ lệ bán hàng thành công.',
   },
   {
-    id: "11",
-    title: "Feather & Black partners with Next",
-    date: "January 15, 2024",
-    publisher: "Furniture Gazette",
-    category: "Partnerships",
-    img_url: "/images/new1_img2.png",
-    summary: `Feather & Black, the British furniture brand owned by Dreams, has announced a partnership with Next which will see it bring an edited collection of furniture and beds to the latter's online audience. The edit has been chosen to complement the collections already available with Next online, and includes bestsellers such as the weathered oak Sienna rattan and Salcombe bed frames.
+    id: "trinh-quet-3d-model-cua-shopify-tren-ios",
+    title:
+      "Nâng tầm sản phẩm của bạn với Trình quét 3D mới của Shopify trên iOS (Phần 1)",
+    date: "March 18, 2024",
+    publisher: "Vương Ái",
+    category: "trend",
+    img_url: "/images/new3_img1.png",
+    meta_script:
+      "Giờ đây bạn có thể phát triển các 3D model chỉ với trình quét 3D của Shopify ngay trên IOS mà không cần thêm bất kỳ phần mềm, phần cứng hoặc chi phí nào",
+    key_word: "Nâng tầm sản phẩm của bạn với Trình quét 3D mới của Shopify",
+    summary:
+      "Giờ đây, trong cùng khoảng thời gian cần thiết để thêm bất kỳ tài liệu nào khác vào cửa hàng của mình, bạn có thể chỉ cần phát triển các đối tượng 3D động để hiện thực hóa ý tưởng này. Điều tuyệt vời nhất là phần mềm Shopify cho phép bạn tạo ra những mô hình có tính thực tế cao này ngay tại đó.",
+    content: `
+    
+    Bạn có thể nhanh chóng và dễ dàng tạo các đối tượng 3D động để hiện thực hóa ý tưởng này trong khoảng thời gian gần bằng thời gian thêm bất kỳ 
+    tài liệu nào khác vào cửa hàng của mình, nhờ các khả năng được cải tiến của iOS 17 của Apple. Điều tuyệt vời nhất là bạn không Không cần thêm 
+    bất kỳ phần mềm, phần cứng hoặc chi phí nào để tạo ra những mẫu có độ chính xác cực cao này—tất cả đều có thể được thực hiện chỉ trong ứng dụng Shopify 
+    trên mẫu iPhone Pro của bạn.
+    <img src="/images/new3_img2.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    <br><br>
+    Shopify muốn cung cấp cho các nhà bán lẻ những công cụ họ cần để xây dựng các cửa hàng trực tuyến có cấu hình cao nhất và có lợi nhuận cao nhất. Một phần trong đó là dân chủ hóa các công nghệ thương mại điện tử tiên tiến nhất để các nhà bán lẻ mới có quyền truy cập vào các nguồn lực tương tự như những người tham gia thị trường lâu đời. Công nghệ mới mà Shopify đã tích hợp sẽ thay đổi đáng kể cách chúng ta mua bán hàng hóa trực tuyến và tất cả người bán đều có thể truy cập được.
+    <br><br>
+    Ngày nay, các sản phẩm hầu hết chỉ được hiển thị trực tuyến dưới dạng văn bản và đồ họa hai chiều. Đây không phải lúc nào cũng thể hiện chính xác sự đa dạng, độc đáo và chiều sâu của mọi thứ chúng ta mua và bán trực tuyến. Ngay cả những thành phần cơ bản nhất của sản phẩm—chi tiết, kết cấu, kích thước và tỷ lệ—cũng có thể bị loại bỏ. Ngoài ra, mô tả văn bản thường bị bỏ qua, buộc khách hàng gần như chỉ dựa vào trí tưởng tượng của họ.
+    <br><br>
+    Việc trưng bày sản phẩm trên internet phải phản ánh sự trình bày trực tiếp của họ, cho phép người mua xử lý các mặt hàng như thể chúng đang ở trong tay họ và đánh giá đầy đủ các chi tiết như kết cấu, kích thước, hình thức và độ hoàn thiện.
+    <br><br>
+    Không cần có kiến thức trước về lập mô hình 3D vì trải nghiệm trong ứng dụng thân thiện với người dùng sẽ hướng dẫn bạn thực hiện quy trình từng bước để đảm bảo rằng bất kỳ ai cũng có thể nhanh chóng và dễ dàng tạo các bản trình bày giống như thật cho các mục của họ trong vòng chưa đầy 20 phút.
+    
+    <img src="/images/new3_img3.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+
+    Những mô hình này là một công cụ mạnh mẽ có thể tăng độ tin cậy của khách hàng và tỷ lệ chuyển đổi đồng thời giảm tỷ lệ trả lại hàng và truy vấn chăm sóc khách hàng. Chúng không chỉ là một phương pháp mới thú vị để giới thiệu hàng hóa của bạn và tạo sự khác biệt cho thương hiệu của bạn so với đối thủ cạnh tranh.
+    <br><br>
+    <h2 style="font-weight: bold; font-size: 1.5em;">Cách tạo đối tượng 3D với Shopify</h2>
+    <br><br>
+    Tạo đối tượng 3D với Shopify đơn giản như:\n
+    1. Cập nhật thiết bị iOS mẫu Pro lên iOS 17, sau đó cài đặt hoặc khởi chạy ứng dụng Shopify.
+    <img src="/images/new3_img4.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    2. Nhấp vào biểu tượng  để đến trang tổng quan về sản phẩm của bạn
+    <br><br>
+    3. Chọn sản phẩm hiện có hoặc chạm vào + để thêm sản phẩm mới.
+    <img src="/images/new3_img5.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    4. Chọn Thêm phương tiện, sau đó chạm vào máy quét 3D
+    <img src="/images/new3_img6.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    5. Làm theo các bước trên màn hình để chụp đối tượng của bạn.
+    <img src="/images/new3_img7.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    6. Khi đối tượng của bạn đã được chụp, hãy xem lại và thêm vào sản phẩm.
+    <img src="/images/new3_img8.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    <h2 style="font-weight: bold; font-size: 1.5em;">Một vài mẹo để có kết quả chụp tốt nhất</h2>
+    Đầu tiên, làm việc với các đồ vật có kích thước chiều cao, chiều dài và chiều rộng lớn hơn 8 cm.
+    \nChọn một khu vực nhận được càng nhiều ánh sáng nhẹ nhàng, đồng đều từ mặt trời càng tốt.
+    \nDành đủ không gian xung quanh sản phẩm của bạn để có thể chụp ảnh từ mọi phía.
+    \nĐảm bảo rằng nền của hình ảnh của bạn có màu nhạt hơn hàng hóa.
+    \nĐảm bảo bạn có mười đến mười lăm phút không bị gián đoạn để ghi lại nội dung của mình.
+    \nNên thực hiện những nỗ lực lặp đi lặp lại để có kết quả tối ưu.
+    \nHãy nhớ rằng các bề mặt bóng loáng, phản chiếu có thể không mang lại kết quả tốt nhất.
+    <img src="/images/new3_img9.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
     `,
-    content: `Feather & Black, the distinguished British furniture brand under Dreams ownership, has recently announced an exciting partnership with Next. This collaboration introduces an exclusive collection of furniture and beds, carefully curated to complement Next's existing online offerings. The collection includes bestsellers such as the weathered oak Sienna rattan and Salcombe bed frames, showcasing Feather & Black's commitment to luxurious and timeless designs.
-
-    The strategic partnership aims to bring Feather & Black's premium furniture to a broader audience through Next's extensive online platform. Steve Payne, Head of New Channels at Feather & Black, expressed enthusiasm about the collaboration, stating, "We are proud of our luxurious collections of furniture and beds at Feather & Black and delighted to bring the brand to a wider audience via our strategic partnership with Next. We look forward to an exciting future as we elevate our brand presence in the market."    
-
-    This collaboration not only expands the reach of Feather & Black but also offers Next customers access to a carefully curated selection of high-quality furniture. The partnership emphasizes the significance of blending established brands to enhance the online shopping experience for consumers seeking both style and comfort in their home furnishings.`,
   },
-  {
-    id: "12",
-    title:
-      "Innovative Eco-Friendly Furniture Line Unveiled by Sustainable Design Studio",
-    date: "February 2, 2024",
-    publisher: "Green Living Magazine",
-    category: "Sustainability",
-    img_url: "/images/new1_img3.png",
-    summary: `Leading the charge in sustainable furniture design, a renowned design studio has launched a groundbreaking eco-friendly furniture line. This collection showcases a harmonious blend of contemporary aesthetics and environmentally conscious materials, marking a significant step towards greener and more sustainable living spaces.`,
-    content: `In a significant leap towards sustainable living, a renowned design studio has launched an innovative eco-friendly furniture line. This groundbreaking collection showcases a harmonious blend of contemporary aesthetics and environmentally conscious materials, setting a new standard for greener and more sustainable living spaces.
-
-    The eco-friendly furniture line goes beyond mere design aesthetics, emphasizing the use of environmentally friendly materials and production processes. Each piece in the collection reflects a commitment to sustainability, making it an ideal choice for individuals seeking to reduce their ecological footprint without compromising on style.
-
-    This collection not only exemplifies the design studio's dedication to environmental responsibility but also serves as an inspiration for the broader design industry. By introducing a range that prioritizes sustainability without sacrificing style, the studio paves the way for a more conscious approach to furnishing our homes.`,
-  },
-  {
-    id: "13",
-    title:
-      "Modern Minimalism Takes Center Stage in New Scandinavian Furniture Collection",
-    date: "March 10, 2024",
-    publisher: "Nordic Living Journal",
-    category: "Modern Design",
-    img_url: "/images/new1_img1.png",
-    summary: `Embracing the timeless appeal of Scandinavian design, a prominent furniture brand has introduced a new collection that celebrates modern minimalism. The curated pieces showcase clean lines, functional elegance, and a commitment to simplicity, embodying the essence of Nordic-inspired aesthetics.`,
-    content: `Embracing the timeless appeal of Scandinavian design, a prominent furniture brand introduces a new collection that celebrates modern minimalism. The curated pieces showcase clean lines, functional elegance, and a commitment to simplicity, embodying the essence of Nordic-inspired aesthetics.
-
-    This Scandinavian furniture collection is a testament to the enduring popularity of minimalistic design, offering homeowners an opportunity to create serene and clutter-free living spaces. From sleek furniture silhouettes to muted color palettes, each piece in the collection reflects the core principles of Scandinavian design, blending form and function seamlessly.
-
-    The introduction of this collection aligns with the enduring global appreciation for Scandinavian design, known for its emphasis on functionality, craftsmanship, and a connection to nature. Whether furnishing a contemporary home or adding a touch of simplicity to traditional interiors, this collection provides a versatile and timeless option for design enthusiasts.`,
-  },
-  {
-    id: "14",
-    title:
-      "Artistic Fusion: Collaboration Between Local Artists and Furniture Craftsmen Yields Unique Collection",
-    date: "April 5, 2024",
-    publisher: "Art & Design Weekly",
-    category: "Artistic Collaboration",
-    img_url: "/images/new1_img2.png",
-    summary: `In a creative collaboration that bridges art and design, local artists have joined forces with skilled furniture craftsmen to produce a one-of-a-kind collection. This fusion of artistic expression and functional design results in furniture pieces that are not just functional but also serve as captivating works of art in their own right.`,
-    content: `In a creative collaboration that bridges art and design, local artists have joined forces with skilled furniture craftsmen to produce a one-of-a-kind collection. This fusion of artistic expression and functional design results in furniture pieces that are not just functional but also serve as captivating works of art in their own right.
-
-    The collaboration brings together the talents of artists and craftsmen, resulting in a collection that goes beyond traditional furniture aesthetics. Each piece tells a unique story, showcasing the diverse styles and techniques employed by the artists. The collection offers consumers an opportunity to bring a touch of originality and artistic flair into their living spaces.
-
-    This artistic fusion not only celebrates the creativity of local talents but also highlights the potential for collaboration between different artistic disciplines. It serves as a reminder of the transformative power of art in redefining the boundaries of traditional furniture design.`,
-  },
-  {
-    id: "15",
-    title: "Smart Living: Furniture Tech Integration Redefines Home Interiors",
-    date: "May 20, 2024",
-    publisher: "Tech Homes Monthly",
-    category: "Smart Furniture",
-    img_url: "/images/new1_img3.png",
-    summary: `Enter the era of smart living with a trailblazing furniture line that seamlessly integrates technology into home interiors. From smart storage solutions to interactive furniture pieces, this innovative collection offers a glimpse into the future of intelligent and connected living spaces.`,
-    content: `Step into the era of smart living with a groundbreaking furniture line that seamlessly integrates technology into home interiors. From smart storage solutions to interactive furniture pieces, this innovative collection offers a glimpse into the future of intelligent and connected living spaces.
-
-    This furniture tech integration not only adds convenience but also elevates the overall functionality of home furnishings. Imagine a living room where your coffee table doubles as a wireless charging station or a wardrobe that suggests outfit combinations based on the weather. This collection caters to the tech-savvy homeowner, blending modern design with cutting-edge technology.
-
-    As our homes become more connected, this collection sets the stage for a new way of living, where furniture goes beyond mere aesthetics to enhance the way we interact with our living spaces. It marks a significant shift in the design landscape, redefining the possibilities for home interiors in the digital age.`,
-  },
-  {
-    id: "16",
-    title:
-      "Revolutionary Materials: Furniture Designer Pioneers Use of Recycled Ocean Plastics",
-    date: "June 8, 2024",
-    publisher: "Sustainable Living Today",
-    category: "Environmental Design",
-    img_url: "/images/new1_img4.png",
-    summary: `A visionary furniture designer is making waves in the industry by pioneering the use of recycled ocean plastics in a new collection. This commitment to sustainability not only transforms waste into functional art but also highlights the urgent need for eco-conscious practices in the world of furniture design.`,
-    content: `A visionary furniture designer is making waves in the industry by pioneering the use of recycled ocean plastics in a new collection. This commitment to sustainability not only transforms waste into functional art but also highlights the urgent need for eco-conscious practices in the world of furniture design.
-
-    The collection features pieces crafted from reclaimed ocean plastics, showcasing the designer's dedication to environmental responsibility. From chairs to tables, each item tells a story of repurposing materials to create beautiful and functional furniture. This initiative serves as a reminder of the impact of design choices on the environment and encourages a shift towards more sustainable practices in the industry.
-
-    By choosing recycled ocean plastics, this designer sets an example for the entire furniture design community, illustrating how creativity can be harnessed to address pressing environmental issues. This collection stands as a testament to the transformative power of design in fostering a more sustainable and responsible future.`,
-  },
-  {
-    id: "17",
-    title:
-      "Heritage Meets Contemporary: Iconic Furniture Brand Reimagines Classic Designs",
-    date: "July 15, 2024",
-    publisher: "Heritage Home Magazine",
-    category: "Classic Revival",
-    img_url: "/images/new1_img1.png",
-    summary: `Embarking on a journey that melds heritage with contemporary sensibilities, an iconic furniture brand has reimagined classic designs for a modern audience. This collection pays homage to timeless craftsmanship while infusing a fresh perspective that resonates with the evolving tastes of today's consumers.`,
-    content: `Embarking on a journey that melds heritage with contemporary sensibilities, an iconic furniture brand has reimagined classic designs for a modern audience. This collection pays homage to timeless craftsmanship while infusing a fresh perspective that resonates with the evolving tastes of today's consumers.
-
-    The juxtaposition of traditional design elements with modern twists creates a collection that is both nostalgic and relevant. From ornate detailing on chairs to updated finishes on wooden furniture, each piece tells a story of craftsmanship passed down through generations. This collection is a celebration of the rich heritage of furniture design, seamlessly adapted to suit the preferences of a contemporary audience.
-
-    By marrying the past with the present, this iconic furniture brand demonstrates the enduring appeal of classic designs. The collection invites consumers to bring a touch of history into their homes while enjoying the functionality and style that meets the demands of modern living.`,
-  },
+  // {
+  //   id: "",
+  //   title: "",
+  //   date: "",
+  //   publisher: "Vương Ái",
+  //   category: "trend",
+  //   img_url: "/images/new3_img1.png",
+  //   meta_script: "",
+  //   key_word: "",
+  //   summary: "",
+  //   content: "",
+  // },
 ];
