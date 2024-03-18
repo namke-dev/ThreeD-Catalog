@@ -154,7 +154,7 @@ export const news_data = [
     date: "March 18, 2024",
     publisher: "Vương Ái",
     category: "trend",
-    img_url: "/images/new3_img1.png",
+    img_url: "/images/new4_img1.png",
     meta_script:
       "phần mềm thiết kế 3D là một trong những công cụ không thể thiếu đối với các kỹ sư cơ khí, thiết kế đồ họa hay kiến trúc sư. Để có thể xây dựng và hoàn thiện thiết kế cho 1 sản phẩm mới hay phối cảnh cho 1 không gian nội thất một cách nhanh chóng",
     key_word: "phần mềm thiết kế 3D phổ biến",
@@ -221,9 +221,114 @@ export const news_data = [
     <h2 style="font-weight: bold; font-size: 1.5em;">3. Tổng kết </h2>
 
     Phần mềm thiết kế 3D là công cụ không thể thiếu trong quá trình tạo ra các mô hình 3D. Nhờ có những phần mềm này mà các kiến trúc sư hay các kỹ sư mô phỏng được những bản vẽ vô cũng chi tiết và chân thực. Chúng đã thể hiện được rằng thế giới 3 chiều rất phong phú. Từ đó vượt qua ranh giới giữa trí tưởng tượng và thực tế.
-    
+
     `,
   },
+
+  {
+    id: "su-dung-catalogue-3d-giup-ban-hang-hieu-qua-hon",
+    title: "Sử dụng Catalogue 3D: Bí quyết Bán hàng Dễ dàng Hơn",
+    date: "March 18, 2024",
+    publisher: "Vương Ái",
+    category: "trend",
+    img_url: "/images/new5_img1.png",
+    meta_script:
+      "Tăng tỷ lệ chuyển đổi, nâng cao trải nghiệm khách hàng và tiết kiệm chi phí với Catalogue 3D - Bí quyết bán hàng hiệu quả trong thời đại công nghệ số.",
+    key_word: "Bí quyết Bán hàng Dễ dàng Hơn",
+    summary:
+      "Trong thời đại công nghệ số bùng nổ, việc thu hút khách hàng và thúc đẩy doanh số bán hàng trở nên cạnh tranh hơn bao giờ hết. Catalogue 3D nổi lên như một giải pháp sáng tạo, mang đến trải nghiệm mua sắm độc đáo và hiệu quả cho cả khách hàng và doanh nghiệp.",
+    content: `
+    <h1 style="font-weight: bold; font-size: 2em;">Sử dụng Catalogue 3D: Bí quyết Bán hàng Dễ dàng Hơn</h1>
+    <h2 style="font-weight: bold; font-size: 1.5em;">Catalogue 3D là gì? </h2>
+    Catalogue 3D là dạng danh mục sản phẩm được mô phỏng sống động bằng hình ảnh 3D, cho phép khách hàng tương tác trực quan với sản phẩm trước khi mua hàng. Thay vì những hình ảnh tĩnh 2D thông thường, catalogue 3D mang đến:
+    <ul style="list-style-type: disc; padding-left: 20px;">
+    <li style="padding-left: 10px;">Hình ảnh chân thực, sống động: Khách hàng có thể xoay, di chuyển, phóng to sản phẩm từ mọi góc độ, tạo cảm giác như đang cầm nắm sản phẩm thực tế.</li>
+    <li style="padding-left: 10px;">Trải nghiệm tương tác: Khách hàng có thể khám phá các tính năng, chi tiết sản phẩm một cách trực quan, dễ dàng so sánh và lựa chọn sản phẩm phù hợp.</li>
+    <li style="padding-left: 10px;">Tăng tính thẩm mỹ: Catalogue 3D thu hút thị giác, tạo ấn tượng mạnh mẽ với khách hàng.</li>
+    </ul>
+    <img src="/images/new5_img1.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    
+    <h2 style="font-weight: bold; font-size: 1.5em;">Lợi ích của việc sử dụng Catalogue 3D</h2>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+    <li style="padding-left: 10px;">Tăng tỷ lệ chuyển đổi: Catalogue 3D giúp khách hàng dễ dàng hình dung sản phẩm, từ đó tăng khả năng mua hàng.</li>
+    <li style="padding-left: 10px;">Nâng cao trải nghiệm khách hàng: Trải nghiệm mua sắm trực quan, thú vị giúp khách hàng hài lòng và quay lại mua hàng.</li>
+    <li style="padding-left: 10px;">Tăng hiệu quả marketing: Catalogue 3D là công cụ marketing hiệu quả, giúp thu hút khách hàng tiềm năng và quảng bá thương hiệu.</li>
+    <li style="padding-left: 10px;">Tiết kiệm chi phí: Catalogue 3D có thể tái sử dụng nhiều lần, tiết kiệm chi phí in ấn và lưu trữ.</li>
+    </ul>
+    <img src="/images/new5_img2.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+
+    <h2 style="font-weight: bold; font-size: 1.5em;">Ứng dụng của Catalogue 3D</h2>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+    <li style="padding-left: 10px;">Bán lẻ: Catalogue 3D được ứng dụng hiệu quả trong các ngành thời trang, nội thất, đồ điện tử, v.v.</li>
+    <li style="padding-left: 10px;">Bất động sản: Catalogue 3D giúp khách hàng tham quan nhà mẫu, dự án bất động sản từ xa một cách trực quan.</li>
+    <li style="padding-left: 10px;">Giáo dục: Catalogue 3D mô phỏng mô hình, vật thể trong giáo dục giúp học sinh tiếp thu kiến thức hiệu quả hơn.</li>
+    </ul>
+    <img src="/images/new5_img3.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    <h2 style="font-weight: bold; font-size: 1.5em;">Lời khuyên khi sử dụng Catalogue 3D</h2>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+    <li style="padding-left: 10px;">Thiết kế catalogue 3D chuyên nghiệp, thu hút: Sử dụng hình ảnh chất lượng cao, bố cục hợp lý, màu sắc hài hòa.</li>
+    <li style="padding-left: 10px;">Tối ưu hóa catalogue 3D cho website: Đảm bảo catalogue 3D tải nhanh, mượt mà trên mọi thiết bị.</li>
+    <li style="padding-left: 10px;">Kết hợp catalogue 3D với các kênh marketing khác: Website, mạng xã hội, email marketing, v.v.</li>
+    </ul> 
+    <h2 style="font-weight: bold; font-size: 1.5em;">Kết luận</h2>
+    Catalogue 3D là công cụ bán hàng hiệu quả trong thời đại công nghệ số. Việc sử dụng catalogue 3D sáng tạo sẽ giúp doanh nghiệp thu hút khách hàng, tăng tỷ lệ chuyển đổi và thúc đẩy doanh số bán hàng hiệu quả.
+
+    Bài viết này đã cung cấp cho bạn thông tin về catalogue 3D và lợi ích của việc sử dụng nó. Hãy áp dụng catalogue 3D vào chiến lược bán hàng của bạn để đạt được thành công!
+    `,
+  },
+
+  {
+    id: "xu-huong-dung-mo-hinh-3D-cho-san-pham-ban-hang",
+    title: "Xu hướng Dùng Mô hình 3D Cho Sản phẩm Bán hàng Online",
+    date: "March 18, 2024",
+    publisher: "Vương Ái",
+    category: "trend",
+    img_url: "/images/new6_img1.png",
+    meta_script:
+      "Sử dụng mô hình 3D cho sản phẩm nổi lên như một xu hướng tất yếu, mang đến trải nghiệm mua sắm độc đáo và hiệu quả cho cả khách hàng và doanh nghiệp.",
+    key_word: "Xu hướng Dùng Mô hình 3D Cho Sản phẩm Bán hàng Online",
+    summary:
+      "Thị trường bán hàng online ngày càng cạnh tranh, đòi hỏi doanh nghiệp phải sáng tạo và đổi mới để thu hút khách hàng và gia tăng doanh số. Sử dụng mô hình 3D cho sản phẩm nổi lên như một xu hướng tất yếu, mang đến trải nghiệm mua sắm độc đáo và hiệu quả cho cả khách hàng và doanh nghiệp.",
+    content: `
+    <h2 style="font-weight: bold; font-size: 1.5em;">Xu hướng bùng nổ của mô hình 3D trong bán hàng online</h2>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+      <li style="padding-left: 10px;">Nhu cầu trải nghiệm trực quan: Khách hàng mong muốn tương tác trực tiếp với sản phẩm trước khi mua hàng, mô hình 3D đáp ứng nhu cầu này một cách hoàn hảo.</li>
+      <li style="padding-left: 10px;">Công nghệ 3D phát triển: Kỹ thuật tạo mô hình 3D ngày càng tiên tiến, cho phép tạo ra hình ảnh chân thực và sống động hơn.</li>
+      <li style="padding-left: 10px;">Khả năng tiếp cận rộng rãi: Mô hình 3D có thể dễ dàng chia sẻ trên website, mạng xã hội và các nền tảng mua sắm trực tuyến.</li>
+    </ul>
+
+    <h2 style="font-weight: bold; font-size: 1.5em;">Lợi ích vượt trội của việc sử dụng mô hình 3D</h2>
+    <img src="/images/new6_img2.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    <ul style="list-style-type: disc; padding-left: 20px;">
+      <li style="padding-left: 10px;">Tăng tỷ lệ chuyển đổi: Khách hàng dễ dàng hình dung sản phẩm, từ đó tăng khả năng mua hàng.</li>
+      <li style="padding-left: 10px;">Nâng cao trải nghiệm khách hàng: Trải nghiệm mua sắm trực quan, thú vị giúp khách hàng hài lòng và quay lại mua hàng.</li>
+      <li style="padding-left: 10px;">Tăng hiệu quả marketing: Mô hình 3D là công cụ marketing hiệu quả, thu hút khách hàng tiềm năng và quảng bá thương hiệu.</li>
+      <li style="padding-left: 10px;">Tiết kiệm chi phí: Giảm chi phí chụp ảnh sản phẩm và lưu trữ kho hàng.</li>
+    </ul>
+
+    <h2 style="font-weight: bold; font-size: 1.5em;">Xu hướng phát triển của mô hình 3D trong tương lai</h2>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+      <li style="padding-left: 10px;">Trí tuệ nhân tạo (AI): AI sẽ giúp tạo ra mô hình 3D thông minh, tự động hóa quy trình sản xuất.</li>
+      <li style="padding-left: 10px;">Thực tế ảo (VR) và thực tế tăng cường (AR): Khách hàng sẽ có trải nghiệm tương tác với sản phẩm 3D trong môi trường VR/AR.</li>
+    </ul>
+
+    <h2 style="font-weight: bold; font-size: 1.5em;">Lời khuyên khi sử dụng mô hình 3D</h2>
+    <img src="/images/new6_img3.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    <ul style="list-style-type: disc; padding-left: 20px;">
+      <li style="padding-left: 10px;">Đảm bảo chất lượng hình ảnh: Mô hình 3D cần chân thực, sắc nét để thu hút khách hàng.</li>
+      <li style="padding-left: 10px;">Tối ưu hóa cho website: Đảm bảo mô hình 3D tải nhanh, mượt mà trên mọi thiết bị.</li>
+      <li style="padding-left: 10px;">Kết hợp đa kênh marketing: Website, mạng xã hội, email marketing, v.v.</li>
+      <li style="padding-left: 10px;">Cung cấp thông tin chi tiết: Mô tả sản phẩm, hướng dẫn sử dụng đầy đủ.</li>
+    </ul>
+
+    <h2 style="font-weight: bold; font-size: 1.5em;">Kết luận</h2>
+    Sử dụng mô hình 3D cho sản phẩm là xu hướng tất yếu trong bán hàng online, mang đến lợi ích to lớn cho cả doanh nghiệp và khách hàng. Hãy áp dụng mô hình 3D vào chiến lược kinh doanh của bạn để bứt phá doanh số và dẫn đầu thị trường trong kỷ nguyên số!
+    
+    Bài viết này đã cung cấp cho bạn thông tin về xu hướng sử dụng mô hình 3D và lợi ích của nó. Hãy bắt đầu áp dụng mô hình 3D ngay hôm nay để gia tăng hiệu quả bán hàng!
+
+    `,
+  },
+
   //  <h3 style="font-weight: bold; font-size: 1.2em;"></h3>
   // <h1 style="font-weight: bold; font-size: 2em;"></h1>
   // <img src="/images/new3_img12.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
