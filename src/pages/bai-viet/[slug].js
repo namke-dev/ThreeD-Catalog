@@ -3,37 +3,39 @@ import HomePageCart from "@/components/layouts/HomePageCart";
 import Layout from "@/components/layouts/Layout";
 import NewsCard from "@/components/layouts/NewsCart";
 import { news_data } from "@/data/news_data";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import ReviewNewsList from "@/components/layouts/ReviewNewsList";
 
 export default function NewsDetail() {
   const router = useRouter();
   const { slug } = router.query;
-  const news = news_data.find((news) => news.id === slug);
-  const related_post = news_data.filter(
-    (item) => item.category === news.category
-  );
-  console.log(`==> ${related_post.length} `);
+  const targetNews = news_data.find((news) => news.id === slug);
+  const [related_post, setRelated_post] = useState([]);
 
   useEffect(() => {
-    if (news) {
-      document.title = news.key_word;
+    if (targetNews) {
+      document.title = targetNews.key_word;
 
       const metaDescriptionTag = document.querySelector(
         'meta[name="description"]'
       );
       if (metaDescriptionTag) {
-        metaDescriptionTag.content = news.meta_script;
+        metaDescriptionTag.content = targetNews.meta_script;
       } else {
         const newMetaTag = document.createElement("meta");
         newMetaTag.name = "description";
-        newMetaTag.content = news.meta_script;
+        newMetaTag.content = targetNews.meta_script;
         document.head.appendChild(newMetaTag);
       }
     }
-  }, [news]);
+    if (targetNews) {
+      setRelated_post(
+        news_data.filter((item) => item.category === targetNews.category)
+      );
+    }
+  }, [targetNews]);
 
-  if (!news) {
+  if (!targetNews) {
     return (
       <Layout>
         <p>News not found</p>
@@ -52,7 +54,7 @@ export default function NewsDetail() {
 
         <div className="flex flex-row gap-1.5">
           <div className="w-2/3 py-8 pl-8 relative">
-            <NewsCard key={news.id} news={news} isExpanded={true} />
+            <NewsCard key={targetNews.id} news={targetNews} isExpanded={true} />
           </div>
           <div className="flex flex-col w-1/3 py-8 pr-8  gap-10">
             {related_post.length > 0 && (
