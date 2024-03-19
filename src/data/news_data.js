@@ -325,10 +325,87 @@ export const news_data = [
     Sử dụng mô hình 3D cho sản phẩm là xu hướng tất yếu trong bán hàng online, mang đến lợi ích to lớn cho cả doanh nghiệp và khách hàng. Hãy áp dụng mô hình 3D vào chiến lược kinh doanh của bạn để bứt phá doanh số và dẫn đầu thị trường trong kỷ nguyên số!
     
     Bài viết này đã cung cấp cho bạn thông tin về xu hướng sử dụng mô hình 3D và lợi ích của nó. Hãy bắt đầu áp dụng mô hình 3D ngay hôm nay để gia tăng hiệu quả bán hàng!
+    `,
+  },
+
+  {
+    id: "anh-huong-cua-thuong-mai-dien-tu-den-cong-nghe-3d",
+    title:
+      "SỰ “BÙNG NỔ” CỦA THƯƠNG MẠI ĐIỆN TỬ KHIẾN HÀNG LOẠT THƯƠNG HIỆU ÁP DỤNG CÔNG NGHỆ 3D?",
+    date: "March 20, 2024",
+    publisher: "Vương Ái",
+    category: "trend",
+    img_url: "/images/new9_img1.png",
+    meta_script: "Xu hướng 3D trong tương lai: Nắm bắt cơ hội bứt phá",
+    key_word: "Công nghệ 3D, Thương mại điện tử",
+    summary:
+      "Trong thế kỷ 21 ngày nay, sự phát triển của công nghệ đã làm thay đổi cách mà chúng ta tiếp cận và trải nghiệm mua sắm trực tuyến. Thương mại điện tử đã trở thành một phần quan trọng của đời sống hàng ngày, và việc sử dụng công nghệ 3D để mô tả sản phẩm đang trở thành một xu hướng ngày càng phổ biến trong thế giới kinh doanh hiện nay. Trên toàn thế giới, hầu hết các thương hiệu và nhà bán lẻ đều đang đầu tư vào công nghệ 3D để tạo ra trải nghiệm mua sắm trực tuyến mới lạ, hấp dẫn hơn cho khách hàng của mình.",
+    content: `
+    Sử dụng công nghệ 3D trong mô tả sản phẩm không chỉ giúp tăng cường trải nghiệm mua sắm của người tiêu dùng mà còn giúp các thương hiệu và nhà bán lẻ thúc đẩy sự phát triển kinh doanh. Việc hiển thị sản phẩm ở góc nhìn 3 chiều giúp người tiêu dùng có cái nhìn chân thực và toàn diện hơn về sản phẩm, từ đó giúp họ ra quyết định mua sắm chính xác hơn. Không những vậy, áp dụng công nghệ 3D cũng giúp tạo ra sự độc đáo trong việc tiếp cận sản phẩm, tạo được sự chú ý và thu hút nhiều khách hàng tiềm năng.
+    <img src="/images/new9_img2.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    Một trong những lĩnh vực mà công nghệ 3D đang được áp dụng phổ biến là ngành thời trang. Các thương hiệu thời trang hàng đầu thế giới hiện đều sử dụng công nghệ 3D để tạo ra các mô hình 3D chân thực của sản phẩm của mình. Nhờ đó, người tiêu dùng có thể thấy được sản phẩm từ mọi góc độ, thậm chí có thể thử trang phục trực tuyến trước khi quyết định mua. Điều này giúp giảm rủi ro trong quá trình mua hàng trực tuyến và tăng cường sự tin tưởng từ phía khách hàng.
+    <img src="/images/new9_img3.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
+    Bên cạnh đó, ngoài ngành thời trang, công nghệ 3D cũng dần được áp dụng rộng rãi trong các lĩnh vực khác như nội thất, ô tô, hoặc thậm chí trong ngành du lịch. Việc sử dụng 3D để mô tả sản phẩm không chỉ giúp nâng cao chất lượng trải nghiệm mua sắm mà còn giúp tạo ra sự đột phá và tiên tiến trong cách thức tiếp cận khách hàng.
+    
+    <h2 style="font-weight: bold; font-size: 1.5em;">Kết luận:</h2>
+    Trong bối cảnh cạnh tranh gay gắt của thị trường hiện nay, việc áp dụng công nghệ 3D để mô tả sản phẩm không còn là một lựa chọn mà là một yêu cầu để các thương hiệu và nhà bán lẻ có thể duy trì và phát triển kinh doanh của mình. Sự gia tăng của thương mại điện tử đã thúc đẩy việc áp dụng công nghệ 3D trong mô tả sản phẩm giúp nâng cao trải nghiệm và tiếp cận khách hàng hiệu quả hơn.
 
     `,
   },
 
+  {
+    id: "xu-huong3d-trong-tuong-lai",
+    title: "Xu hướng 3D trong tương lai: Nắm bắt cơ hội bứt phá",
+    date: "March 20, 2024",
+    publisher: "Vương Ái",
+    category: "trend",
+    img_url: "/images/new9_img2.png",
+    meta_script: "Xu hướng 3D trong tương lai: Nắm bắt cơ hội bứt phá",
+    key_word: "Xu hướng 3D trong tương lai: Nắm bắt cơ hội bứt phá",
+    summary:
+      "Công nghệ 3D đang phát triển với tốc độ chóng mặt, hứa hẹn mang đến những đột phá mang tính cách mạng trong nhiều lĩnh vực. Bài viết này sẽ điểm qua một số xu hướng 3D nổi bật trong tương lai, giúp bạn nắm bắt cơ hội bứt phá và dẫn đầu.",
+    content: `
+    <h2 style="font-weight: bold; font-size: 1.5em;">Trí tuệ nhân tạo (AI) và học máy (Machine Learning):</h2>
+<ul style="list-style-type: disc; padding-left: 20px;">
+  <li style="padding-left: 10px;">AI và học máy sẽ đóng vai trò quan trọng trong việc tự động hóa quy trình 3D, giúp tạo mô hình nhanh hơn, hiệu quả hơn và chính xác hơn.</li>
+  <li style="padding-left: 10px;">Các thuật toán học sâu sẽ được ứng dụng để tối ưu hóa quy trình in 3D, tạo ra các sản phẩm với chất lượng cao và độ chính xác cao.</li>
+  <li style="padding-left: 10px;">AI sẽ hỗ trợ thiết kế 3D thông minh, giúp người dùng dễ dàng tạo ra các mô hình 3D phức tạp mà không cần nhiều kỹ năng chuyên môn.</li>
+</ul>
+
+<h2 style="font-weight: bold; font-size: 1.5em;">Thực tế ảo (VR) và Thực tế tăng cường (AR):</h2>
+<ul style="list-style-type: disc; padding-left: 20px;">
+  <li style="padding-left: 10px;">VR và AR sẽ mang đến trải nghiệm 3D sống động và tương tác hơn, cho phép người dùng tương tác trực tiếp với các mô hình 3D trong môi trường ảo.</li>
+  <li style="padding-left: 10px;">VR được ứng dụng trong đào tạo, mô phỏng, giải trí,... giúp người dùng trải nghiệm các tình huống thực tế một cách an toàn và hiệu quả.</li>
+  <li style="padding-left: 10px;">AR được sử dụng trong thiết kế nội thất, kiến trúc, y tế,... giúp trực quan hóa các dự án và đưa ra quyết định sáng suốt hơn.</li>
+</ul>
+
+<h2 style="font-weight: bold; font-size: 1.5em;">In 3D đa vật liệu:</h2>
+<ul style="list-style-type: disc; padding-left: 20px;">
+  <li style="padding-left: 10px;">Công nghệ in 3D sẽ phát triển mạnh mẽ, cho phép in ra các sản phẩm với nhiều loại vật liệu khác nhau, đáp ứng nhu cầu đa dạng của người dùng.</li>
+  <li style="padding-left: 10px;">In 3D kim loại sẽ được ứng dụng rộng rãi trong sản xuất linh kiện, phụ tùng, dụng cụ y tế,...</li>
+  <li style="padding-left: 10px;">In 3D sinh học sẽ tạo ra các mô cấy ghép, mô phỏng mô cơ thể,... mang đến giải pháp y tế tiên tiến cho con người.</li>
+</ul>
+
+<h2 style="font-weight: bold; font-size: 1.5em;">In 3D nano:</h2>
+<ul style="list-style-type: disc; padding-left: 20px;">
+  <li style="padding-left: 10px;">In 3D nano sẽ mở ra cánh cửa cho các ứng dụng mới trong nhiều lĩnh vực như điện tử, y tế, vật liệu,...</li>
+  <li style="padding-left: 10px;">In 3D nano cho phép tạo ra các thiết bị điện tử siêu nhỏ, pin năng lượng cao, vật liệu siêu dẫn,...</li>
+  <li style="padding-left: 10px;">Ngành công nghiệp dược phẩm sẽ được hưởng lợi từ in 3D nano để tạo ra các loại thuốc nhắm mục tiêu hiệu quả hơn.</li>
+</ul>
+
+<h2 style="font-weight: bold; font-size: 1.5em;">Kết nối vạn vật (IoT):</h2>
+<ul style="list-style-type: disc; padding-left: 20px;">
+  <li style="padding-left: 10px;">IoT sẽ kết nối các máy in 3D với nhau, tạo ra mạng lưới sản xuất thông minh và hiệu quả.</li>
+  <li style="padding-left: 10px;">Người dùng có thể theo dõi tiến độ in 3D từ xa, điều khiển máy in và quản lý nguồn nguyên liệu một cách dễ dàng.</li>
+  <li style="padding-left: 10px;">Dữ liệu thu thập từ các máy in 3D sẽ được sử dụng để tối ưu hóa quy trình sản xuất và nâng cao chất lượng sản phẩm.</li>
+</ul>
+
+<h2 style="font-weight: bold; font-size: 1.5em;">Kết luận:</h2>
+Xu hướng 3D trong tương lai hứa hẹn mang đến nhiều cơ hội phát triển cho các doanh nghiệp và cá nhân. Nắm bắt những xu hướng này sẽ giúp bạn đón đầu thị trường, tạo ra sản phẩm sáng tạo và bứt phá trong lĩnh vực 3D. Hãy sẵn sàng cho một tương lai đầy tiềm năng với công nghệ 3D!
+
+
+    `,
+  },
   //  <h3 style="font-weight: bold; font-size: 1.2em;"></h3>
   // <h1 style="font-weight: bold; font-size: 2em;"></h1>
   // <img src="/images/new3_img12.png" alt="Image 3" style="display: block; margin: auto;height: 400px;">
