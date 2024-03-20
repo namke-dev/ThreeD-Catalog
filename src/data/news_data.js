@@ -33,8 +33,8 @@ export const news_data = [
     id: "trinh-quet-3d-model-cua-shopify-tren-ios",
     title:
       "Nâng tầm sản phẩm của bạn với Trình quét 3D mới của Shopify trên iOS (Phần 1)",
-    date: "March 18, 2024",
-    publisher: "Vương Ái",
+    date: "January 25, 2024",
+    publisher: "Dũng",
     category: "trend",
     img_url: "/images/new3_img1.png",
     meta_script:
@@ -91,8 +91,8 @@ export const news_data = [
   {
     id: "loi-ich-cua-viec-tao-mo-hinh-san-pham-3d",
     title: "Lợi ích của việc tạo mô hình sản phẩm 3D",
-    date: "March 18, 2024",
-    publisher: "Vương Ái",
+    date: "February 8, 2024",
+    publisher: "Hải",
     category: "trend",
     img_url: "/images/new3_img10.png",
     meta_script:
@@ -132,8 +132,8 @@ export const news_data = [
   {
     id: "IKEA-tich-hop-danh-muc-trong-google",
     title: "IKEA tích hợp danh mục sản phẩm 3D đầy đủ của mình trong Google",
-    date: "March 18, 2024",
-    publisher: "Vương Ái",
+    date: "February 02, 2024",
+    publisher: "Dũng",
     category: "trend",
     img_url: "/images/new3_img1.png",
     meta_script:
@@ -151,8 +151,8 @@ export const news_data = [
   {
     id: "cac-phan-mem-thiet-ke-3D-pho-bien",
     title: "Các phần mềm thiết kế 3D phổ biến",
-    date: "March 18, 2024",
-    publisher: "Vương Ái",
+    date: "February 22, 2024",
+    publisher: "Hải",
     category: "trend",
     img_url: "/images/new4_img1.png",
     meta_script:
@@ -228,8 +228,8 @@ export const news_data = [
   {
     id: "su-dung-catalogue-3d-giup-ban-hang-hieu-qua-hon",
     title: "Sử dụng Catalogue 3D: Bí quyết Bán hàng Dễ dàng Hơn",
-    date: "March 18, 2024",
-    publisher: "Vương Ái",
+    date: "January 01, 2024",
+    publisher: "Hải",
     category: "trend",
     img_url: "/images/new5_img1.png",
     meta_script:
@@ -280,8 +280,8 @@ export const news_data = [
   {
     id: "xu-huong-dung-mo-hinh-3D-cho-san-pham-ban-hang",
     title: "Xu hướng Dùng Mô hình 3D Cho Sản phẩm Bán hàng Online",
-    date: "March 18, 2024",
-    publisher: "Vương Ái",
+    date: "March 15, 2024",
+    publisher: "Minh",
     category: "trend",
     img_url: "/images/new6_img1.png",
     meta_script:
@@ -356,8 +356,8 @@ export const news_data = [
   {
     id: "xu-huong3d-trong-tuong-lai",
     title: "Xu hướng 3D trong tương lai: Nắm bắt cơ hội bứt phá",
-    date: "March 20, 2024",
-    publisher: "Vương Ái",
+    date: "March 15, 2024",
+    publisher: "Minh",
     category: "trend",
     img_url: "/images/new9_img2.png",
     meta_script: "Xu hướng 3D trong tương lai: Nắm bắt cơ hội bứt phá",
