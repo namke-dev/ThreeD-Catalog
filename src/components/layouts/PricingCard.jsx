@@ -13,30 +13,22 @@ function PricingCard({ pack }) {
         <h2 className="text-2xl font-bold pb-3 text-center">{pack.title}</h2>
         {pack.priceMonth && (
           <p className="text-gray-500 ">
-            Giá chỉ từ
-            <FaDollarSign className="inline h-3.5" />
-            {pack.priceMonth} / Tháng
+            Giá chỉ từ <span>{pack.priceMonth} / Tháng</span>
           </p>
         )}
         {pack.price3Months && (
           <p className="text-gray-500 ">
-            Giá chỉ từ
-            <FaDollarSign className="inline h-3.5" />
-            {pack.price3Months} / 3 Tháng
+            Giá chỉ từ <span>{pack.price3Months} / 3 Tháng</span>
           </p>
         )}
         {pack.price6Months && (
           <p className="text-gray-500 ">
-            Giá chỉ từ
-            <FaDollarSign className="inline h-3.5" />
-            {pack.price6Months} / 6 Tháng
+            Giá chỉ từ <span>{pack.price6Months} / 6 Tháng</span>
           </p>
         )}
         {pack.priceYear && (
           <p className="text-gray-500 ">
-            Giá chỉ từ
-            <FaDollarSign className="inline h-3.5" />
-            {pack.priceYear} / Năm
+            <span>Giá chỉ từ {pack.priceYear} / Năm</span>
           </p>
         )}
         {pack.priceSpecial && (
