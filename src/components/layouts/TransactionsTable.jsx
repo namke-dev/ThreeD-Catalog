@@ -94,12 +94,13 @@ const TransactionsTable = () => {
           <table className="w-full table-auto">
             <thead>
               <tr>
-                <th className="px-4 py-2">Transaction ID</th>
-                <th className="px-4 py-2">Custormer Name</th>
+                <th className="px-4 py-2">ID giao dịch</th>
+                <th className="px-4 py-2">Tên Khách hàng</th>
                 <th className="px-4 py-2">Email</th>
-                <th className="px-4 py-2">Order Date</th>
-                <th className="px-4 py-2">Service Plan</th>
-                <th className="px-4 py-2">Charge Amount</th>
+                <th className="px-4 py-2">Ngày mua</th>
+                <th className="px-4 py-2">Gói dịch vụ</th>
+                <th className="px-4 py-2">Thời hạn</th>
+                <th className="px-4 py-2">Chi phí</th>
               </tr>
             </thead>
             <tbody>

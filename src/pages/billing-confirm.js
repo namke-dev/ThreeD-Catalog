@@ -2,14 +2,22 @@ import { UserAuth } from "@/components/context/auth-context";
 import Layout from "@/components/layouts/Layout";
 import PageHeader from "@/components/layouts/PageHeader";
 import { SERVICE_PACK } from "@/data/service_pack_data";
+import { MOCK_TRANSACTION_DATA } from "@/data/transaction_data";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
+import React, { useState } from "react";
+import { FiCheckCircle } from "react-icons/fi";
 
 export default function BillingConfirm() {
   const router = useRouter();
   const { chargePlan, period } = router.query;
   const { user } = UserAuth();
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const handleConfirmPayment = () => {
+    setShowPopup(true);
+  };
 
   const getPrice = (title, period) => {
     // Find the service pack based on the title
@@ -78,7 +86,7 @@ export default function BillingConfirm() {
           Quay lại trang chọn gói dịch vụ
         </button>
       </Link>
-      <div className="flex flex-row gap-4  bg-white text-black py-10">
+      <div className="flex flex-row gap-4   py-10">
         <div className="flex-1">
           <div className="mb-2 text-left px-16 pb-5">
             <p className="text-2xl font-semibold ">Phương thức thanh toán</p>
@@ -111,16 +119,18 @@ export default function BillingConfirm() {
               />
             </div>
           </div>
-
-          <div className="px-16 py-10 ">
-            <p className="text-red-600 font-bold underline">LƯU Ý :</p>
-            <p>
-              Ghi rõ phần nội dung chuyển khoảng chuyển khoản nội dung như sau:
-            </p>
-            <p className="border py-2 px-3 bg-green-500 text-white font-semibold my-6">
-              {user.email + " - " + generateCode()}
-            </p>
-          </div>
+          {user && (
+            <div className="px-16 py-10 ">
+              <p className="text-red-600 font-bold underline">LƯU Ý :</p>
+              <p>
+                Ghi rõ phần nội dung chuyển khoảng chuyển khoản nội dung như
+                sau:
+              </p>
+              <p className="border py-2 px-3 bg-green-500 text-white font-semibold my-6">
+                {user.email + " - " + generateCode()}
+              </p>
+            </div>
+          )}
         </div>
         <div className="flex-1">
           <div className="h-full px-16">
@@ -129,9 +139,7 @@ export default function BillingConfirm() {
             </div>
 
             <div className="mb-2 mt-2 border border-dashed border-blue-400 px-3 py-6">
-              <div className="text-2xl font-semibold mb-4 text-gray-600">
-                Hoá đơn
-              </div>
+              <div className="text-2xl font-semibold mb-4 ">Hoá đơn</div>
               <p className="font-semibold">{chargePlan} </p>
               <p className="pl-4">{period}</p>
 
@@ -148,14 +156,13 @@ export default function BillingConfirm() {
               giờ làm việc và chính sách của từng ngân hàng
             </p>
 
-            <Link href="/confirmed-transaction">
-              <button
-                type="submit"
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3"
-              >
-                Xác nhận đã chuyển khoản
-              </button>
-            </Link>
+            <button
+              type="submit"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3"
+              onClick={handleConfirmPayment}
+            >
+              Xác nhận đã chuyển khoản
+            </button>
 
             <hr className="my-5" />
             <ul className="list-disc mb-6">
@@ -179,6 +186,70 @@ export default function BillingConfirm() {
           </div>
         </div>
       </div>
+      <div
+        className="text-4xl font-bold mb-8
+      relative ml-20"
+      >
+        Lịch sử giao dịch
+      </div>
+      {user && (
+        <table className="w-full table-auto">
+          <thead>
+            <tr>
+              <th className="px-4 py-2">ID giao dịch</th>
+              <th className="px-4 py-2">Tên Khách hàng</th>
+              <th className="px-4 py-2">Email</th>
+              <th className="px-4 py-2">Ngày mua</th>
+              <th className="px-4 py-2">Gói dịch vụ</th>
+              <th className="px-4 py-2">Thời hạn</th>
+              <th className="px-4 py-2">Chi phí</th>
+              <th className="px-4 py-2">Trạng thái thanh toán</th>
+            </tr>
+          </thead>
+          <tbody>
+            {MOCK_TRANSACTION_DATA.filter(
+              (transaction) => transaction.useremail === user.email
+            ).map((transaction) => (
+              <tr key={transaction.id}>
+                <td className="border px-4 py-2">{transaction.id}</td>
+                <td className="border px-4 py-2">{transaction.customer}</td>
+                <td className="border px-4 py-2">{transaction.useremail}</td>
+                <td className="border px-4 py-2">{transaction.time}</td>
+                <td className="border px-4 py-2">{transaction.servicePlan}</td>
+                <td className="border px-4 py-2">{transaction.period}</td>
+                <td className="border px-4 py-2 text-right">
+                  {transaction.chargeamount}
+                </td>
+                <td className="border px-4 py-2">Chờ xác nhận</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+      {showPopup && (
+        <div className="fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 flex items-center justify-center">
+          <div className="bg-white p-8 rounded-lg">
+            <FiCheckCircle className="text-green-500 w-16 h-16 mb-4 mx-auto" />
+            <h1 className="text-2xl font-bold text-center mb-2">
+              Đã hoàn tất thông tin thanh toán
+            </h1>
+            <p className="text-lg text-gray-600 text-center">
+              Thông tin đơn hàng của bạn đã được hệ thống ghi nhận.
+            </p>
+            <div className="items-center justify-center flex">
+              <button
+                type="button"
+                className="
+              
+              bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3"
+                onClick={() => setShowPopup(false)}
+              >
+                Xác nhận
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </Layout>
   );
 }

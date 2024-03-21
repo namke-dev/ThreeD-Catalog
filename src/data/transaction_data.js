@@ -2,7 +2,7 @@ export const MOCK_TRANSACTION_DATA = [
   {
     id: 1,
     customer: "Trần Văn Nam",
-    useremail: "tranvannam1032@gmail.com",
+    useremail: "namnguyenke1999@gmail.com",
     time: "2023-02-03",
     servicePlan: "Gói dùng thử",
     period: "1 Month",
