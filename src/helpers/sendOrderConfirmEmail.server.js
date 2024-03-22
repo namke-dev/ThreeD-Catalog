@@ -1,4 +1,3 @@
-"use server";
 export async function sendOrderConfirmEmail(
   user,
   chargePlan,

@@ -1,4 +1,3 @@
-"use client";
 import { UserAuth } from "@/components/context/auth-context";
 import Layout from "@/components/layouts/Layout";
 import PageHeader from "@/components/layouts/PageHeader";
@@ -154,18 +153,14 @@ export default function BillingConfirm() {
               giao dịch, thời gian xác nhận giao dịch thành công tuỳ thuộc vào
               giờ làm việc và chính sách của từng ngân hàng
             </p>
-            <form
-              action={async () => {
-                await handleConfirmPayment();
-              }}
+
+            <button
+              type="submit"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3"
+              onClick={async () => await handleConfirmPayment()}
             >
-              <button
-                type="submit"
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3"
-              >
-                Xác nhận đã chuyển khoản
-              </button>
-            </form>
+              Xác nhận đã chuyển khoản
+            </button>
 
             <hr className="my-5" />
             <ul className="list-disc mb-6">
