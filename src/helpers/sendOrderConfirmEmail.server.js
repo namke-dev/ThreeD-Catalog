@@ -9,6 +9,7 @@ export default async function sendOrderConfirmEmail(
   period,
   getPrice
 ) {
+  console.log("==> function send email");
   if (!user) {
     return null;
   }
