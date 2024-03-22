@@ -60,7 +60,7 @@ export default function BillingConfirm() {
   const handleConfirmPayment = async () => {
     setShowPopup(true);
     // Send email
-    sendOrderConfirmEmail(user, chargePlan, period, getPrice);
+    await sendOrderConfirmEmail(user, chargePlan, period, getPrice);
   };
 
   function generateCode() {
