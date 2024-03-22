@@ -7,6 +7,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 9,
@@ -79,6 +87,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 10,
@@ -88,6 +97,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 11,
@@ -97,6 +107,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 12,
@@ -106,6 +117,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 13,
@@ -115,6 +127,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 14,
@@ -124,6 +137,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 15,
@@ -133,6 +147,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 16,
@@ -142,6 +157,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 17,
@@ -151,6 +167,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 18,
@@ -160,6 +177,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 19,
@@ -169,6 +187,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 20,
@@ -178,6 +197,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 21,
@@ -187,6 +207,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 22,
@@ -196,6 +217,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 23,
@@ -205,6 +227,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 24,
@@ -214,6 +237,7 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
   {
     id: 25,
@@ -223,14 +247,16 @@ export const MOCK_TRANSACTION_DATA = [
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",
+    status: "Đã xác nhận giao dịch",
   },
-  {
-    id: 26,
-    customer: "Nguyễn Kế Nam",
-    useremail: "namnguyenke1999@gmail.com",
-    time: "2023-23-03",
-    servicePlan: "Gói dùng thử",
-    period: "1 Month",
-    chargeamount: "300,000 Đồng",
-  },
+  // {
+  //   id: 26,
+  //   customer: "Nguyễn Kế Nam",
+  //   useremail: "namnguyenke1999@gmail.com",
+  //   time: "2023-23-03",
+  //   servicePlan: "Gói dùng thử",
+  //   period: "1 Month",
+  //   chargeamount: "300,000 Đồng",
+  //   status: "Chờ xác nhận giao dịch",
+  // },
 ];

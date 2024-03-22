@@ -218,7 +218,17 @@ export default function BillingConfirm() {
                 <td className="border px-4 py-2 text-right">
                   {transaction.chargeamount}
                 </td>
-                <td className="border px-4 py-2">Chờ xác nhận</td>
+                <td className="border px-4 py-2">
+                  <p
+                    className={
+                      transaction.status === "Đã xác nhận giao dịch"
+                        ? "bg-green-300"
+                        : "bg-yellow-300"
+                    }
+                  >
+                    {transaction.status}
+                  </p>
+                </td>
               </tr>
             ))}
           </tbody>
