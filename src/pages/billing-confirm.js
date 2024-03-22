@@ -3,7 +3,7 @@ import Layout from "@/components/layouts/Layout";
 import PageHeader from "@/components/layouts/PageHeader";
 import { SERVICE_PACK } from "@/data/service_pack_data";
 import { MOCK_TRANSACTION_DATA } from "@/data/transaction_data";
-import { sendOrderConfirmEmail } from "@/helpers/sendOrderConfirmEmail.server";
+import EmailHelper from "@/helpers/sendOrderConfirmEmail.server";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -60,7 +60,7 @@ export default function BillingConfirm() {
   const handleConfirmPayment = async () => {
     setShowPopup(true);
     // Send email
-    await sendOrderConfirmEmail(user, chargePlan, period, getPrice);
+    await EmailHelper.sendOrderConfirmEmail(user, chargePlan, period, getPrice);
   };
 
   function generateCode() {
