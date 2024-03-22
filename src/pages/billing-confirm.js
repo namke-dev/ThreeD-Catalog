@@ -1,8 +1,10 @@
+"use client";
 import { UserAuth } from "@/components/context/auth-context";
 import Layout from "@/components/layouts/Layout";
 import PageHeader from "@/components/layouts/PageHeader";
 import { SERVICE_PACK } from "@/data/service_pack_data";
 import { MOCK_TRANSACTION_DATA } from "@/data/transaction_data";
+import { sendOrderConfirmEmail } from "@/helpers/sendOrderConfirmEmail.server";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
@@ -14,10 +16,6 @@ export default function BillingConfirm() {
   const { user } = UserAuth();
 
   const [showPopup, setShowPopup] = useState(false);
-
-  const handleConfirmPayment = () => {
-    setShowPopup(true);
-  };
 
   const getPrice = (title, period) => {
     // Find the service pack based on the title
@@ -42,20 +40,15 @@ export default function BillingConfirm() {
   };
 
   const formatPrice = (priceString) => {
-    console.log(` ==> ${priceString}`);
-
     // Remove non-numeric characters and convert to lowercase
     const cleanedPrice = priceString;
 
     // Check if the price is in million (triệu) or thousand (nghìn)
     if (cleanedPrice.includes("triệu Đồng")) {
-      console.log("==> milion");
       const numericPrice =
         parseFloat(cleanedPrice.replace("triệu", "").trim()) * 1000000;
       return numericPrice.toLocaleString("en-US") + " VND";
     } else if (cleanedPrice.includes("nghìn Đồng")) {
-      console.log("==> thousand");
-
       const numericPrice =
         parseFloat(cleanedPrice.replace("nghìn", "").trim()) * 1000;
       return numericPrice.toLocaleString("en-US") + " VND";
@@ -63,6 +56,12 @@ export default function BillingConfirm() {
       // If the price is already in VND
       return parseFloat(cleanedPrice).toLocaleString("en-US") + " VND";
     }
+  };
+
+  const handleConfirmPayment = async () => {
+    setShowPopup(true);
+    // Send email
+    sendOrderConfirmEmail(user, chargePlan, period, getPrice);
   };
 
   function generateCode() {
@@ -155,14 +154,18 @@ export default function BillingConfirm() {
               giao dịch, thời gian xác nhận giao dịch thành công tuỳ thuộc vào
               giờ làm việc và chính sách của từng ngân hàng
             </p>
-
-            <button
-              type="submit"
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3"
-              onClick={handleConfirmPayment}
+            <form
+              action={async () => {
+                await handleConfirmPayment();
+              }}
             >
-              Xác nhận đã chuyển khoản
-            </button>
+              <button
+                type="submit"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3"
+              >
+                Xác nhận đã chuyển khoản
+              </button>
+            </form>
 
             <hr className="my-5" />
             <ul className="list-disc mb-6">
