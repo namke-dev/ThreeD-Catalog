@@ -1,7 +1,7 @@
 export const MOCK_TRANSACTION_DATA = [
   {
     id: 1,
-    customer: "Trần Văn Nam",
+    customer: "Nguyễn Kế Nam",
     useremail: "namnguyenke1999@gmail.com",
     time: "2023-02-03",
     servicePlan: "Gói dùng thử",
@@ -220,6 +220,15 @@ export const MOCK_TRANSACTION_DATA = [
     customer: "Lê Thị Hà",
     useremail: "lethiha2159@outlook.com",
     time: "2023-07-15",
+    servicePlan: "Gói dùng thử",
+    period: "1 Month",
+    chargeamount: "300,000 Đồng",
+  },
+  {
+    id: 26,
+    customer: "Nguyễn Kế Nam",
+    useremail: "namnguyenke1999@gmail.com",
+    time: "2023-23-03",
     servicePlan: "Gói dùng thử",
     period: "1 Month",
     chargeamount: "300,000 Đồng",

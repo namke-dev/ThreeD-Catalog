@@ -36,10 +36,10 @@ export default async function sendOrderConfirmEmail(
   Best regards,
 `;
   console.log(message);
-  resend.emails.send({
-    from: "onboarding@resend.dev",
-    to: userEmail,
-    subject: "Katalog 3d: Xác nhận đơn hàng",
-    text: message,
-  });
+  // resend.emails.send({
+  //   from: "onboarding@resend.dev",
+  //   to: userEmail,
+  //   subject: "Katalog 3d: Xác nhận đơn hàng",
+  //   text: message,
+  // });
 }
