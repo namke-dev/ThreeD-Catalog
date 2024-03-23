@@ -25,22 +25,27 @@ export const TransactionsTable = () => {
       totalChargeAmount += amount;
     });
 
-    return totalChargeAmount;
+    // Format the totalChargeAmount with commas
+    const formattedTotalChargeAmount =
+      totalChargeAmount.toLocaleString("en-US");
+
+    return formattedTotalChargeAmount + " VND";
   }
 
   return (
     <div className="w-full overflow-x-auto">
-      <div className="text-lg border-2 border-dashed px-10 py-5 font-bold">
+      <div className="text-lg border-2 border-dashed px-10 py-5 font-semibold">
+        <p className="py-5 font-bold text-2xl">Tổng quát</p>
         <span>
           Tổng đơn hàng đã nhận: {countOrders(MOCK_TRANSACTION_DATA)} Đơn Hàng
         </span>
         <br />
-        <span>
-          Tổng doanh thu: {sumChargeAmounts(MOCK_TRANSACTION_DATA)} VND
-        </span>
+        <span>Tổng doanh thu: {sumChargeAmounts(MOCK_TRANSACTION_DATA)}</span>
       </div>
       <div className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-xl my-2">Transactions</h2>
+        <h2 className="text-xl my-2 font-bold py-5">
+          Giao dịch được nghi nhận
+        </h2>
         <div className="overflow-x-auto">
           <table className="w-full table-auto">
             <thead>

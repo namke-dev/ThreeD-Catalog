@@ -69,7 +69,7 @@ export default function DashboardRevenue() {
 
         <div className="w-full px-4">
           <div className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-xl my-2">Revenue by Day</h2>
+            <h2 className="text-xl my-2">Biểu đồ doanh thu theo ngày</h2>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={barChartData}>
                 <XAxis dataKey="date" />
