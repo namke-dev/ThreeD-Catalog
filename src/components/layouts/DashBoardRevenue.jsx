@@ -142,10 +142,13 @@ function convertToBarChartData(transactions) {
     }
   });
 
-  // Convert revenueByDate object to an array of objects with date and revenue
-  for (const date in revenueByDate) {
+  // Convert revenueByDate object to an array of objects
+  Object.keys(revenueByDate).forEach((date) => {
     barChartData.push({ date, revenue: revenueByDate[date] });
-  }
+  });
+
+  // Sort the barChartData array by date
+  barChartData.sort((a, b) => new Date(a.date) - new Date(b.date));
 
   return barChartData;
 }
