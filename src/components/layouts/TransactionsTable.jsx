@@ -60,7 +60,9 @@ export const TransactionsTable = () => {
               </tr>
             </thead>
             <tbody>
-              {MOCK_TRANSACTION_DATA.map((transaction) => (
+              {MOCK_TRANSACTION_DATA.sort(
+                (a, b) => new Date(a.time) - new Date(b.time)
+              ).map((transaction) => (
                 <tr key={transaction.id}>
                   <td className="border px-4 py-2">{transaction.id}</td>
                   <td className="border px-4 py-2">{transaction.customer}</td>
